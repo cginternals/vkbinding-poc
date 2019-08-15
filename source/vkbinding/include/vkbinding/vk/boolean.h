@@ -1,30 +1,30 @@
 #pragma once
 
 
-#include <eglbinding/Boolean32.h>
+#include <vkbinding/Boolean8.h>
 
-#include <eglbinding/eglbinding_api.h>
-#include <eglbinding/eglbinding_features.h>
-#include <eglbinding/noegl.h>
+#include <vkbinding/vkbinding_api.h>
+#include <vkbinding/vkbinding_features.h>
+#include <vkbinding/novk.h>
 
 
-namespace egl
+namespace vk
 {
 
 
-using EGLBoolean = eglbinding::Boolean32;
+using VKBoolean = vkbinding::Boolean8;
 
 
-} // namespace egl
+} // namespace vk
 
 
-namespace egl
+namespace vk
 {
 
 // import booleans to namespace
 
-EGLBINDING_CONSTEXPR static const EGLBoolean EGL_FALSE = EGLBoolean(0);
-EGLBINDING_CONSTEXPR static const EGLBoolean EGL_TRUE = EGLBoolean(1);
+VKBINDING_CONSTEXPR static const VKBoolean EGL_FALSE = VKBoolean(0);
+VKBINDING_CONSTEXPR static const VKBoolean EGL_TRUE = VKBoolean(1);
 
 
-} // namespace egl
+} // namespace vk

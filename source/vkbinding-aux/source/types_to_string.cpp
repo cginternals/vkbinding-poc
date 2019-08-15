@@ -45,12 +45,6 @@ std::ostream & operator<<(std::ostream & stream, const VkAccessFlagBits & value)
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkAttachmentDescriptionFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkAttachmentDescriptionFlagBits>(value);
-    return stream;
-}
-
 std::ostream & operator<<(std::ostream & stream, const VkBufferCreateFlagBits & value)
 {
     stream << vkbinding::aux::bitfieldString<VkBufferCreateFlagBits>(value);
@@ -63,33 +57,9 @@ std::ostream & operator<<(std::ostream & stream, const VkBufferUsageFlagBits & v
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkBufferViewCreateFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkBufferViewCreateFlagBits>(value);
-    return stream;
-}
-
 std::ostream & operator<<(std::ostream & stream, const VkBuildAccelerationStructureFlagBitsNV & value)
 {
     stream << vkbinding::aux::bitfieldString<VkBuildAccelerationStructureFlagBitsNV>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkColorComponentFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkColorComponentFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkCommandBufferResetFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkCommandBufferResetFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkCommandBufferUsageFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkCommandBufferUsageFlagBits>(value);
     return stream;
 }
 
@@ -99,33 +69,9 @@ std::ostream & operator<<(std::ostream & stream, const VkCommandPoolCreateFlagBi
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkCommandPoolResetFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkCommandPoolResetFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkCompositeAlphaFlagBitsKHR & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkCompositeAlphaFlagBitsKHR>(value);
-    return stream;
-}
-
 std::ostream & operator<<(std::ostream & stream, const VkConditionalRenderingFlagBitsEXT & value)
 {
     stream << vkbinding::aux::bitfieldString<VkConditionalRenderingFlagBitsEXT>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkCullModeFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkCullModeFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkDebugReportFlagBitsEXT & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkDebugReportFlagBitsEXT>(value);
     return stream;
 }
 
@@ -135,21 +81,9 @@ std::ostream & operator<<(std::ostream & stream, const VkDebugUtilsMessageSeveri
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkDebugUtilsMessageTypeFlagBitsEXT & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkDebugUtilsMessageTypeFlagBitsEXT>(value);
-    return stream;
-}
-
 std::ostream & operator<<(std::ostream & stream, const VkDependencyFlagBits & value)
 {
     stream << vkbinding::aux::bitfieldString<VkDependencyFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkDescriptorBindingFlagBitsEXT & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkDescriptorBindingFlagBitsEXT>(value);
     return stream;
 }
 
@@ -162,12 +96,6 @@ std::ostream & operator<<(std::ostream & stream, const VkDescriptorPoolCreateFla
 std::ostream & operator<<(std::ostream & stream, const VkDescriptorSetLayoutCreateFlagBits & value)
 {
     stream << vkbinding::aux::bitfieldString<VkDescriptorSetLayoutCreateFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkDeviceCreateFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkDeviceCreateFlagBits>(value);
     return stream;
 }
 
@@ -195,33 +123,15 @@ std::ostream & operator<<(std::ostream & stream, const VkExternalFenceFeatureFla
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkExternalFenceFeatureFlagBitsKHR & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkExternalFenceFeatureFlagBitsKHR>(value);
-    return stream;
-}
-
 std::ostream & operator<<(std::ostream & stream, const VkExternalFenceHandleTypeFlagBits & value)
 {
     stream << vkbinding::aux::bitfieldString<VkExternalFenceHandleTypeFlagBits>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkExternalFenceHandleTypeFlagBitsKHR & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkExternalFenceHandleTypeFlagBitsKHR>(value);
-    return stream;
-}
-
 std::ostream & operator<<(std::ostream & stream, const VkExternalMemoryFeatureFlagBits & value)
 {
     stream << vkbinding::aux::bitfieldString<VkExternalMemoryFeatureFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkExternalMemoryFeatureFlagBitsKHR & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkExternalMemoryFeatureFlagBitsKHR>(value);
     return stream;
 }
 
@@ -237,12 +147,6 @@ std::ostream & operator<<(std::ostream & stream, const VkExternalMemoryHandleTyp
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkExternalMemoryHandleTypeFlagBitsKHR & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkExternalMemoryHandleTypeFlagBitsKHR>(value);
-    return stream;
-}
-
 std::ostream & operator<<(std::ostream & stream, const VkExternalMemoryHandleTypeFlagBitsNV & value)
 {
     stream << vkbinding::aux::bitfieldString<VkExternalMemoryHandleTypeFlagBitsNV>(value);
@@ -255,39 +159,15 @@ std::ostream & operator<<(std::ostream & stream, const VkExternalSemaphoreFeatur
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkExternalSemaphoreFeatureFlagBitsKHR & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkExternalSemaphoreFeatureFlagBitsKHR>(value);
-    return stream;
-}
-
 std::ostream & operator<<(std::ostream & stream, const VkExternalSemaphoreHandleTypeFlagBits & value)
 {
     stream << vkbinding::aux::bitfieldString<VkExternalSemaphoreHandleTypeFlagBits>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkExternalSemaphoreHandleTypeFlagBitsKHR & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkExternalSemaphoreHandleTypeFlagBitsKHR>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkFenceCreateFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkFenceCreateFlagBits>(value);
-    return stream;
-}
-
 std::ostream & operator<<(std::ostream & stream, const VkFenceImportFlagBits & value)
 {
     stream << vkbinding::aux::bitfieldString<VkFenceImportFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkFenceImportFlagBitsKHR & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkFenceImportFlagBitsKHR>(value);
     return stream;
 }
 
@@ -345,21 +225,9 @@ std::ostream & operator<<(std::ostream & stream, const VkIndirectCommandsLayoutU
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkInstanceCreateFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkInstanceCreateFlagBits>(value);
-    return stream;
-}
-
 std::ostream & operator<<(std::ostream & stream, const VkMemoryAllocateFlagBits & value)
 {
     stream << vkbinding::aux::bitfieldString<VkMemoryAllocateFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkMemoryAllocateFlagBitsKHR & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkMemoryAllocateFlagBitsKHR>(value);
     return stream;
 }
 
@@ -387,24 +255,6 @@ std::ostream & operator<<(std::ostream & stream, const VkPeerMemoryFeatureFlagBi
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkPeerMemoryFeatureFlagBitsKHR & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkPeerMemoryFeatureFlagBitsKHR>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkPipelineCacheCreateFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkPipelineCacheCreateFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkPipelineColorBlendStateCreateFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkPipelineColorBlendStateCreateFlagBits>(value);
-    return stream;
-}
-
 std::ostream & operator<<(std::ostream & stream, const VkPipelineCreateFlagBits & value)
 {
     stream << vkbinding::aux::bitfieldString<VkPipelineCreateFlagBits>(value);
@@ -414,42 +264,6 @@ std::ostream & operator<<(std::ostream & stream, const VkPipelineCreateFlagBits 
 std::ostream & operator<<(std::ostream & stream, const VkPipelineCreationFeedbackFlagBitsEXT & value)
 {
     stream << vkbinding::aux::bitfieldString<VkPipelineCreationFeedbackFlagBitsEXT>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkPipelineDepthStencilStateCreateFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkPipelineDepthStencilStateCreateFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkPipelineDynamicStateCreateFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkPipelineDynamicStateCreateFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkPipelineInputAssemblyStateCreateFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkPipelineInputAssemblyStateCreateFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkPipelineLayoutCreateFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkPipelineLayoutCreateFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkPipelineMultisampleStateCreateFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkPipelineMultisampleStateCreateFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkPipelineRasterizationStateCreateFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkPipelineRasterizationStateCreateFlagBits>(value);
     return stream;
 }
 
@@ -465,57 +279,9 @@ std::ostream & operator<<(std::ostream & stream, const VkPipelineStageFlagBits &
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkPipelineTessellationStateCreateFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkPipelineTessellationStateCreateFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkPipelineVertexInputStateCreateFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkPipelineVertexInputStateCreateFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkPipelineViewportStateCreateFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkPipelineViewportStateCreateFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkQueryControlFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkQueryControlFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkQueryPipelineStatisticFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkQueryPipelineStatisticFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkQueryPoolCreateFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkQueryPoolCreateFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkQueryResultFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkQueryResultFlagBits>(value);
-    return stream;
-}
-
 std::ostream & operator<<(std::ostream & stream, const VkQueueFlagBits & value)
 {
     stream << vkbinding::aux::bitfieldString<VkQueueFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkRenderPassCreateFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkRenderPassCreateFlagBits>(value);
     return stream;
 }
 
@@ -543,39 +309,9 @@ std::ostream & operator<<(std::ostream & stream, const VkSemaphoreImportFlagBits
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkSemaphoreImportFlagBitsKHR & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkSemaphoreImportFlagBitsKHR>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkShaderModuleCreateFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkShaderModuleCreateFlagBits>(value);
-    return stream;
-}
-
 std::ostream & operator<<(std::ostream & stream, const VkShaderStageFlagBits & value)
 {
     stream << vkbinding::aux::bitfieldString<VkShaderStageFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkSparseImageFormatFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkSparseImageFormatFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkSparseMemoryBindFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkSparseMemoryBindFlagBits>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkStencilFaceFlagBits & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkStencilFaceFlagBits>(value);
     return stream;
 }
 
@@ -597,21 +333,9 @@ std::ostream & operator<<(std::ostream & stream, const VkSurfaceCounterFlagBitsE
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkSurfaceTransformFlagBitsKHR & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkSurfaceTransformFlagBitsKHR>(value);
-    return stream;
-}
-
 std::ostream & operator<<(std::ostream & stream, const VkSwapchainCreateFlagBitsKHR & value)
 {
     stream << vkbinding::aux::bitfieldString<VkSwapchainCreateFlagBitsKHR>(value);
-    return stream;
-}
-
-std::ostream & operator<<(std::ostream & stream, const VkSwapchainImageUsageFlagBitsANDROID & value)
-{
-    stream << vkbinding::aux::bitfieldString<VkSwapchainImageUsageFlagBitsANDROID>(value);
     return stream;
 }
 
@@ -668,4386 +392,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::CAMetalLayer>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::CAMetalLayer>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::CAMetalLayer *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::CAMetalLayer *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::char>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::char>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::char *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::char *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::char           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::char           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::char            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::char            *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::char            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::char            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::char             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::char             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::char                             >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::char                             >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::char                              *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::char                              *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const CAMetalLayer*      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const CAMetalLayer*      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const CAMetalLayer*       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const CAMetalLayer*       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const char*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const char*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const char* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const char* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const char* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const char* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const char*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const char*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const char*     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const char*     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const char*      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const char*      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const char*      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const char*      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const char*       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const char*       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const char*            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const char*            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const char*             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const char*             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const char*                      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const char*                      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const char*                       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const char*                       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const char*                        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const char*                        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const char*                         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const char*                         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const char*                                  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const char*                                  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const char*                                   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const char*                                   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const char*                                                  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const char*                                                  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const char*                                                   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const char*                                                   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const char* const*      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const char* const*      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const char* const*       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const char* const*       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const float>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const float>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const float *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const float *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const float* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const float* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const float*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const float*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const float*    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const float*    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const float*     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const float*     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const int32_t*   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const int32_t*   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const int32_t*    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const int32_t*    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const SECURITY_ATTRIBUTES* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const SECURITY_ATTRIBUTES* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const SECURITY_ATTRIBUTES*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const SECURITY_ATTRIBUTES*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const SECURITY_ATTRIBUTES*       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const SECURITY_ATTRIBUTES*       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const SECURITY_ATTRIBUTES*        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const SECURITY_ATTRIBUTES*        *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const struct AHardwareBuffer*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const struct AHardwareBuffer*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const struct AHardwareBuffer* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const struct AHardwareBuffer* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const struct VkBaseInStructure* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const struct VkBaseInStructure* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const struct VkBaseInStructure*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const struct VkBaseInStructure*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const uint32_t*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint32_t*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const uint32_t* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint32_t* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const uint32_t* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint32_t* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const uint32_t*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint32_t*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const uint32_t*  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint32_t*  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const uint32_t*   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint32_t*   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const uint32_t*    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint32_t*    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const uint32_t*     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint32_t*     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const uint32_t*     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint32_t*     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const uint32_t*      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint32_t*      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const uint32_t*        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint32_t*        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const uint32_t*         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint32_t*         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const uint32_t*            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint32_t*            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const uint32_t*             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint32_t*             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const uint32_t*               >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint32_t*               >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const uint32_t*                *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint32_t*                *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const uint32_t*                  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint32_t*                  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const uint32_t*                   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint32_t*                   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const uint32_t*                   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint32_t*                   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const uint32_t*                    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint32_t*                    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const uint64_t* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint64_t* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const uint64_t*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint64_t*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const uint64_t*                  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint64_t*                  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const uint64_t*                   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const uint64_t*                   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAccelerationStructureCreateInfoNV*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAccelerationStructureCreateInfoNV*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAccelerationStructureCreateInfoNV* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAccelerationStructureCreateInfoNV* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAccelerationStructureInfoNV*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAccelerationStructureInfoNV*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAccelerationStructureInfoNV* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAccelerationStructureInfoNV* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAccelerationStructureMemoryRequirementsInfoNV*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAccelerationStructureMemoryRequirementsInfoNV*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAccelerationStructureMemoryRequirementsInfoNV* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAccelerationStructureMemoryRequirementsInfoNV* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAccelerationStructureNV*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAccelerationStructureNV*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAccelerationStructureNV* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAccelerationStructureNV* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAccelerationStructureNV* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAccelerationStructureNV* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAccelerationStructureNV*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAccelerationStructureNV*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAcquireNextImageInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAcquireNextImageInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAcquireNextImageInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAcquireNextImageInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAllocationCallbacks*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAllocationCallbacks*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAllocationCallbacks* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAllocationCallbacks* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAndroidSurfaceCreateInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAndroidSurfaceCreateInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAndroidSurfaceCreateInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAndroidSurfaceCreateInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkApplicationInfo* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkApplicationInfo* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkApplicationInfo*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkApplicationInfo*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAttachmentDescription* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAttachmentDescription* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAttachmentDescription*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAttachmentDescription*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAttachmentDescription2KHR* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAttachmentDescription2KHR* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAttachmentDescription2KHR*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAttachmentDescription2KHR*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAttachmentReference* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAttachmentReference* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAttachmentReference*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAttachmentReference*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAttachmentReference2KHR* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAttachmentReference2KHR* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAttachmentReference2KHR*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAttachmentReference2KHR*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAttachmentReference2KHR*         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAttachmentReference2KHR*         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAttachmentReference2KHR*          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAttachmentReference2KHR*          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAttachmentReference2KHR*            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAttachmentReference2KHR*            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAttachmentReference2KHR*             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAttachmentReference2KHR*             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAttachmentSampleLocationsEXT* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAttachmentSampleLocationsEXT* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkAttachmentSampleLocationsEXT*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkAttachmentSampleLocationsEXT*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBindAccelerationStructureMemoryInfoNV*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBindAccelerationStructureMemoryInfoNV*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBindAccelerationStructureMemoryInfoNV* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBindAccelerationStructureMemoryInfoNV* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBindBufferMemoryInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBindBufferMemoryInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBindBufferMemoryInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBindBufferMemoryInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBindImageMemoryInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBindImageMemoryInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBindImageMemoryInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBindImageMemoryInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBindSparseInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBindSparseInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBindSparseInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBindSparseInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBuffer*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBuffer*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBuffer* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBuffer* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBufferCopy*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBufferCopy*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBufferCopy* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBufferCopy* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBufferCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBufferCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBufferCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBufferCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBufferDeviceAddressInfoEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBufferDeviceAddressInfoEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBufferDeviceAddressInfoEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBufferDeviceAddressInfoEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBufferImageCopy*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBufferImageCopy*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBufferImageCopy* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBufferImageCopy* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBufferMemoryBarrier*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBufferMemoryBarrier*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBufferMemoryBarrier* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBufferMemoryBarrier* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBufferMemoryRequirementsInfo2*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBufferMemoryRequirementsInfo2*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBufferMemoryRequirementsInfo2* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBufferMemoryRequirementsInfo2* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBufferView*    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBufferView*    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBufferView*     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBufferView*     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBufferViewCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBufferViewCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkBufferViewCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkBufferViewCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCalibratedTimestampInfoEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCalibratedTimestampInfoEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCalibratedTimestampInfoEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCalibratedTimestampInfoEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkClearAttachment*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkClearAttachment*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkClearAttachment* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkClearAttachment* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkClearColorValue*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkClearColorValue*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkClearColorValue* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkClearColorValue* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkClearDepthStencilValue*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkClearDepthStencilValue*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkClearDepthStencilValue* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkClearDepthStencilValue* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkClearRect*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkClearRect*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkClearRect* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkClearRect* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkClearValue*    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkClearValue*    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkClearValue*     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkClearValue*     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCmdProcessCommandsInfoNVX*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCmdProcessCommandsInfoNVX*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCmdProcessCommandsInfoNVX* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCmdProcessCommandsInfoNVX* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCmdReserveSpaceForCommandsInfoNVX*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCmdReserveSpaceForCommandsInfoNVX*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCmdReserveSpaceForCommandsInfoNVX* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCmdReserveSpaceForCommandsInfoNVX* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCoarseSampleLocationNV* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCoarseSampleLocationNV* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCoarseSampleLocationNV*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCoarseSampleLocationNV*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCoarseSampleOrderCustomNV*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCoarseSampleOrderCustomNV*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCoarseSampleOrderCustomNV* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCoarseSampleOrderCustomNV* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCoarseSampleOrderCustomNV*        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCoarseSampleOrderCustomNV*        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCoarseSampleOrderCustomNV*         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCoarseSampleOrderCustomNV*         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCommandBuffer*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCommandBuffer*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCommandBuffer* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCommandBuffer* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCommandBuffer*     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCommandBuffer*     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCommandBuffer*      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCommandBuffer*      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCommandBufferAllocateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCommandBufferAllocateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCommandBufferAllocateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCommandBufferAllocateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCommandBufferBeginInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCommandBufferBeginInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCommandBufferBeginInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCommandBufferBeginInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCommandBufferInheritanceInfo*       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCommandBufferInheritanceInfo*       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCommandBufferInheritanceInfo*        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCommandBufferInheritanceInfo*        *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCommandPoolCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCommandPoolCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCommandPoolCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCommandPoolCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkComputePipelineCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkComputePipelineCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkComputePipelineCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkComputePipelineCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkConditionalRenderingBeginInfoEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkConditionalRenderingBeginInfoEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkConditionalRenderingBeginInfoEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkConditionalRenderingBeginInfoEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCopyDescriptorSet*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCopyDescriptorSet*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkCopyDescriptorSet* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkCopyDescriptorSet* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugMarkerMarkerInfoEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugMarkerMarkerInfoEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugMarkerMarkerInfoEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugMarkerMarkerInfoEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugMarkerObjectNameInfoEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugMarkerObjectNameInfoEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugMarkerObjectNameInfoEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugMarkerObjectNameInfoEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugMarkerObjectTagInfoEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugMarkerObjectTagInfoEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugMarkerObjectTagInfoEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugMarkerObjectTagInfoEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugReportCallbackCreateInfoEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugReportCallbackCreateInfoEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugReportCallbackCreateInfoEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugReportCallbackCreateInfoEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugUtilsLabelEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugUtilsLabelEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugUtilsLabelEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugUtilsLabelEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugUtilsLabelEXT*                 >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugUtilsLabelEXT*                 >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugUtilsLabelEXT*                  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugUtilsLabelEXT*                  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugUtilsLabelEXT*                  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugUtilsLabelEXT*                  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugUtilsLabelEXT*                   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugUtilsLabelEXT*                   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugUtilsMessengerCallbackDataEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugUtilsMessengerCallbackDataEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugUtilsMessengerCallbackDataEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugUtilsMessengerCallbackDataEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugUtilsMessengerCreateInfoEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugUtilsMessengerCreateInfoEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugUtilsMessengerCreateInfoEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugUtilsMessengerCreateInfoEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugUtilsObjectNameInfoEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugUtilsObjectNameInfoEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugUtilsObjectNameInfoEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugUtilsObjectNameInfoEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugUtilsObjectNameInfoEXT*             >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugUtilsObjectNameInfoEXT*             >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugUtilsObjectNameInfoEXT*              *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugUtilsObjectNameInfoEXT*              *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugUtilsObjectTagInfoEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugUtilsObjectTagInfoEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDebugUtilsObjectTagInfoEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDebugUtilsObjectTagInfoEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorBindingFlagsEXT* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorBindingFlagsEXT* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorBindingFlagsEXT*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorBindingFlagsEXT*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorBufferInfo* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorBufferInfo* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorBufferInfo*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorBufferInfo*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorImageInfo* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorImageInfo* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorImageInfo*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorImageInfo*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorPoolCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorPoolCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorPoolCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorPoolCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorPoolSize* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorPoolSize* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorPoolSize*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorPoolSize*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorSet*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorSet*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorSet* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorSet* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorSetAllocateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorSetAllocateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorSetAllocateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorSetAllocateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorSetLayout* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorSetLayout* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorSetLayout*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorSetLayout*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorSetLayoutBinding* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorSetLayoutBinding* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorSetLayoutBinding*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorSetLayoutBinding*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorSetLayoutCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorSetLayoutCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorSetLayoutCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorSetLayoutCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorUpdateTemplateCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorUpdateTemplateCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorUpdateTemplateCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorUpdateTemplateCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorUpdateTemplateEntry* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorUpdateTemplateEntry* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDescriptorUpdateTemplateEntry*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDescriptorUpdateTemplateEntry*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDeviceCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDeviceCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDeviceCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDeviceCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDeviceEventInfoEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDeviceEventInfoEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDeviceEventInfoEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDeviceEventInfoEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDeviceMemory* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDeviceMemory* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDeviceMemory*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDeviceMemory*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDeviceMemory*            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDeviceMemory*            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDeviceMemory*             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDeviceMemory*             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDeviceQueueCreateInfo* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDeviceQueueCreateInfo* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDeviceQueueCreateInfo*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDeviceQueueCreateInfo*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDeviceQueueInfo2*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDeviceQueueInfo2*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDeviceQueueInfo2* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDeviceQueueInfo2* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDeviceSize*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDeviceSize*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDeviceSize* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDeviceSize* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDisplayEventInfoEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDisplayEventInfoEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDisplayEventInfoEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDisplayEventInfoEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDisplayModeCreateInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDisplayModeCreateInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDisplayModeCreateInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDisplayModeCreateInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDisplayPlaneInfo2KHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDisplayPlaneInfo2KHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDisplayPlaneInfo2KHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDisplayPlaneInfo2KHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDisplayPowerInfoEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDisplayPowerInfoEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDisplayPowerInfoEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDisplayPowerInfoEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDisplaySurfaceCreateInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDisplaySurfaceCreateInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDisplaySurfaceCreateInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDisplaySurfaceCreateInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDynamicState*  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDynamicState*  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkDynamicState*   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkDynamicState*   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkEvent*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkEvent*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkEvent* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkEvent* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkEventCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkEventCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkEventCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkEventCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkFence*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkFence*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkFence* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkFence* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkFenceCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkFenceCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkFenceCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkFenceCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkFenceGetFdInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkFenceGetFdInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkFenceGetFdInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkFenceGetFdInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkFenceGetWin32HandleInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkFenceGetWin32HandleInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkFenceGetWin32HandleInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkFenceGetWin32HandleInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkFormat*    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkFormat*    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkFormat*     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkFormat*     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkFormat*      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkFormat*      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkFormat*       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkFormat*       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkFramebufferAttachmentImageInfoKHR* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkFramebufferAttachmentImageInfoKHR* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkFramebufferAttachmentImageInfoKHR*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkFramebufferAttachmentImageInfoKHR*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkFramebufferCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkFramebufferCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkFramebufferCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkFramebufferCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkGeometryNV* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkGeometryNV* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkGeometryNV*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkGeometryNV*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkGraphicsPipelineCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkGraphicsPipelineCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkGraphicsPipelineCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkGraphicsPipelineCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkHdrMetadataEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkHdrMetadataEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkHdrMetadataEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkHdrMetadataEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkHeadlessSurfaceCreateInfoEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkHeadlessSurfaceCreateInfoEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkHeadlessSurfaceCreateInfoEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkHeadlessSurfaceCreateInfoEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageBlit*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageBlit*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageBlit* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageBlit* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageCopy*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageCopy*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageCopy* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageCopy* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageMemoryBarrier*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageMemoryBarrier*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageMemoryBarrier* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageMemoryBarrier* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageMemoryRequirementsInfo2*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageMemoryRequirementsInfo2*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageMemoryRequirementsInfo2* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageMemoryRequirementsInfo2* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImagePipeSurfaceCreateInfoFUCHSIA*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImagePipeSurfaceCreateInfoFUCHSIA*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImagePipeSurfaceCreateInfoFUCHSIA* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImagePipeSurfaceCreateInfoFUCHSIA* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageResolve*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageResolve*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageResolve* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageResolve* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageSparseMemoryRequirementsInfo2*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageSparseMemoryRequirementsInfo2*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageSparseMemoryRequirementsInfo2* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageSparseMemoryRequirementsInfo2* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageSubresource*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageSubresource*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageSubresource* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageSubresource* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageSubresourceRange*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageSubresourceRange*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageSubresourceRange* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageSubresourceRange* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageView* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageView* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageView*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageView*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageView*     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageView*     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageView*      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageView*      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageViewCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageViewCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageViewCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageViewCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageViewHandleInfoNVX*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageViewHandleInfoNVX*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImageViewHandleInfoNVX* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImageViewHandleInfoNVX* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImportFenceFdInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImportFenceFdInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImportFenceFdInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImportFenceFdInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImportFenceWin32HandleInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImportFenceWin32HandleInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImportFenceWin32HandleInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImportFenceWin32HandleInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImportSemaphoreFdInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImportSemaphoreFdInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImportSemaphoreFdInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImportSemaphoreFdInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImportSemaphoreWin32HandleInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImportSemaphoreWin32HandleInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkImportSemaphoreWin32HandleInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkImportSemaphoreWin32HandleInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkIndirectCommandsLayoutCreateInfoNVX*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkIndirectCommandsLayoutCreateInfoNVX*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkIndirectCommandsLayoutCreateInfoNVX* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkIndirectCommandsLayoutCreateInfoNVX* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkIndirectCommandsLayoutTokenNVX*  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkIndirectCommandsLayoutTokenNVX*  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkIndirectCommandsLayoutTokenNVX*   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkIndirectCommandsLayoutTokenNVX*   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkIndirectCommandsTokenNVX*       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkIndirectCommandsTokenNVX*       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkIndirectCommandsTokenNVX*        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkIndirectCommandsTokenNVX*        *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkInitializePerformanceApiInfoINTEL*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkInitializePerformanceApiInfoINTEL*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkInitializePerformanceApiInfoINTEL* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkInitializePerformanceApiInfoINTEL* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkInputAttachmentAspectReference* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkInputAttachmentAspectReference* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkInputAttachmentAspectReference*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkInputAttachmentAspectReference*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkInstanceCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkInstanceCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkInstanceCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkInstanceCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkIOSSurfaceCreateInfoMVK*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkIOSSurfaceCreateInfoMVK*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkIOSSurfaceCreateInfoMVK* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkIOSSurfaceCreateInfoMVK* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkMacOSSurfaceCreateInfoMVK*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkMacOSSurfaceCreateInfoMVK*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkMacOSSurfaceCreateInfoMVK* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkMacOSSurfaceCreateInfoMVK* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkMappedMemoryRange*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkMappedMemoryRange*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkMappedMemoryRange* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkMappedMemoryRange* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkMemoryAllocateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkMemoryAllocateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkMemoryAllocateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkMemoryAllocateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkMemoryBarrier*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkMemoryBarrier*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkMemoryBarrier* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkMemoryBarrier* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkMemoryGetAndroidHardwareBufferInfoANDROID*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkMemoryGetAndroidHardwareBufferInfoANDROID*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkMemoryGetAndroidHardwareBufferInfoANDROID* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkMemoryGetAndroidHardwareBufferInfoANDROID* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkMemoryGetFdInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkMemoryGetFdInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkMemoryGetFdInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkMemoryGetFdInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkMemoryGetWin32HandleInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkMemoryGetWin32HandleInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkMemoryGetWin32HandleInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkMemoryGetWin32HandleInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkMetalSurfaceCreateInfoEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkMetalSurfaceCreateInfoEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkMetalSurfaceCreateInfoEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkMetalSurfaceCreateInfoEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkObjectEntryTypeNVX*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkObjectEntryTypeNVX*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkObjectEntryTypeNVX* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkObjectEntryTypeNVX* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkObjectEntryTypeNVX*       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkObjectEntryTypeNVX*       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkObjectEntryTypeNVX*        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkObjectEntryTypeNVX*        *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkObjectEntryUsageFlagsNVX* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkObjectEntryUsageFlagsNVX* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkObjectEntryUsageFlagsNVX*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkObjectEntryUsageFlagsNVX*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkObjectTableCreateInfoNVX*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkObjectTableCreateInfoNVX*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkObjectTableCreateInfoNVX* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkObjectTableCreateInfoNVX* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkObjectTableEntryNVX* const*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkObjectTableEntryNVX* const*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkObjectTableEntryNVX* const* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkObjectTableEntryNVX* const* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPerformanceConfigurationAcquireInfoINTEL*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPerformanceConfigurationAcquireInfoINTEL*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPerformanceConfigurationAcquireInfoINTEL* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPerformanceConfigurationAcquireInfoINTEL* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPerformanceMarkerInfoINTEL*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPerformanceMarkerInfoINTEL*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPerformanceMarkerInfoINTEL* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPerformanceMarkerInfoINTEL* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPerformanceOverrideInfoINTEL*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPerformanceOverrideInfoINTEL*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPerformanceOverrideInfoINTEL* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPerformanceOverrideInfoINTEL* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPerformanceStreamMarkerInfoINTEL*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPerformanceStreamMarkerInfoINTEL*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPerformanceStreamMarkerInfoINTEL* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPerformanceStreamMarkerInfoINTEL* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPhysicalDevice*  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPhysicalDevice*  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPhysicalDevice*   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPhysicalDevice*   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPhysicalDeviceExternalBufferInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPhysicalDeviceExternalBufferInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPhysicalDeviceExternalBufferInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPhysicalDeviceExternalBufferInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPhysicalDeviceExternalFenceInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPhysicalDeviceExternalFenceInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPhysicalDeviceExternalFenceInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPhysicalDeviceExternalFenceInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPhysicalDeviceExternalSemaphoreInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPhysicalDeviceExternalSemaphoreInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPhysicalDeviceExternalSemaphoreInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPhysicalDeviceExternalSemaphoreInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPhysicalDeviceFeatures* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPhysicalDeviceFeatures* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPhysicalDeviceFeatures*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPhysicalDeviceFeatures*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPhysicalDeviceImageFormatInfo2*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPhysicalDeviceImageFormatInfo2*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPhysicalDeviceImageFormatInfo2* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPhysicalDeviceImageFormatInfo2* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPhysicalDeviceSparseImageFormatInfo2*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPhysicalDeviceSparseImageFormatInfo2*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPhysicalDeviceSparseImageFormatInfo2* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPhysicalDeviceSparseImageFormatInfo2* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPhysicalDeviceSurfaceInfo2KHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPhysicalDeviceSurfaceInfo2KHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPhysicalDeviceSurfaceInfo2KHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPhysicalDeviceSurfaceInfo2KHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineCache*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineCache*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineCache* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineCache* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineCacheCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineCacheCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineCacheCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineCacheCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineColorBlendAttachmentState* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineColorBlendAttachmentState* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineColorBlendAttachmentState*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineColorBlendAttachmentState*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineColorBlendStateCreateInfo* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineColorBlendStateCreateInfo* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineColorBlendStateCreateInfo*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineColorBlendStateCreateInfo*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineDepthStencilStateCreateInfo* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineDepthStencilStateCreateInfo* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineDepthStencilStateCreateInfo*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineDepthStencilStateCreateInfo*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineDynamicStateCreateInfo* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineDynamicStateCreateInfo* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineDynamicStateCreateInfo*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineDynamicStateCreateInfo*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineInputAssemblyStateCreateInfo* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineInputAssemblyStateCreateInfo* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineInputAssemblyStateCreateInfo*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineInputAssemblyStateCreateInfo*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineLayoutCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineLayoutCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineLayoutCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineLayoutCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineMultisampleStateCreateInfo* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineMultisampleStateCreateInfo* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineMultisampleStateCreateInfo*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineMultisampleStateCreateInfo*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineRasterizationStateCreateInfo* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineRasterizationStateCreateInfo* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineRasterizationStateCreateInfo*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineRasterizationStateCreateInfo*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineShaderStageCreateInfo* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineShaderStageCreateInfo* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineShaderStageCreateInfo*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineShaderStageCreateInfo*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineStageFlags*           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineStageFlags*           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineStageFlags*            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineStageFlags*            *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineTessellationStateCreateInfo* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineTessellationStateCreateInfo* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineTessellationStateCreateInfo*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineTessellationStateCreateInfo*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineVertexInputStateCreateInfo* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineVertexInputStateCreateInfo* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineVertexInputStateCreateInfo*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineVertexInputStateCreateInfo*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineViewportStateCreateInfo* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineViewportStateCreateInfo* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPipelineViewportStateCreateInfo*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPipelineViewportStateCreateInfo*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPresentInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPresentInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPresentInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPresentInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPresentRegionKHR*   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPresentRegionKHR*   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPresentRegionKHR*    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPresentRegionKHR*    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPresentTimeGOOGLE*   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPresentTimeGOOGLE*   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPresentTimeGOOGLE*    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPresentTimeGOOGLE*    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPushConstantRange* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPushConstantRange* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkPushConstantRange*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkPushConstantRange*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkQueryPoolCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkQueryPoolCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkQueryPoolCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkQueryPoolCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRayTracingPipelineCreateInfoNV*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRayTracingPipelineCreateInfoNV*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRayTracingPipelineCreateInfoNV* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRayTracingPipelineCreateInfoNV* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRayTracingShaderGroupCreateInfoNV* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRayTracingShaderGroupCreateInfoNV* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRayTracingShaderGroupCreateInfoNV*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRayTracingShaderGroupCreateInfoNV*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRect2D*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRect2D*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRect2D* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRect2D* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRect2D* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRect2D* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRect2D*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRect2D*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRect2D*  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRect2D*  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRect2D*   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRect2D*   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRect2D*    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRect2D*    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRect2D*     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRect2D*     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRect2D*        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRect2D*        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRect2D*         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRect2D*         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRectLayerKHR*   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRectLayerKHR*   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRectLayerKHR*    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRectLayerKHR*    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRenderPassBeginInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRenderPassBeginInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRenderPassBeginInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRenderPassBeginInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRenderPassCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRenderPassCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRenderPassCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRenderPassCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRenderPassCreateInfo2KHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRenderPassCreateInfo2KHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkRenderPassCreateInfo2KHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkRenderPassCreateInfo2KHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSampleLocationEXT* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSampleLocationEXT* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSampleLocationEXT*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSampleLocationEXT*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSampleLocationsInfoEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSampleLocationsInfoEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSampleLocationsInfoEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSampleLocationsInfoEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSampleMask*    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSampleMask*    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSampleMask*     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSampleMask*     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSampler*       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSampler*       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSampler*        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSampler*        *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSamplerCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSamplerCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSamplerCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSamplerCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSamplerYcbcrConversionCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSamplerYcbcrConversionCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSamplerYcbcrConversionCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSamplerYcbcrConversionCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSemaphore*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSemaphore*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSemaphore* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSemaphore* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSemaphore* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSemaphore* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSemaphore*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSemaphore*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSemaphore*     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSemaphore*     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSemaphore*      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSemaphore*      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSemaphoreCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSemaphoreCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSemaphoreCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSemaphoreCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSemaphoreGetFdInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSemaphoreGetFdInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSemaphoreGetFdInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSemaphoreGetFdInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSemaphoreGetWin32HandleInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSemaphoreGetWin32HandleInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSemaphoreGetWin32HandleInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSemaphoreGetWin32HandleInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkShaderModuleCreateInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkShaderModuleCreateInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkShaderModuleCreateInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkShaderModuleCreateInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkShadingRatePaletteEntryNV*  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkShadingRatePaletteEntryNV*  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkShadingRatePaletteEntryNV*   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkShadingRatePaletteEntryNV*   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkShadingRatePaletteNV*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkShadingRatePaletteNV*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkShadingRatePaletteNV* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkShadingRatePaletteNV* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkShadingRatePaletteNV*      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkShadingRatePaletteNV*      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkShadingRatePaletteNV*       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkShadingRatePaletteNV*       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSparseBufferMemoryBindInfo* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSparseBufferMemoryBindInfo* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSparseBufferMemoryBindInfo*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSparseBufferMemoryBindInfo*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSparseImageMemoryBind* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSparseImageMemoryBind* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSparseImageMemoryBind*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSparseImageMemoryBind*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSparseImageMemoryBindInfo* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSparseImageMemoryBindInfo* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSparseImageMemoryBindInfo*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSparseImageMemoryBindInfo*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSparseImageOpaqueMemoryBindInfo* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSparseImageOpaqueMemoryBindInfo* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSparseImageOpaqueMemoryBindInfo*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSparseImageOpaqueMemoryBindInfo*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSparseMemoryBind* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSparseMemoryBind* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSparseMemoryBind*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSparseMemoryBind*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSpecializationInfo* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSpecializationInfo* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSpecializationInfo*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSpecializationInfo*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSpecializationMapEntry* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSpecializationMapEntry* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSpecializationMapEntry*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSpecializationMapEntry*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkStreamDescriptorSurfaceCreateInfoGGP*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkStreamDescriptorSurfaceCreateInfoGGP*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkStreamDescriptorSurfaceCreateInfoGGP* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkStreamDescriptorSurfaceCreateInfoGGP* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSubmitInfo*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSubmitInfo*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSubmitInfo* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSubmitInfo* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSubpassBeginInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSubpassBeginInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSubpassBeginInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSubpassBeginInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSubpassDependency* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSubpassDependency* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSubpassDependency*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSubpassDependency*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSubpassDependency2KHR*     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSubpassDependency2KHR*     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSubpassDependency2KHR*      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSubpassDependency2KHR*      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSubpassDescription* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSubpassDescription* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSubpassDescription*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSubpassDescription*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSubpassDescription2KHR*       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSubpassDescription2KHR*       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSubpassDescription2KHR*        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSubpassDescription2KHR*        *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSubpassEndInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSubpassEndInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSubpassEndInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSubpassEndInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSubpassSampleLocationsEXT* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSubpassSampleLocationsEXT* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSubpassSampleLocationsEXT*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSubpassSampleLocationsEXT*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSubresourceLayout* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSubresourceLayout* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSubresourceLayout*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSubresourceLayout*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSwapchainCreateInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSwapchainCreateInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSwapchainCreateInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSwapchainCreateInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSwapchainKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSwapchainKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSwapchainKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSwapchainKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSwapchainKHR* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSwapchainKHR* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkSwapchainKHR*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkSwapchainKHR*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkValidationCacheCreateInfoEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkValidationCacheCreateInfoEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkValidationCacheCreateInfoEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkValidationCacheCreateInfoEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkValidationCacheEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkValidationCacheEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkValidationCacheEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkValidationCacheEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkValidationCheckEXT* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkValidationCheckEXT* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkValidationCheckEXT*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkValidationCheckEXT*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkValidationFeatureDisableEXT* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkValidationFeatureDisableEXT* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkValidationFeatureDisableEXT*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkValidationFeatureDisableEXT*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkValidationFeatureEnableEXT* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkValidationFeatureEnableEXT* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkValidationFeatureEnableEXT*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkValidationFeatureEnableEXT*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkVertexInputAttributeDescription* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkVertexInputAttributeDescription* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkVertexInputAttributeDescription*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkVertexInputAttributeDescription*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkVertexInputBindingDescription* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkVertexInputBindingDescription* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkVertexInputBindingDescription*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkVertexInputBindingDescription*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkVertexInputBindingDivisorDescriptionEXT*      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkVertexInputBindingDivisorDescriptionEXT*      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkVertexInputBindingDivisorDescriptionEXT*       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkVertexInputBindingDivisorDescriptionEXT*       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkViewport*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkViewport*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkViewport* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkViewport* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkViewport*      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkViewport*      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkViewport*       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkViewport*       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkViewportSwizzleNV*      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkViewportSwizzleNV*      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkViewportSwizzleNV*       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkViewportSwizzleNV*       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkViewportWScalingNV*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkViewportWScalingNV*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkViewportWScalingNV* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkViewportWScalingNV* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkViewportWScalingNV*      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkViewportWScalingNV*      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkViewportWScalingNV*       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkViewportWScalingNV*       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkViSurfaceCreateInfoNN*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkViSurfaceCreateInfoNN*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkViSurfaceCreateInfoNN* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkViSurfaceCreateInfoNN* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkWaylandSurfaceCreateInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkWaylandSurfaceCreateInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkWaylandSurfaceCreateInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkWaylandSurfaceCreateInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkWin32SurfaceCreateInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkWin32SurfaceCreateInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkWin32SurfaceCreateInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkWin32SurfaceCreateInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkWriteDescriptorSet*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkWriteDescriptorSet*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkWriteDescriptorSet* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkWriteDescriptorSet* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkXcbSurfaceCreateInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkXcbSurfaceCreateInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkXcbSurfaceCreateInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkXcbSurfaceCreateInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const VkXlibSurfaceCreateInfoKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkXlibSurfaceCreateInfoKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const VkXlibSurfaceCreateInfoKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const VkXlibSurfaceCreateInfoKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*              >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*              >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*               *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*               *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                 *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                 *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                            *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                              >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                              >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                               *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                               *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                               >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                               >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                 *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                 *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                           *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                              >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                              >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                               *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                               *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                                    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                                    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                                     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                                     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                                      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                                      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                                       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                                       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                                        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                                        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                                         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                                         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                                          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                                          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                                           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                                           *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                                            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                                            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                                             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                                             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                                                 >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                                                 >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                                                  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                                                  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                                                      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                                                      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::const void*                                                                       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::const void*                                                                       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::Display>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::Display>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::Display *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::Display *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::Display*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::Display*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::Display* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::Display* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::Display*                         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::Display*                         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::Display*                          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::Display*                          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::DWORD>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::DWORD>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::DWORD *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::DWORD *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::DWORD                            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::DWORD                            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::DWORD                             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::DWORD                             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::DWORD                                      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::DWORD                                      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::DWORD                                       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::DWORD                                       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::float>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::float>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::float *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::float *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::float >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::float >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::float  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::float  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::float   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::float   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::float    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::float    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::float          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::float          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::float           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::float           *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::float            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::float            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::float             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::float             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::float                  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::float                  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::float                   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::float                   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::float                       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::float                       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::float                        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::float                        *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::float                            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::float                            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::float                             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::float                             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::float                              >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::float                              >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::float                               *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::float                               *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::float                                                                            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::float                                                                            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::float                                                                             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::float                                                                             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::GgpFrameToken>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::GgpFrameToken>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::GgpFrameToken *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::GgpFrameToken *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::GgpFrameToken                    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::GgpFrameToken                    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::GgpFrameToken                     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::GgpFrameToken                     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::GgpStreamDescriptor>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::GgpStreamDescriptor>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::GgpStreamDescriptor *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::GgpStreamDescriptor *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::GgpStreamDescriptor              >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::GgpStreamDescriptor              >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::GgpStreamDescriptor               *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::GgpStreamDescriptor               *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::HANDLE>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HANDLE>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::HANDLE *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HANDLE *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::HANDLE           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HANDLE           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::HANDLE            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HANDLE            *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::HANDLE                           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HANDLE                           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::HANDLE                            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HANDLE                            *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::HANDLE                             >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HANDLE                             >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::HANDLE                              *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HANDLE                              *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::HANDLE*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HANDLE*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::HANDLE* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HANDLE* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::HINSTANCE>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HINSTANCE>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::HINSTANCE *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HINSTANCE *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::HINSTANCE                        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HINSTANCE                        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::HINSTANCE                         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HINSTANCE                         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::HMONITOR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HMONITOR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::HMONITOR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HMONITOR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::HMONITOR         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HMONITOR         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::HMONITOR          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HMONITOR          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::HWND>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HWND>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::HWND *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HWND *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::HWND                             >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HWND                             >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::HWND                              *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::HWND                              *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::int>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::int *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::int >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::int  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::int                              >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int                              >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::int                               *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int                               *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::int                                    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int                                    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::int                                     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int                                     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::int*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::int* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::int32_t>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int32_t>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::int32_t *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int32_t *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::int32_t        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int32_t        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::int32_t         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int32_t         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::int32_t           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int32_t           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::int32_t            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int32_t            *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::int32_t                >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int32_t                >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::int32_t                 *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int32_t                 *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::int32_t                        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int32_t                        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::int32_t                         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int32_t                         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::int32_t                                                            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int32_t                                                            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::int32_t                                                             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::int32_t                                                             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::LPCWSTR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::LPCWSTR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::LPCWSTR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::LPCWSTR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::LPCWSTR          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::LPCWSTR          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::LPCWSTR           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::LPCWSTR           *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::LPCWSTR                          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::LPCWSTR                          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::LPCWSTR                           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::LPCWSTR                           *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::LPCWSTR                            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::LPCWSTR                            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::LPCWSTR                             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::LPCWSTR                             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::LPCWSTR                                    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::LPCWSTR                                    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::LPCWSTR                                     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::LPCWSTR                                     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkAllocationFunction>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkAllocationFunction>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkAllocationFunction *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkAllocationFunction *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkAllocationFunction   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkAllocationFunction   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkAllocationFunction    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkAllocationFunction    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkDebugReportCallbackEXT>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkDebugReportCallbackEXT>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkDebugReportCallbackEXT *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkDebugReportCallbackEXT *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkDebugReportCallbackEXT     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkDebugReportCallbackEXT     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkDebugReportCallbackEXT      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkDebugReportCallbackEXT      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkDebugUtilsMessengerCallbackEXT>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkDebugUtilsMessengerCallbackEXT>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkDebugUtilsMessengerCallbackEXT *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkDebugUtilsMessengerCallbackEXT *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkDebugUtilsMessengerCallbackEXT                 >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkDebugUtilsMessengerCallbackEXT                 >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkDebugUtilsMessengerCallbackEXT                  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkDebugUtilsMessengerCallbackEXT                  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkFreeFunction>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkFreeFunction>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkFreeFunction *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkFreeFunction *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkFreeFunction    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkFreeFunction    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkFreeFunction     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkFreeFunction     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkInternalAllocationNotification>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkInternalAllocationNotification>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkInternalAllocationNotification *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkInternalAllocationNotification *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkInternalAllocationNotification >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkInternalAllocationNotification >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkInternalAllocationNotification  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkInternalAllocationNotification  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkInternalFreeNotification>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkInternalFreeNotification>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkInternalFreeNotification *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkInternalFreeNotification *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkInternalFreeNotification >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkInternalFreeNotification >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkInternalFreeNotification  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkInternalFreeNotification  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkReallocationFunction>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkReallocationFunction>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkReallocationFunction *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkReallocationFunction *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkReallocationFunction >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkReallocationFunction >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::PFN_vkReallocationFunction  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::PFN_vkReallocationFunction  *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::PFN_vkVoidFunction>))
     {
         return stream << *reinterpret_cast<const Value<vk::PFN_vkVoidFunction>*>(value);
@@ -5057,630 +401,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::PFN_vkVoidFunction *>))
     {
         return stream << *reinterpret_cast<const Value<vk::PFN_vkVoidFunction *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::RROutput>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::RROutput>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::RROutput *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::RROutput *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::SECURITY_ATTRIBUTES>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::SECURITY_ATTRIBUTES>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::SECURITY_ATTRIBUTES *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::SECURITY_ATTRIBUTES *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::size_t>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::size_t>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::size_t *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::size_t *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::size_t >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::size_t >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::size_t  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::size_t  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::size_t                 >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::size_t                 >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::size_t                  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::size_t                  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::size_t                           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::size_t                           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::size_t                            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::size_t                            *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::size_t                                 >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::size_t                                 >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::size_t                                  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::size_t                                  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::size_t*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::size_t*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::size_t* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::size_t* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint16_t>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint16_t>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint16_t *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint16_t *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint16_t                                         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint16_t                                         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint16_t                                          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint16_t                                          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t        *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t           *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t               >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t               >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                 >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                 >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                        *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                           *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                            *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                 >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                 >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                        *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                           *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                               >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                               >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                                *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                                *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                                 >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                                 >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                                  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                                  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                                    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                                    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                                     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                                     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                                         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                                         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                                          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                                          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                                           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                                           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                                            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                                            *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                                               >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                                               >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                                                *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                                                *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                                                         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                                                         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t                                                                          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t                                                                          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint32_t* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint32_t* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint64_t>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint64_t>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint64_t *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint64_t *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint64_t >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint64_t >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint64_t  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint64_t  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint64_t                         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint64_t                         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint64_t                          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint64_t                          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint64_t                           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint64_t                           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint64_t                            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint64_t                            *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint64_t                            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint64_t                            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint64_t                             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint64_t                             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint64_t                               >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint64_t                               >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint64_t                                *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint64_t                                *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint64_t                                               >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint64_t                                               >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint64_t                                                *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint64_t                                                *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint64_t*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint64_t*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint64_t* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint64_t* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint8_t>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint8_t>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint8_t *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint8_t *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint8_t        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint8_t        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint8_t         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint8_t         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::uint8_t                          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint8_t                          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::uint8_t                           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::uint8_t                           *>*>(value);
     }
 
     
@@ -5705,18 +425,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::UnusedMask *>))
     {
         return stream << *reinterpret_cast<const Value<vk::UnusedMask *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VisualID>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VisualID>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VisualID *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VisualID *>*>(value);
     }
 
     
@@ -5756,30 +464,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VK_DEFINE_HANDLE>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VK_DEFINE_HANDLE>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VK_DEFINE_HANDLE *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VK_DEFINE_HANDLE *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VK_DEFINE_NON_DISPATCHABLE_HANDLE>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VK_DEFINE_NON_DISPATCHABLE_HANDLE>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VK_DEFINE_NON_DISPATCHABLE_HANDLE *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VK_DEFINE_NON_DISPATCHABLE_HANDLE *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VK_HEADER_VERSION>))
     {
         return stream << *reinterpret_cast<const Value<vk::VK_HEADER_VERSION>*>(value);
@@ -5789,18 +473,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VK_HEADER_VERSION *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VK_HEADER_VERSION *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VK_MAKE_VERSION>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VK_MAKE_VERSION>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VK_MAKE_VERSION *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VK_MAKE_VERSION *>*>(value);
     }
 
     
@@ -5852,15 +524,39 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureInfoNV          >))
+    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureCreateInfoNV>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureInfoNV          >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureCreateInfoNV>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureInfoNV           *>))
+    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureCreateInfoNV *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureInfoNV           *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureCreateInfoNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureInfoNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureInfoNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureInfoNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureInfoNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureMemoryRequirementsInfoNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureMemoryRequirementsInfoNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureMemoryRequirementsInfoNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureMemoryRequirementsInfoNV *>*>(value);
     }
 
     
@@ -5876,18 +572,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureMemoryRequirementsTypeNV                      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureMemoryRequirementsTypeNV                      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureMemoryRequirementsTypeNV                       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureMemoryRequirementsTypeNV                       *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureNV>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureNV>*>(value);
@@ -5897,66 +581,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureNV *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureNV *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureNV        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureNV        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureNV         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureNV         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureNV                                            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureNV                                            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureNV                                             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureNV                                             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureNV*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureNV*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureNV* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureNV* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureTypeNV>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureTypeNV>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureTypeNV *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureTypeNV *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureTypeNV         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureTypeNV         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureTypeNV          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureTypeNV          *>*>(value);
     }
 
     
@@ -5972,183 +596,327 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkAccessFlags     >))
+    if (typeid(*value) == typeid(Value<vk::VkAcquireNextImageInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkAccessFlags     >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkAcquireNextImageInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkAccessFlags      *>))
+    if (typeid(*value) == typeid(Value<vk::VkAcquireNextImageInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkAccessFlags      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkAccessFlags          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAccessFlags          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkAccessFlags           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAccessFlags           *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkAcquireNextImageInfoKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkAndroidHardwareBufferPropertiesANDROID*>))
+    if (typeid(*value) == typeid(Value<vk::VkAllocationCallbacks>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkAndroidHardwareBufferPropertiesANDROID*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkAllocationCallbacks>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkAndroidHardwareBufferPropertiesANDROID* *>))
+    if (typeid(*value) == typeid(Value<vk::VkAllocationCallbacks *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkAndroidHardwareBufferPropertiesANDROID* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkAndroidSurfaceCreateFlagsKHR >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAndroidSurfaceCreateFlagsKHR >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkAndroidSurfaceCreateFlagsKHR  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAndroidSurfaceCreateFlagsKHR  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkAllocationCallbacks *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkAttachmentDescriptionFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkAndroidHardwareBufferFormatPropertiesANDROID>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkAttachmentDescriptionFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkAndroidHardwareBufferFormatPropertiesANDROID>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkAttachmentDescriptionFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkAndroidHardwareBufferFormatPropertiesANDROID *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkAttachmentDescriptionFlagBits *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkAttachmentDescriptionFlags >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAttachmentDescriptionFlags >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkAttachmentDescriptionFlags  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAttachmentDescriptionFlags  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkAndroidHardwareBufferFormatPropertiesANDROID *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkAttachmentLoadOp>))
+    if (typeid(*value) == typeid(Value<vk::VkAndroidHardwareBufferPropertiesANDROID>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkAttachmentLoadOp>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkAndroidHardwareBufferPropertiesANDROID>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkAttachmentLoadOp *>))
+    if (typeid(*value) == typeid(Value<vk::VkAndroidHardwareBufferPropertiesANDROID *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkAttachmentLoadOp *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkAttachmentLoadOp     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAttachmentLoadOp     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkAttachmentLoadOp      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAttachmentLoadOp      *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkAndroidHardwareBufferPropertiesANDROID *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkAttachmentLoadOp                           >))
+    if (typeid(*value) == typeid(Value<vk::VkAndroidHardwareBufferUsageANDROID>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkAttachmentLoadOp                           >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkAndroidHardwareBufferUsageANDROID>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkAttachmentLoadOp                            *>))
+    if (typeid(*value) == typeid(Value<vk::VkAndroidHardwareBufferUsageANDROID *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkAttachmentLoadOp                            *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkAttachmentReference            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAttachmentReference            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkAttachmentReference             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAttachmentReference             *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkAndroidHardwareBufferUsageANDROID *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkAttachmentStoreOp>))
+    if (typeid(*value) == typeid(Value<vk::VkAndroidSurfaceCreateInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkAttachmentStoreOp>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkAndroidSurfaceCreateInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkAttachmentStoreOp *>))
+    if (typeid(*value) == typeid(Value<vk::VkAndroidSurfaceCreateInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkAttachmentStoreOp *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkAttachmentStoreOp    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAttachmentStoreOp    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkAttachmentStoreOp     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAttachmentStoreOp     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkAndroidSurfaceCreateInfoKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkAttachmentStoreOp                          >))
+    if (typeid(*value) == typeid(Value<vk::VkApplicationInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkAttachmentStoreOp                          >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkApplicationInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkAttachmentStoreOp                           *>))
+    if (typeid(*value) == typeid(Value<vk::VkApplicationInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkAttachmentStoreOp                           *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBlendFactor>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBlendFactor>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBlendFactor *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBlendFactor *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkApplicationInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkBlendFactor          >))
+    if (typeid(*value) == typeid(Value<vk::VkAttachmentDescription>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkBlendFactor          >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkAttachmentDescription>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkBlendFactor           *>))
+    if (typeid(*value) == typeid(Value<vk::VkAttachmentDescription *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkBlendFactor           *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkAttachmentDescription *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkAttachmentDescription2KHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkAttachmentDescription2KHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkAttachmentDescription2KHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkAttachmentDescription2KHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkAttachmentReference>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkAttachmentReference>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkAttachmentReference *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkAttachmentReference *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkAttachmentReference2KHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkAttachmentReference2KHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkAttachmentReference2KHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkAttachmentReference2KHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkAttachmentSampleLocationsEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkAttachmentSampleLocationsEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkAttachmentSampleLocationsEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkAttachmentSampleLocationsEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBaseInStructure>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBaseInStructure>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBaseInStructure *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBaseInStructure *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBaseOutStructure>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBaseOutStructure>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBaseOutStructure *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBaseOutStructure *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindAccelerationStructureMemoryInfoNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindAccelerationStructureMemoryInfoNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindAccelerationStructureMemoryInfoNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindAccelerationStructureMemoryInfoNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindBufferMemoryDeviceGroupInfo>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindBufferMemoryDeviceGroupInfo>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindBufferMemoryDeviceGroupInfo *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindBufferMemoryDeviceGroupInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindBufferMemoryDeviceGroupInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindBufferMemoryDeviceGroupInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindBufferMemoryDeviceGroupInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindBufferMemoryDeviceGroupInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindBufferMemoryInfo>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindBufferMemoryInfo>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindBufferMemoryInfo *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindBufferMemoryInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindBufferMemoryInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindBufferMemoryInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindBufferMemoryInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindBufferMemoryInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindImageMemoryDeviceGroupInfo>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindImageMemoryDeviceGroupInfo>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindImageMemoryDeviceGroupInfo *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindImageMemoryDeviceGroupInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindImageMemoryDeviceGroupInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindImageMemoryDeviceGroupInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindImageMemoryDeviceGroupInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindImageMemoryDeviceGroupInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindImageMemoryInfo>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindImageMemoryInfo>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindImageMemoryInfo *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindImageMemoryInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindImageMemoryInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindImageMemoryInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindImageMemoryInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindImageMemoryInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindImageMemorySwapchainInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindImageMemorySwapchainInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindImageMemorySwapchainInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindImageMemorySwapchainInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindImagePlaneMemoryInfo>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindImagePlaneMemoryInfo>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindImagePlaneMemoryInfo *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindImagePlaneMemoryInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindImagePlaneMemoryInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindImagePlaneMemoryInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindImagePlaneMemoryInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindImagePlaneMemoryInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindSparseInfo>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindSparseInfo>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBindSparseInfo *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBindSparseInfo *>*>(value);
     }
 
     
@@ -6164,18 +932,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkBlendOp              >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBlendOp              >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBlendOp               *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBlendOp               *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkBlendOverlapEXT>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkBlendOverlapEXT>*>(value);
@@ -6185,18 +941,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkBlendOverlapEXT *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkBlendOverlapEXT *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBlendOverlapEXT      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBlendOverlapEXT      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBlendOverlapEXT       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBlendOverlapEXT       *>*>(value);
     }
 
     
@@ -6212,222 +956,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkBool32 >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32 >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32        *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32               >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32               >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                        *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                            *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                             >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                             >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                              *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                              *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                                 >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                                 >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                                  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                                  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                                                         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                                                         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                                                          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                                                          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                                                               >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                                                               >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                                                                *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                                                                *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                                                                    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                                                                    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                                                                     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                                                                     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                                                                         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                                                                         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32                                                                          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32                                                                          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBool32* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBool32* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBorderColor>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBorderColor>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBorderColor *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBorderColor *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBorderColor          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBorderColor          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBorderColor           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBorderColor           *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkBuffer>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkBuffer>*>(value);
@@ -6440,123 +968,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkBuffer >))
+    if (typeid(*value) == typeid(Value<vk::VkBufferCopy>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkBuffer >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkBufferCopy>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkBuffer  *>))
+    if (typeid(*value) == typeid(Value<vk::VkBufferCopy *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkBuffer  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBuffer   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBuffer   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBuffer    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBuffer    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBuffer         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBuffer         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBuffer          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBuffer          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBuffer               >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBuffer               >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBuffer                *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBuffer                *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBuffer                     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBuffer                     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBuffer                      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBuffer                      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBuffer                         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBuffer                         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBuffer                          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBuffer                          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBuffer                                 >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBuffer                                 >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBuffer                                  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBuffer                                  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBuffer                                               >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBuffer                                               >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBuffer                                                *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBuffer                                                *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBuffer                                                             >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBuffer                                                             >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBuffer                                                              *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBuffer                                                              *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBuffer*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBuffer*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBuffer* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBuffer* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkBufferCopy *>*>(value);
     }
 
     
@@ -6572,27 +992,87 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkBufferCreateFlags >))
+    if (typeid(*value) == typeid(Value<vk::VkBufferCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkBufferCreateFlags >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkBufferCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkBufferCreateFlags  *>))
+    if (typeid(*value) == typeid(Value<vk::VkBufferCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkBufferCreateFlags  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkBufferCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkBufferCreateFlags    >))
+    if (typeid(*value) == typeid(Value<vk::VkBufferDeviceAddressCreateInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkBufferCreateFlags    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkBufferDeviceAddressCreateInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkBufferCreateFlags     *>))
+    if (typeid(*value) == typeid(Value<vk::VkBufferDeviceAddressCreateInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkBufferCreateFlags     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkBufferDeviceAddressCreateInfoEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBufferDeviceAddressInfoEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBufferDeviceAddressInfoEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBufferDeviceAddressInfoEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBufferDeviceAddressInfoEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBufferImageCopy>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBufferImageCopy>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBufferImageCopy *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBufferImageCopy *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBufferMemoryBarrier>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBufferMemoryBarrier>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBufferMemoryBarrier *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBufferMemoryBarrier *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBufferMemoryRequirementsInfo2>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBufferMemoryRequirementsInfo2>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBufferMemoryRequirementsInfo2 *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBufferMemoryRequirementsInfo2 *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBufferMemoryRequirementsInfo2KHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBufferMemoryRequirementsInfo2KHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBufferMemoryRequirementsInfo2KHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBufferMemoryRequirementsInfo2KHR *>*>(value);
     }
 
     
@@ -6608,30 +1088,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkBufferUsageFlags     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBufferUsageFlags     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBufferUsageFlags      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBufferUsageFlags      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBufferUsageFlags               >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBufferUsageFlags               >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBufferUsageFlags                *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBufferUsageFlags                *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkBufferView>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkBufferView>*>(value);
@@ -6644,39 +1100,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkBufferView*>))
+    if (typeid(*value) == typeid(Value<vk::VkBufferViewCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkBufferView*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkBufferViewCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkBufferView* *>))
+    if (typeid(*value) == typeid(Value<vk::VkBufferViewCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkBufferView* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBufferViewCreateFlagBits>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBufferViewCreateFlagBits>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBufferViewCreateFlagBits *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBufferViewCreateFlagBits *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkBufferViewCreateFlags>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBufferViewCreateFlags>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkBufferViewCreateFlags *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkBufferViewCreateFlags *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkBufferViewCreateInfo *>*>(value);
     }
 
     
@@ -6692,39 +1124,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkBuildAccelerationStructureFlagsNV>))
+    if (typeid(*value) == typeid(Value<vk::VkCalibratedTimestampInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkBuildAccelerationStructureFlagsNV>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkCalibratedTimestampInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkBuildAccelerationStructureFlagsNV *>))
+    if (typeid(*value) == typeid(Value<vk::VkCalibratedTimestampInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkBuildAccelerationStructureFlagsNV *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkCheckpointDataNV*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCheckpointDataNV*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkCheckpointDataNV* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCheckpointDataNV* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkCalibratedTimestampInfoEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkChromaLocation>))
+    if (typeid(*value) == typeid(Value<vk::VkCheckpointDataNV>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkChromaLocation>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkCheckpointDataNV>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkChromaLocation *>))
+    if (typeid(*value) == typeid(Value<vk::VkCheckpointDataNV *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkChromaLocation *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkCheckpointDataNV *>*>(value);
     }
 
     
@@ -6740,75 +1160,111 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkChromaLocation              >))
+    if (typeid(*value) == typeid(Value<vk::VkClearAttachment>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkChromaLocation              >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkClearAttachment>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkChromaLocation               *>))
+    if (typeid(*value) == typeid(Value<vk::VkClearAttachment *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkChromaLocation               *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkChromaLocation                   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkChromaLocation                   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkChromaLocation                    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkChromaLocation                    *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkClearAttachment *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkChromaLocationKHR>))
+    if (typeid(*value) == typeid(Value<vk::VkClearColorValue>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkChromaLocationKHR>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkClearColorValue>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkChromaLocationKHR *>))
+    if (typeid(*value) == typeid(Value<vk::VkClearColorValue *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkChromaLocationKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkClearColorValue      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkClearColorValue      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkClearColorValue       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkClearColorValue       *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkClearColorValue *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkClearDepthStencilValue >))
+    if (typeid(*value) == typeid(Value<vk::VkClearDepthStencilValue>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkClearDepthStencilValue >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkClearDepthStencilValue>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkClearDepthStencilValue  *>))
+    if (typeid(*value) == typeid(Value<vk::VkClearDepthStencilValue *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkClearDepthStencilValue  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkClearDepthStencilValue *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkClearValue           >))
+    if (typeid(*value) == typeid(Value<vk::VkClearRect>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkClearValue           >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkClearRect>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkClearValue            *>))
+    if (typeid(*value) == typeid(Value<vk::VkClearRect *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkClearValue            *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkClearRect *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkClearValue>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkClearValue>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkClearValue *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkClearValue *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkCmdProcessCommandsInfoNVX>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCmdProcessCommandsInfoNVX>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkCmdProcessCommandsInfoNVX *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCmdProcessCommandsInfoNVX *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkCmdReserveSpaceForCommandsInfoNVX>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCmdReserveSpaceForCommandsInfoNVX>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkCmdReserveSpaceForCommandsInfoNVX *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCmdReserveSpaceForCommandsInfoNVX *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkCoarseSampleLocationNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCoarseSampleLocationNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkCoarseSampleLocationNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCoarseSampleLocationNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkCoarseSampleOrderCustomNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCoarseSampleOrderCustomNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkCoarseSampleOrderCustomNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCoarseSampleOrderCustomNV *>*>(value);
     }
 
     
@@ -6824,42 +1280,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkCoarseSampleOrderTypeNV                                              >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCoarseSampleOrderTypeNV                                              >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkCoarseSampleOrderTypeNV                                               *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCoarseSampleOrderTypeNV                                               *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkColorComponentFlagBits>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkColorComponentFlagBits>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkColorComponentFlagBits *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkColorComponentFlagBits *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkColorComponentFlags  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkColorComponentFlags  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkColorComponentFlags   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkColorComponentFlags   *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkColorSpaceKHR>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkColorSpaceKHR>*>(value);
@@ -6869,18 +1289,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkColorSpaceKHR *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkColorSpaceKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkColorSpaceKHR                  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkColorSpaceKHR                  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkColorSpaceKHR                   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkColorSpaceKHR                   *>*>(value);
     }
 
     
@@ -6896,99 +1304,51 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkCommandBuffer                          >))
+    if (typeid(*value) == typeid(Value<vk::VkCommandBufferAllocateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandBuffer                          >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferAllocateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkCommandBuffer                           *>))
+    if (typeid(*value) == typeid(Value<vk::VkCommandBufferAllocateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandBuffer                           *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkCommandBuffer*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandBuffer*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkCommandBuffer* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandBuffer* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferAllocateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkCommandBufferLevel>))
+    if (typeid(*value) == typeid(Value<vk::VkCommandBufferBeginInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferLevel>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferBeginInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkCommandBufferLevel *>))
+    if (typeid(*value) == typeid(Value<vk::VkCommandBufferBeginInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferLevel *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkCommandBufferLevel   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferLevel   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkCommandBufferLevel    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferLevel    *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferBeginInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkCommandBufferResetFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkCommandBufferInheritanceConditionalRenderingInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferResetFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferInheritanceConditionalRenderingInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkCommandBufferResetFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkCommandBufferInheritanceConditionalRenderingInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferResetFlagBits *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkCommandBufferResetFlags>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferResetFlags>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkCommandBufferResetFlags *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferResetFlags *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferInheritanceConditionalRenderingInfoEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkCommandBufferUsageFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkCommandBufferInheritanceInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferUsageFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferInheritanceInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkCommandBufferUsageFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkCommandBufferInheritanceInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferUsageFlagBits *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkCommandBufferUsageFlags  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferUsageFlags  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkCommandBufferUsageFlags   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferUsageFlags   *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferInheritanceInfo *>*>(value);
     }
 
     
@@ -7004,30 +1364,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkCommandPool          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandPool          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkCommandPool           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandPool           *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkCommandPool*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandPool*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkCommandPool* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandPool* *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkCommandPoolCreateFlagBits>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkCommandPoolCreateFlagBits>*>(value);
@@ -7040,135 +1376,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkCommandPoolCreateFlags   >))
+    if (typeid(*value) == typeid(Value<vk::VkCommandPoolCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandPoolCreateFlags   >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkCommandPoolCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkCommandPoolCreateFlags    *>))
+    if (typeid(*value) == typeid(Value<vk::VkCommandPoolCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandPoolCreateFlags    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkCommandPoolResetFlagBits>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandPoolResetFlagBits>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkCommandPoolResetFlagBits *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandPoolResetFlagBits *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkCommandPoolResetFlags>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandPoolResetFlags>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkCommandPoolResetFlags *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandPoolResetFlags *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkCommandPoolTrimFlags>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandPoolTrimFlags>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkCommandPoolTrimFlags *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandPoolTrimFlags *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkCompareOp>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCompareOp>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkCompareOp *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCompareOp *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkCompareOp            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCompareOp            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkCompareOp             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCompareOp             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkComponentMapping     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkComponentMapping     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkComponentMapping      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkComponentMapping      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkComponentMapping               >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkComponentMapping               >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkComponentMapping                *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkComponentMapping                *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkComponentMapping                 >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkComponentMapping                 >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkComponentMapping                  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkComponentMapping                  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkComponentSwizzle>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkComponentSwizzle>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkComponentSwizzle *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkComponentSwizzle *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkComponentSwizzle >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkComponentSwizzle >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkComponentSwizzle  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkComponentSwizzle  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkCommandPoolCreateInfo *>*>(value);
     }
 
     
@@ -7184,51 +1400,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkComponentTypeNV                   >))
+    if (typeid(*value) == typeid(Value<vk::VkComputePipelineCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkComponentTypeNV                   >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkComputePipelineCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkComponentTypeNV                    *>))
+    if (typeid(*value) == typeid(Value<vk::VkComputePipelineCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkComponentTypeNV                    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkCompositeAlphaFlagBitsKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCompositeAlphaFlagBitsKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkCompositeAlphaFlagBitsKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCompositeAlphaFlagBitsKHR *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkComputePipelineCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkCompositeAlphaFlagBitsKHR      >))
+    if (typeid(*value) == typeid(Value<vk::VkConditionalRenderingBeginInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkCompositeAlphaFlagBitsKHR      >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkConditionalRenderingBeginInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkCompositeAlphaFlagBitsKHR       *>))
+    if (typeid(*value) == typeid(Value<vk::VkConditionalRenderingBeginInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkCompositeAlphaFlagBitsKHR       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkCompositeAlphaFlagsKHR         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCompositeAlphaFlagsKHR         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkCompositeAlphaFlagsKHR          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCompositeAlphaFlagsKHR          *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkConditionalRenderingBeginInfoEXT *>*>(value);
     }
 
     
@@ -7244,27 +1436,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkConditionalRenderingFlagsEXT    >))
+    if (typeid(*value) == typeid(Value<vk::VkConformanceVersionKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkConditionalRenderingFlagsEXT    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkConformanceVersionKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkConditionalRenderingFlagsEXT     *>))
+    if (typeid(*value) == typeid(Value<vk::VkConformanceVersionKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkConditionalRenderingFlagsEXT     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkConformanceVersionKHR          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkConformanceVersionKHR          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkConformanceVersionKHR           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkConformanceVersionKHR           *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkConformanceVersionKHR *>*>(value);
     }
 
     
@@ -7280,27 +1460,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkConservativeRasterizationModeEXT                                               >))
+    if (typeid(*value) == typeid(Value<vk::VkCooperativeMatrixPropertiesNV>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkConservativeRasterizationModeEXT                                               >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkCooperativeMatrixPropertiesNV>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkConservativeRasterizationModeEXT                                                *>))
+    if (typeid(*value) == typeid(Value<vk::VkCooperativeMatrixPropertiesNV *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkConservativeRasterizationModeEXT                                                *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkCooperativeMatrixPropertiesNV*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCooperativeMatrixPropertiesNV*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkCooperativeMatrixPropertiesNV* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCooperativeMatrixPropertiesNV* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkCooperativeMatrixPropertiesNV *>*>(value);
     }
 
     
@@ -7316,6 +1484,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkCopyDescriptorSet>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCopyDescriptorSet>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkCopyDescriptorSet *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCopyDescriptorSet *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkCoverageModulationModeNV>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkCoverageModulationModeNV>*>(value);
@@ -7325,18 +1505,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkCoverageModulationModeNV *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkCoverageModulationModeNV *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkCoverageModulationModeNV                                                       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCoverageModulationModeNV                                                       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkCoverageModulationModeNV                                                        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCoverageModulationModeNV                                                        *>*>(value);
     }
 
     
@@ -7352,51 +1520,63 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkCoverageReductionModeNV  >))
+    if (typeid(*value) == typeid(Value<vk::VkD3D12FenceSubmitInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkCoverageReductionModeNV  >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkD3D12FenceSubmitInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkCoverageReductionModeNV   *>))
+    if (typeid(*value) == typeid(Value<vk::VkD3D12FenceSubmitInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkCoverageReductionModeNV   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkCoverageReductionModeNV                                          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCoverageReductionModeNV                                          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkCoverageReductionModeNV                                           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkCoverageReductionModeNV                                           *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkD3D12FenceSubmitInfoKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkCullModeFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkDebugMarkerMarkerInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkCullModeFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDebugMarkerMarkerInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkCullModeFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkDebugMarkerMarkerInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkCullModeFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDebugMarkerMarkerInfoEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkCullModeFlags        >))
+    if (typeid(*value) == typeid(Value<vk::VkDebugMarkerObjectNameInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkCullModeFlags        >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDebugMarkerObjectNameInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkCullModeFlags         *>))
+    if (typeid(*value) == typeid(Value<vk::VkDebugMarkerObjectNameInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkCullModeFlags         *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDebugMarkerObjectNameInfoEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDebugMarkerObjectTagInfoEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDebugMarkerObjectTagInfoEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDebugMarkerObjectTagInfoEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDebugMarkerObjectTagInfoEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDebugReportCallbackCreateInfoEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDebugReportCallbackCreateInfoEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDebugReportCallbackCreateInfoEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDebugReportCallbackCreateInfoEXT *>*>(value);
     }
 
     
@@ -7412,54 +1592,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDebugReportCallbackEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugReportCallbackEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDebugReportCallbackEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugReportCallbackEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDebugReportFlagBitsEXT>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugReportFlagBitsEXT>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDebugReportFlagBitsEXT *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugReportFlagBitsEXT *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDebugReportFlagsEXT>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugReportFlagsEXT>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDebugReportFlagsEXT *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugReportFlagsEXT *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDebugReportFlagsEXT            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugReportFlagsEXT            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDebugReportFlagsEXT             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugReportFlagsEXT             *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkDebugReportObjectTypeEXT>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkDebugReportObjectTypeEXT>*>(value);
@@ -7472,15 +1604,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDebugReportObjectTypeEXT       >))
+    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsLabelEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugReportObjectTypeEXT       >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsLabelEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDebugReportObjectTypeEXT        *>))
+    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsLabelEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugReportObjectTypeEXT        *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsLabelEXT *>*>(value);
     }
 
     
@@ -7496,75 +1628,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessageSeverityFlagsEXT                  >))
+    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessengerCallbackDataEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessageSeverityFlagsEXT                  >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessengerCallbackDataEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessageSeverityFlagsEXT                   *>))
+    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessengerCallbackDataEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessageSeverityFlagsEXT                   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessageTypeFlagBitsEXT>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessageTypeFlagBitsEXT>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessageTypeFlagBitsEXT *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessageTypeFlagBitsEXT *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessengerCallbackDataEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessageTypeFlagsEXT>))
+    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessengerCreateInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessageTypeFlagsEXT>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessengerCreateInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessageTypeFlagsEXT *>))
+    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessengerCreateInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessageTypeFlagsEXT *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessageTypeFlagsEXT                      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessageTypeFlagsEXT                      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessageTypeFlagsEXT                       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessageTypeFlagsEXT                       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessengerCallbackDataFlagsEXT                          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessengerCallbackDataFlagsEXT                          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessengerCallbackDataFlagsEXT                           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessengerCallbackDataFlagsEXT                           *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessengerCreateFlagsEXT  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessengerCreateFlagsEXT  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessengerCreateFlagsEXT   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessengerCreateFlagsEXT   *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessengerCreateInfoEXT *>*>(value);
     }
 
     
@@ -7580,15 +1664,63 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessengerEXT*>))
+    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsObjectNameInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessengerEXT*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsObjectNameInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessengerEXT* *>))
+    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsObjectNameInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessengerEXT* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsObjectNameInfoEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsObjectTagInfoEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsObjectTagInfoEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsObjectTagInfoEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsObjectTagInfoEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDedicatedAllocationBufferCreateInfoNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDedicatedAllocationBufferCreateInfoNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDedicatedAllocationBufferCreateInfoNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDedicatedAllocationBufferCreateInfoNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDedicatedAllocationImageCreateInfoNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDedicatedAllocationImageCreateInfoNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDedicatedAllocationImageCreateInfoNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDedicatedAllocationImageCreateInfoNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDedicatedAllocationMemoryAllocateInfoNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDedicatedAllocationMemoryAllocateInfoNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDedicatedAllocationMemoryAllocateInfoNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDedicatedAllocationMemoryAllocateInfoNV *>*>(value);
     }
 
     
@@ -7604,51 +1736,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDependencyFlags>))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorBufferInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDependencyFlags>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorBufferInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDependencyFlags *>))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorBufferInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDependencyFlags *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDependencyFlags >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDependencyFlags >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDependencyFlags  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDependencyFlags  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorBufferInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDependencyFlags      >))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorImageInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDependencyFlags      >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorImageInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDependencyFlags       *>))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorImageInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDependencyFlags       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorBindingFlagBitsEXT>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorBindingFlagBitsEXT>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorBindingFlagBitsEXT *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorBindingFlagBitsEXT *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorImageInfo *>*>(value);
     }
 
     
@@ -7664,30 +1772,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorPool       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorPool       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorPool        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorPool        *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorPool*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorPool*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorPool* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorPool* *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkDescriptorPoolCreateFlagBits>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkDescriptorPoolCreateFlagBits>*>(value);
@@ -7700,27 +1784,39 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorPoolCreateFlags  >))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorPoolCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorPoolCreateFlags  >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorPoolCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorPoolCreateFlags   *>))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorPoolCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorPoolCreateFlags   *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorPoolCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorPoolResetFlags>))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorPoolInlineUniformBlockCreateInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorPoolResetFlags>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorPoolInlineUniformBlockCreateInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorPoolResetFlags *>))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorPoolInlineUniformBlockCreateInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorPoolResetFlags *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorPoolInlineUniformBlockCreateInfoEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorPoolSize>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorPoolSize>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorPoolSize *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorPoolSize *>*>(value);
     }
 
     
@@ -7736,39 +1832,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorSet        >))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetAllocateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSet        >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetAllocateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorSet         *>))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetAllocateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSet         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorSet              >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSet              >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorSet               *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSet               *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorSet*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSet*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorSet* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSet* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetAllocateInfo *>*>(value);
     }
 
     
@@ -7784,27 +1856,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayout >))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayoutBinding>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayout >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayoutBinding>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayout  *>))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayoutBinding *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayout  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayoutBinding *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayout*>))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayoutBindingFlagsCreateInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayout*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayoutBindingFlagsCreateInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayout* *>))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayoutBindingFlagsCreateInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayout* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayoutBindingFlagsCreateInfoEXT *>*>(value);
     }
 
     
@@ -7820,27 +1892,63 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayoutCreateFlags    >))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayoutCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayoutCreateFlags    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayoutCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayoutCreateFlags     *>))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayoutCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayoutCreateFlags     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayoutCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayoutSupport*>))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayoutSupport>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayoutSupport*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayoutSupport>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayoutSupport* *>))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayoutSupport *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayoutSupport* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayoutSupport *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayoutSupportKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayoutSupportKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayoutSupportKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayoutSupportKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetVariableDescriptorCountAllocateInfoEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetVariableDescriptorCountAllocateInfoEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetVariableDescriptorCountAllocateInfoEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetVariableDescriptorCountAllocateInfoEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetVariableDescriptorCountLayoutSupportEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetVariableDescriptorCountLayoutSupportEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetVariableDescriptorCountLayoutSupportEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetVariableDescriptorCountLayoutSupportEXT *>*>(value);
     }
 
     
@@ -7856,42 +1964,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorType       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorType       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorType        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorType        *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorType                 >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorType                 >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorType                  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorType                  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorType                    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorType                    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorType                     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorType                     *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplate>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplate>*>(value);
@@ -7904,27 +1976,51 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplate*>))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplate*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplate* *>))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplate* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateCreateFlags    >))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateCreateInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateCreateFlags    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateCreateInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateCreateFlags     *>))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateCreateInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateCreateFlags     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateCreateInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateEntry>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateEntry>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateEntry *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateEntry *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateEntryKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateEntryKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateEntryKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateEntryKHR *>*>(value);
     }
 
     
@@ -7952,42 +2048,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateType>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateType>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateType *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateType *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateType >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateType >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateType  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateType  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateTypeKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateTypeKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateTypeKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateTypeKHR *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkDevice>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkDevice>*>(value);
@@ -7997,18 +2057,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkDevice *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkDevice *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDevice*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDevice*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDevice* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDevice* *>*>(value);
     }
 
     
@@ -8024,39 +2072,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceAddress                  >))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceAddress                  >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceAddress                   *>))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceAddress                   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceCreateFlagBits>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceCreateFlagBits>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceCreateFlagBits *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceCreateFlags    >))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceEventInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceCreateFlags    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceEventInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceCreateFlags     *>))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceEventInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceCreateFlags     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceEventInfoEXT *>*>(value);
     }
 
     
@@ -8072,51 +2108,123 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceEventTypeEXT             >))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGeneratedCommandsFeaturesNVX>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceEventTypeEXT             >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGeneratedCommandsFeaturesNVX>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceEventTypeEXT              *>))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGeneratedCommandsFeaturesNVX *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceEventTypeEXT              *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceGeneratedCommandsFeaturesNVX*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceGeneratedCommandsFeaturesNVX*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceGeneratedCommandsFeaturesNVX* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceGeneratedCommandsFeaturesNVX* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGeneratedCommandsFeaturesNVX *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceGeneratedCommandsLimitsNVX*>))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGeneratedCommandsLimitsNVX>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceGeneratedCommandsLimitsNVX*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGeneratedCommandsLimitsNVX>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceGeneratedCommandsLimitsNVX* *>))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGeneratedCommandsLimitsNVX *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceGeneratedCommandsLimitsNVX* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGeneratedCommandsLimitsNVX *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupPresentCapabilitiesKHR*>))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupBindSparseInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupPresentCapabilitiesKHR*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupBindSparseInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupPresentCapabilitiesKHR* *>))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupBindSparseInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupPresentCapabilitiesKHR* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupBindSparseInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupBindSparseInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupBindSparseInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupBindSparseInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupBindSparseInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupCommandBufferBeginInfo>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupCommandBufferBeginInfo>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupCommandBufferBeginInfo *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupCommandBufferBeginInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupCommandBufferBeginInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupCommandBufferBeginInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupCommandBufferBeginInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupCommandBufferBeginInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupDeviceCreateInfo>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupDeviceCreateInfo>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupDeviceCreateInfo *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupDeviceCreateInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupDeviceCreateInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupDeviceCreateInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupDeviceCreateInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupDeviceCreateInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupPresentCapabilitiesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupPresentCapabilitiesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupPresentCapabilitiesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupPresentCapabilitiesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupPresentInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupPresentInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupPresentInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupPresentInfoKHR *>*>(value);
     }
 
     
@@ -8132,51 +2240,63 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupPresentModeFlagBitsKHR >))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupRenderPassBeginInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupPresentModeFlagBitsKHR >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupRenderPassBeginInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupPresentModeFlagBitsKHR  *>))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupRenderPassBeginInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupPresentModeFlagBitsKHR  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupPresentModeFlagsKHR >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupPresentModeFlagsKHR >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupPresentModeFlagsKHR  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupPresentModeFlagsKHR  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupRenderPassBeginInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupPresentModeFlagsKHR                         >))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupRenderPassBeginInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupPresentModeFlagsKHR                         >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupRenderPassBeginInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupPresentModeFlagsKHR                          *>))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupRenderPassBeginInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupPresentModeFlagsKHR                          *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupRenderPassBeginInfoKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupPresentModeFlagsKHR*>))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupSubmitInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupPresentModeFlagsKHR*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupSubmitInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupPresentModeFlagsKHR* *>))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupSubmitInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupPresentModeFlagsKHR* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupSubmitInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupSubmitInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupSubmitInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupSubmitInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupSubmitInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupSwapchainCreateInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupSwapchainCreateInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupSwapchainCreateInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupSwapchainCreateInfoKHR *>*>(value);
     }
 
     
@@ -8192,51 +2312,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceMemory         >))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceMemoryOverallocationCreateInfoAMD>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceMemory         >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceMemoryOverallocationCreateInfoAMD>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceMemory          *>))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceMemoryOverallocationCreateInfoAMD *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceMemory          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceMemory                   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceMemory                   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceMemory                    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceMemory                    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceMemory                     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceMemory                     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceMemory                      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceMemory                      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceMemory*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceMemory*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceMemory* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceMemory* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceMemoryOverallocationCreateInfoAMD *>*>(value);
     }
 
     
@@ -8252,27 +2336,39 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceQueueCreateFlags    >))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceQueueCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceQueueCreateFlags    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceQueueCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceQueueCreateFlags     *>))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceQueueCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceQueueCreateFlags     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceQueueCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceQueueCreateFlags            >))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceQueueGlobalPriorityCreateInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceQueueCreateFlags            >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceQueueGlobalPriorityCreateInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceQueueCreateFlags             *>))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceQueueGlobalPriorityCreateInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceQueueCreateFlags             *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceQueueGlobalPriorityCreateInfoEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceQueueInfo2>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceQueueInfo2>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceQueueInfo2 *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceQueueInfo2 *>*>(value);
     }
 
     
@@ -8288,102 +2384,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceSize >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceSize >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceSize  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceSize  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceSize           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceSize           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceSize            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceSize            *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceSize               >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceSize               >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceSize                *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceSize                *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceSize                     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceSize                     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceSize                      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceSize                      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceSize                       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceSize                       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceSize                        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceSize                        *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceSize                           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceSize                           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceSize                            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceSize                            *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceSize                             >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceSize                             >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceSize                              *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceSize                              *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceSize*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceSize*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDeviceSize* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceSize* *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkDiscardRectangleModeEXT>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkDiscardRectangleModeEXT>*>(value);
@@ -8396,15 +2396,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDiscardRectangleModeEXT                                                        >))
+    if (typeid(*value) == typeid(Value<vk::VkDispatchIndirectCommand>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDiscardRectangleModeEXT                                                        >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDispatchIndirectCommand>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDiscardRectangleModeEXT                                                         *>))
+    if (typeid(*value) == typeid(Value<vk::VkDispatchIndirectCommand *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDiscardRectangleModeEXT                                                         *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDispatchIndirectCommand *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDisplayEventInfoEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayEventInfoEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDisplayEventInfoEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayEventInfoEXT *>*>(value);
     }
 
     
@@ -8420,18 +2432,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayEventTypeEXT            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayEventTypeEXT            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDisplayEventTypeEXT             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayEventTypeEXT             *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkDisplayKHR>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkDisplayKHR>*>(value);
@@ -8444,39 +2444,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayKHR                     >))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayModeCreateInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayKHR                     >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayModeCreateInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayKHR                      *>))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayModeCreateInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayKHR                      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDisplayKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDisplayKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDisplayModeCreateFlagsKHR      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayModeCreateFlagsKHR      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDisplayModeCreateFlagsKHR       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayModeCreateFlagsKHR       *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayModeCreateInfoKHR *>*>(value);
     }
 
     
@@ -8492,87 +2468,51 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayModeKHR >))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayModeParametersKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayModeKHR >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayModeParametersKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayModeKHR  *>))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayModeParametersKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayModeKHR  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDisplayModeKHR                 >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayModeKHR                 >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDisplayModeKHR                  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayModeKHR                  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayModeParametersKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayModeKHR*>))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayModeProperties2KHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayModeKHR*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayModeProperties2KHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayModeKHR* *>))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayModeProperties2KHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayModeKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDisplayModeParametersKHR       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayModeParametersKHR       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDisplayModeParametersKHR        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayModeParametersKHR        *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayModeProperties2KHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayModeProperties2KHR*>))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayModePropertiesKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayModeProperties2KHR*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayModePropertiesKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayModeProperties2KHR* *>))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayModePropertiesKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayModeProperties2KHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDisplayModePropertiesKHR >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayModePropertiesKHR >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDisplayModePropertiesKHR  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayModePropertiesKHR  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayModePropertiesKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayModePropertiesKHR*>))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayNativeHdrSurfaceCapabilitiesAMD>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayModePropertiesKHR*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayNativeHdrSurfaceCapabilitiesAMD>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayModePropertiesKHR* *>))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayNativeHdrSurfaceCapabilitiesAMD *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayModePropertiesKHR* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayNativeHdrSurfaceCapabilitiesAMD *>*>(value);
     }
 
     
@@ -8588,99 +2528,75 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneAlphaFlagBitsKHR   >))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneCapabilities2KHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneAlphaFlagBitsKHR   >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneCapabilities2KHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneAlphaFlagBitsKHR    *>))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneCapabilities2KHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneAlphaFlagBitsKHR    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneAlphaFlagsKHR      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneAlphaFlagsKHR      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneAlphaFlagsKHR       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneAlphaFlagsKHR       *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneCapabilities2KHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneCapabilities2KHR*>))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneCapabilitiesKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneCapabilities2KHR*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneCapabilitiesKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneCapabilities2KHR* *>))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneCapabilitiesKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneCapabilities2KHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneCapabilitiesKHR >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneCapabilitiesKHR >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneCapabilitiesKHR  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneCapabilitiesKHR  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneCapabilitiesKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneCapabilitiesKHR*>))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneInfo2KHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneCapabilitiesKHR*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneInfo2KHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneCapabilitiesKHR* *>))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneInfo2KHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneCapabilitiesKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneProperties2KHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneProperties2KHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneProperties2KHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneProperties2KHR* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneInfo2KHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPlanePropertiesKHR >))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneProperties2KHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlanePropertiesKHR >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneProperties2KHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPlanePropertiesKHR  *>))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneProperties2KHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlanePropertiesKHR  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneProperties2KHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPlanePropertiesKHR*>))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayPlanePropertiesKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlanePropertiesKHR*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlanePropertiesKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPlanePropertiesKHR* *>))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayPlanePropertiesKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlanePropertiesKHR* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlanePropertiesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDisplayPowerInfoEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayPowerInfoEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDisplayPowerInfoEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayPowerInfoEXT *>*>(value);
     }
 
     
@@ -8696,63 +2612,87 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPowerStateEXT           >))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayPresentInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPowerStateEXT           >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayPresentInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPowerStateEXT            *>))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayPresentInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPowerStateEXT            *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDisplayProperties2KHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayProperties2KHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDisplayProperties2KHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayProperties2KHR* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayPresentInfoKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPropertiesKHR >))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayProperties2KHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPropertiesKHR >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayProperties2KHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPropertiesKHR  *>))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayProperties2KHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPropertiesKHR  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPropertiesKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPropertiesKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkDisplayPropertiesKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplayPropertiesKHR* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayProperties2KHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplaySurfaceCreateFlagsKHR   >))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayPropertiesKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplaySurfaceCreateFlagsKHR   >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayPropertiesKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDisplaySurfaceCreateFlagsKHR    *>))
+    if (typeid(*value) == typeid(Value<vk::VkDisplayPropertiesKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDisplaySurfaceCreateFlagsKHR    *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayPropertiesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDisplaySurfaceCreateInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDisplaySurfaceCreateInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDisplaySurfaceCreateInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDisplaySurfaceCreateInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDrawIndexedIndirectCommand>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDrawIndexedIndirectCommand>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDrawIndexedIndirectCommand *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDrawIndexedIndirectCommand *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDrawIndirectCommand>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDrawIndirectCommand>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDrawIndirectCommand *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDrawIndirectCommand *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDrawMeshTasksIndirectCommandNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDrawMeshTasksIndirectCommandNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDrawMeshTasksIndirectCommandNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDrawMeshTasksIndirectCommandNV *>*>(value);
     }
 
     
@@ -8768,27 +2708,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDriverIdKHR                    >))
+    if (typeid(*value) == typeid(Value<vk::VkDrmFormatModifierPropertiesEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDriverIdKHR                    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDrmFormatModifierPropertiesEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDriverIdKHR                     *>))
+    if (typeid(*value) == typeid(Value<vk::VkDrmFormatModifierPropertiesEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDriverIdKHR                     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDrmFormatModifierPropertiesEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDrmFormatModifierPropertiesEXT* >))
+    if (typeid(*value) == typeid(Value<vk::VkDrmFormatModifierPropertiesListEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDrmFormatModifierPropertiesEXT* >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDrmFormatModifierPropertiesListEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDrmFormatModifierPropertiesEXT*  *>))
+    if (typeid(*value) == typeid(Value<vk::VkDrmFormatModifierPropertiesListEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDrmFormatModifierPropertiesEXT*  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDrmFormatModifierPropertiesListEXT *>*>(value);
     }
 
     
@@ -8828,27 +2768,147 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkEvent*>))
+    if (typeid(*value) == typeid(Value<vk::VkEventCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkEvent*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkEventCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkEvent* *>))
+    if (typeid(*value) == typeid(Value<vk::VkEventCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkEvent* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkEventCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkEventCreateFlags     >))
+    if (typeid(*value) == typeid(Value<vk::VkExportFenceCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkEventCreateFlags     >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExportFenceCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkEventCreateFlags      *>))
+    if (typeid(*value) == typeid(Value<vk::VkExportFenceCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkEventCreateFlags      *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExportFenceCreateInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExportFenceCreateInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExportFenceCreateInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExportFenceCreateInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExportFenceCreateInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExportFenceWin32HandleInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExportFenceWin32HandleInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExportFenceWin32HandleInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExportFenceWin32HandleInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExportMemoryAllocateInfo>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExportMemoryAllocateInfo>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExportMemoryAllocateInfo *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExportMemoryAllocateInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExportMemoryAllocateInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExportMemoryAllocateInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExportMemoryAllocateInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExportMemoryAllocateInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExportMemoryAllocateInfoNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExportMemoryAllocateInfoNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExportMemoryAllocateInfoNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExportMemoryAllocateInfoNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExportMemoryWin32HandleInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExportMemoryWin32HandleInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExportMemoryWin32HandleInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExportMemoryWin32HandleInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExportMemoryWin32HandleInfoNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExportMemoryWin32HandleInfoNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExportMemoryWin32HandleInfoNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExportMemoryWin32HandleInfoNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExportSemaphoreCreateInfo>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExportSemaphoreCreateInfo>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExportSemaphoreCreateInfo *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExportSemaphoreCreateInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExportSemaphoreCreateInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExportSemaphoreCreateInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExportSemaphoreCreateInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExportSemaphoreCreateInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExportSemaphoreWin32HandleInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExportSemaphoreWin32HandleInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExportSemaphoreWin32HandleInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExportSemaphoreWin32HandleInfoKHR *>*>(value);
     }
 
     
@@ -8864,111 +2924,63 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkExtensionProperties*>))
+    if (typeid(*value) == typeid(Value<vk::VkExtensionProperties>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExtensionProperties*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExtensionProperties>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkExtensionProperties* *>))
+    if (typeid(*value) == typeid(Value<vk::VkExtensionProperties *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExtensionProperties* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkExtent2D >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExtent2D >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExtent2D  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExtent2D  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExtensionProperties *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkExtent2D     >))
+    if (typeid(*value) == typeid(Value<vk::VkExtent2D>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExtent2D     >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExtent2D>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkExtent2D      *>))
+    if (typeid(*value) == typeid(Value<vk::VkExtent2D *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExtent2D      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkExtent2D                       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExtent2D                       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExtent2D                        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExtent2D                        *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExtent2D *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkExtent2D                          >))
+    if (typeid(*value) == typeid(Value<vk::VkExtent3D>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExtent2D                          >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExtent3D>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkExtent2D                           *>))
+    if (typeid(*value) == typeid(Value<vk::VkExtent3D *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExtent2D                           *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkExtent2D                             >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExtent2D                             >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExtent2D                              *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExtent2D                              *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExtent3D *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkExtent2D*>))
+    if (typeid(*value) == typeid(Value<vk::VkExternalBufferProperties>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExtent2D*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalBufferProperties>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkExtent2D* *>))
+    if (typeid(*value) == typeid(Value<vk::VkExternalBufferProperties *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExtent2D* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkExtent3D             >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExtent3D             >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExtent3D              *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExtent3D              *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalBufferProperties *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalBufferProperties*>))
+    if (typeid(*value) == typeid(Value<vk::VkExternalBufferPropertiesKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalBufferProperties*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalBufferPropertiesKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalBufferProperties* *>))
+    if (typeid(*value) == typeid(Value<vk::VkExternalBufferPropertiesKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalBufferProperties* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalBufferPropertiesKHR *>*>(value);
     }
 
     
@@ -8984,30 +2996,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalFenceFeatureFlagBitsKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceFeatureFlagBitsKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalFenceFeatureFlagBitsKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceFeatureFlagBitsKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalFenceFeatureFlags >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceFeatureFlags >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalFenceFeatureFlags  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceFeatureFlags  *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkExternalFenceHandleTypeFlagBits>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkExternalFenceHandleTypeFlagBits>*>(value);
@@ -9020,87 +3008,99 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalFenceHandleTypeFlagBits >))
+    if (typeid(*value) == typeid(Value<vk::VkExternalFenceProperties>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceHandleTypeFlagBits >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceProperties>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalFenceHandleTypeFlagBits  *>))
+    if (typeid(*value) == typeid(Value<vk::VkExternalFenceProperties *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceHandleTypeFlagBits  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalFenceHandleTypeFlagBits  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceHandleTypeFlagBits  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalFenceHandleTypeFlagBits   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceHandleTypeFlagBits   *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceProperties *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalFenceHandleTypeFlagBits   >))
+    if (typeid(*value) == typeid(Value<vk::VkExternalFencePropertiesKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceHandleTypeFlagBits   >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalFencePropertiesKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalFenceHandleTypeFlagBits    *>))
+    if (typeid(*value) == typeid(Value<vk::VkExternalFencePropertiesKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceHandleTypeFlagBits    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalFenceHandleTypeFlagBitsKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceHandleTypeFlagBitsKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalFenceHandleTypeFlagBitsKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceHandleTypeFlagBitsKHR *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalFencePropertiesKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalFenceHandleTypeFlags >))
+    if (typeid(*value) == typeid(Value<vk::VkExternalFormatANDROID>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceHandleTypeFlags >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalFormatANDROID>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalFenceHandleTypeFlags  *>))
+    if (typeid(*value) == typeid(Value<vk::VkExternalFormatANDROID *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceHandleTypeFlags  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalFenceProperties*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceProperties*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalFenceProperties* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceProperties* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalFormatANDROID *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalImageFormatPropertiesNV*>))
+    if (typeid(*value) == typeid(Value<vk::VkExternalImageFormatProperties>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalImageFormatPropertiesNV*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalImageFormatProperties>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalImageFormatPropertiesNV* *>))
+    if (typeid(*value) == typeid(Value<vk::VkExternalImageFormatProperties *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalImageFormatPropertiesNV* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalImageFormatProperties *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalImageFormatPropertiesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalImageFormatPropertiesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalImageFormatPropertiesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalImageFormatPropertiesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalImageFormatPropertiesNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalImageFormatPropertiesNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalImageFormatPropertiesNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalImageFormatPropertiesNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryBufferCreateInfo>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryBufferCreateInfo>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryBufferCreateInfo *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryBufferCreateInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryBufferCreateInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryBufferCreateInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryBufferCreateInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryBufferCreateInfoKHR *>*>(value);
     }
 
     
@@ -9116,18 +3116,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryFeatureFlagBitsKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryFeatureFlagBitsKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryFeatureFlagBitsKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryFeatureFlagBitsKHR *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkExternalMemoryFeatureFlagBitsNV>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryFeatureFlagBitsNV>*>(value);
@@ -9137,30 +3125,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkExternalMemoryFeatureFlagBitsNV *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryFeatureFlagBitsNV *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryFeatureFlags  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryFeatureFlags  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryFeatureFlags   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryFeatureFlags   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryFeatureFlagsNV   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryFeatureFlagsNV   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryFeatureFlagsNV    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryFeatureFlagsNV    *>*>(value);
     }
 
     
@@ -9176,30 +3140,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryHandleTypeFlagBits >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryHandleTypeFlagBits >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryHandleTypeFlagBits  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryHandleTypeFlagBits  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryHandleTypeFlagBitsKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryHandleTypeFlagBitsKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryHandleTypeFlagBitsKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryHandleTypeFlagBitsKHR *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkExternalMemoryHandleTypeFlagBitsNV>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryHandleTypeFlagBitsNV>*>(value);
@@ -9212,63 +3152,63 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryHandleTypeFlags >))
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryImageCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryHandleTypeFlags >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryImageCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryHandleTypeFlags  *>))
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryImageCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryHandleTypeFlags  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryHandleTypeFlagsNV>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryHandleTypeFlagsNV>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryHandleTypeFlagsNV *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryHandleTypeFlagsNV *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryImageCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryHandleTypeFlagsNV >))
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryImageCreateInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryHandleTypeFlagsNV >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryImageCreateInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryHandleTypeFlagsNV  *>))
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryImageCreateInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryHandleTypeFlagsNV  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryProperties >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryProperties >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryProperties  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryProperties  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryImageCreateInfoKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryProperties    >))
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryImageCreateInfoNV>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryProperties    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryImageCreateInfoNV>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryProperties     *>))
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryImageCreateInfoNV *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryProperties     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryImageCreateInfoNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryProperties>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryProperties>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryProperties *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryProperties *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryPropertiesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryPropertiesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryPropertiesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryPropertiesKHR *>*>(value);
     }
 
     
@@ -9284,30 +3224,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreFeatureFlagBitsKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreFeatureFlagBitsKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreFeatureFlagBitsKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreFeatureFlagBitsKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreFeatureFlags >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreFeatureFlags >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreFeatureFlags  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreFeatureFlags  *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreHandleTypeFlagBits>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreHandleTypeFlagBits>*>(value);
@@ -9320,51 +3236,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreHandleTypeFlagBits >))
+    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreProperties>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreHandleTypeFlagBits >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreProperties>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreHandleTypeFlagBits  *>))
+    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreProperties *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreHandleTypeFlagBits  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreHandleTypeFlagBitsKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreHandleTypeFlagBitsKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreHandleTypeFlagBitsKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreHandleTypeFlagBitsKHR *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreProperties *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreHandleTypeFlags >))
+    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphorePropertiesKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreHandleTypeFlags >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphorePropertiesKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreHandleTypeFlags  *>))
+    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphorePropertiesKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreHandleTypeFlags  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreProperties*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreProperties*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreProperties* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreProperties* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphorePropertiesKHR *>*>(value);
     }
 
     
@@ -9380,87 +3272,39 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkFence >))
+    if (typeid(*value) == typeid(Value<vk::VkFenceCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFence >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFenceCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkFence  *>))
+    if (typeid(*value) == typeid(Value<vk::VkFenceCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFence  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkFence              >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFence              >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFence               *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFence               *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFenceCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkFence                          >))
+    if (typeid(*value) == typeid(Value<vk::VkFenceGetFdInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFence                          >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFenceGetFdInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkFence                           *>))
+    if (typeid(*value) == typeid(Value<vk::VkFenceGetFdInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFence                           *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkFence                                >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFence                                >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFence                                 *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFence                                 *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFenceGetFdInfoKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkFence*>))
+    if (typeid(*value) == typeid(Value<vk::VkFenceGetWin32HandleInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFence*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFenceGetWin32HandleInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkFence* *>))
+    if (typeid(*value) == typeid(Value<vk::VkFenceGetWin32HandleInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFence* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkFenceCreateFlagBits>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFenceCreateFlagBits>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFenceCreateFlagBits *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFenceCreateFlagBits *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkFenceCreateFlags     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFenceCreateFlags     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFenceCreateFlags      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFenceCreateFlags      *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFenceGetWin32HandleInfoKHR *>*>(value);
     }
 
     
@@ -9476,42 +3320,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkFenceImportFlagBitsKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFenceImportFlagBitsKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFenceImportFlagBitsKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFenceImportFlagBitsKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkFenceImportFlags  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFenceImportFlags  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFenceImportFlags   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFenceImportFlags   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkFenceImportFlags              >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFenceImportFlags              >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFenceImportFlags               *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFenceImportFlags               *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkFilter>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkFilter>*>(value);
@@ -9524,39 +3332,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkFilter               >))
+    if (typeid(*value) == typeid(Value<vk::VkFilterCubicImageViewImageFormatPropertiesEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFilter               >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFilterCubicImageViewImageFormatPropertiesEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkFilter                *>))
+    if (typeid(*value) == typeid(Value<vk::VkFilterCubicImageViewImageFormatPropertiesEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFilter                *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkFilter                         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFilter                         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFilter                          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFilter                          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkFlags>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFlags>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFlags *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFlags *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFilterCubicImageViewImageFormatPropertiesEXT *>*>(value);
     }
 
     
@@ -9572,66 +3356,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkFormat               >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFormat               >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFormat                *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFormat                *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkFormat                   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFormat                   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFormat                    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFormat                    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkFormat                         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFormat                         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFormat                          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFormat                          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkFormat                           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFormat                           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFormat                            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFormat                            *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkFormat                                     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFormat                                     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFormat                                      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFormat                                      *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkFormatFeatureFlagBits>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkFormatFeatureFlagBits>*>(value);
@@ -9644,75 +3368,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkFormatFeatureFlags >))
+    if (typeid(*value) == typeid(Value<vk::VkFormatProperties2>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFormatFeatureFlags >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFormatProperties2>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkFormatFeatureFlags  *>))
+    if (typeid(*value) == typeid(Value<vk::VkFormatProperties2 *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFormatFeatureFlags  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkFormatFeatureFlags   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFormatFeatureFlags   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFormatFeatureFlags    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFormatFeatureFlags    *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFormatProperties2 *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkFormatFeatureFlags               >))
+    if (typeid(*value) == typeid(Value<vk::VkFormatProperties2KHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFormatFeatureFlags               >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFormatProperties2KHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkFormatFeatureFlags                *>))
+    if (typeid(*value) == typeid(Value<vk::VkFormatProperties2KHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFormatFeatureFlags                *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkFormatProperties               >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFormatProperties               >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFormatProperties                *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFormatProperties                *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkFormatProperties*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFormatProperties*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFormatProperties* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFormatProperties* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkFormatProperties2*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFormatProperties2*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFormatProperties2* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFormatProperties2* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFormatProperties2KHR *>*>(value);
     }
 
     
@@ -9728,39 +3404,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkFramebuffer   >))
+    if (typeid(*value) == typeid(Value<vk::VkFramebufferAttachmentImageInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFramebuffer   >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFramebufferAttachmentImageInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkFramebuffer    *>))
+    if (typeid(*value) == typeid(Value<vk::VkFramebufferAttachmentImageInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFramebuffer    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkFramebuffer          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFramebuffer          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFramebuffer           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFramebuffer           *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFramebufferAttachmentImageInfoKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkFramebuffer*>))
+    if (typeid(*value) == typeid(Value<vk::VkFramebufferAttachmentsCreateInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFramebuffer*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFramebufferAttachmentsCreateInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkFramebuffer* *>))
+    if (typeid(*value) == typeid(Value<vk::VkFramebufferAttachmentsCreateInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFramebuffer* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFramebufferAttachmentsCreateInfoKHR *>*>(value);
     }
 
     
@@ -9776,99 +3440,51 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkFramebufferCreateFlags    >))
+    if (typeid(*value) == typeid(Value<vk::VkFramebufferCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFramebufferCreateFlags    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFramebufferCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkFramebufferCreateFlags     *>))
+    if (typeid(*value) == typeid(Value<vk::VkFramebufferCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFramebufferCreateFlags     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkFramebufferMixedSamplesCombinationNV*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFramebufferMixedSamplesCombinationNV*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFramebufferMixedSamplesCombinationNV* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFramebufferMixedSamplesCombinationNV* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFramebufferCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkFrontFace>))
+    if (typeid(*value) == typeid(Value<vk::VkFramebufferMixedSamplesCombinationNV>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFrontFace>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFramebufferMixedSamplesCombinationNV>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkFrontFace *>))
+    if (typeid(*value) == typeid(Value<vk::VkFramebufferMixedSamplesCombinationNV *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFrontFace *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkFrontFace            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFrontFace            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFrontFace             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFrontFace             *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFramebufferMixedSamplesCombinationNV *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkFullScreenExclusiveEXT>))
+    if (typeid(*value) == typeid(Value<vk::VkGeometryAABBNV>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFullScreenExclusiveEXT>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkGeometryAABBNV>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkFullScreenExclusiveEXT *>))
+    if (typeid(*value) == typeid(Value<vk::VkGeometryAABBNV *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFullScreenExclusiveEXT *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkFullScreenExclusiveEXT         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFullScreenExclusiveEXT         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFullScreenExclusiveEXT          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFullScreenExclusiveEXT          *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkGeometryAABBNV *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkGeometryAABBNV                       >))
+    if (typeid(*value) == typeid(Value<vk::VkGeometryDataNV>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkGeometryAABBNV                       >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkGeometryDataNV>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkGeometryAABBNV                        *>))
+    if (typeid(*value) == typeid(Value<vk::VkGeometryDataNV *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkGeometryAABBNV                        *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkGeometryDataNV                  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkGeometryDataNV                  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkGeometryDataNV                   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkGeometryDataNV                   *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkGeometryDataNV *>*>(value);
     }
 
     
@@ -9884,18 +3500,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkGeometryFlagsNV >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkGeometryFlagsNV >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkGeometryFlagsNV  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkGeometryFlagsNV  *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkGeometryInstanceFlagBitsNV>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkGeometryInstanceFlagBitsNV>*>(value);
@@ -9908,15 +3512,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkGeometryTrianglesNV                  >))
+    if (typeid(*value) == typeid(Value<vk::VkGeometryNV>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkGeometryTrianglesNV                  >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkGeometryNV>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkGeometryTrianglesNV                   *>))
+    if (typeid(*value) == typeid(Value<vk::VkGeometryNV *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkGeometryTrianglesNV                   *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkGeometryNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkGeometryTrianglesNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkGeometryTrianglesNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkGeometryTrianglesNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkGeometryTrianglesNV *>*>(value);
     }
 
     
@@ -9932,27 +3548,39 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkGeometryTypeNV                  >))
+    if (typeid(*value) == typeid(Value<vk::VkGraphicsPipelineCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkGeometryTypeNV                  >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkGraphicsPipelineCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkGeometryTypeNV                   *>))
+    if (typeid(*value) == typeid(Value<vk::VkGraphicsPipelineCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkGeometryTypeNV                   *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkGraphicsPipelineCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkHeadlessSurfaceCreateFlagsEXT   >))
+    if (typeid(*value) == typeid(Value<vk::VkHdrMetadataEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkHeadlessSurfaceCreateFlagsEXT   >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkHdrMetadataEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkHeadlessSurfaceCreateFlagsEXT    *>))
+    if (typeid(*value) == typeid(Value<vk::VkHdrMetadataEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkHeadlessSurfaceCreateFlagsEXT    *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkHdrMetadataEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkHeadlessSurfaceCreateInfoEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkHeadlessSurfaceCreateInfoEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkHeadlessSurfaceCreateInfoEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkHeadlessSurfaceCreateInfoEXT *>*>(value);
     }
 
     
@@ -9968,78 +3596,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImage >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImage >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImage  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImage  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImage          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImage          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImage           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImage           *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImage                >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImage                >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImage                 *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImage                 *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImage                          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImage                          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImage                           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImage                           *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImage                                                              >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImage                                                              >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImage                                                               *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImage                                                               *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImage*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImage*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImage* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImage* *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkImageAspectFlagBits>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkImageAspectFlagBits>*>(value);
@@ -10052,51 +3608,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImageAspectFlagBits            >))
+    if (typeid(*value) == typeid(Value<vk::VkImageBlit>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageAspectFlagBits            >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageBlit>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkImageAspectFlagBits             *>))
+    if (typeid(*value) == typeid(Value<vk::VkImageBlit *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageAspectFlagBits             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageAspectFlags >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageAspectFlags >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageAspectFlags  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageAspectFlags  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageBlit *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImageAspectFlags     >))
+    if (typeid(*value) == typeid(Value<vk::VkImageCopy>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageAspectFlags     >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageCopy>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkImageAspectFlags      *>))
+    if (typeid(*value) == typeid(Value<vk::VkImageCopy *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageAspectFlags      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageAspectFlags              >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageAspectFlags              >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageAspectFlags               *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageAspectFlags               *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageCopy *>*>(value);
     }
 
     
@@ -10112,99 +3644,99 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImageCreateFlags>))
+    if (typeid(*value) == typeid(Value<vk::VkImageCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageCreateFlags>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkImageCreateFlags *>))
+    if (typeid(*value) == typeid(Value<vk::VkImageCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageCreateFlags *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageCreateFlags >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageCreateFlags >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageCreateFlags  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageCreateFlags  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImageCreateFlags     >))
+    if (typeid(*value) == typeid(Value<vk::VkImageDrmFormatModifierExplicitCreateInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageCreateFlags     >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageDrmFormatModifierExplicitCreateInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkImageCreateFlags      *>))
+    if (typeid(*value) == typeid(Value<vk::VkImageDrmFormatModifierExplicitCreateInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageCreateFlags      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageCreateFlags       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageCreateFlags       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageCreateFlags        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageCreateFlags        *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageDrmFormatModifierExplicitCreateInfoEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImageDrmFormatModifierPropertiesEXT*>))
+    if (typeid(*value) == typeid(Value<vk::VkImageDrmFormatModifierListCreateInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageDrmFormatModifierPropertiesEXT*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageDrmFormatModifierListCreateInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkImageDrmFormatModifierPropertiesEXT* *>))
+    if (typeid(*value) == typeid(Value<vk::VkImageDrmFormatModifierListCreateInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageDrmFormatModifierPropertiesEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageFormatProperties          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageFormatProperties          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageFormatProperties           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageFormatProperties           *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageDrmFormatModifierListCreateInfoEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImageFormatProperties*>))
+    if (typeid(*value) == typeid(Value<vk::VkImageDrmFormatModifierPropertiesEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageFormatProperties*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageDrmFormatModifierPropertiesEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkImageFormatProperties* *>))
+    if (typeid(*value) == typeid(Value<vk::VkImageDrmFormatModifierPropertiesEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageFormatProperties* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageDrmFormatModifierPropertiesEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImageFormatProperties2*>))
+    if (typeid(*value) == typeid(Value<vk::VkImageFormatListCreateInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageFormatProperties2*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageFormatListCreateInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkImageFormatProperties2* *>))
+    if (typeid(*value) == typeid(Value<vk::VkImageFormatListCreateInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageFormatProperties2* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageFormatListCreateInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageFormatProperties>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageFormatProperties>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageFormatProperties *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageFormatProperties *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageFormatProperties2>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageFormatProperties2>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageFormatProperties2 *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageFormatProperties2 *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageFormatProperties2KHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageFormatProperties2KHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageFormatProperties2KHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageFormatProperties2KHR *>*>(value);
     }
 
     
@@ -10220,99 +3752,171 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImageLayout   >))
+    if (typeid(*value) == typeid(Value<vk::VkImageMemoryBarrier>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageLayout   >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageMemoryBarrier>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkImageLayout    *>))
+    if (typeid(*value) == typeid(Value<vk::VkImageMemoryBarrier *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageLayout    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageLayout          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageLayout          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageLayout           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageLayout           *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageMemoryBarrier *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImageLayout                     >))
+    if (typeid(*value) == typeid(Value<vk::VkImageMemoryRequirementsInfo2>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageLayout                     >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageMemoryRequirementsInfo2>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkImageLayout                      *>))
+    if (typeid(*value) == typeid(Value<vk::VkImageMemoryRequirementsInfo2 *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageLayout                      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageLayout                                >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageLayout                                >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageLayout                                 *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageLayout                                 *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageMemoryRequirementsInfo2 *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImagePipeSurfaceCreateFlagsFUCHSIA   >))
+    if (typeid(*value) == typeid(Value<vk::VkImageMemoryRequirementsInfo2KHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImagePipeSurfaceCreateFlagsFUCHSIA   >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageMemoryRequirementsInfo2KHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkImagePipeSurfaceCreateFlagsFUCHSIA    *>))
+    if (typeid(*value) == typeid(Value<vk::VkImageMemoryRequirementsInfo2KHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImagePipeSurfaceCreateFlagsFUCHSIA    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageSubresource     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageSubresource     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageSubresource      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageSubresource      *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageMemoryRequirementsInfo2KHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImageSubresourceLayers >))
+    if (typeid(*value) == typeid(Value<vk::VkImagePipeSurfaceCreateInfoFUCHSIA>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageSubresourceLayers >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImagePipeSurfaceCreateInfoFUCHSIA>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkImageSubresourceLayers  *>))
+    if (typeid(*value) == typeid(Value<vk::VkImagePipeSurfaceCreateInfoFUCHSIA *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageSubresourceLayers  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImagePipeSurfaceCreateInfoFUCHSIA *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImageSubresourceRange >))
+    if (typeid(*value) == typeid(Value<vk::VkImagePlaneMemoryRequirementsInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageSubresourceRange >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImagePlaneMemoryRequirementsInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkImageSubresourceRange  *>))
+    if (typeid(*value) == typeid(Value<vk::VkImagePlaneMemoryRequirementsInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageSubresourceRange  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImagePlaneMemoryRequirementsInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImagePlaneMemoryRequirementsInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImagePlaneMemoryRequirementsInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImagePlaneMemoryRequirementsInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImagePlaneMemoryRequirementsInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageResolve>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageResolve>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageResolve *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageResolve *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageSparseMemoryRequirementsInfo2>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageSparseMemoryRequirementsInfo2>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageSparseMemoryRequirementsInfo2 *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageSparseMemoryRequirementsInfo2 *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageSparseMemoryRequirementsInfo2KHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageSparseMemoryRequirementsInfo2KHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageSparseMemoryRequirementsInfo2KHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageSparseMemoryRequirementsInfo2KHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageStencilUsageCreateInfoEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageStencilUsageCreateInfoEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageStencilUsageCreateInfoEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageStencilUsageCreateInfoEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageSubresource>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageSubresource>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageSubresource *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageSubresource *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageSubresourceLayers>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageSubresourceLayers>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageSubresourceLayers *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageSubresourceLayers *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageSubresourceRange>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageSubresourceRange>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageSubresourceRange *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageSubresourceRange *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageSwapchainCreateInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageSwapchainCreateInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageSwapchainCreateInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageSwapchainCreateInfoKHR *>*>(value);
     }
 
     
@@ -10328,30 +3932,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImageTiling          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageTiling          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageTiling           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageTiling           *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageTiling                    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageTiling                    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageTiling                     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageTiling                     *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkImageType>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkImageType>*>(value);
@@ -10361,30 +3941,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkImageType *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkImageType *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageType            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageType            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageType             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageType             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageType                      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageType                      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageType                       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageType                       *>*>(value);
     }
 
     
@@ -10400,66 +3956,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImageUsageFlags>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageUsageFlags>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageUsageFlags *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageUsageFlags *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageUsageFlags >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageUsageFlags >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageUsageFlags  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageUsageFlags  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageUsageFlags      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageUsageFlags      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageUsageFlags       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageUsageFlags       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageUsageFlags                >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageUsageFlags                >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageUsageFlags                 *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageUsageFlags                 *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageUsageFlags                        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageUsageFlags                        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageUsageFlags                         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageUsageFlags                         *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkImageView>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkImageView>*>(value);
@@ -10472,39 +3968,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImageView     >))
+    if (typeid(*value) == typeid(Value<vk::VkImageViewASTCDecodeModeEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageView     >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageViewASTCDecodeModeEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkImageView      *>))
+    if (typeid(*value) == typeid(Value<vk::VkImageViewASTCDecodeModeEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageView      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageView                         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageView                         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageView                          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageView                          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageView*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageView*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageView* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageView* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageViewASTCDecodeModeEXT *>*>(value);
     }
 
     
@@ -10520,51 +3992,159 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImageViewCreateFlags >))
+    if (typeid(*value) == typeid(Value<vk::VkImageViewCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageViewCreateFlags >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageViewCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkImageViewCreateFlags  *>))
+    if (typeid(*value) == typeid(Value<vk::VkImageViewCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageViewCreateFlags  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageViewType>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageViewType>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImageViewType *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImageViewType *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageViewCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImageViewType        >))
+    if (typeid(*value) == typeid(Value<vk::VkImageViewHandleInfoNVX>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageViewType        >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageViewHandleInfoNVX>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkImageViewType         *>))
+    if (typeid(*value) == typeid(Value<vk::VkImageViewHandleInfoNVX *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageViewType         *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageViewHandleInfoNVX *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImageViewType                  >))
+    if (typeid(*value) == typeid(Value<vk::VkImageViewUsageCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageViewType                  >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageViewUsageCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkImageViewType                   *>))
+    if (typeid(*value) == typeid(Value<vk::VkImageViewUsageCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageViewType                   *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageViewUsageCreateInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageViewUsageCreateInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageViewUsageCreateInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageViewUsageCreateInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageViewUsageCreateInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImportAndroidHardwareBufferInfoANDROID>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImportAndroidHardwareBufferInfoANDROID>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImportAndroidHardwareBufferInfoANDROID *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImportAndroidHardwareBufferInfoANDROID *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImportFenceFdInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImportFenceFdInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImportFenceFdInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImportFenceFdInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImportFenceWin32HandleInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImportFenceWin32HandleInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImportFenceWin32HandleInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImportFenceWin32HandleInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImportMemoryFdInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImportMemoryFdInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImportMemoryFdInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImportMemoryFdInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImportMemoryHostPointerInfoEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImportMemoryHostPointerInfoEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImportMemoryHostPointerInfoEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImportMemoryHostPointerInfoEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImportMemoryWin32HandleInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImportMemoryWin32HandleInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImportMemoryWin32HandleInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImportMemoryWin32HandleInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImportMemoryWin32HandleInfoNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImportMemoryWin32HandleInfoNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImportMemoryWin32HandleInfoNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImportMemoryWin32HandleInfoNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImportSemaphoreFdInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImportSemaphoreFdInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImportSemaphoreFdInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImportSemaphoreFdInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkImportSemaphoreWin32HandleInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImportSemaphoreWin32HandleInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImportSemaphoreWin32HandleInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImportSemaphoreWin32HandleInfoKHR *>*>(value);
     }
 
     
@@ -10580,27 +4160,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkIndexType                >))
+    if (typeid(*value) == typeid(Value<vk::VkIndirectCommandsLayoutCreateInfoNVX>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkIndexType                >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkIndirectCommandsLayoutCreateInfoNVX>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkIndexType                 *>))
+    if (typeid(*value) == typeid(Value<vk::VkIndirectCommandsLayoutCreateInfoNVX *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkIndexType                 *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkIndexType                  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkIndexType                  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkIndexType                   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkIndexType                   *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkIndirectCommandsLayoutCreateInfoNVX *>*>(value);
     }
 
     
@@ -10616,27 +4184,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkIndirectCommandsLayoutNVX                              >))
+    if (typeid(*value) == typeid(Value<vk::VkIndirectCommandsLayoutTokenNVX>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkIndirectCommandsLayoutNVX                              >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkIndirectCommandsLayoutTokenNVX>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkIndirectCommandsLayoutNVX                               *>))
+    if (typeid(*value) == typeid(Value<vk::VkIndirectCommandsLayoutTokenNVX *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkIndirectCommandsLayoutNVX                               *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkIndirectCommandsLayoutNVX*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkIndirectCommandsLayoutNVX*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkIndirectCommandsLayoutNVX* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkIndirectCommandsLayoutNVX* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkIndirectCommandsLayoutTokenNVX *>*>(value);
     }
 
     
@@ -10652,15 +4208,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkIndirectCommandsLayoutUsageFlagsNVX    >))
+    if (typeid(*value) == typeid(Value<vk::VkIndirectCommandsTokenNVX>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkIndirectCommandsLayoutUsageFlagsNVX    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkIndirectCommandsTokenNVX>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkIndirectCommandsLayoutUsageFlagsNVX     *>))
+    if (typeid(*value) == typeid(Value<vk::VkIndirectCommandsTokenNVX *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkIndirectCommandsLayoutUsageFlagsNVX     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkIndirectCommandsTokenNVX *>*>(value);
     }
 
     
@@ -10676,15 +4232,39 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkIndirectCommandsTokenTypeNVX      >))
+    if (typeid(*value) == typeid(Value<vk::VkInitializePerformanceApiInfoINTEL>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkIndirectCommandsTokenTypeNVX      >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkInitializePerformanceApiInfoINTEL>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkIndirectCommandsTokenTypeNVX       *>))
+    if (typeid(*value) == typeid(Value<vk::VkInitializePerformanceApiInfoINTEL *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkIndirectCommandsTokenTypeNVX       *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkInitializePerformanceApiInfoINTEL *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkInputAttachmentAspectReference>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkInputAttachmentAspectReference>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkInputAttachmentAspectReference *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkInputAttachmentAspectReference *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkInputAttachmentAspectReferenceKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkInputAttachmentAspectReferenceKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkInputAttachmentAspectReferenceKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkInputAttachmentAspectReferenceKHR *>*>(value);
     }
 
     
@@ -10700,75 +4280,39 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkInstance*>))
+    if (typeid(*value) == typeid(Value<vk::VkInstanceCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkInstance*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkInstanceCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkInstance* *>))
+    if (typeid(*value) == typeid(Value<vk::VkInstanceCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkInstance* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkInstanceCreateFlagBits>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkInstanceCreateFlagBits>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkInstanceCreateFlagBits *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkInstanceCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkInstanceCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkInstanceCreateFlags  >))
+    if (typeid(*value) == typeid(Value<vk::VkIOSSurfaceCreateInfoMVK>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkInstanceCreateFlags  >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkIOSSurfaceCreateInfoMVK>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkInstanceCreateFlags   *>))
+    if (typeid(*value) == typeid(Value<vk::VkIOSSurfaceCreateInfoMVK *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkInstanceCreateFlags   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkInternalAllocationType>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkInternalAllocationType>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkInternalAllocationType *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkInternalAllocationType *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkIOSSurfaceCreateInfoMVK *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkIOSSurfaceCreateFlagsMVK     >))
+    if (typeid(*value) == typeid(Value<vk::VkLayerProperties>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkIOSSurfaceCreateFlagsMVK     >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkLayerProperties>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkIOSSurfaceCreateFlagsMVK      *>))
+    if (typeid(*value) == typeid(Value<vk::VkLayerProperties *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkIOSSurfaceCreateFlagsMVK      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkLayerProperties*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkLayerProperties*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkLayerProperties* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkLayerProperties* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkLayerProperties *>*>(value);
     }
 
     
@@ -10784,51 +4328,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkLineRasterizationModeEXT                                       >))
+    if (typeid(*value) == typeid(Value<vk::VkMacOSSurfaceCreateInfoMVK>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkLineRasterizationModeEXT                                       >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMacOSSurfaceCreateInfoMVK>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkLineRasterizationModeEXT                                        *>))
+    if (typeid(*value) == typeid(Value<vk::VkMacOSSurfaceCreateInfoMVK *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkLineRasterizationModeEXT                                        *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkLogicOp>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkLogicOp>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkLogicOp *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkLogicOp *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMacOSSurfaceCreateInfoMVK *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkLogicOp              >))
+    if (typeid(*value) == typeid(Value<vk::VkMappedMemoryRange>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkLogicOp              >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMappedMemoryRange>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkLogicOp               *>))
+    if (typeid(*value) == typeid(Value<vk::VkMappedMemoryRange *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkLogicOp               *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkMacOSSurfaceCreateFlagsMVK   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMacOSSurfaceCreateFlagsMVK   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkMacOSSurfaceCreateFlagsMVK    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMacOSSurfaceCreateFlagsMVK    *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMappedMemoryRange *>*>(value);
     }
 
     
@@ -10844,51 +4364,159 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryAllocateFlagBitsKHR>))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryAllocateFlagsInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryAllocateFlagBitsKHR>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryAllocateFlagsInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryAllocateFlagBitsKHR *>))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryAllocateFlagsInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryAllocateFlagBitsKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkMemoryAllocateFlags >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryAllocateFlags >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkMemoryAllocateFlags  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryAllocateFlags  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryAllocateFlagsInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryFdPropertiesKHR*>))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryAllocateFlagsInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryFdPropertiesKHR*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryAllocateFlagsInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryFdPropertiesKHR* *>))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryAllocateFlagsInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryFdPropertiesKHR* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryAllocateFlagsInfoKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryHeap           >))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryAllocateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryHeap           >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryAllocateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryHeap            *>))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryAllocateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryHeap            *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryAllocateInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryBarrier>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryBarrier>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryBarrier *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryBarrier *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryDedicatedAllocateInfo>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryDedicatedAllocateInfo>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryDedicatedAllocateInfo *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryDedicatedAllocateInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryDedicatedAllocateInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryDedicatedAllocateInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryDedicatedAllocateInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryDedicatedAllocateInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryDedicatedRequirements>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryDedicatedRequirements>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryDedicatedRequirements *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryDedicatedRequirements *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryDedicatedRequirementsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryDedicatedRequirementsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryDedicatedRequirementsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryDedicatedRequirementsKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryFdPropertiesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryFdPropertiesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryFdPropertiesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryFdPropertiesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryGetAndroidHardwareBufferInfoANDROID>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryGetAndroidHardwareBufferInfoANDROID>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryGetAndroidHardwareBufferInfoANDROID *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryGetAndroidHardwareBufferInfoANDROID *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryGetFdInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryGetFdInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryGetFdInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryGetFdInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryGetWin32HandleInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryGetWin32HandleInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryGetWin32HandleInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryGetWin32HandleInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryHeap>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryHeap>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryHeap *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryHeap *>*>(value);
     }
 
     
@@ -10904,39 +4532,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryHeapFlags      >))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryHostPointerPropertiesEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryHeapFlags      >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryHostPointerPropertiesEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryHeapFlags       *>))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryHostPointerPropertiesEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryHeapFlags       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkMemoryHostPointerPropertiesEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryHostPointerPropertiesEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkMemoryHostPointerPropertiesEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryHostPointerPropertiesEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkMemoryMapFlags>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryMapFlags>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkMemoryMapFlags *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryMapFlags *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryHostPointerPropertiesEXT *>*>(value);
     }
 
     
@@ -10952,15 +4556,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryOverallocationBehaviorAMD >))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryPriorityAllocateInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryOverallocationBehaviorAMD >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryPriorityAllocateInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryOverallocationBehaviorAMD  *>))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryPriorityAllocateInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryOverallocationBehaviorAMD  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryPriorityAllocateInfoEXT *>*>(value);
     }
 
     
@@ -10976,123 +4580,111 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryPropertyFlags  >))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryRequirements>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryPropertyFlags  >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryRequirements>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryPropertyFlags   *>))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryRequirements *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryPropertyFlags   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkMemoryRequirements                                                 >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryRequirements                                                 >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkMemoryRequirements                                                  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryRequirements                                                  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryRequirements *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryRequirements*>))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryRequirements2>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryRequirements*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryRequirements2>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryRequirements* *>))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryRequirements2 *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryRequirements* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkMemoryRequirements2*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryRequirements2*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkMemoryRequirements2* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryRequirements2* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryRequirements2 *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryRequirements2KHR*>))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryRequirements2KHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryRequirements2KHR*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryRequirements2KHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryRequirements2KHR* *>))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryRequirements2KHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryRequirements2KHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkMemoryType           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryType           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkMemoryType            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryType            *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryRequirements2KHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryWin32HandlePropertiesKHR*>))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryType>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryWin32HandlePropertiesKHR*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryType>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryWin32HandlePropertiesKHR* *>))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryType *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryWin32HandlePropertiesKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkMetalSurfaceCreateFlagsEXT   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMetalSurfaceCreateFlagsEXT   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkMetalSurfaceCreateFlagsEXT    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMetalSurfaceCreateFlagsEXT    *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryType *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkMultisamplePropertiesEXT*>))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryWin32HandlePropertiesKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMultisamplePropertiesEXT*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryWin32HandlePropertiesKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkMultisamplePropertiesEXT* *>))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryWin32HandlePropertiesKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMultisamplePropertiesEXT* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryWin32HandlePropertiesKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkNativeBufferUsage2ANDROID >))
+    if (typeid(*value) == typeid(Value<vk::VkMetalSurfaceCreateInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkNativeBufferUsage2ANDROID >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMetalSurfaceCreateInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkNativeBufferUsage2ANDROID  *>))
+    if (typeid(*value) == typeid(Value<vk::VkMetalSurfaceCreateInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkNativeBufferUsage2ANDROID  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMetalSurfaceCreateInfoEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkMultisamplePropertiesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMultisamplePropertiesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkMultisamplePropertiesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMultisamplePropertiesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkNativeBufferANDROID>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkNativeBufferANDROID>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkNativeBufferANDROID *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkNativeBufferANDROID *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkNativeBufferUsage2ANDROID>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkNativeBufferUsage2ANDROID>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkNativeBufferUsage2ANDROID *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkNativeBufferUsage2ANDROID *>*>(value);
     }
 
     
@@ -11108,18 +4700,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkObjectEntryTypeNVX         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkObjectEntryTypeNVX         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkObjectEntryTypeNVX          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkObjectEntryTypeNVX          *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkObjectEntryUsageFlagBitsNVX>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkObjectEntryUsageFlagBitsNVX>*>(value);
@@ -11132,15 +4712,51 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkObjectEntryUsageFlagsNVX   >))
+    if (typeid(*value) == typeid(Value<vk::VkObjectTableCreateInfoNVX>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkObjectEntryUsageFlagsNVX   >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkObjectTableCreateInfoNVX>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkObjectEntryUsageFlagsNVX    *>))
+    if (typeid(*value) == typeid(Value<vk::VkObjectTableCreateInfoNVX *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkObjectEntryUsageFlagsNVX    *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkObjectTableCreateInfoNVX *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkObjectTableDescriptorSetEntryNVX>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkObjectTableDescriptorSetEntryNVX>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkObjectTableDescriptorSetEntryNVX *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkObjectTableDescriptorSetEntryNVX *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkObjectTableEntryNVX>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkObjectTableEntryNVX>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkObjectTableEntryNVX *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkObjectTableEntryNVX *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkObjectTableIndexBufferEntryNVX>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkObjectTableIndexBufferEntryNVX>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkObjectTableIndexBufferEntryNVX *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkObjectTableIndexBufferEntryNVX *>*>(value);
     }
 
     
@@ -11156,27 +4772,39 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkObjectTableNVX                                         >))
+    if (typeid(*value) == typeid(Value<vk::VkObjectTablePipelineEntryNVX>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkObjectTableNVX                                         >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkObjectTablePipelineEntryNVX>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkObjectTableNVX                                          *>))
+    if (typeid(*value) == typeid(Value<vk::VkObjectTablePipelineEntryNVX *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkObjectTableNVX                                          *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkObjectTablePipelineEntryNVX *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkObjectTableNVX*>))
+    if (typeid(*value) == typeid(Value<vk::VkObjectTablePushConstantEntryNVX>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkObjectTableNVX*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkObjectTablePushConstantEntryNVX>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkObjectTableNVX* *>))
+    if (typeid(*value) == typeid(Value<vk::VkObjectTablePushConstantEntryNVX *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkObjectTableNVX* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkObjectTablePushConstantEntryNVX *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkObjectTableVertexBufferEntryNVX>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkObjectTableVertexBufferEntryNVX>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkObjectTableVertexBufferEntryNVX *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkObjectTableVertexBufferEntryNVX *>*>(value);
     }
 
     
@@ -11192,75 +4820,39 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkObjectType                           >))
+    if (typeid(*value) == typeid(Value<vk::VkOffset2D>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkObjectType                           >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkOffset2D>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkObjectType                            *>))
+    if (typeid(*value) == typeid(Value<vk::VkOffset2D *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkObjectType                            *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkObjectType                                           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkObjectType                                           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkObjectType                                            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkObjectType                                            *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkOffset2D *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkOffset2D     >))
+    if (typeid(*value) == typeid(Value<vk::VkOffset3D>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkOffset2D     >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkOffset3D>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkOffset2D      *>))
+    if (typeid(*value) == typeid(Value<vk::VkOffset3D *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkOffset2D      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkOffset2D                       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkOffset2D                       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkOffset2D                        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkOffset2D                        *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkOffset3D *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkOffset3D             >))
+    if (typeid(*value) == typeid(Value<vk::VkPastPresentationTimingGOOGLE>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkOffset3D             >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPastPresentationTimingGOOGLE>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkOffset3D              *>))
+    if (typeid(*value) == typeid(Value<vk::VkPastPresentationTimingGOOGLE *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkOffset3D              *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPastPresentationTimingGOOGLE*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPastPresentationTimingGOOGLE*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPastPresentationTimingGOOGLE* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPastPresentationTimingGOOGLE* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPastPresentationTimingGOOGLE *>*>(value);
     }
 
     
@@ -11276,27 +4868,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPeerMemoryFeatureFlagBitsKHR>))
+    if (typeid(*value) == typeid(Value<vk::VkPerformanceConfigurationAcquireInfoINTEL>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPeerMemoryFeatureFlagBitsKHR>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPerformanceConfigurationAcquireInfoINTEL>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPeerMemoryFeatureFlagBitsKHR *>))
+    if (typeid(*value) == typeid(Value<vk::VkPerformanceConfigurationAcquireInfoINTEL *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPeerMemoryFeatureFlagBitsKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPeerMemoryFeatureFlags*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPeerMemoryFeatureFlags*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPeerMemoryFeatureFlags* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPeerMemoryFeatureFlags* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPerformanceConfigurationAcquireInfoINTEL *>*>(value);
     }
 
     
@@ -11312,18 +4892,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPerformanceConfigurationINTEL*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPerformanceConfigurationINTEL*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPerformanceConfigurationINTEL* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPerformanceConfigurationINTEL* *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkPerformanceConfigurationTypeINTEL>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPerformanceConfigurationTypeINTEL>*>(value);
@@ -11336,15 +4904,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPerformanceConfigurationTypeINTEL >))
+    if (typeid(*value) == typeid(Value<vk::VkPerformanceMarkerInfoINTEL>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPerformanceConfigurationTypeINTEL >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPerformanceMarkerInfoINTEL>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPerformanceConfigurationTypeINTEL  *>))
+    if (typeid(*value) == typeid(Value<vk::VkPerformanceMarkerInfoINTEL *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPerformanceConfigurationTypeINTEL  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPerformanceMarkerInfoINTEL *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPerformanceOverrideInfoINTEL>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPerformanceOverrideInfoINTEL>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPerformanceOverrideInfoINTEL *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPerformanceOverrideInfoINTEL *>*>(value);
     }
 
     
@@ -11360,18 +4940,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPerformanceOverrideTypeINTEL      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPerformanceOverrideTypeINTEL      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPerformanceOverrideTypeINTEL       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPerformanceOverrideTypeINTEL       *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkPerformanceParameterTypeINTEL>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPerformanceParameterTypeINTEL>*>(value);
@@ -11384,27 +4952,39 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPerformanceValueDataINTEL        >))
+    if (typeid(*value) == typeid(Value<vk::VkPerformanceStreamMarkerInfoINTEL>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPerformanceValueDataINTEL        >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPerformanceStreamMarkerInfoINTEL>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPerformanceValueDataINTEL         *>))
+    if (typeid(*value) == typeid(Value<vk::VkPerformanceStreamMarkerInfoINTEL *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPerformanceValueDataINTEL         *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPerformanceStreamMarkerInfoINTEL *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPerformanceValueINTEL*>))
+    if (typeid(*value) == typeid(Value<vk::VkPerformanceValueDataINTEL>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPerformanceValueINTEL*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPerformanceValueDataINTEL>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPerformanceValueINTEL* *>))
+    if (typeid(*value) == typeid(Value<vk::VkPerformanceValueDataINTEL *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPerformanceValueINTEL* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPerformanceValueDataINTEL *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPerformanceValueINTEL>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPerformanceValueINTEL>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPerformanceValueINTEL *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPerformanceValueINTEL *>*>(value);
     }
 
     
@@ -11420,18 +5000,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPerformanceValueTypeINTEL        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPerformanceValueTypeINTEL        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPerformanceValueTypeINTEL         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPerformanceValueTypeINTEL         *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkPhysicalDevice>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevice>*>(value);
@@ -11444,195 +5012,1443 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevice                 >))
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevice16BitStorageFeatures>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevice                 >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevice16BitStorageFeatures>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevice                  *>))
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevice16BitStorageFeatures *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevice                  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevice*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevice*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevice* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevice* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevice16BitStorageFeatures *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFeatures         >))
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevice16BitStorageFeaturesKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFeatures         >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevice16BitStorageFeaturesKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFeatures          *>))
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevice16BitStorageFeaturesKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFeatures          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFeatures*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFeatures*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFeatures* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFeatures* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevice16BitStorageFeaturesKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFeatures2*>))
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevice8BitStorageFeaturesKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFeatures2*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevice8BitStorageFeaturesKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFeatures2* *>))
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevice8BitStorageFeaturesKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFeatures2* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceGroupProperties*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceGroupProperties*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceGroupProperties* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceGroupProperties* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevice8BitStorageFeaturesKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceLimits >))
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceASTCDecodeFeaturesEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceLimits >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceASTCDecodeFeaturesEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceLimits  *>))
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceASTCDecodeFeaturesEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceLimits  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMemoryProperties >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMemoryProperties >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMemoryProperties  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMemoryProperties  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceASTCDecodeFeaturesEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMemoryProperties*>))
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceBlendOperationAdvancedFeaturesEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMemoryProperties*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceBlendOperationAdvancedFeaturesEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMemoryProperties* *>))
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceBlendOperationAdvancedFeaturesEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMemoryProperties* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMemoryProperties2*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMemoryProperties2*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMemoryProperties2* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMemoryProperties2* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceBlendOperationAdvancedFeaturesEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceProperties       >))
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceBlendOperationAdvancedPropertiesEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceProperties       >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceBlendOperationAdvancedPropertiesEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceProperties        *>))
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceBlendOperationAdvancedPropertiesEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceProperties        *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceProperties*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceProperties*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceProperties* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceProperties* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceBlendOperationAdvancedPropertiesEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceProperties2*>))
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceBufferAddressFeaturesEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceProperties2*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceBufferAddressFeaturesEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceProperties2* *>))
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceBufferAddressFeaturesEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceProperties2* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSparseProperties >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSparseProperties >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSparseProperties  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSparseProperties  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceBufferAddressFeaturesEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceType>))
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceBufferDeviceAddressFeaturesEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceType>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceBufferDeviceAddressFeaturesEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceType *>))
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceBufferDeviceAddressFeaturesEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceType *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceBufferDeviceAddressFeaturesEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceType >))
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceComputeShaderDerivativesFeaturesNV>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceType >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceComputeShaderDerivativesFeaturesNV>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceType  *>))
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceComputeShaderDerivativesFeaturesNV *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceType  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceComputeShaderDerivativesFeaturesNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceConditionalRenderingFeaturesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceConditionalRenderingFeaturesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceConditionalRenderingFeaturesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceConditionalRenderingFeaturesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceConservativeRasterizationPropertiesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceConservativeRasterizationPropertiesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceConservativeRasterizationPropertiesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceConservativeRasterizationPropertiesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceCooperativeMatrixFeaturesNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceCooperativeMatrixFeaturesNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceCooperativeMatrixFeaturesNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceCooperativeMatrixFeaturesNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceCooperativeMatrixPropertiesNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceCooperativeMatrixPropertiesNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceCooperativeMatrixPropertiesNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceCooperativeMatrixPropertiesNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceCornerSampledImageFeaturesNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceCornerSampledImageFeaturesNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceCornerSampledImageFeaturesNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceCornerSampledImageFeaturesNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceCoverageReductionModeFeaturesNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceCoverageReductionModeFeaturesNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceCoverageReductionModeFeaturesNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceCoverageReductionModeFeaturesNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceDepthClipEnableFeaturesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceDepthClipEnableFeaturesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceDepthClipEnableFeaturesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceDepthClipEnableFeaturesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceDepthStencilResolvePropertiesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceDepthStencilResolvePropertiesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceDepthStencilResolvePropertiesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceDepthStencilResolvePropertiesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceDescriptorIndexingFeaturesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceDescriptorIndexingFeaturesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceDescriptorIndexingFeaturesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceDescriptorIndexingFeaturesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceDescriptorIndexingPropertiesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceDescriptorIndexingPropertiesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceDescriptorIndexingPropertiesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceDescriptorIndexingPropertiesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceDiscardRectanglePropertiesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceDiscardRectanglePropertiesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceDiscardRectanglePropertiesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceDiscardRectanglePropertiesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceDriverPropertiesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceDriverPropertiesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceDriverPropertiesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceDriverPropertiesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceExclusiveScissorFeaturesNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceExclusiveScissorFeaturesNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceExclusiveScissorFeaturesNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceExclusiveScissorFeaturesNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceExternalBufferInfo>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceExternalBufferInfo>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceExternalBufferInfo *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceExternalBufferInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceExternalBufferInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceExternalBufferInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceExternalBufferInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceExternalBufferInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceExternalFenceInfo>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceExternalFenceInfo>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceExternalFenceInfo *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceExternalFenceInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceExternalFenceInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceExternalFenceInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceExternalFenceInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceExternalFenceInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceExternalImageFormatInfo>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceExternalImageFormatInfo>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceExternalImageFormatInfo *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceExternalImageFormatInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceExternalImageFormatInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceExternalImageFormatInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceExternalImageFormatInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceExternalImageFormatInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceExternalMemoryHostPropertiesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceExternalMemoryHostPropertiesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceExternalMemoryHostPropertiesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceExternalMemoryHostPropertiesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceExternalSemaphoreInfo>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceExternalSemaphoreInfo>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceExternalSemaphoreInfo *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceExternalSemaphoreInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceExternalSemaphoreInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceExternalSemaphoreInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceExternalSemaphoreInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceExternalSemaphoreInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFeatures>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFeatures>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFeatures *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFeatures *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFeatures2>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFeatures2>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFeatures2 *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFeatures2 *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFeatures2KHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFeatures2KHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFeatures2KHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFeatures2KHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFloat16Int8FeaturesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFloat16Int8FeaturesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFloat16Int8FeaturesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFloat16Int8FeaturesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFloatControlsPropertiesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFloatControlsPropertiesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFloatControlsPropertiesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFloatControlsPropertiesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFragmentDensityMapFeaturesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFragmentDensityMapFeaturesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFragmentDensityMapFeaturesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFragmentDensityMapFeaturesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFragmentDensityMapPropertiesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFragmentDensityMapPropertiesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFragmentDensityMapPropertiesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFragmentDensityMapPropertiesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFragmentShaderBarycentricFeaturesNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFragmentShaderBarycentricFeaturesNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFragmentShaderBarycentricFeaturesNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFragmentShaderBarycentricFeaturesNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceGroupProperties>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceGroupProperties>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceGroupProperties *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceGroupProperties *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceGroupPropertiesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceGroupPropertiesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceGroupPropertiesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceGroupPropertiesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceHostQueryResetFeaturesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceHostQueryResetFeaturesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceHostQueryResetFeaturesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceHostQueryResetFeaturesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceIDProperties>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceIDProperties>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceIDProperties *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceIDProperties *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceIDPropertiesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceIDPropertiesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceIDPropertiesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceIDPropertiesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceImageDrmFormatModifierInfoEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceImageDrmFormatModifierInfoEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceImageDrmFormatModifierInfoEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceImageDrmFormatModifierInfoEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceImageFormatInfo2>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceImageFormatInfo2>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceImageFormatInfo2 *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceImageFormatInfo2 *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceImageFormatInfo2KHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceImageFormatInfo2KHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceImageFormatInfo2KHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceImageFormatInfo2KHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceImagelessFramebufferFeaturesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceImagelessFramebufferFeaturesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceImagelessFramebufferFeaturesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceImagelessFramebufferFeaturesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceImageViewImageFormatInfoEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceImageViewImageFormatInfoEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceImageViewImageFormatInfoEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceImageViewImageFormatInfoEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceIndexTypeUint8FeaturesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceIndexTypeUint8FeaturesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceIndexTypeUint8FeaturesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceIndexTypeUint8FeaturesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceInlineUniformBlockFeaturesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceInlineUniformBlockFeaturesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceInlineUniformBlockFeaturesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceInlineUniformBlockFeaturesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceInlineUniformBlockPropertiesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceInlineUniformBlockPropertiesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceInlineUniformBlockPropertiesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceInlineUniformBlockPropertiesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceLimits>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceLimits>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceLimits *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceLimits *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceLineRasterizationFeaturesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceLineRasterizationFeaturesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceLineRasterizationFeaturesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceLineRasterizationFeaturesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceLineRasterizationPropertiesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceLineRasterizationPropertiesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceLineRasterizationPropertiesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceLineRasterizationPropertiesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMaintenance3Properties>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMaintenance3Properties>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMaintenance3Properties *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMaintenance3Properties *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMaintenance3PropertiesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMaintenance3PropertiesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMaintenance3PropertiesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMaintenance3PropertiesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMemoryBudgetPropertiesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMemoryBudgetPropertiesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMemoryBudgetPropertiesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMemoryBudgetPropertiesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMemoryPriorityFeaturesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMemoryPriorityFeaturesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMemoryPriorityFeaturesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMemoryPriorityFeaturesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMemoryProperties>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMemoryProperties>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMemoryProperties *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMemoryProperties *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMemoryProperties2>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMemoryProperties2>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMemoryProperties2 *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMemoryProperties2 *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMemoryProperties2KHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMemoryProperties2KHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMemoryProperties2KHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMemoryProperties2KHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMeshShaderFeaturesNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMeshShaderFeaturesNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMeshShaderFeaturesNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMeshShaderFeaturesNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMeshShaderPropertiesNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMeshShaderPropertiesNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMeshShaderPropertiesNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMeshShaderPropertiesNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMultiviewFeatures>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMultiviewFeatures>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMultiviewFeatures *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMultiviewFeatures *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMultiviewFeaturesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMultiviewFeaturesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMultiviewFeaturesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMultiviewFeaturesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMultiviewPerViewAttributesPropertiesNVX>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMultiviewPerViewAttributesPropertiesNVX>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMultiviewPerViewAttributesPropertiesNVX *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMultiviewPerViewAttributesPropertiesNVX *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMultiviewProperties>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMultiviewProperties>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMultiviewProperties *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMultiviewProperties *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMultiviewPropertiesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMultiviewPropertiesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceMultiviewPropertiesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceMultiviewPropertiesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevicePCIBusInfoPropertiesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevicePCIBusInfoPropertiesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevicePCIBusInfoPropertiesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevicePCIBusInfoPropertiesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevicePointClippingProperties>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevicePointClippingProperties>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevicePointClippingProperties *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevicePointClippingProperties *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevicePointClippingPropertiesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevicePointClippingPropertiesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevicePointClippingPropertiesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevicePointClippingPropertiesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevicePresentationPropertiesANDROID>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevicePresentationPropertiesANDROID>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevicePresentationPropertiesANDROID *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevicePresentationPropertiesANDROID *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceProperties>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceProperties>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceProperties *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceProperties *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceProperties2>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceProperties2>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceProperties2 *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceProperties2 *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceProperties2KHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceProperties2KHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceProperties2KHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceProperties2KHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceProtectedMemoryFeatures>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceProtectedMemoryFeatures>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceProtectedMemoryFeatures *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceProtectedMemoryFeatures *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceProtectedMemoryProperties>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceProtectedMemoryProperties>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceProtectedMemoryProperties *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceProtectedMemoryProperties *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevicePushDescriptorPropertiesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevicePushDescriptorPropertiesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevicePushDescriptorPropertiesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevicePushDescriptorPropertiesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceRayTracingPropertiesNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceRayTracingPropertiesNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceRayTracingPropertiesNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceRayTracingPropertiesNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceRepresentativeFragmentTestFeaturesNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceRepresentativeFragmentTestFeaturesNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceRepresentativeFragmentTestFeaturesNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceRepresentativeFragmentTestFeaturesNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSampleLocationsPropertiesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSampleLocationsPropertiesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSampleLocationsPropertiesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSampleLocationsPropertiesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSamplerFilterMinmaxPropertiesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSamplerFilterMinmaxPropertiesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSamplerFilterMinmaxPropertiesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSamplerFilterMinmaxPropertiesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSamplerYcbcrConversionFeatures>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSamplerYcbcrConversionFeatures>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSamplerYcbcrConversionFeatures *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSamplerYcbcrConversionFeatures *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSamplerYcbcrConversionFeaturesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSamplerYcbcrConversionFeaturesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSamplerYcbcrConversionFeaturesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSamplerYcbcrConversionFeaturesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceScalarBlockLayoutFeaturesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceScalarBlockLayoutFeaturesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceScalarBlockLayoutFeaturesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceScalarBlockLayoutFeaturesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderAtomicInt64FeaturesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderAtomicInt64FeaturesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderAtomicInt64FeaturesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderAtomicInt64FeaturesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderCorePropertiesAMD>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderCorePropertiesAMD>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderCorePropertiesAMD *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderCorePropertiesAMD *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderDemoteToHelperInvocationFeaturesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderDemoteToHelperInvocationFeaturesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderDemoteToHelperInvocationFeaturesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderDemoteToHelperInvocationFeaturesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderDrawParameterFeatures>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderDrawParameterFeatures>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderDrawParameterFeatures *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderDrawParameterFeatures *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderDrawParametersFeatures>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderDrawParametersFeatures>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderDrawParametersFeatures *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderDrawParametersFeatures *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderFloat16Int8FeaturesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderFloat16Int8FeaturesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderFloat16Int8FeaturesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderFloat16Int8FeaturesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderImageFootprintFeaturesNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderImageFootprintFeaturesNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderImageFootprintFeaturesNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderImageFootprintFeaturesNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderIntegerFunctions2FeaturesINTEL>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderIntegerFunctions2FeaturesINTEL>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderIntegerFunctions2FeaturesINTEL *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderIntegerFunctions2FeaturesINTEL *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderSMBuiltinsFeaturesNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderSMBuiltinsFeaturesNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderSMBuiltinsFeaturesNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderSMBuiltinsFeaturesNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderSMBuiltinsPropertiesNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderSMBuiltinsPropertiesNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderSMBuiltinsPropertiesNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderSMBuiltinsPropertiesNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShadingRateImageFeaturesNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShadingRateImageFeaturesNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShadingRateImageFeaturesNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShadingRateImageFeaturesNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShadingRateImagePropertiesNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShadingRateImagePropertiesNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShadingRateImagePropertiesNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShadingRateImagePropertiesNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSparseImageFormatInfo2>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSparseImageFormatInfo2>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSparseImageFormatInfo2 *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSparseImageFormatInfo2 *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSparseImageFormatInfo2KHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSparseImageFormatInfo2KHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSparseImageFormatInfo2KHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSparseImageFormatInfo2KHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSparseProperties>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSparseProperties>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSparseProperties *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSparseProperties *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSubgroupProperties>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSubgroupProperties>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSubgroupProperties *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSubgroupProperties *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSubgroupSizeControlPropertiesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSubgroupSizeControlPropertiesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSubgroupSizeControlPropertiesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSubgroupSizeControlPropertiesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSurfaceInfo2KHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSurfaceInfo2KHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSurfaceInfo2KHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSurfaceInfo2KHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceTexelBufferAlignmentFeaturesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceTexelBufferAlignmentFeaturesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceTexelBufferAlignmentFeaturesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceTexelBufferAlignmentFeaturesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceTexelBufferAlignmentPropertiesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceTexelBufferAlignmentPropertiesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceTexelBufferAlignmentPropertiesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceTexelBufferAlignmentPropertiesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceTextureCompressionASTCHDRFeaturesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceTextureCompressionASTCHDRFeaturesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceTextureCompressionASTCHDRFeaturesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceTextureCompressionASTCHDRFeaturesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceTransformFeedbackFeaturesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceTransformFeedbackFeaturesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceTransformFeedbackFeaturesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceTransformFeedbackFeaturesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceTransformFeedbackPropertiesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceTransformFeedbackPropertiesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceTransformFeedbackPropertiesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceTransformFeedbackPropertiesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceUniformBufferStandardLayoutFeaturesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceUniformBufferStandardLayoutFeaturesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceUniformBufferStandardLayoutFeaturesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceUniformBufferStandardLayoutFeaturesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceVariablePointerFeatures>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceVariablePointerFeatures>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceVariablePointerFeatures *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceVariablePointerFeatures *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceVariablePointerFeaturesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceVariablePointerFeaturesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceVariablePointerFeaturesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceVariablePointerFeaturesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceVariablePointersFeatures>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceVariablePointersFeatures>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceVariablePointersFeatures *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceVariablePointersFeatures *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceVariablePointersFeaturesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceVariablePointersFeaturesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceVariablePointersFeaturesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceVariablePointersFeaturesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceVertexAttributeDivisorFeaturesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceVertexAttributeDivisorFeaturesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceVertexAttributeDivisorFeaturesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceVertexAttributeDivisorFeaturesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceVertexAttributeDivisorPropertiesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceVertexAttributeDivisorPropertiesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceVertexAttributeDivisorPropertiesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceVertexAttributeDivisorPropertiesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceVulkanMemoryModelFeaturesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceVulkanMemoryModelFeaturesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceVulkanMemoryModelFeaturesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceVulkanMemoryModelFeaturesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceYcbcrImageArraysFeaturesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceYcbcrImageArraysFeaturesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceYcbcrImageArraysFeaturesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceYcbcrImageArraysFeaturesEXT *>*>(value);
     }
 
     
@@ -11648,42 +6464,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipeline      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipeline      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipeline       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipeline       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipeline                   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipeline                   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipeline                    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipeline                    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipeline*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipeline*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipeline* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipeline* *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkPipelineBindPoint>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineBindPoint>*>(value);
@@ -11693,54 +6473,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkPipelineBindPoint *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineBindPoint *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineBindPoint >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineBindPoint >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineBindPoint  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineBindPoint  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineBindPoint    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineBindPoint    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineBindPoint     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineBindPoint     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineBindPoint                      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineBindPoint                      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineBindPoint                       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineBindPoint                       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineBindPoint                                         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineBindPoint                                         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineBindPoint                                          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineBindPoint                                          *>*>(value);
     }
 
     
@@ -11756,39 +6488,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCache*>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCacheCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCache*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCacheCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCache* *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCacheCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCache* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCacheCreateFlagBits>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCacheCreateFlagBits>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCacheCreateFlagBits *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCacheCreateFlagBits *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCacheCreateFlags    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCacheCreateFlags    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCacheCreateFlags     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCacheCreateFlags     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCacheCreateInfo *>*>(value);
     }
 
     
@@ -11804,63 +6512,75 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineColorBlendStateCreateFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineColorBlendAdvancedStateCreateInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineColorBlendStateCreateFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineColorBlendAdvancedStateCreateInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineColorBlendStateCreateFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineColorBlendAdvancedStateCreateInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineColorBlendStateCreateFlagBits *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineColorBlendStateCreateFlags    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineColorBlendStateCreateFlags    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineColorBlendStateCreateFlags     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineColorBlendStateCreateFlags     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineColorBlendAdvancedStateCreateInfoEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCoverageModulationStateCreateFlagsNV                   >))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineColorBlendAttachmentState>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCoverageModulationStateCreateFlagsNV                   >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineColorBlendAttachmentState>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCoverageModulationStateCreateFlagsNV                    *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineColorBlendAttachmentState *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCoverageModulationStateCreateFlagsNV                    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCoverageReductionStateCreateFlagsNV      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCoverageReductionStateCreateFlagsNV      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCoverageReductionStateCreateFlagsNV       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCoverageReductionStateCreateFlagsNV       *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineColorBlendAttachmentState *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCoverageToColorStateCreateFlagsNV                    >))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineColorBlendStateCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCoverageToColorStateCreateFlagsNV                    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineColorBlendStateCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCoverageToColorStateCreateFlagsNV                     *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineColorBlendStateCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCoverageToColorStateCreateFlagsNV                     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineColorBlendStateCreateInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCoverageModulationStateCreateInfoNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCoverageModulationStateCreateInfoNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCoverageModulationStateCreateInfoNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCoverageModulationStateCreateInfoNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCoverageReductionStateCreateInfoNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCoverageReductionStateCreateInfoNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCoverageReductionStateCreateInfoNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCoverageReductionStateCreateInfoNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCoverageToColorStateCreateInfoNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCoverageToColorStateCreateInfoNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCoverageToColorStateCreateInfoNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCoverageToColorStateCreateInfoNV *>*>(value);
     }
 
     
@@ -11876,39 +6596,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCreateFlags  >))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCreationFeedbackCreateInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCreateFlags  >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCreationFeedbackCreateInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCreateFlags   *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCreationFeedbackCreateInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCreateFlags   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCreationFeedbackEXT* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCreationFeedbackEXT* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCreationFeedbackEXT*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCreationFeedbackEXT*  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCreationFeedbackCreateInfoEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCreationFeedbackEXT*      >))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCreationFeedbackEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCreationFeedbackEXT*      >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCreationFeedbackEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCreationFeedbackEXT*       *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCreationFeedbackEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCreationFeedbackEXT*       *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCreationFeedbackEXT *>*>(value);
     }
 
     
@@ -11924,99 +6632,51 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCreationFeedbackFlagsEXT  >))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineDepthStencilStateCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCreationFeedbackFlagsEXT  >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineDepthStencilStateCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCreationFeedbackFlagsEXT   *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineDepthStencilStateCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCreationFeedbackFlagsEXT   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineDepthStencilStateCreateFlagBits>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineDepthStencilStateCreateFlagBits>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineDepthStencilStateCreateFlagBits *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineDepthStencilStateCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineDepthStencilStateCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineDepthStencilStateCreateFlags    >))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineDiscardRectangleStateCreateInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineDepthStencilStateCreateFlags    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineDiscardRectangleStateCreateInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineDepthStencilStateCreateFlags     *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineDiscardRectangleStateCreateInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineDepthStencilStateCreateFlags     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineDiscardRectangleStateCreateFlagsEXT                    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineDiscardRectangleStateCreateFlagsEXT                    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineDiscardRectangleStateCreateFlagsEXT                     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineDiscardRectangleStateCreateFlagsEXT                     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineDiscardRectangleStateCreateInfoEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineDynamicStateCreateFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineDynamicStateCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineDynamicStateCreateFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineDynamicStateCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineDynamicStateCreateFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineDynamicStateCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineDynamicStateCreateFlagBits *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineDynamicStateCreateFlags    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineDynamicStateCreateFlags    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineDynamicStateCreateFlags     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineDynamicStateCreateFlags     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineDynamicStateCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineInputAssemblyStateCreateFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineInputAssemblyStateCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineInputAssemblyStateCreateFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineInputAssemblyStateCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineInputAssemblyStateCreateFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineInputAssemblyStateCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineInputAssemblyStateCreateFlagBits *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineInputAssemblyStateCreateFlags    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineInputAssemblyStateCreateFlags    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineInputAssemblyStateCreateFlags     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineInputAssemblyStateCreateFlags     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineInputAssemblyStateCreateInfo *>*>(value);
     }
 
     
@@ -12032,147 +6692,123 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineLayout       >))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineLayoutCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineLayout       >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineLayoutCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineLayout        *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineLayoutCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineLayout        *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineLayout             >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineLayout             >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineLayout              *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineLayout              *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineLayoutCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineLayout*>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineMultisampleStateCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineLayout*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineMultisampleStateCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineLayout* *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineMultisampleStateCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineLayout* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineLayoutCreateFlagBits>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineLayoutCreateFlagBits>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineLayoutCreateFlagBits *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineLayoutCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineMultisampleStateCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineLayoutCreateFlags    >))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationConservativeStateCreateInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineLayoutCreateFlags    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationConservativeStateCreateInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineLayoutCreateFlags     *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationConservativeStateCreateInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineLayoutCreateFlags     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineMultisampleStateCreateFlagBits>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineMultisampleStateCreateFlagBits>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineMultisampleStateCreateFlagBits *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineMultisampleStateCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationConservativeStateCreateInfoEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineMultisampleStateCreateFlags    >))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationDepthClipStateCreateInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineMultisampleStateCreateFlags    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationDepthClipStateCreateInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineMultisampleStateCreateFlags     *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationDepthClipStateCreateInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineMultisampleStateCreateFlags     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationConservativeStateCreateFlagsEXT           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationConservativeStateCreateFlagsEXT           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationConservativeStateCreateFlagsEXT            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationConservativeStateCreateFlagsEXT            *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationDepthClipStateCreateInfoEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationDepthClipStateCreateFlagsEXT         >))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationLineStateCreateInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationDepthClipStateCreateFlagsEXT         >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationLineStateCreateInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationDepthClipStateCreateFlagsEXT          *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationLineStateCreateInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationDepthClipStateCreateFlagsEXT          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationStateCreateFlagBits>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationStateCreateFlagBits>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationStateCreateFlagBits *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationStateCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationLineStateCreateInfoEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationStateCreateFlags    >))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationStateCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationStateCreateFlags    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationStateCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationStateCreateFlags     *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationStateCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationStateCreateFlags     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationStateCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationStateStreamCreateFlagsEXT                 >))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationStateRasterizationOrderAMD>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationStateStreamCreateFlagsEXT                 >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationStateRasterizationOrderAMD>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationStateStreamCreateFlagsEXT                  *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationStateRasterizationOrderAMD *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationStateStreamCreateFlagsEXT                  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationStateRasterizationOrderAMD *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationStateStreamCreateInfoEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationStateStreamCreateInfoEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationStateStreamCreateInfoEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationStateStreamCreateInfoEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRepresentativeFragmentTestStateCreateInfoNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRepresentativeFragmentTestStateCreateInfoNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRepresentativeFragmentTestStateCreateInfoNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRepresentativeFragmentTestStateCreateInfoNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineSampleLocationsStateCreateInfoEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineSampleLocationsStateCreateInfoEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineSampleLocationsStateCreateInfoEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineSampleLocationsStateCreateInfoEXT *>*>(value);
     }
 
     
@@ -12188,27 +6824,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineShaderStageCreateFlags    >))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineShaderStageCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineShaderStageCreateFlags    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineShaderStageCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineShaderStageCreateFlags     *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineShaderStageCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineShaderStageCreateFlags     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineShaderStageCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineShaderStageCreateInfo >))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineShaderStageRequiredSubgroupSizeCreateInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineShaderStageCreateInfo >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineShaderStageRequiredSubgroupSizeCreateInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineShaderStageCreateInfo  *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineShaderStageRequiredSubgroupSizeCreateInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineShaderStageCreateInfo  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineShaderStageRequiredSubgroupSizeCreateInfoEXT *>*>(value);
     }
 
     
@@ -12224,147 +6860,135 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineStageFlagBits   >))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineTessellationDomainOriginStateCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineStageFlagBits   >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineTessellationDomainOriginStateCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineStageFlagBits    *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineTessellationDomainOriginStateCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineStageFlagBits    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineStageFlags>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineStageFlags>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineStageFlags *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineStageFlags *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineTessellationDomainOriginStateCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineStageFlags >))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineTessellationDomainOriginStateCreateInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineStageFlags >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineTessellationDomainOriginStateCreateInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineStageFlags  *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineTessellationDomainOriginStateCreateInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineStageFlags  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineStageFlags   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineStageFlags   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineStageFlags    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineStageFlags    *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineTessellationDomainOriginStateCreateInfoKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineStageFlags              >))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineTessellationStateCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineStageFlags              >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineTessellationStateCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineStageFlags               *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineTessellationStateCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineStageFlags               *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineTessellationStateCreateFlagBits>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineTessellationStateCreateFlagBits>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineTessellationStateCreateFlagBits *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineTessellationStateCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineTessellationStateCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineTessellationStateCreateFlags    >))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineVertexInputDivisorStateCreateInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineTessellationStateCreateFlags    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineVertexInputDivisorStateCreateInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineTessellationStateCreateFlags     *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineVertexInputDivisorStateCreateInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineTessellationStateCreateFlags     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineVertexInputStateCreateFlagBits>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineVertexInputStateCreateFlagBits>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineVertexInputStateCreateFlagBits *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineVertexInputStateCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineVertexInputDivisorStateCreateInfoEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineVertexInputStateCreateFlags    >))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineVertexInputStateCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineVertexInputStateCreateFlags    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineVertexInputStateCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineVertexInputStateCreateFlags     *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineVertexInputStateCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineVertexInputStateCreateFlags     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportStateCreateFlagBits>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportStateCreateFlagBits>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportStateCreateFlagBits *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportStateCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineVertexInputStateCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportStateCreateFlags    >))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportCoarseSampleOrderStateCreateInfoNV>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportStateCreateFlags    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportCoarseSampleOrderStateCreateInfoNV>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportStateCreateFlags     *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportCoarseSampleOrderStateCreateInfoNV *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportStateCreateFlags     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportCoarseSampleOrderStateCreateInfoNV *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportSwizzleStateCreateFlagsNV    >))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportExclusiveScissorStateCreateInfoNV>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportSwizzleStateCreateFlagsNV    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportExclusiveScissorStateCreateInfoNV>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportSwizzleStateCreateFlagsNV     *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportExclusiveScissorStateCreateInfoNV *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportSwizzleStateCreateFlagsNV     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportExclusiveScissorStateCreateInfoNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportShadingRateImageStateCreateInfoNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportShadingRateImageStateCreateInfoNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportShadingRateImageStateCreateInfoNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportShadingRateImageStateCreateInfoNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportStateCreateInfo>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportStateCreateInfo>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportStateCreateInfo *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportStateCreateInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportSwizzleStateCreateInfoNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportSwizzleStateCreateInfoNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportSwizzleStateCreateInfoNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportSwizzleStateCreateInfoNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportWScalingStateCreateInfoNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportWScalingStateCreateInfoNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportWScalingStateCreateInfoNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportWScalingStateCreateInfoNV *>*>(value);
     }
 
     
@@ -12377,42 +7001,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkPointClippingBehavior *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPointClippingBehavior *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPointClippingBehavior>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPointClippingBehavior>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPointClippingBehavior *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPointClippingBehavior *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPointClippingBehavior      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPointClippingBehavior      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPointClippingBehavior       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPointClippingBehavior       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPointClippingBehaviorKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPointClippingBehaviorKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPointClippingBehaviorKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPointClippingBehaviorKHR *>*>(value);
     }
 
     
@@ -12428,15 +7016,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPolygonMode          >))
+    if (typeid(*value) == typeid(Value<vk::VkPresentFrameTokenGGP>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPolygonMode          >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPresentFrameTokenGGP>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPolygonMode           *>))
+    if (typeid(*value) == typeid(Value<vk::VkPresentFrameTokenGGP *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPolygonMode           *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPresentFrameTokenGGP *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPresentInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPresentInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPresentInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPresentInfoKHR *>*>(value);
     }
 
     
@@ -12452,111 +7052,75 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPresentModeKHR                 >))
+    if (typeid(*value) == typeid(Value<vk::VkPresentRegionKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPresentModeKHR                 >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPresentRegionKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPresentModeKHR                  *>))
+    if (typeid(*value) == typeid(Value<vk::VkPresentRegionKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPresentModeKHR                  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPresentModeKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPresentModeKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPresentModeKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPresentModeKHR* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPresentRegionKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPrimitiveTopology>))
+    if (typeid(*value) == typeid(Value<vk::VkPresentRegionsKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPrimitiveTopology>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPresentRegionsKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPrimitiveTopology *>))
+    if (typeid(*value) == typeid(Value<vk::VkPresentRegionsKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPrimitiveTopology *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPrimitiveTopology    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPrimitiveTopology    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPrimitiveTopology     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPrimitiveTopology     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPresentRegionsKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkQueryControlFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkPresentTimeGOOGLE>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryControlFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPresentTimeGOOGLE>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkQueryControlFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkPresentTimeGOOGLE *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryControlFlagBits *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkQueryControlFlags>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryControlFlags>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkQueryControlFlags *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryControlFlags *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPresentTimeGOOGLE *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkQueryControlFlags    >))
+    if (typeid(*value) == typeid(Value<vk::VkPresentTimesInfoGOOGLE>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryControlFlags    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPresentTimesInfoGOOGLE>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkQueryControlFlags     *>))
+    if (typeid(*value) == typeid(Value<vk::VkPresentTimesInfoGOOGLE *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryControlFlags     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkQueryPipelineStatisticFlagBits>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryPipelineStatisticFlagBits>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkQueryPipelineStatisticFlagBits *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryPipelineStatisticFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPresentTimesInfoGOOGLE *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkQueryPipelineStatisticFlags >))
+    if (typeid(*value) == typeid(Value<vk::VkProtectedSubmitInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryPipelineStatisticFlags >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkProtectedSubmitInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkQueryPipelineStatisticFlags  *>))
+    if (typeid(*value) == typeid(Value<vk::VkProtectedSubmitInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryPipelineStatisticFlags  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkProtectedSubmitInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPushConstantRange>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPushConstantRange>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPushConstantRange *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPushConstantRange *>*>(value);
     }
 
     
@@ -12572,39 +7136,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkQueryPool*>))
+    if (typeid(*value) == typeid(Value<vk::VkQueryPoolCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryPool*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkQueryPoolCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkQueryPool* *>))
+    if (typeid(*value) == typeid(Value<vk::VkQueryPoolCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryPool* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkQueryPoolCreateFlagBits>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryPoolCreateFlagBits>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkQueryPoolCreateFlagBits *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryPoolCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkQueryPoolCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkQueryPoolCreateFlags >))
+    if (typeid(*value) == typeid(Value<vk::VkQueryPoolCreateInfoINTEL>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryPoolCreateFlags >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkQueryPoolCreateInfoINTEL>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkQueryPoolCreateFlags  *>))
+    if (typeid(*value) == typeid(Value<vk::VkQueryPoolCreateInfoINTEL *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryPoolCreateFlags  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkQueryPoolCreateInfoINTEL *>*>(value);
     }
 
     
@@ -12620,42 +7172,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkQueryPoolSamplingModeINTEL        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryPoolSamplingModeINTEL        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkQueryPoolSamplingModeINTEL         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryPoolSamplingModeINTEL         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkQueryResultFlagBits>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryResultFlagBits>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkQueryResultFlagBits *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryResultFlagBits *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkQueryResultFlags>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryResultFlags>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkQueryResultFlags *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryResultFlags *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkQueryType>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkQueryType>*>(value);
@@ -12665,18 +7181,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkQueryType *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkQueryType *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkQueryType            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryType            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkQueryType             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkQueryType             *>*>(value);
     }
 
     
@@ -12692,51 +7196,51 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkQueue*>))
+    if (typeid(*value) == typeid(Value<vk::VkQueueFamilyCheckpointPropertiesNV>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkQueue*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkQueueFamilyCheckpointPropertiesNV>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkQueue* *>))
+    if (typeid(*value) == typeid(Value<vk::VkQueueFamilyCheckpointPropertiesNV *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkQueue* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkQueueFamilyProperties          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkQueueFamilyProperties          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkQueueFamilyProperties           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkQueueFamilyProperties           *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkQueueFamilyCheckpointPropertiesNV *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkQueueFamilyProperties*>))
+    if (typeid(*value) == typeid(Value<vk::VkQueueFamilyProperties>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkQueueFamilyProperties*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkQueueFamilyProperties>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkQueueFamilyProperties* *>))
+    if (typeid(*value) == typeid(Value<vk::VkQueueFamilyProperties *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkQueueFamilyProperties* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkQueueFamilyProperties *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkQueueFamilyProperties2*>))
+    if (typeid(*value) == typeid(Value<vk::VkQueueFamilyProperties2>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkQueueFamilyProperties2*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkQueueFamilyProperties2>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkQueueFamilyProperties2* *>))
+    if (typeid(*value) == typeid(Value<vk::VkQueueFamilyProperties2 *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkQueueFamilyProperties2* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkQueueFamilyProperties2 *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkQueueFamilyProperties2KHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkQueueFamilyProperties2KHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkQueueFamilyProperties2KHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkQueueFamilyProperties2KHR *>*>(value);
     }
 
     
@@ -12752,18 +7256,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkQueueFlags           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkQueueFlags           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkQueueFlags            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkQueueFlags            *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkQueueGlobalPriorityEXT>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkQueueGlobalPriorityEXT>*>(value);
@@ -12773,18 +7265,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkQueueGlobalPriorityEXT *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkQueueGlobalPriorityEXT *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkQueueGlobalPriorityEXT       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkQueueGlobalPriorityEXT       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkQueueGlobalPriorityEXT        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkQueueGlobalPriorityEXT        *>*>(value);
     }
 
     
@@ -12800,15 +7280,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkRasterizationOrderAMD          >))
+    if (typeid(*value) == typeid(Value<vk::VkRayTracingPipelineCreateInfoNV>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkRasterizationOrderAMD          >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkRayTracingPipelineCreateInfoNV>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkRasterizationOrderAMD           *>))
+    if (typeid(*value) == typeid(Value<vk::VkRayTracingPipelineCreateInfoNV *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkRasterizationOrderAMD           *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkRayTracingPipelineCreateInfoNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkRayTracingShaderGroupCreateInfoNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkRayTracingShaderGroupCreateInfoNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkRayTracingShaderGroupCreateInfoNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkRayTracingShaderGroupCreateInfoNV *>*>(value);
     }
 
     
@@ -12824,75 +7316,39 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkRayTracingShaderGroupTypeNV >))
+    if (typeid(*value) == typeid(Value<vk::VkRect2D>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkRayTracingShaderGroupTypeNV >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkRect2D>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkRayTracingShaderGroupTypeNV  *>))
+    if (typeid(*value) == typeid(Value<vk::VkRect2D *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkRayTracingShaderGroupTypeNV  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkRect2D       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkRect2D       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkRect2D        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkRect2D        *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkRect2D *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkRect2D               >))
+    if (typeid(*value) == typeid(Value<vk::VkRectLayerKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkRect2D               >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkRectLayerKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkRect2D                *>))
+    if (typeid(*value) == typeid(Value<vk::VkRectLayerKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkRect2D                *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkRect2D                         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkRect2D                         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkRect2D                          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkRect2D                          *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkRectLayerKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkRect2D*>))
+    if (typeid(*value) == typeid(Value<vk::VkRefreshCycleDurationGOOGLE>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkRect2D*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkRefreshCycleDurationGOOGLE>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkRect2D* *>))
+    if (typeid(*value) == typeid(Value<vk::VkRefreshCycleDurationGOOGLE *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkRect2D* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkRefreshCycleDurationGOOGLE*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkRefreshCycleDurationGOOGLE*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkRefreshCycleDurationGOOGLE* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkRefreshCycleDurationGOOGLE* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkRefreshCycleDurationGOOGLE *>*>(value);
     }
 
     
@@ -12908,75 +7364,123 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkRenderPass    >))
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassAttachmentBeginInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkRenderPass    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassAttachmentBeginInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkRenderPass     *>))
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassAttachmentBeginInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkRenderPass     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkRenderPass           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkRenderPass           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkRenderPass            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkRenderPass            *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassAttachmentBeginInfoKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkRenderPass*>))
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassBeginInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkRenderPass*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassBeginInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkRenderPass* *>))
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassBeginInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkRenderPass* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkRenderPassCreateFlagBits>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkRenderPassCreateFlagBits>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkRenderPassCreateFlagBits *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkRenderPassCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassBeginInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkRenderPassCreateFlags >))
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkRenderPassCreateFlags >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkRenderPassCreateFlags  *>))
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkRenderPassCreateFlags  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkRenderPassCreateFlags    >))
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassCreateInfo2KHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkRenderPassCreateFlags    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassCreateInfo2KHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkRenderPassCreateFlags     *>))
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassCreateInfo2KHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkRenderPassCreateFlags     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassCreateInfo2KHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassFragmentDensityMapCreateInfoEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassFragmentDensityMapCreateInfoEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassFragmentDensityMapCreateInfoEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassFragmentDensityMapCreateInfoEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassInputAttachmentAspectCreateInfo>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassInputAttachmentAspectCreateInfo>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassInputAttachmentAspectCreateInfo *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassInputAttachmentAspectCreateInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassInputAttachmentAspectCreateInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassInputAttachmentAspectCreateInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassInputAttachmentAspectCreateInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassInputAttachmentAspectCreateInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassMultiviewCreateInfo>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassMultiviewCreateInfo>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassMultiviewCreateInfo *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassMultiviewCreateInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassMultiviewCreateInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassMultiviewCreateInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassMultiviewCreateInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassMultiviewCreateInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassSampleLocationsBeginInfoEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassSampleLocationsBeginInfoEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassSampleLocationsBeginInfoEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassSampleLocationsBeginInfoEXT *>*>(value);
     }
 
     
@@ -12992,30 +7496,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkResolveModeFlagBitsKHR                                 >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkResolveModeFlagBitsKHR                                 >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkResolveModeFlagBitsKHR                                  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkResolveModeFlagBitsKHR                                  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkResolveModeFlagsKHR                >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkResolveModeFlagsKHR                >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkResolveModeFlagsKHR                 *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkResolveModeFlagsKHR                 *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkResult>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkResult>*>(value);
@@ -13025,18 +7505,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkResult *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkResult *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkResult* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkResult* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkResult*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkResult*  *>*>(value);
     }
 
     
@@ -13052,111 +7520,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSampleCountFlagBits  >))
+    if (typeid(*value) == typeid(Value<vk::VkSampleLocationEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSampleCountFlagBits  >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSampleLocationEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSampleCountFlagBits   *>))
+    if (typeid(*value) == typeid(Value<vk::VkSampleLocationEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSampleCountFlagBits   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSampleCountFlagBits      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSampleCountFlagBits      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSampleCountFlagBits       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSampleCountFlagBits       *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSampleLocationEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSampleCountFlagBits            >))
+    if (typeid(*value) == typeid(Value<vk::VkSampleLocationsInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSampleCountFlagBits            >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSampleLocationsInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSampleCountFlagBits             *>))
+    if (typeid(*value) == typeid(Value<vk::VkSampleLocationsInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSampleCountFlagBits             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSampleCountFlagBits                        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSampleCountFlagBits                        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSampleCountFlagBits                         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSampleCountFlagBits                         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSampleCountFlags     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSampleCountFlags     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSampleCountFlags      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSampleCountFlags      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSampleCountFlags         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSampleCountFlags         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSampleCountFlags          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSampleCountFlags          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSampleCountFlags               >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSampleCountFlags               >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSampleCountFlags                *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSampleCountFlags                *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSampleLocationsInfoEXT         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSampleLocationsInfoEXT         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSampleLocationsInfoEXT          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSampleLocationsInfoEXT          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSampleMask>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSampleMask>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSampleMask *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSampleMask *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSampleLocationsInfoEXT *>*>(value);
     }
 
     
@@ -13172,42 +7556,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSampler       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSampler       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSampler        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSampler        *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSampler           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSampler           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSampler            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSampler            *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSampler*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSampler*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSampler* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSampler* *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkSamplerAddressMode>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSamplerAddressMode>*>(value);
@@ -13217,18 +7565,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkSamplerAddressMode *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSamplerAddressMode *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSamplerAddressMode   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerAddressMode   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSamplerAddressMode    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerAddressMode    *>*>(value);
     }
 
     
@@ -13244,39 +7580,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSamplerCreateFlags   >))
+    if (typeid(*value) == typeid(Value<vk::VkSamplerCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerCreateFlags   >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSamplerCreateFlags    *>))
+    if (typeid(*value) == typeid(Value<vk::VkSamplerCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerCreateFlags    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSamplerMipmapMode>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerMipmapMode>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSamplerMipmapMode *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerMipmapMode *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSamplerMipmapMode    >))
+    if (typeid(*value) == typeid(Value<vk::VkSamplerReductionModeCreateInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerMipmapMode    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerReductionModeCreateInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSamplerMipmapMode     *>))
+    if (typeid(*value) == typeid(Value<vk::VkSamplerReductionModeCreateInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerMipmapMode     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerReductionModeCreateInfoEXT *>*>(value);
     }
 
     
@@ -13292,18 +7616,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSamplerReductionModeEXT >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerReductionModeEXT >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSamplerReductionModeEXT  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerReductionModeEXT  *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrConversion>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrConversion>*>(value);
@@ -13316,27 +7628,75 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrConversion      >))
+    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrConversionCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrConversion      >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrConversionCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrConversion       *>))
+    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrConversionCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrConversion       *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrConversionCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrConversion*>))
+    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrConversionCreateInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrConversion*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrConversionCreateInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrConversion* *>))
+    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrConversionCreateInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrConversion* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrConversionCreateInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrConversionImageFormatProperties>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrConversionImageFormatProperties>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrConversionImageFormatProperties *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrConversionImageFormatProperties *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrConversionImageFormatPropertiesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrConversionImageFormatPropertiesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrConversionImageFormatPropertiesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrConversionImageFormatPropertiesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrConversionInfo>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrConversionInfo>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrConversionInfo *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrConversionInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrConversionInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrConversionInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrConversionInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrConversionInfoKHR *>*>(value);
     }
 
     
@@ -13364,54 +7724,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrModelConversion>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrModelConversion>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrModelConversion *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrModelConversion *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrModelConversion >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrModelConversion >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrModelConversion  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrModelConversion  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrModelConversion      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrModelConversion      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrModelConversion       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrModelConversion       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrModelConversionKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrModelConversionKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrModelConversionKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrModelConversionKHR *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrRange>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrRange>*>(value);
@@ -13421,54 +7733,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrRange *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrRange *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrRange>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrRange>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrRange *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrRange *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrRange           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrRange           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrRange            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrRange            *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrRange                >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrRange                >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrRange                 *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrRange                 *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrRangeKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrRangeKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrRangeKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrRangeKHR *>*>(value);
     }
 
     
@@ -13484,18 +7748,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkScopeNV                           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkScopeNV                           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkScopeNV                            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkScopeNV                            *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkSemaphore>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSemaphore>*>(value);
@@ -13508,63 +7760,39 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSemaphore >))
+    if (typeid(*value) == typeid(Value<vk::VkSemaphoreCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSemaphore >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSemaphore  *>))
+    if (typeid(*value) == typeid(Value<vk::VkSemaphoreCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSemaphore  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSemaphore    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSemaphore    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSemaphore     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSemaphore     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSemaphore                      >))
+    if (typeid(*value) == typeid(Value<vk::VkSemaphoreGetFdInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSemaphore                      >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreGetFdInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSemaphore                       *>))
+    if (typeid(*value) == typeid(Value<vk::VkSemaphoreGetFdInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSemaphore                       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSemaphore*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSemaphore*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSemaphore* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSemaphore* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreGetFdInfoKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSemaphoreCreateFlags >))
+    if (typeid(*value) == typeid(Value<vk::VkSemaphoreGetWin32HandleInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreCreateFlags >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreGetWin32HandleInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSemaphoreCreateFlags  *>))
+    if (typeid(*value) == typeid(Value<vk::VkSemaphoreGetWin32HandleInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreCreateFlags  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreGetWin32HandleInfoKHR *>*>(value);
     }
 
     
@@ -13580,30 +7808,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSemaphoreImportFlagBitsKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreImportFlagBitsKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSemaphoreImportFlagBitsKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreImportFlagBitsKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSemaphoreImportFlags >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreImportFlags >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSemaphoreImportFlags  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreImportFlags  *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkShaderFloatControlsIndependenceKHR>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkShaderFloatControlsIndependenceKHR>*>(value);
@@ -13613,18 +7817,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkShaderFloatControlsIndependenceKHR *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkShaderFloatControlsIndependenceKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkShaderFloatControlsIndependenceKHR >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderFloatControlsIndependenceKHR >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkShaderFloatControlsIndependenceKHR  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderFloatControlsIndependenceKHR  *>*>(value);
     }
 
     
@@ -13652,63 +7844,39 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkShaderModule         >))
+    if (typeid(*value) == typeid(Value<vk::VkShaderModuleCreateInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderModule         >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkShaderModuleCreateInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkShaderModule          *>))
+    if (typeid(*value) == typeid(Value<vk::VkShaderModuleCreateInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderModule          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkShaderModule*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderModule*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkShaderModule* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderModule* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkShaderModuleCreateInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkShaderModuleCreateFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkShaderModuleValidationCacheCreateInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderModuleCreateFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkShaderModuleValidationCacheCreateInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkShaderModuleCreateFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkShaderModuleValidationCacheCreateInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderModuleCreateFlagBits *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkShaderModuleCreateFlags >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderModuleCreateFlags >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkShaderModuleCreateFlags  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderModuleCreateFlags  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkShaderModuleValidationCacheCreateInfoEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkShaderResourceUsageAMD >))
+    if (typeid(*value) == typeid(Value<vk::VkShaderResourceUsageAMD>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderResourceUsageAMD >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkShaderResourceUsageAMD>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkShaderResourceUsageAMD  *>))
+    if (typeid(*value) == typeid(Value<vk::VkShaderResourceUsageAMD *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderResourceUsageAMD  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkShaderResourceUsageAMD *>*>(value);
     }
 
     
@@ -13724,99 +7892,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkShaderStageFlagBits  >))
+    if (typeid(*value) == typeid(Value<vk::VkShaderStatisticsInfoAMD>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderStageFlagBits  >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkShaderStatisticsInfoAMD>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkShaderStageFlagBits   *>))
+    if (typeid(*value) == typeid(Value<vk::VkShaderStatisticsInfoAMD *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderStageFlagBits   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkShaderStageFlags>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderStageFlags>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkShaderStageFlags *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderStageFlags *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkShaderStageFlags >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderStageFlags >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkShaderStageFlags  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderStageFlags  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkShaderStageFlags     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderStageFlags     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkShaderStageFlags      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderStageFlags      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkShaderStageFlags           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderStageFlags           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkShaderStageFlags            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderStageFlags            *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkShaderStageFlags            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderStageFlags            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkShaderStageFlags             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderStageFlags             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkShaderStageFlags             >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderStageFlags             >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkShaderStageFlags              *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderStageFlags              *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkShaderStageFlags                  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderStageFlags                  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkShaderStageFlags                   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkShaderStageFlags                   *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkShaderStatisticsInfoAMD *>*>(value);
     }
 
     
@@ -13832,267 +7916,207 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkShadingRatePaletteEntryNV         >))
+    if (typeid(*value) == typeid(Value<vk::VkShadingRatePaletteNV>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkShadingRatePaletteEntryNV         >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkShadingRatePaletteNV>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkShadingRatePaletteEntryNV          *>))
+    if (typeid(*value) == typeid(Value<vk::VkShadingRatePaletteNV *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkShadingRatePaletteEntryNV          *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSharingMode>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSharingMode>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSharingMode *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSharingMode *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkShadingRatePaletteNV *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSharingMode >))
+    if (typeid(*value) == typeid(Value<vk::VkSharedPresentSurfaceCapabilitiesKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSharingMode >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSharedPresentSurfaceCapabilitiesKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSharingMode  *>))
+    if (typeid(*value) == typeid(Value<vk::VkSharedPresentSurfaceCapabilitiesKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSharingMode  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSharingMode          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSharingMode          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSharingMode           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSharingMode           *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSharedPresentSurfaceCapabilitiesKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSharingMode                    >))
+    if (typeid(*value) == typeid(Value<vk::VkSparseBufferMemoryBindInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSharingMode                    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSparseBufferMemoryBindInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSharingMode                     *>))
+    if (typeid(*value) == typeid(Value<vk::VkSparseBufferMemoryBindInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSharingMode                     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSparseImageFormatFlagBits>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseImageFormatFlagBits>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSparseImageFormatFlagBits *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseImageFormatFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSparseBufferMemoryBindInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSparseImageFormatFlags >))
+    if (typeid(*value) == typeid(Value<vk::VkSparseImageFormatProperties>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseImageFormatFlags >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSparseImageFormatProperties>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSparseImageFormatFlags  *>))
+    if (typeid(*value) == typeid(Value<vk::VkSparseImageFormatProperties *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseImageFormatFlags  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSparseImageFormatProperties >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseImageFormatProperties >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSparseImageFormatProperties  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseImageFormatProperties  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSparseImageFormatProperties *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSparseImageFormatProperties    >))
+    if (typeid(*value) == typeid(Value<vk::VkSparseImageFormatProperties2>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseImageFormatProperties    >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSparseImageFormatProperties2>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSparseImageFormatProperties     *>))
+    if (typeid(*value) == typeid(Value<vk::VkSparseImageFormatProperties2 *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseImageFormatProperties     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSparseImageFormatProperties*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseImageFormatProperties*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSparseImageFormatProperties* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseImageFormatProperties* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSparseImageFormatProperties2 *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSparseImageFormatProperties2*>))
+    if (typeid(*value) == typeid(Value<vk::VkSparseImageFormatProperties2KHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseImageFormatProperties2*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSparseImageFormatProperties2KHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSparseImageFormatProperties2* *>))
+    if (typeid(*value) == typeid(Value<vk::VkSparseImageFormatProperties2KHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseImageFormatProperties2* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSparseImageMemoryRequirements                                      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseImageMemoryRequirements                                      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSparseImageMemoryRequirements                                       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseImageMemoryRequirements                                       *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSparseImageFormatProperties2KHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSparseImageMemoryRequirements*>))
+    if (typeid(*value) == typeid(Value<vk::VkSparseImageMemoryBind>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseImageMemoryRequirements*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSparseImageMemoryBind>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSparseImageMemoryRequirements* *>))
+    if (typeid(*value) == typeid(Value<vk::VkSparseImageMemoryBind *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseImageMemoryRequirements* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSparseImageMemoryRequirements2*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseImageMemoryRequirements2*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSparseImageMemoryRequirements2* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseImageMemoryRequirements2* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSparseImageMemoryBind *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSparseMemoryBindFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkSparseImageMemoryBindInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseMemoryBindFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSparseImageMemoryBindInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSparseMemoryBindFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkSparseImageMemoryBindInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseMemoryBindFlagBits *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSparseMemoryBindFlags>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseMemoryBindFlags>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSparseMemoryBindFlags *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSparseMemoryBindFlags *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSparseImageMemoryBindInfo *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkStencilFaceFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkSparseImageMemoryRequirements>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkStencilFaceFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSparseImageMemoryRequirements>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkStencilFaceFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkSparseImageMemoryRequirements *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkStencilFaceFlagBits *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkStencilFaceFlags>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkStencilFaceFlags>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkStencilFaceFlags *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkStencilFaceFlags *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSparseImageMemoryRequirements *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkStencilOp>))
+    if (typeid(*value) == typeid(Value<vk::VkSparseImageMemoryRequirements2>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkStencilOp>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSparseImageMemoryRequirements2>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkStencilOp *>))
+    if (typeid(*value) == typeid(Value<vk::VkSparseImageMemoryRequirements2 *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkStencilOp *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkStencilOp            >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkStencilOp            >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkStencilOp             *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkStencilOp             *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSparseImageMemoryRequirements2 *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkStencilOpState       >))
+    if (typeid(*value) == typeid(Value<vk::VkSparseImageMemoryRequirements2KHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkStencilOpState       >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSparseImageMemoryRequirements2KHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkStencilOpState        *>))
+    if (typeid(*value) == typeid(Value<vk::VkSparseImageMemoryRequirements2KHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkStencilOpState        *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSparseImageMemoryRequirements2KHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkStreamDescriptorSurfaceCreateFlagsGGP >))
+    if (typeid(*value) == typeid(Value<vk::VkSparseImageOpaqueMemoryBindInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkStreamDescriptorSurfaceCreateFlagsGGP >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSparseImageOpaqueMemoryBindInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkStreamDescriptorSurfaceCreateFlagsGGP  *>))
+    if (typeid(*value) == typeid(Value<vk::VkSparseImageOpaqueMemoryBindInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkStreamDescriptorSurfaceCreateFlagsGGP  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSparseImageOpaqueMemoryBindInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSparseMemoryBind>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSparseMemoryBind>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSparseMemoryBind *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSparseMemoryBind *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSpecializationInfo>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSpecializationInfo>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSpecializationInfo *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSpecializationInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSpecializationMapEntry>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSpecializationMapEntry>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSpecializationMapEntry *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSpecializationMapEntry *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkStencilOpState>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkStencilOpState>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkStencilOpState *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkStencilOpState *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkStreamDescriptorSurfaceCreateInfoGGP>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkStreamDescriptorSurfaceCreateInfoGGP>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkStreamDescriptorSurfaceCreateInfoGGP *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkStreamDescriptorSurfaceCreateInfoGGP *>*>(value);
     }
 
     
@@ -14108,54 +8132,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkStructureType >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkStructureType >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkStructureType  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkStructureType  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkStructureType  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkStructureType  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkStructureType   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkStructureType   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkStructureType        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkStructureType        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkStructureType         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkStructureType         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkStructureType                  >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkStructureType                  >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkStructureType                   *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkStructureType                   *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkSubgroupFeatureFlagBits>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSubgroupFeatureFlagBits>*>(value);
@@ -14168,15 +8144,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSubgroupFeatureFlags        >))
+    if (typeid(*value) == typeid(Value<vk::VkSubmitInfo>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSubgroupFeatureFlags        >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSubmitInfo>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSubgroupFeatureFlags         *>))
+    if (typeid(*value) == typeid(Value<vk::VkSubmitInfo *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSubgroupFeatureFlags         *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSubmitInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSubpassBeginInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSubpassBeginInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSubpassBeginInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSubpassBeginInfoKHR *>*>(value);
     }
 
     
@@ -14192,15 +8180,63 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSubpassContents      >))
+    if (typeid(*value) == typeid(Value<vk::VkSubpassDependency>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSubpassContents      >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSubpassDependency>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSubpassContents       *>))
+    if (typeid(*value) == typeid(Value<vk::VkSubpassDependency *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSubpassContents       *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSubpassDependency *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSubpassDependency2KHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSubpassDependency2KHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSubpassDependency2KHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSubpassDependency2KHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSubpassDescription>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSubpassDescription>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSubpassDescription *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSubpassDescription *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSubpassDescription2KHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSubpassDescription2KHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSubpassDescription2KHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSubpassDescription2KHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSubpassDescriptionDepthStencilResolveKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSubpassDescriptionDepthStencilResolveKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSubpassDescriptionDepthStencilResolveKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSubpassDescriptionDepthStencilResolveKHR *>*>(value);
     }
 
     
@@ -14216,87 +8252,87 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSubpassDescriptionFlags >))
+    if (typeid(*value) == typeid(Value<vk::VkSubpassEndInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSubpassDescriptionFlags >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSubpassEndInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSubpassDescriptionFlags  *>))
+    if (typeid(*value) == typeid(Value<vk::VkSubpassEndInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSubpassDescriptionFlags  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSubpassDescriptionFlags                   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSubpassDescriptionFlags                   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSubpassDescriptionFlags                    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSubpassDescriptionFlags                    *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSubpassEndInfoKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSubresourceLayout*>))
+    if (typeid(*value) == typeid(Value<vk::VkSubpassSampleLocationsEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSubresourceLayout*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSubpassSampleLocationsEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSubresourceLayout* *>))
+    if (typeid(*value) == typeid(Value<vk::VkSubpassSampleLocationsEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSubresourceLayout* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceCapabilities2EXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCapabilities2EXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceCapabilities2EXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCapabilities2EXT* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSubpassSampleLocationsEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceCapabilities2KHR*>))
+    if (typeid(*value) == typeid(Value<vk::VkSubresourceLayout>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCapabilities2KHR*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSubresourceLayout>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceCapabilities2KHR* *>))
+    if (typeid(*value) == typeid(Value<vk::VkSubresourceLayout *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCapabilities2KHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceCapabilitiesKHR >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCapabilitiesKHR >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceCapabilitiesKHR  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCapabilitiesKHR  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSubresourceLayout *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceCapabilitiesKHR*>))
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceCapabilities2EXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCapabilitiesKHR*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCapabilities2EXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceCapabilitiesKHR* *>))
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceCapabilities2EXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCapabilitiesKHR* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCapabilities2EXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceCapabilities2KHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCapabilities2KHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceCapabilities2KHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCapabilities2KHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceCapabilitiesFullScreenExclusiveEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCapabilitiesFullScreenExclusiveEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceCapabilitiesFullScreenExclusiveEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCapabilitiesFullScreenExclusiveEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceCapabilitiesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCapabilitiesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceCapabilitiesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCapabilitiesKHR *>*>(value);
     }
 
     
@@ -14312,63 +8348,51 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceCounterFlagsEXT >))
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceFormat2KHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCounterFlagsEXT >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceFormat2KHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceCounterFlagsEXT  *>))
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceFormat2KHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCounterFlagsEXT  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceCounterFlagsEXT         >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCounterFlagsEXT         >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceCounterFlagsEXT          *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCounterFlagsEXT          *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceFormat2KHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceFormat2KHR*>))
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceFormatKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceFormat2KHR*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceFormatKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceFormat2KHR* *>))
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceFormatKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceFormat2KHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceFormatKHR >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceFormatKHR >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceFormatKHR  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceFormatKHR  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceFormatKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceFormatKHR*>))
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceFullScreenExclusiveInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceFormatKHR*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceFullScreenExclusiveInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceFormatKHR* *>))
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceFullScreenExclusiveInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceFormatKHR* *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceFullScreenExclusiveInfoEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceFullScreenExclusiveWin32InfoEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceFullScreenExclusiveWin32InfoEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceFullScreenExclusiveWin32InfoEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceFullScreenExclusiveWin32InfoEXT *>*>(value);
     }
 
     
@@ -14384,75 +8408,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceKHR >))
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceProtectedCapabilitiesKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceKHR >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceProtectedCapabilitiesKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceKHR  *>))
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceProtectedCapabilitiesKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceKHR  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceKHR                     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceKHR                     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceKHR                      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceKHR                      *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceProtectedCapabilitiesKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceKHR*>))
+    if (typeid(*value) == typeid(Value<vk::VkSwapchainCounterCreateInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceKHR*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSwapchainCounterCreateInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceKHR* *>))
+    if (typeid(*value) == typeid(Value<vk::VkSwapchainCounterCreateInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceTransformFlagBitsKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceTransformFlagBitsKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceTransformFlagBitsKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceTransformFlagBitsKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceTransformFlagBitsKHR    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceTransformFlagBitsKHR    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceTransformFlagBitsKHR     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceTransformFlagBitsKHR     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceTransformFlagsKHR       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceTransformFlagsKHR       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceTransformFlagsKHR        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceTransformFlagsKHR        *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSwapchainCounterCreateInfoEXT *>*>(value);
     }
 
     
@@ -14468,51 +8444,39 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSwapchainCreateFlagsKHR        >))
+    if (typeid(*value) == typeid(Value<vk::VkSwapchainCreateInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSwapchainCreateFlagsKHR        >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSwapchainCreateInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSwapchainCreateFlagsKHR         *>))
+    if (typeid(*value) == typeid(Value<vk::VkSwapchainCreateInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSwapchainCreateFlagsKHR         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSwapchainImageUsageFlagBitsANDROID>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSwapchainImageUsageFlagBitsANDROID>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSwapchainImageUsageFlagBitsANDROID *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSwapchainImageUsageFlagBitsANDROID *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSwapchainCreateInfoKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSwapchainImageUsageFlagsANDROID>))
+    if (typeid(*value) == typeid(Value<vk::VkSwapchainDisplayNativeHdrCreateInfoAMD>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSwapchainImageUsageFlagsANDROID>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSwapchainDisplayNativeHdrCreateInfoAMD>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSwapchainImageUsageFlagsANDROID *>))
+    if (typeid(*value) == typeid(Value<vk::VkSwapchainDisplayNativeHdrCreateInfoAMD *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSwapchainImageUsageFlagsANDROID *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSwapchainDisplayNativeHdrCreateInfoAMD *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSwapchainImageUsageFlagsANDROID >))
+    if (typeid(*value) == typeid(Value<vk::VkSwapchainImageCreateInfoANDROID>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSwapchainImageUsageFlagsANDROID >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSwapchainImageCreateInfoANDROID>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSwapchainImageUsageFlagsANDROID  *>))
+    if (typeid(*value) == typeid(Value<vk::VkSwapchainImageCreateInfoANDROID *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSwapchainImageUsageFlagsANDROID  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSwapchainImageCreateInfoANDROID *>*>(value);
     }
 
     
@@ -14528,54 +8492,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSwapchainKHR >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSwapchainKHR >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSwapchainKHR  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSwapchainKHR  *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSwapchainKHR   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSwapchainKHR   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSwapchainKHR    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSwapchainKHR    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSwapchainKHR*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSwapchainKHR*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSwapchainKHR* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSwapchainKHR* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSystemAllocationScope>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSystemAllocationScope>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSystemAllocationScope *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSystemAllocationScope *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkTessellationDomainOrigin>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkTessellationDomainOrigin>*>(value);
@@ -14588,39 +8504,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkTessellationDomainOrigin>))
+    if (typeid(*value) == typeid(Value<vk::VkTextureLODGatherFormatPropertiesAMD>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkTessellationDomainOrigin>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkTextureLODGatherFormatPropertiesAMD>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkTessellationDomainOrigin *>))
+    if (typeid(*value) == typeid(Value<vk::VkTextureLODGatherFormatPropertiesAMD *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkTessellationDomainOrigin *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkTessellationDomainOrigin    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkTessellationDomainOrigin    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkTessellationDomainOrigin     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkTessellationDomainOrigin     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkTessellationDomainOriginKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkTessellationDomainOriginKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkTessellationDomainOriginKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkTessellationDomainOriginKHR *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkTextureLODGatherFormatPropertiesAMD *>*>(value);
     }
 
     
@@ -14636,39 +8528,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkTimeDomainEXT        >))
+    if (typeid(*value) == typeid(Value<vk::VkValidationCacheCreateInfoEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkTimeDomainEXT        >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkValidationCacheCreateInfoEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkTimeDomainEXT         *>))
+    if (typeid(*value) == typeid(Value<vk::VkValidationCacheCreateInfoEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkTimeDomainEXT         *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkTimeDomainEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkTimeDomainEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkTimeDomainEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkTimeDomainEXT* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkValidationCacheCreateFlagsEXT    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkValidationCacheCreateFlagsEXT    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkValidationCacheCreateFlagsEXT     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkValidationCacheCreateFlagsEXT     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkValidationCacheCreateInfoEXT *>*>(value);
     }
 
     
@@ -14684,30 +8552,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkValidationCacheEXT    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkValidationCacheEXT    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkValidationCacheEXT     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkValidationCacheEXT     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkValidationCacheEXT*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkValidationCacheEXT*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkValidationCacheEXT* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkValidationCacheEXT* *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkValidationCacheHeaderVersionEXT>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkValidationCacheHeaderVersionEXT>*>(value);
@@ -14720,39 +8564,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkValidationCheckEXT>))
+    if (typeid(*value) == typeid(Value<vk::VkValidationFeaturesEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkValidationCheckEXT>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkValidationFeaturesEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkValidationCheckEXT *>))
+    if (typeid(*value) == typeid(Value<vk::VkValidationFeaturesEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkValidationCheckEXT *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkValidationFeatureDisableEXT>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkValidationFeatureDisableEXT>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkValidationFeatureDisableEXT *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkValidationFeatureDisableEXT *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkValidationFeaturesEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkValidationFeatureEnableEXT>))
+    if (typeid(*value) == typeid(Value<vk::VkValidationFlagsEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkValidationFeatureEnableEXT>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkValidationFlagsEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkValidationFeatureEnableEXT *>))
+    if (typeid(*value) == typeid(Value<vk::VkValidationFlagsEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkValidationFeatureEnableEXT *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkValidationFlagsEXT *>*>(value);
     }
 
     
@@ -14768,27 +8600,51 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkVertexInputRate>))
+    if (typeid(*value) == typeid(Value<vk::VkVertexInputAttributeDescription>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkVertexInputRate>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkVertexInputAttributeDescription>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkVertexInputRate *>))
+    if (typeid(*value) == typeid(Value<vk::VkVertexInputAttributeDescription *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkVertexInputRate *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkVertexInputAttributeDescription *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkVertexInputRate      >))
+    if (typeid(*value) == typeid(Value<vk::VkVertexInputBindingDescription>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkVertexInputRate      >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkVertexInputBindingDescription>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkVertexInputRate       *>))
+    if (typeid(*value) == typeid(Value<vk::VkVertexInputBindingDescription *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkVertexInputRate       *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkVertexInputBindingDescription *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkVertexInputBindingDivisorDescriptionEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkVertexInputBindingDivisorDescriptionEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkVertexInputBindingDivisorDescriptionEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkVertexInputBindingDivisorDescriptionEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkViewport>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkViewport>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkViewport *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkViewport *>*>(value);
     }
 
     
@@ -14804,495 +8660,159 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkViewportCoordinateSwizzleNV          >))
+    if (typeid(*value) == typeid(Value<vk::VkViewportSwizzleNV>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkViewportCoordinateSwizzleNV          >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkViewportSwizzleNV>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkViewportCoordinateSwizzleNV           *>))
+    if (typeid(*value) == typeid(Value<vk::VkViewportSwizzleNV *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkViewportCoordinateSwizzleNV           *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkViSurfaceCreateFlagsNN   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkViSurfaceCreateFlagsNN   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkViSurfaceCreateFlagsNN    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkViSurfaceCreateFlagsNN    *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkViewportSwizzleNV *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkWaylandSurfaceCreateFlagsKHR   >))
+    if (typeid(*value) == typeid(Value<vk::VkViewportWScalingNV>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkWaylandSurfaceCreateFlagsKHR   >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkViewportWScalingNV>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkWaylandSurfaceCreateFlagsKHR    *>))
+    if (typeid(*value) == typeid(Value<vk::VkViewportWScalingNV *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkWaylandSurfaceCreateFlagsKHR    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkWin32SurfaceCreateFlagsKHR   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkWin32SurfaceCreateFlagsKHR   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkWin32SurfaceCreateFlagsKHR    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkWin32SurfaceCreateFlagsKHR    *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkViewportWScalingNV *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkXcbSurfaceCreateFlagsKHR   >))
+    if (typeid(*value) == typeid(Value<vk::VkViSurfaceCreateInfoNN>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkXcbSurfaceCreateFlagsKHR   >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkViSurfaceCreateInfoNN>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkXcbSurfaceCreateFlagsKHR    *>))
+    if (typeid(*value) == typeid(Value<vk::VkViSurfaceCreateInfoNN *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkXcbSurfaceCreateFlagsKHR    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkXlibSurfaceCreateFlagsKHR   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkXlibSurfaceCreateFlagsKHR   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkXlibSurfaceCreateFlagsKHR    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkXlibSurfaceCreateFlagsKHR    *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkViSurfaceCreateInfoNN *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkXYColorEXT   >))
+    if (typeid(*value) == typeid(Value<vk::VkWaylandSurfaceCreateInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkXYColorEXT   >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkWaylandSurfaceCreateInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkXYColorEXT    *>))
+    if (typeid(*value) == typeid(Value<vk::VkWaylandSurfaceCreateInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkXYColorEXT    *>*>(value);
-    }
-
-    /*
-    if (typeid(*value) == typeid(Value<vk::void>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void>*>(value);
-    }
-    */
-    
-    if (typeid(*value) == typeid(Value<vk::void *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkWaylandSurfaceCreateInfoKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::void*>))
+    if (typeid(*value) == typeid(Value<vk::VkWin32KeyedMutexAcquireReleaseInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::void*>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkWin32KeyedMutexAcquireReleaseInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::void* *>))
+    if (typeid(*value) == typeid(Value<vk::VkWin32KeyedMutexAcquireReleaseInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::void* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::void* >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void* >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::void*  *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void*  *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkWin32KeyedMutexAcquireReleaseInfoKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::void*   >))
+    if (typeid(*value) == typeid(Value<vk::VkWin32KeyedMutexAcquireReleaseInfoNV>))
     {
-        return stream << *reinterpret_cast<const Value<vk::void*   >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkWin32KeyedMutexAcquireReleaseInfoNV>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::void*    *>))
+    if (typeid(*value) == typeid(Value<vk::VkWin32KeyedMutexAcquireReleaseInfoNV *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::void*    *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::void*    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void*    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::void*     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void*     *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkWin32KeyedMutexAcquireReleaseInfoNV *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::void*      >))
+    if (typeid(*value) == typeid(Value<vk::VkWin32SurfaceCreateInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::void*      >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkWin32SurfaceCreateInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::void*       *>))
+    if (typeid(*value) == typeid(Value<vk::VkWin32SurfaceCreateInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::void*       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::void*        >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void*        >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::void*         *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void*         *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkWin32SurfaceCreateInfoKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::void*          >))
+    if (typeid(*value) == typeid(Value<vk::VkWriteDescriptorSet>))
     {
-        return stream << *reinterpret_cast<const Value<vk::void*          >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkWriteDescriptorSet>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::void*           *>))
+    if (typeid(*value) == typeid(Value<vk::VkWriteDescriptorSet *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::void*           *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::void*           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void*           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::void*            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void*            *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkWriteDescriptorSet *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::void*            >))
+    if (typeid(*value) == typeid(Value<vk::VkWriteDescriptorSetAccelerationStructureNV>))
     {
-        return stream << *reinterpret_cast<const Value<vk::void*            >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkWriteDescriptorSetAccelerationStructureNV>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::void*             *>))
+    if (typeid(*value) == typeid(Value<vk::VkWriteDescriptorSetAccelerationStructureNV *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::void*             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::void*             >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void*             >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::void*              *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void*              *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkWriteDescriptorSetAccelerationStructureNV *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::void*                  >))
+    if (typeid(*value) == typeid(Value<vk::VkWriteDescriptorSetInlineUniformBlockEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::void*                  >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkWriteDescriptorSetInlineUniformBlockEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::void*                   *>))
+    if (typeid(*value) == typeid(Value<vk::VkWriteDescriptorSetInlineUniformBlockEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::void*                   *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::void*                   >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void*                   >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::void*                    *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void*                    *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkWriteDescriptorSetInlineUniformBlockEXT *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::void*                      >))
+    if (typeid(*value) == typeid(Value<vk::VkXcbSurfaceCreateInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::void*                      >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkXcbSurfaceCreateInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::void*                       *>))
+    if (typeid(*value) == typeid(Value<vk::VkXcbSurfaceCreateInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::void*                       *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::void*                          >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void*                          >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::void*                           *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void*                           *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkXcbSurfaceCreateInfoKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::void*                            >))
+    if (typeid(*value) == typeid(Value<vk::VkXlibSurfaceCreateInfoKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::void*                            >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkXlibSurfaceCreateInfoKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::void*                             *>))
+    if (typeid(*value) == typeid(Value<vk::VkXlibSurfaceCreateInfoKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::void*                             *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::void*                              >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void*                              >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::void*                               *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void*                               *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkXlibSurfaceCreateInfoKHR *>*>(value);
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::void*                               >))
+    if (typeid(*value) == typeid(Value<vk::VkXYColorEXT>))
     {
-        return stream << *reinterpret_cast<const Value<vk::void*                               >*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkXYColorEXT>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::void*                                *>))
+    if (typeid(*value) == typeid(Value<vk::VkXYColorEXT *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::void*                                *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::void*                                >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void*                                >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::void*                                 *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void*                                 *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::void*                                    >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void*                                    >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::void*                                     *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void*                                     *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::void*                                       >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void*                                       >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::void*                                        *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void*                                        *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::void**>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void**>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::void** *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::void** *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::Window>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::Window>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::Window *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::Window *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::Window                           >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::Window                           >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::Window                            *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::Window                            *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::wl_display>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::wl_display>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::wl_display *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::wl_display *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::wl_surface>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::wl_surface>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::wl_surface *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::wl_surface *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::xcb_connection_t>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::xcb_connection_t>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::xcb_connection_t *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::xcb_connection_t *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::xcb_connection_t*>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::xcb_connection_t*>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::xcb_connection_t* *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::xcb_connection_t* *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::xcb_connection_t*                >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::xcb_connection_t*                >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::xcb_connection_t*                 *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::xcb_connection_t*                 *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::xcb_visualid_t>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::xcb_visualid_t>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::xcb_visualid_t *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::xcb_visualid_t *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::xcb_window_t>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::xcb_window_t>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::xcb_window_t *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::xcb_window_t *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::xcb_window_t                     >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::xcb_window_t                     >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::xcb_window_t                      *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::xcb_window_t                      *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::zx_handle_t>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::zx_handle_t>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::zx_handle_t *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::zx_handle_t *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::zx_handle_t                      >))
-    {
-        return stream << *reinterpret_cast<const Value<vk::zx_handle_t                      >*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::zx_handle_t                       *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::zx_handle_t                       *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkXYColorEXT *>*>(value);
     }
 
     // expect an AbstractValue with a pointer in first member

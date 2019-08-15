@@ -5,6 +5,7 @@
 
 # find_package(EGL REQUIRED)
 find_package(KHR REQUIRED)
+find_package(Vulkan REQUIRED)
 
 # find_package(OpenGL REQUIRED)
 
@@ -79,8 +80,8 @@ set(headers
     ${include_path}/AbstractFunction.h
     ${include_path}/AbstractState.h
     ${include_path}/AbstractValue.h
-    ${include_path}/Boolean32.h
-    ${include_path}/Boolean32.inl
+    ${include_path}/Boolean8.h
+    ${include_path}/Boolean8.inl
     ${include_path}/CallbackMask.h
     ${include_path}/CallbackMask.inl
     ${include_path}/ContextHandle.h
@@ -235,6 +236,7 @@ target_include_directories(${target}
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include>
     $<INSTALL_INTERFACE:include>
+    ${Vulkan_INCLUDE_DIRS}
 )
 
 
@@ -248,6 +250,7 @@ target_link_libraries(${target}
 
     PUBLIC
     ${DEFAULT_LIBRARIES}
+    ${Vulkan_LIBRARIES}
     KHR::KHR
 
     INTERFACE

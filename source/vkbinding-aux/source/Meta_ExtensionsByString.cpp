@@ -32,9 +32,7 @@ const std::unordered_map<std::string, VKextension> Meta_ExtensionsByString_A =
     { "VK_AMD_shader_image_load_store_lod", VKextension::VK_AMD_shader_image_load_store_lod },
     { "VK_AMD_shader_info", VKextension::VK_AMD_shader_info },
     { "VK_AMD_shader_trinary_minmax", VKextension::VK_AMD_shader_trinary_minmax },
-    { "VK_AMD_texture_gather_bias_lod", VKextension::VK_AMD_texture_gather_bias_lod },
-    { "VK_ANDROID_external_memory_android_hardware_buffer", VKextension::VK_ANDROID_external_memory_android_hardware_buffer },
-    { "VK_ANDROID_native_buffer", VKextension::VK_ANDROID_native_buffer }
+    { "VK_AMD_texture_gather_bias_lod", VKextension::VK_AMD_texture_gather_bias_lod }
 };
 
 const std::unordered_map<std::string, VKextension> Meta_ExtensionsByString_B{};
@@ -45,7 +43,6 @@ const std::unordered_map<std::string, VKextension> Meta_ExtensionsByString_D{};
 
 const std::unordered_map<std::string, VKextension> Meta_ExtensionsByString_E =
 {
-    { "VK_EXT_acquire_xlib_display", VKextension::VK_EXT_acquire_xlib_display },
     { "VK_EXT_astc_decode_mode", VKextension::VK_EXT_astc_decode_mode },
     { "VK_EXT_blend_operation_advanced", VKextension::VK_EXT_blend_operation_advanced },
     { "VK_EXT_buffer_device_address", VKextension::VK_EXT_buffer_device_address },
@@ -67,7 +64,6 @@ const std::unordered_map<std::string, VKextension> Meta_ExtensionsByString_E =
     { "VK_EXT_filter_cubic", VKextension::VK_EXT_filter_cubic },
     { "VK_EXT_fragment_density_map", VKextension::VK_EXT_fragment_density_map },
     { "VK_EXT_fragment_shader_interlock", VKextension::VK_EXT_fragment_shader_interlock },
-    { "VK_EXT_full_screen_exclusive", VKextension::VK_EXT_full_screen_exclusive },
     { "VK_EXT_global_priority", VKextension::VK_EXT_global_priority },
     { "VK_EXT_hdr_metadata", VKextension::VK_EXT_hdr_metadata },
     { "VK_EXT_headless_surface", VKextension::VK_EXT_headless_surface },
@@ -78,7 +74,6 @@ const std::unordered_map<std::string, VKextension> Meta_ExtensionsByString_E =
     { "VK_EXT_line_rasterization", VKextension::VK_EXT_line_rasterization },
     { "VK_EXT_memory_budget", VKextension::VK_EXT_memory_budget },
     { "VK_EXT_memory_priority", VKextension::VK_EXT_memory_priority },
-    { "VK_EXT_metal_surface", VKextension::VK_EXT_metal_surface },
     { "VK_EXT_pci_bus_info", VKextension::VK_EXT_pci_bus_info },
     { "VK_EXT_pipeline_creation_feedback", VKextension::VK_EXT_pipeline_creation_feedback },
     { "VK_EXT_post_depth_coverage", VKextension::VK_EXT_post_depth_coverage },
@@ -104,15 +99,10 @@ const std::unordered_map<std::string, VKextension> Meta_ExtensionsByString_E =
     { "VK_EXT_ycbcr_image_arrays", VKextension::VK_EXT_ycbcr_image_arrays }
 };
 
-const std::unordered_map<std::string, VKextension> Meta_ExtensionsByString_F =
-{
-    { "VK_FUCHSIA_imagepipe_surface", VKextension::VK_FUCHSIA_imagepipe_surface }
-};
+const std::unordered_map<std::string, VKextension> Meta_ExtensionsByString_F{};
 
 const std::unordered_map<std::string, VKextension> Meta_ExtensionsByString_G =
 {
-    { "VK_GGP_frame_token", VKextension::VK_GGP_frame_token },
-    { "VK_GGP_stream_descriptor_surface", VKextension::VK_GGP_stream_descriptor_surface },
     { "VK_GOOGLE_decorate_string", VKextension::VK_GOOGLE_decorate_string },
     { "VK_GOOGLE_display_timing", VKextension::VK_GOOGLE_display_timing },
     { "VK_GOOGLE_hlsl_functionality1", VKextension::VK_GOOGLE_hlsl_functionality1 }
@@ -134,7 +124,6 @@ const std::unordered_map<std::string, VKextension> Meta_ExtensionsByString_K =
 {
     { "VK_KHR_16bit_storage", VKextension::VK_KHR_16bit_storage },
     { "VK_KHR_8bit_storage", VKextension::VK_KHR_8bit_storage },
-    { "VK_KHR_android_surface", VKextension::VK_KHR_android_surface },
     { "VK_KHR_bind_memory2", VKextension::VK_KHR_bind_memory2 },
     { "VK_KHR_create_renderpass2", VKextension::VK_KHR_create_renderpass2 },
     { "VK_KHR_dedicated_allocation", VKextension::VK_KHR_dedicated_allocation },
@@ -149,15 +138,12 @@ const std::unordered_map<std::string, VKextension> Meta_ExtensionsByString_K =
     { "VK_KHR_external_fence", VKextension::VK_KHR_external_fence },
     { "VK_KHR_external_fence_capabilities", VKextension::VK_KHR_external_fence_capabilities },
     { "VK_KHR_external_fence_fd", VKextension::VK_KHR_external_fence_fd },
-    { "VK_KHR_external_fence_win32", VKextension::VK_KHR_external_fence_win32 },
     { "VK_KHR_external_memory", VKextension::VK_KHR_external_memory },
     { "VK_KHR_external_memory_capabilities", VKextension::VK_KHR_external_memory_capabilities },
     { "VK_KHR_external_memory_fd", VKextension::VK_KHR_external_memory_fd },
-    { "VK_KHR_external_memory_win32", VKextension::VK_KHR_external_memory_win32 },
     { "VK_KHR_external_semaphore", VKextension::VK_KHR_external_semaphore },
     { "VK_KHR_external_semaphore_capabilities", VKextension::VK_KHR_external_semaphore_capabilities },
     { "VK_KHR_external_semaphore_fd", VKextension::VK_KHR_external_semaphore_fd },
-    { "VK_KHR_external_semaphore_win32", VKextension::VK_KHR_external_semaphore_win32 },
     { "VK_KHR_get_display_properties2", VKextension::VK_KHR_get_display_properties2 },
     { "VK_KHR_get_memory_requirements2", VKextension::VK_KHR_get_memory_requirements2 },
     { "VK_KHR_get_physical_device_properties2", VKextension::VK_KHR_get_physical_device_properties2 },
@@ -168,7 +154,6 @@ const std::unordered_map<std::string, VKextension> Meta_ExtensionsByString_K =
     { "VK_KHR_maintenance1", VKextension::VK_KHR_maintenance1 },
     { "VK_KHR_maintenance2", VKextension::VK_KHR_maintenance2 },
     { "VK_KHR_maintenance3", VKextension::VK_KHR_maintenance3 },
-    { "VK_KHR_mir_surface", VKextension::VK_KHR_mir_surface },
     { "VK_KHR_multiview", VKextension::VK_KHR_multiview },
     { "VK_KHR_push_descriptor", VKextension::VK_KHR_push_descriptor },
     { "VK_KHR_relaxed_block_layout", VKextension::VK_KHR_relaxed_block_layout },
@@ -186,26 +171,15 @@ const std::unordered_map<std::string, VKextension> Meta_ExtensionsByString_K =
     { "VK_KHR_swapchain_mutable_format", VKextension::VK_KHR_swapchain_mutable_format },
     { "VK_KHR_uniform_buffer_standard_layout", VKextension::VK_KHR_uniform_buffer_standard_layout },
     { "VK_KHR_variable_pointers", VKextension::VK_KHR_variable_pointers },
-    { "VK_KHR_vulkan_memory_model", VKextension::VK_KHR_vulkan_memory_model },
-    { "VK_KHR_wayland_surface", VKextension::VK_KHR_wayland_surface },
-    { "VK_KHR_win32_keyed_mutex", VKextension::VK_KHR_win32_keyed_mutex },
-    { "VK_KHR_win32_surface", VKextension::VK_KHR_win32_surface },
-    { "VK_KHR_xcb_surface", VKextension::VK_KHR_xcb_surface },
-    { "VK_KHR_xlib_surface", VKextension::VK_KHR_xlib_surface }
+    { "VK_KHR_vulkan_memory_model", VKextension::VK_KHR_vulkan_memory_model }
 };
 
 const std::unordered_map<std::string, VKextension> Meta_ExtensionsByString_L{};
 
-const std::unordered_map<std::string, VKextension> Meta_ExtensionsByString_M =
-{
-    { "VK_MVK_ios_surface", VKextension::VK_MVK_ios_surface },
-    { "VK_MVK_macos_surface", VKextension::VK_MVK_macos_surface },
-    { "VK_MVK_moltenvk", VKextension::VK_MVK_moltenvk }
-};
+const std::unordered_map<std::string, VKextension> Meta_ExtensionsByString_M{};
 
 const std::unordered_map<std::string, VKextension> Meta_ExtensionsByString_N =
 {
-    { "VK_NN_vi_surface", VKextension::VK_NN_vi_surface },
     { "VK_NV_clip_space_w_scaling", VKextension::VK_NV_clip_space_w_scaling },
     { "VK_NV_compute_shader_derivatives", VKextension::VK_NV_compute_shader_derivatives },
     { "VK_NV_cooperative_matrix", VKextension::VK_NV_cooperative_matrix },
@@ -216,7 +190,6 @@ const std::unordered_map<std::string, VKextension> Meta_ExtensionsByString_N =
     { "VK_NV_device_diagnostic_checkpoints", VKextension::VK_NV_device_diagnostic_checkpoints },
     { "VK_NV_external_memory", VKextension::VK_NV_external_memory },
     { "VK_NV_external_memory_capabilities", VKextension::VK_NV_external_memory_capabilities },
-    { "VK_NV_external_memory_win32", VKextension::VK_NV_external_memory_win32 },
     { "VK_NV_fill_rectangle", VKextension::VK_NV_fill_rectangle },
     { "VK_NV_fragment_coverage_to_color", VKextension::VK_NV_fragment_coverage_to_color },
     { "VK_NV_fragment_shader_barycentric", VKextension::VK_NV_fragment_shader_barycentric },
@@ -234,7 +207,6 @@ const std::unordered_map<std::string, VKextension> Meta_ExtensionsByString_N =
     { "VK_NV_shading_rate_image", VKextension::VK_NV_shading_rate_image },
     { "VK_NV_viewport_array2", VKextension::VK_NV_viewport_array2 },
     { "VK_NV_viewport_swizzle", VKextension::VK_NV_viewport_swizzle },
-    { "VK_NV_win32_keyed_mutex", VKextension::VK_NV_win32_keyed_mutex },
     { "VK_NVX_device_generated_commands", VKextension::VK_NVX_device_generated_commands },
     { "VK_NVX_image_view_handle", VKextension::VK_NVX_image_view_handle },
     { "VK_NVX_multiview_per_view_attributes", VKextension::VK_NVX_multiview_per_view_attributes }

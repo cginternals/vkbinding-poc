@@ -1,5 +1,5 @@
 
 
-#if defined(__gl_h_)
-    #error "vkbinding is not compatible with gl.h"
+#if defined(__vulkan_h_)
+    #error "vkbinding is not compatible with vulkan.h"
 #endif

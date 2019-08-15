@@ -13,7 +13,6 @@ Function<VkResult, VkDevice, const VkDeviceEventInfoEXT*, const VkAllocationCall
 Function<VkResult, VkDevice, VkDisplayKHR, const VkDisplayEventInfoEXT*, const VkAllocationCallbacks*, VkFence*> Binding::RegisterDisplayEventEXT("vkRegisterDisplayEventEXT");
 Function<VkResult, VkDevice, VkObjectTableNVX, uint32_t, const VkObjectTableEntryNVX* const*, const uint32_t*> Binding::RegisterObjectsNVX("vkRegisterObjectsNVX");
 Function<VkResult, VkPhysicalDevice, VkDisplayKHR> Binding::ReleaseDisplayEXT("vkReleaseDisplayEXT");
-Function<VkResult, VkDevice, VkSwapchainKHR> Binding::ReleaseFullScreenExclusiveModeEXT("vkReleaseFullScreenExclusiveModeEXT");
 Function<VkResult, VkDevice, VkPerformanceConfigurationINTEL> Binding::ReleasePerformanceConfigurationINTEL("vkReleasePerformanceConfigurationINTEL");
 Function<VkResult, VkCommandBuffer, VkCommandBufferResetFlags> Binding::ResetCommandBuffer("vkResetCommandBuffer");
 Function<VkResult, VkDevice, VkCommandPool, VkCommandPoolResetFlags> Binding::ResetCommandPool("vkResetCommandPool");

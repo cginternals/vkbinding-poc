@@ -286,18 +286,6 @@ public:
     *  @return
     *    The string representation of the value
     */
-    static const std::string & getString(vk::VkAttachmentDescriptionFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
     static const std::string & getString(vk::VkBufferCreateFlagBits vkbitfield);
 
     /**
@@ -322,55 +310,7 @@ public:
     *  @return
     *    The string representation of the value
     */
-    static const std::string & getString(vk::VkBufferViewCreateFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
     static const std::string & getString(vk::VkBuildAccelerationStructureFlagBitsNV vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkColorComponentFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkCommandBufferResetFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkCommandBufferUsageFlagBits vkbitfield);
 
     /**
     *  @brief
@@ -394,55 +334,7 @@ public:
     *  @return
     *    The string representation of the value
     */
-    static const std::string & getString(vk::VkCommandPoolResetFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkCompositeAlphaFlagBitsKHR vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
     static const std::string & getString(vk::VkConditionalRenderingFlagBitsEXT vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkCullModeFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkDebugReportFlagBitsEXT vkbitfield);
 
     /**
     *  @brief
@@ -466,31 +358,7 @@ public:
     *  @return
     *    The string representation of the value
     */
-    static const std::string & getString(vk::VkDebugUtilsMessageTypeFlagBitsEXT vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
     static const std::string & getString(vk::VkDependencyFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkDescriptorBindingFlagBitsEXT vkbitfield);
 
     /**
     *  @brief
@@ -515,18 +383,6 @@ public:
     *    The string representation of the value
     */
     static const std::string & getString(vk::VkDescriptorSetLayoutCreateFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkDeviceCreateFlagBits vkbitfield);
 
     /**
     *  @brief
@@ -586,18 +442,6 @@ public:
     *  @return
     *    The string representation of the value
     */
-    static const std::string & getString(vk::VkExternalFenceFeatureFlagBitsKHR vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
     static const std::string & getString(vk::VkExternalFenceHandleTypeFlagBits vkbitfield);
 
     /**
@@ -610,31 +454,7 @@ public:
     *  @return
     *    The string representation of the value
     */
-    static const std::string & getString(vk::VkExternalFenceHandleTypeFlagBitsKHR vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
     static const std::string & getString(vk::VkExternalMemoryFeatureFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkExternalMemoryFeatureFlagBitsKHR vkbitfield);
 
     /**
     *  @brief
@@ -670,18 +490,6 @@ public:
     *  @return
     *    The string representation of the value
     */
-    static const std::string & getString(vk::VkExternalMemoryHandleTypeFlagBitsKHR vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
     static const std::string & getString(vk::VkExternalMemoryHandleTypeFlagBitsNV vkbitfield);
 
     /**
@@ -706,18 +514,6 @@ public:
     *  @return
     *    The string representation of the value
     */
-    static const std::string & getString(vk::VkExternalSemaphoreFeatureFlagBitsKHR vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
     static const std::string & getString(vk::VkExternalSemaphoreHandleTypeFlagBits vkbitfield);
 
     /**
@@ -730,43 +526,7 @@ public:
     *  @return
     *    The string representation of the value
     */
-    static const std::string & getString(vk::VkExternalSemaphoreHandleTypeFlagBitsKHR vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkFenceCreateFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
     static const std::string & getString(vk::VkFenceImportFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkFenceImportFlagBitsKHR vkbitfield);
 
     /**
     *  @brief
@@ -886,31 +646,7 @@ public:
     *  @return
     *    The string representation of the value
     */
-    static const std::string & getString(vk::VkInstanceCreateFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
     static const std::string & getString(vk::VkMemoryAllocateFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkMemoryAllocateFlagBitsKHR vkbitfield);
 
     /**
     *  @brief
@@ -970,42 +706,6 @@ public:
     *  @return
     *    The string representation of the value
     */
-    static const std::string & getString(vk::VkPeerMemoryFeatureFlagBitsKHR vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkPipelineCacheCreateFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkPipelineColorBlendStateCreateFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
     static const std::string & getString(vk::VkPipelineCreateFlagBits vkbitfield);
 
     /**
@@ -1019,78 +719,6 @@ public:
     *    The string representation of the value
     */
     static const std::string & getString(vk::VkPipelineCreationFeedbackFlagBitsEXT vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkPipelineDepthStencilStateCreateFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkPipelineDynamicStateCreateFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkPipelineInputAssemblyStateCreateFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkPipelineLayoutCreateFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkPipelineMultisampleStateCreateFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkPipelineRasterizationStateCreateFlagBits vkbitfield);
 
     /**
     *  @brief
@@ -1126,103 +754,7 @@ public:
     *  @return
     *    The string representation of the value
     */
-    static const std::string & getString(vk::VkPipelineTessellationStateCreateFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkPipelineVertexInputStateCreateFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkPipelineViewportStateCreateFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkQueryControlFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkQueryPipelineStatisticFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkQueryPoolCreateFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkQueryResultFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
     static const std::string & getString(vk::VkQueueFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkRenderPassCreateFlagBits vkbitfield);
 
     /**
     *  @brief
@@ -1282,67 +814,7 @@ public:
     *  @return
     *    The string representation of the value
     */
-    static const std::string & getString(vk::VkSemaphoreImportFlagBitsKHR vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkShaderModuleCreateFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
     static const std::string & getString(vk::VkShaderStageFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkSparseImageFormatFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkSparseMemoryBindFlagBits vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkStencilFaceFlagBits vkbitfield);
 
     /**
     *  @brief
@@ -1390,31 +862,7 @@ public:
     *  @return
     *    The string representation of the value
     */
-    static const std::string & getString(vk::VkSurfaceTransformFlagBitsKHR vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
     static const std::string & getString(vk::VkSwapchainCreateFlagBitsKHR vkbitfield);
-
-    /**
-    *  @brief
-    *    Convert bitfield to symbol name string representation
-    *
-    *  @param[in] glbitfield
-    *    The bitfield value
-    *
-    *  @return
-    *    The string representation of the value
-    */
-    static const std::string & getString(vk::VkSwapchainImageUsageFlagBitsANDROID vkbitfield);
 
 
 private:

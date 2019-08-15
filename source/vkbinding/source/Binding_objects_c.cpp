@@ -104,7 +104,6 @@ Function<void, VkCommandBuffer, VkPipelineStageFlagBits, VkBuffer, VkDeviceSize,
 Function<void, VkCommandBuffer, VkPipelineStageFlagBits, VkQueryPool, uint32_t> Binding::CmdWriteTimestamp("vkCmdWriteTimestamp");
 Function<VkResult, VkDevice, VkPipeline, uint32_t> Binding::CompileDeferredNV("vkCompileDeferredNV");
 Function<VkResult, VkDevice, const VkAccelerationStructureCreateInfoNV*, const VkAllocationCallbacks*, VkAccelerationStructureNV*> Binding::CreateAccelerationStructureNV("vkCreateAccelerationStructureNV");
-Function<VkResult, VkInstance, const VkAndroidSurfaceCreateInfoKHR*, const VkAllocationCallbacks*, VkSurfaceKHR*> Binding::CreateAndroidSurfaceKHR("vkCreateAndroidSurfaceKHR");
 Function<VkResult, VkDevice, const VkBufferCreateInfo*, const VkAllocationCallbacks*, VkBuffer*> Binding::CreateBuffer("vkCreateBuffer");
 Function<VkResult, VkDevice, const VkBufferViewCreateInfo*, const VkAllocationCallbacks*, VkBufferView*> Binding::CreateBufferView("vkCreateBufferView");
 Function<VkResult, VkDevice, const VkCommandPoolCreateInfo*, const VkAllocationCallbacks*, VkCommandPool*> Binding::CreateCommandPool("vkCreateCommandPool");
@@ -124,13 +123,9 @@ Function<VkResult, VkDevice, const VkFramebufferCreateInfo*, const VkAllocationC
 Function<VkResult, VkDevice, VkPipelineCache, uint32_t, const VkGraphicsPipelineCreateInfo*, const VkAllocationCallbacks*, VkPipeline*> Binding::CreateGraphicsPipelines("vkCreateGraphicsPipelines");
 Function<VkResult, VkInstance, const VkHeadlessSurfaceCreateInfoEXT*, const VkAllocationCallbacks*, VkSurfaceKHR*> Binding::CreateHeadlessSurfaceEXT("vkCreateHeadlessSurfaceEXT");
 Function<VkResult, VkDevice, const VkImageCreateInfo*, const VkAllocationCallbacks*, VkImage*> Binding::CreateImage("vkCreateImage");
-Function<VkResult, VkInstance, const VkImagePipeSurfaceCreateInfoFUCHSIA*, const VkAllocationCallbacks*, VkSurfaceKHR*> Binding::CreateImagePipeSurfaceFUCHSIA("vkCreateImagePipeSurfaceFUCHSIA");
 Function<VkResult, VkDevice, const VkImageViewCreateInfo*, const VkAllocationCallbacks*, VkImageView*> Binding::CreateImageView("vkCreateImageView");
 Function<VkResult, VkDevice, const VkIndirectCommandsLayoutCreateInfoNVX*, const VkAllocationCallbacks*, VkIndirectCommandsLayoutNVX*> Binding::CreateIndirectCommandsLayoutNVX("vkCreateIndirectCommandsLayoutNVX");
 Function<VkResult, const VkInstanceCreateInfo*, const VkAllocationCallbacks*, VkInstance*> Binding::CreateInstance("vkCreateInstance");
-Function<VkResult, VkInstance, const VkIOSSurfaceCreateInfoMVK*, const VkAllocationCallbacks*, VkSurfaceKHR*> Binding::CreateIOSSurfaceMVK("vkCreateIOSSurfaceMVK");
-Function<VkResult, VkInstance, const VkMacOSSurfaceCreateInfoMVK*, const VkAllocationCallbacks*, VkSurfaceKHR*> Binding::CreateMacOSSurfaceMVK("vkCreateMacOSSurfaceMVK");
-Function<VkResult, VkInstance, const VkMetalSurfaceCreateInfoEXT*, const VkAllocationCallbacks*, VkSurfaceKHR*> Binding::CreateMetalSurfaceEXT("vkCreateMetalSurfaceEXT");
 Function<VkResult, VkDevice, const VkObjectTableCreateInfoNVX*, const VkAllocationCallbacks*, VkObjectTableNVX*> Binding::CreateObjectTableNVX("vkCreateObjectTableNVX");
 Function<VkResult, VkDevice, const VkPipelineCacheCreateInfo*, const VkAllocationCallbacks*, VkPipelineCache*> Binding::CreatePipelineCache("vkCreatePipelineCache");
 Function<VkResult, VkDevice, const VkPipelineLayoutCreateInfo*, const VkAllocationCallbacks*, VkPipelineLayout*> Binding::CreatePipelineLayout("vkCreatePipelineLayout");
@@ -144,14 +139,8 @@ Function<VkResult, VkDevice, const VkSamplerYcbcrConversionCreateInfo*, const Vk
 Function<VkResult, VkDevice, const VkSemaphoreCreateInfo*, const VkAllocationCallbacks*, VkSemaphore*> Binding::CreateSemaphore("vkCreateSemaphore");
 Function<VkResult, VkDevice, const VkShaderModuleCreateInfo*, const VkAllocationCallbacks*, VkShaderModule*> Binding::CreateShaderModule("vkCreateShaderModule");
 Function<VkResult, VkDevice, uint32_t, const VkSwapchainCreateInfoKHR*, const VkAllocationCallbacks*, VkSwapchainKHR*> Binding::CreateSharedSwapchainsKHR("vkCreateSharedSwapchainsKHR");
-Function<VkResult, VkInstance, const VkStreamDescriptorSurfaceCreateInfoGGP*, const VkAllocationCallbacks*, VkSurfaceKHR*> Binding::CreateStreamDescriptorSurfaceGGP("vkCreateStreamDescriptorSurfaceGGP");
 Function<VkResult, VkDevice, const VkSwapchainCreateInfoKHR*, const VkAllocationCallbacks*, VkSwapchainKHR*> Binding::CreateSwapchainKHR("vkCreateSwapchainKHR");
 Function<VkResult, VkDevice, const VkValidationCacheCreateInfoEXT*, const VkAllocationCallbacks*, VkValidationCacheEXT*> Binding::CreateValidationCacheEXT("vkCreateValidationCacheEXT");
-Function<VkResult, VkInstance, const VkViSurfaceCreateInfoNN*, const VkAllocationCallbacks*, VkSurfaceKHR*> Binding::CreateViSurfaceNN("vkCreateViSurfaceNN");
-Function<VkResult, VkInstance, const VkWaylandSurfaceCreateInfoKHR*, const VkAllocationCallbacks*, VkSurfaceKHR*> Binding::CreateWaylandSurfaceKHR("vkCreateWaylandSurfaceKHR");
-Function<VkResult, VkInstance, const VkWin32SurfaceCreateInfoKHR*, const VkAllocationCallbacks*, VkSurfaceKHR*> Binding::CreateWin32SurfaceKHR("vkCreateWin32SurfaceKHR");
-Function<VkResult, VkInstance, const VkXcbSurfaceCreateInfoKHR*, const VkAllocationCallbacks*, VkSurfaceKHR*> Binding::CreateXcbSurfaceKHR("vkCreateXcbSurfaceKHR");
-Function<VkResult, VkInstance, const VkXlibSurfaceCreateInfoKHR*, const VkAllocationCallbacks*, VkSurfaceKHR*> Binding::CreateXlibSurfaceKHR("vkCreateXlibSurfaceKHR");
 
 
 } // namespace vkbinding

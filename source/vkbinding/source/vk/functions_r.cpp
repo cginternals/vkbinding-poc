@@ -28,11 +28,6 @@ VkResult vkReleaseDisplayEXT(VkPhysicalDevice physicalDevice, VkDisplayKHR displ
     return vkbinding::Binding::ReleaseDisplayEXT(physicalDevice, display);
 }
 
-VkResult vkReleaseFullScreenExclusiveModeEXT(VkDevice device, VkSwapchainKHR swapchain)
-{
-    return vkbinding::Binding::ReleaseFullScreenExclusiveModeEXT(device, swapchain);
-}
-
 VkResult vkReleasePerformanceConfigurationINTEL(VkDevice device, VkPerformanceConfigurationINTEL configuration)
 {
     return vkbinding::Binding::ReleasePerformanceConfigurationINTEL(device, configuration);

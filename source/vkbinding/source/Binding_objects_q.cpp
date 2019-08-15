@@ -15,7 +15,6 @@ Function<void, VkQueue> Binding::QueueEndDebugUtilsLabelEXT("vkQueueEndDebugUtil
 Function<void, VkQueue, const VkDebugUtilsLabelEXT*> Binding::QueueInsertDebugUtilsLabelEXT("vkQueueInsertDebugUtilsLabelEXT");
 Function<VkResult, VkQueue, const VkPresentInfoKHR*> Binding::QueuePresentKHR("vkQueuePresentKHR");
 Function<VkResult, VkQueue, VkPerformanceConfigurationINTEL> Binding::QueueSetPerformanceConfigurationINTEL("vkQueueSetPerformanceConfigurationINTEL");
-Function<VkResult, VkQueue, uint32_t, const VkSemaphore*, VkImage, int*> Binding::QueueSignalReleaseImageANDROID("vkQueueSignalReleaseImageANDROID");
 Function<VkResult, VkQueue, uint32_t, const VkSubmitInfo*, VkFence> Binding::QueueSubmit("vkQueueSubmit");
 Function<VkResult, VkQueue> Binding::QueueWaitIdle("vkQueueWaitIdle");
 

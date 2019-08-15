@@ -8,16 +8,6 @@ namespace vk
 {
 
 
-VkResult vkAcquireFullScreenExclusiveModeEXT(VkDevice device, VkSwapchainKHR swapchain)
-{
-    return vkbinding::Binding::AcquireFullScreenExclusiveModeEXT(device, swapchain);
-}
-
-VkResult vkAcquireImageANDROID(VkDevice device, VkImage image, int nativeFenceFd, VkSemaphore semaphore, VkFence fence)
-{
-    return vkbinding::Binding::AcquireImageANDROID(device, image, nativeFenceFd, semaphore, fence);
-}
-
 VkResult vkAcquireNextImage2KHR(VkDevice device, const VkAcquireNextImageInfoKHR* pAcquireInfo, uint32_t* pImageIndex)
 {
     return vkbinding::Binding::AcquireNextImage2KHR(device, pAcquireInfo, pImageIndex);
@@ -31,11 +21,6 @@ VkResult vkAcquireNextImageKHR(VkDevice device, VkSwapchainKHR swapchain, uint64
 VkResult vkAcquirePerformanceConfigurationINTEL(VkDevice device, const VkPerformanceConfigurationAcquireInfoINTEL* pAcquireInfo, VkPerformanceConfigurationINTEL* pConfiguration)
 {
     return vkbinding::Binding::AcquirePerformanceConfigurationINTEL(device, pAcquireInfo, pConfiguration);
-}
-
-VkResult vkAcquireXlibDisplayEXT(VkPhysicalDevice physicalDevice, Display* dpy, VkDisplayKHR display)
-{
-    return vkbinding::Binding::AcquireXlibDisplayEXT(physicalDevice, dpy, display);
 }
 
 VkResult vkAllocateCommandBuffers(VkDevice device, const VkCommandBufferAllocateInfo* pAllocateInfo, VkCommandBuffer* pCommandBuffers)

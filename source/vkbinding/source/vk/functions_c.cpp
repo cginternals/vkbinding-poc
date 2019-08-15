@@ -483,11 +483,6 @@ VkResult vkCreateAccelerationStructureNV(VkDevice device, const VkAccelerationSt
     return vkbinding::Binding::CreateAccelerationStructureNV(device, pCreateInfo, pAllocator, pAccelerationStructure);
 }
 
-VkResult vkCreateAndroidSurfaceKHR(VkInstance instance, const VkAndroidSurfaceCreateInfoKHR* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkSurfaceKHR* pSurface)
-{
-    return vkbinding::Binding::CreateAndroidSurfaceKHR(instance, pCreateInfo, pAllocator, pSurface);
-}
-
 VkResult vkCreateBuffer(VkDevice device, const VkBufferCreateInfo* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkBuffer* pBuffer)
 {
     return vkbinding::Binding::CreateBuffer(device, pCreateInfo, pAllocator, pBuffer);
@@ -583,11 +578,6 @@ VkResult vkCreateImage(VkDevice device, const VkImageCreateInfo* pCreateInfo, co
     return vkbinding::Binding::CreateImage(device, pCreateInfo, pAllocator, pImage);
 }
 
-VkResult vkCreateImagePipeSurfaceFUCHSIA(VkInstance instance, const VkImagePipeSurfaceCreateInfoFUCHSIA* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkSurfaceKHR* pSurface)
-{
-    return vkbinding::Binding::CreateImagePipeSurfaceFUCHSIA(instance, pCreateInfo, pAllocator, pSurface);
-}
-
 VkResult vkCreateImageView(VkDevice device, const VkImageViewCreateInfo* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkImageView* pView)
 {
     return vkbinding::Binding::CreateImageView(device, pCreateInfo, pAllocator, pView);
@@ -601,21 +591,6 @@ VkResult vkCreateIndirectCommandsLayoutNVX(VkDevice device, const VkIndirectComm
 VkResult vkCreateInstance(const VkInstanceCreateInfo* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkInstance* pInstance)
 {
     return vkbinding::Binding::CreateInstance(pCreateInfo, pAllocator, pInstance);
-}
-
-VkResult vkCreateIOSSurfaceMVK(VkInstance instance, const VkIOSSurfaceCreateInfoMVK* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkSurfaceKHR* pSurface)
-{
-    return vkbinding::Binding::CreateIOSSurfaceMVK(instance, pCreateInfo, pAllocator, pSurface);
-}
-
-VkResult vkCreateMacOSSurfaceMVK(VkInstance instance, const VkMacOSSurfaceCreateInfoMVK* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkSurfaceKHR* pSurface)
-{
-    return vkbinding::Binding::CreateMacOSSurfaceMVK(instance, pCreateInfo, pAllocator, pSurface);
-}
-
-VkResult vkCreateMetalSurfaceEXT(VkInstance instance, const VkMetalSurfaceCreateInfoEXT* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkSurfaceKHR* pSurface)
-{
-    return vkbinding::Binding::CreateMetalSurfaceEXT(instance, pCreateInfo, pAllocator, pSurface);
 }
 
 VkResult vkCreateObjectTableNVX(VkDevice device, const VkObjectTableCreateInfoNVX* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkObjectTableNVX* pObjectTable)
@@ -683,11 +658,6 @@ VkResult vkCreateSharedSwapchainsKHR(VkDevice device, uint32_t swapchainCount, c
     return vkbinding::Binding::CreateSharedSwapchainsKHR(device, swapchainCount, pCreateInfos, pAllocator, pSwapchains);
 }
 
-VkResult vkCreateStreamDescriptorSurfaceGGP(VkInstance instance, const VkStreamDescriptorSurfaceCreateInfoGGP* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkSurfaceKHR* pSurface)
-{
-    return vkbinding::Binding::CreateStreamDescriptorSurfaceGGP(instance, pCreateInfo, pAllocator, pSurface);
-}
-
 VkResult vkCreateSwapchainKHR(VkDevice device, const VkSwapchainCreateInfoKHR* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkSwapchainKHR* pSwapchain)
 {
     return vkbinding::Binding::CreateSwapchainKHR(device, pCreateInfo, pAllocator, pSwapchain);
@@ -696,31 +666,6 @@ VkResult vkCreateSwapchainKHR(VkDevice device, const VkSwapchainCreateInfoKHR* p
 VkResult vkCreateValidationCacheEXT(VkDevice device, const VkValidationCacheCreateInfoEXT* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkValidationCacheEXT* pValidationCache)
 {
     return vkbinding::Binding::CreateValidationCacheEXT(device, pCreateInfo, pAllocator, pValidationCache);
-}
-
-VkResult vkCreateViSurfaceNN(VkInstance instance, const VkViSurfaceCreateInfoNN* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkSurfaceKHR* pSurface)
-{
-    return vkbinding::Binding::CreateViSurfaceNN(instance, pCreateInfo, pAllocator, pSurface);
-}
-
-VkResult vkCreateWaylandSurfaceKHR(VkInstance instance, const VkWaylandSurfaceCreateInfoKHR* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkSurfaceKHR* pSurface)
-{
-    return vkbinding::Binding::CreateWaylandSurfaceKHR(instance, pCreateInfo, pAllocator, pSurface);
-}
-
-VkResult vkCreateWin32SurfaceKHR(VkInstance instance, const VkWin32SurfaceCreateInfoKHR* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkSurfaceKHR* pSurface)
-{
-    return vkbinding::Binding::CreateWin32SurfaceKHR(instance, pCreateInfo, pAllocator, pSurface);
-}
-
-VkResult vkCreateXcbSurfaceKHR(VkInstance instance, const VkXcbSurfaceCreateInfoKHR* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkSurfaceKHR* pSurface)
-{
-    return vkbinding::Binding::CreateXcbSurfaceKHR(instance, pCreateInfo, pAllocator, pSurface);
-}
-
-VkResult vkCreateXlibSurfaceKHR(VkInstance instance, const VkXlibSurfaceCreateInfoKHR* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkSurfaceKHR* pSurface)
-{
-    return vkbinding::Binding::CreateXlibSurfaceKHR(instance, pCreateInfo, pAllocator, pSurface);
 }
 
 

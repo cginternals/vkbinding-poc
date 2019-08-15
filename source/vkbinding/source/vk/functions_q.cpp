@@ -38,11 +38,6 @@ VkResult vkQueueSetPerformanceConfigurationINTEL(VkQueue queue, VkPerformanceCon
     return vkbinding::Binding::QueueSetPerformanceConfigurationINTEL(queue, configuration);
 }
 
-VkResult vkQueueSignalReleaseImageANDROID(VkQueue queue, uint32_t waitSemaphoreCount, const VkSemaphore* pWaitSemaphores, VkImage image, int* pNativeFenceFd)
-{
-    return vkbinding::Binding::QueueSignalReleaseImageANDROID(queue, waitSemaphoreCount, pWaitSemaphores, image, pNativeFenceFd);
-}
-
 VkResult vkQueueSubmit(VkQueue queue, uint32_t submitCount, const VkSubmitInfo* pSubmits, VkFence fence)
 {
     return vkbinding::Binding::QueueSubmit(queue, submitCount, pSubmits, fence);
