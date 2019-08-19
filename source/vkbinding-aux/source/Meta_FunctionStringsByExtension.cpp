@@ -58,6 +58,7 @@ const std::unordered_map<VKextension, std::set<std::string>> Meta_FunctionString
     { VKextension::VK_KHR_get_surface_capabilities2, { "vkGetPhysicalDeviceSurfaceCapabilities2KHR", "vkGetPhysicalDeviceSurfaceFormats2KHR" } },
     { VKextension::VK_KHR_maintenance1, { "vkTrimCommandPoolKHR" } },
     { VKextension::VK_KHR_maintenance3, { "vkGetDescriptorSetLayoutSupportKHR" } },
+    { VKextension::VK_KHR_pipeline_executable_properties, { "vkGetPipelineExecutableInternalRepresentationsKHR", "vkGetPipelineExecutablePropertiesKHR", "vkGetPipelineExecutableStatisticsKHR" } },
     { VKextension::VK_KHR_push_descriptor, { "vkCmdPushDescriptorSetKHR", "vkCmdPushDescriptorSetWithTemplateKHR" } },
     { VKextension::VK_KHR_sampler_ycbcr_conversion, { "vkCreateSamplerYcbcrConversionKHR", "vkDestroySamplerYcbcrConversionKHR" } },
     { VKextension::VK_KHR_shared_presentable_image, { "vkGetSwapchainStatusKHR" } },

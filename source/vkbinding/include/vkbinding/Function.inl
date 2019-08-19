@@ -10,7 +10,7 @@
 #include <vkbinding/FunctionCall.h>
 #include <vkbinding/CallbackMask.h>
 
-#include <vkbinding/Boolean8.h>
+#include <vkbinding/Boolean32.h>
 
 
 
@@ -32,11 +32,11 @@ struct BasicCallHelper
 
 
 template <typename... Arguments>
-struct BasicCallHelper<vkbinding::Boolean8, Arguments...>
+struct BasicCallHelper<vkbinding::Boolean32, Arguments...>
 {
-    inline static vkbinding::Boolean8 call(const vkbinding::Function<vkbinding::Boolean8, Arguments...> * function, Arguments&&... arguments)
+    inline static vkbinding::Boolean32 call(const vkbinding::Function<vkbinding::Boolean32, Arguments...> * function, Arguments&&... arguments)
     {
-        return reinterpret_cast<typename vkbinding::Function<vkbinding::Boolean8::underlying_type, Arguments...>::Signature>(function->address())(std::forward<Arguments>(arguments)...);
+        return reinterpret_cast<typename vkbinding::Function<vkbinding::Boolean32::underlying_type, Arguments...>::Signature>(function->address())(std::forward<Arguments>(arguments)...);
     }
 };
 

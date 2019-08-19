@@ -11,7 +11,7 @@ namespace vkbinding { namespace aux
 {
 
 
-const std::unordered_map<VKboolean, std::string> Meta_StringsByBoolean =
+const std::unordered_map<VkBool32, std::string> Meta_StringsByBoolean =
 {
     { vk::VK_FALSE, "VK_FALSE" },
     { vk::VK_TRUE, "VK_TRUE" }

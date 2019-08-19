@@ -49,7 +49,6 @@ set(include_path "${CMAKE_CURRENT_SOURCE_DIR}/include/${target}")
 set(source_path  "${CMAKE_CURRENT_SOURCE_DIR}/source")
 
 set(headers
-    ${include_path}/ContextInfo.h
     ${include_path}/Meta.h
 
     ${include_path}/ValidVersions.h
@@ -72,8 +71,6 @@ file(GLOB featured_includes ${include_path}/gl*/*.h)
 list(APPEND headers ${featured_includes})
 
 set(sources
-    ${source_path}/ContextInfo.cpp
-
     ${source_path}/Meta.cpp
     ${source_path}/Meta_Maps.h
     ${source_path}/Meta_getStringByBitfield.cpp

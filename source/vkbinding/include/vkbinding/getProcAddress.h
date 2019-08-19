@@ -2,16 +2,16 @@
 #pragma once
 
 
-#include <eglbinding/eglbinding_api.h>
+#include <vkbinding/vkbinding_api.h>
 
-#include <eglbinding/ProcAddress.h>
+#include <vkbinding/ProcAddress.h>
 
 
-namespace eglbinding
+namespace vkbinding
 {
 
 
-EGLBINDING_API ProcAddress getProcAddress(const char * name);
+VKBINDING_API ProcAddress getProcAddress(const char * name);
 
 
-} // namespace eglbinding
+} // namespace vkbinding

@@ -1,21 +1,21 @@
 
-#include <eglbinding-aux/Meta.h>
+#include <vkbinding-aux/Meta.h>
 
-#include <eglbinding/egl/bitfield.h>
-#include <eglbinding/egl/boolean.h>
-#include <eglbinding/egl/enum.h>
-#include <eglbinding/egl/extension.h>
+#include <vkbinding/vk/bitfield.h>
+#include <vkbinding/vk/boolean.h>
+#include <vkbinding/vk/enum.h>
+#include <vkbinding/vk/extension.h>
 
-#include <eglbinding/AbstractFunction.h>
-#include <eglbinding/Binding.h>
-#include <eglbinding/Version.h>
+#include <vkbinding/AbstractFunction.h>
+#include <vkbinding/Binding.h>
+#include <vkbinding/Version.h>
 
-#include <eglbinding-aux/ValidVersions.h>
+#include <vkbinding-aux/ValidVersions.h>
 
-#include "eglrevision.h"
+#include "vkrevision.h"
 #include "Meta_Maps.h"
 
-using namespace egl;
+using namespace vk;
 
 
 namespace 
@@ -23,21 +23,21 @@ namespace
 
 
 static const auto none = std::string{};
-static const auto noneVersion = eglbinding::Version{};
+static const auto noneVersion = vkbinding::Version{};
 static const auto noneStringSet = std::set<std::string>{};
-static const auto noneExtensions = std::set<egl::EGLextension>{};
+static const auto noneExtensions = std::set<vk::VKextension>{};
 
 
 } // namespace
 
 
-namespace eglbinding { namespace aux
+namespace vkbinding { namespace aux
 {
 
 
-int Meta::eglRevision()
+int Meta::vkRevision()
 {
-    return EGL_REVISION;
+    return VK_REVISION;
 }
 
 size_t Meta::alphabeticalGroupIndex(const std::string & identifier, const std::uint8_t prefixLength)
@@ -60,9 +60,9 @@ size_t Meta::alphabeticalGroupIndex(const std::string & identifier, const std::u
     return index;
 }
 
-std::vector<EGLbitfield> Meta::bitfields()
+std::vector<VKbitfield> Meta::bitfields()
 {
-    auto bitfields = std::vector<EGLbitfield>{};
+    auto bitfields = std::vector<VKbitfield>{};
 
     for(const auto & map : Meta_BitfieldsByStringMaps)
     {
@@ -251,7 +251,7 @@ const std::set<AbstractFunction *> Meta::functions(const Version & version)
     return requiredFunctions;
 }
 
-const std::set<AbstractFunction *> Meta::functions(const EGLextension extension)
+const std::set<AbstractFunction *> Meta::functions(const VKextension extension)
 {
     const auto i = Meta_FunctionStringsByExtension.find(extension);
 
@@ -273,7 +273,7 @@ const std::set<AbstractFunction *> Meta::functions(const EGLextension extension)
     return requiredFunctions;
 }
 
-const Version & Meta::version(const EGLextension extension)
+const Version & Meta::version(const VKextension extension)
 {
     const auto i = Meta_ReqVersionsByExtension.find(extension);
 
@@ -291,4 +291,4 @@ const std::set<Version> & Meta::versions()
 }
 
 
-} } // namespace eglbinding::aux
+} } // namespace vkbinding::aux

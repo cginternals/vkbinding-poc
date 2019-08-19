@@ -15,7 +15,7 @@ namespace vk
 {
 
 
-std::ostream & operator<<(std::ostream & stream, const VKboolean & value)
+std::ostream & operator<<(std::ostream & stream, const VkBool32 & value)
 {
     stream << vkbinding::aux::Meta::getString(value);
     return stream;
@@ -39,303 +39,765 @@ std::ostream & operator<<(std::ostream & stream, const UnusedMask & value)
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkAccessFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkAccessFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkAccessFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkAccessFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkBufferCreateFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkAttachmentDescriptionFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkBufferCreateFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkAttachmentDescriptionFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkBufferUsageFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkBufferCreateFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkBufferUsageFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkBufferCreateFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkBuildAccelerationStructureFlagBitsNV & value)
+std::ostream & operator<<(std::ostream & stream, const VkBufferUsageFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkBuildAccelerationStructureFlagBitsNV>(value);
+    stream << vkbinding::aux::bitfieldString<VkBufferUsageFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkCommandPoolCreateFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkBufferViewCreateFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkCommandPoolCreateFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkBufferViewCreateFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkConditionalRenderingFlagBitsEXT & value)
+std::ostream & operator<<(std::ostream & stream, const VkBuildAccelerationStructureFlagsNV & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkConditionalRenderingFlagBitsEXT>(value);
+    stream << vkbinding::aux::bitfieldString<VkBuildAccelerationStructureFlagsNV>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkDebugUtilsMessageSeverityFlagBitsEXT & value)
+std::ostream & operator<<(std::ostream & stream, const VkColorComponentFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkDebugUtilsMessageSeverityFlagBitsEXT>(value);
+    stream << vkbinding::aux::bitfieldString<VkColorComponentFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkDependencyFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkCommandBufferResetFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkDependencyFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkCommandBufferResetFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkDescriptorPoolCreateFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkCommandBufferUsageFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkDescriptorPoolCreateFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkCommandBufferUsageFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkDescriptorSetLayoutCreateFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkCommandPoolCreateFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkDescriptorSetLayoutCreateFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkCommandPoolCreateFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkDeviceGroupPresentModeFlagBitsKHR & value)
+std::ostream & operator<<(std::ostream & stream, const VkCommandPoolResetFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkDeviceGroupPresentModeFlagBitsKHR>(value);
+    stream << vkbinding::aux::bitfieldString<VkCommandPoolResetFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkDeviceQueueCreateFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkCommandPoolTrimFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkDeviceQueueCreateFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkCommandPoolTrimFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkDisplayPlaneAlphaFlagBitsKHR & value)
+std::ostream & operator<<(std::ostream & stream, const VkCommandPoolTrimFlagsKHR & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkDisplayPlaneAlphaFlagBitsKHR>(value);
+    stream << vkbinding::aux::bitfieldString<VkCommandPoolTrimFlagsKHR>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkExternalFenceFeatureFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkCompositeAlphaFlagsKHR & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkExternalFenceFeatureFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkCompositeAlphaFlagsKHR>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkExternalFenceHandleTypeFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkConditionalRenderingFlagsEXT & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkExternalFenceHandleTypeFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkConditionalRenderingFlagsEXT>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkExternalMemoryFeatureFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkCullModeFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkExternalMemoryFeatureFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkCullModeFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkExternalMemoryFeatureFlagBitsNV & value)
+std::ostream & operator<<(std::ostream & stream, const VkDebugReportFlagsEXT & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkExternalMemoryFeatureFlagBitsNV>(value);
+    stream << vkbinding::aux::bitfieldString<VkDebugReportFlagsEXT>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkExternalMemoryHandleTypeFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkDebugUtilsMessageSeverityFlagsEXT & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkExternalMemoryHandleTypeFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkDebugUtilsMessageSeverityFlagsEXT>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkExternalMemoryHandleTypeFlagBitsNV & value)
+std::ostream & operator<<(std::ostream & stream, const VkDebugUtilsMessageTypeFlagsEXT & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkExternalMemoryHandleTypeFlagBitsNV>(value);
+    stream << vkbinding::aux::bitfieldString<VkDebugUtilsMessageTypeFlagsEXT>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkExternalSemaphoreFeatureFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkDebugUtilsMessengerCallbackDataFlagsEXT & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkExternalSemaphoreFeatureFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkDebugUtilsMessengerCallbackDataFlagsEXT>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkExternalSemaphoreHandleTypeFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkDependencyFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkExternalSemaphoreHandleTypeFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkDependencyFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkFenceImportFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkDescriptorPoolCreateFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkFenceImportFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkDescriptorPoolCreateFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkFormatFeatureFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkDescriptorPoolResetFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkFormatFeatureFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkDescriptorPoolResetFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkFramebufferCreateFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkDescriptorSetLayoutCreateFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkFramebufferCreateFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkDescriptorSetLayoutCreateFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkGeometryFlagBitsNV & value)
+std::ostream & operator<<(std::ostream & stream, const VkDescriptorUpdateTemplateCreateFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkGeometryFlagBitsNV>(value);
+    stream << vkbinding::aux::bitfieldString<VkDescriptorUpdateTemplateCreateFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkGeometryInstanceFlagBitsNV & value)
+std::ostream & operator<<(std::ostream & stream, const VkDescriptorUpdateTemplateCreateFlagsKHR & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkGeometryInstanceFlagBitsNV>(value);
+    stream << vkbinding::aux::bitfieldString<VkDescriptorUpdateTemplateCreateFlagsKHR>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkImageAspectFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkDeviceCreateFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkImageAspectFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkDeviceCreateFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkImageCreateFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkDeviceGroupPresentModeFlagsKHR & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkImageCreateFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkDeviceGroupPresentModeFlagsKHR>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkImageUsageFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkDeviceQueueCreateFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkImageUsageFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkDeviceQueueCreateFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkImageViewCreateFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkDisplayModeCreateFlagsKHR & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkImageViewCreateFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkDisplayModeCreateFlagsKHR>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkIndirectCommandsLayoutUsageFlagBitsNVX & value)
+std::ostream & operator<<(std::ostream & stream, const VkDisplayPlaneAlphaFlagsKHR & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkIndirectCommandsLayoutUsageFlagBitsNVX>(value);
+    stream << vkbinding::aux::bitfieldString<VkDisplayPlaneAlphaFlagsKHR>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkMemoryAllocateFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkDisplaySurfaceCreateFlagsKHR & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkMemoryAllocateFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkDisplaySurfaceCreateFlagsKHR>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkMemoryHeapFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkEventCreateFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkMemoryHeapFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkEventCreateFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkMemoryPropertyFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkExternalFenceFeatureFlagBitsKHR & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkMemoryPropertyFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkExternalFenceFeatureFlagBitsKHR>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkObjectEntryUsageFlagBitsNVX & value)
+std::ostream & operator<<(std::ostream & stream, const VkExternalFenceFeatureFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkObjectEntryUsageFlagBitsNVX>(value);
+    stream << vkbinding::aux::bitfieldString<VkExternalFenceFeatureFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkPeerMemoryFeatureFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkExternalFenceFeatureFlagsKHR & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkPeerMemoryFeatureFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkExternalFenceFeatureFlagsKHR>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkPipelineCreateFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkExternalFenceHandleTypeFlagBitsKHR & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkPipelineCreateFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkExternalFenceHandleTypeFlagBitsKHR>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkPipelineCreationFeedbackFlagBitsEXT & value)
+std::ostream & operator<<(std::ostream & stream, const VkExternalFenceHandleTypeFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkPipelineCreationFeedbackFlagBitsEXT>(value);
+    stream << vkbinding::aux::bitfieldString<VkExternalFenceHandleTypeFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkPipelineShaderStageCreateFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkExternalFenceHandleTypeFlagsKHR & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkPipelineShaderStageCreateFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkExternalFenceHandleTypeFlagsKHR>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkPipelineStageFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkExternalMemoryFeatureFlagBitsKHR & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkPipelineStageFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkExternalMemoryFeatureFlagBitsKHR>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkQueueFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkExternalMemoryFeatureFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkQueueFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkExternalMemoryFeatureFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkResolveModeFlagBitsKHR & value)
+std::ostream & operator<<(std::ostream & stream, const VkExternalMemoryFeatureFlagsKHR & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkResolveModeFlagBitsKHR>(value);
+    stream << vkbinding::aux::bitfieldString<VkExternalMemoryFeatureFlagsKHR>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkSampleCountFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkExternalMemoryFeatureFlagsNV & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkSampleCountFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkExternalMemoryFeatureFlagsNV>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkSamplerCreateFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkExternalMemoryHandleTypeFlagBitsKHR & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkSamplerCreateFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkExternalMemoryHandleTypeFlagBitsKHR>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkSemaphoreImportFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkExternalMemoryHandleTypeFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkSemaphoreImportFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkExternalMemoryHandleTypeFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkShaderStageFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkExternalMemoryHandleTypeFlagsKHR & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkShaderStageFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkExternalMemoryHandleTypeFlagsKHR>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkSubgroupFeatureFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkExternalMemoryHandleTypeFlagsNV & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkSubgroupFeatureFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkExternalMemoryHandleTypeFlagsNV>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkSubpassDescriptionFlagBits & value)
+std::ostream & operator<<(std::ostream & stream, const VkExternalSemaphoreFeatureFlagBitsKHR & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkSubpassDescriptionFlagBits>(value);
+    stream << vkbinding::aux::bitfieldString<VkExternalSemaphoreFeatureFlagBitsKHR>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkSurfaceCounterFlagBitsEXT & value)
+std::ostream & operator<<(std::ostream & stream, const VkExternalSemaphoreFeatureFlags & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkSurfaceCounterFlagBitsEXT>(value);
+    stream << vkbinding::aux::bitfieldString<VkExternalSemaphoreFeatureFlags>(value);
     return stream;
 }
 
-std::ostream & operator<<(std::ostream & stream, const VkSwapchainCreateFlagBitsKHR & value)
+std::ostream & operator<<(std::ostream & stream, const VkExternalSemaphoreFeatureFlagsKHR & value)
 {
-    stream << vkbinding::aux::bitfieldString<VkSwapchainCreateFlagBitsKHR>(value);
+    stream << vkbinding::aux::bitfieldString<VkExternalSemaphoreFeatureFlagsKHR>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkExternalSemaphoreHandleTypeFlagBitsKHR & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkExternalSemaphoreHandleTypeFlagBitsKHR>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkExternalSemaphoreHandleTypeFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkExternalSemaphoreHandleTypeFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkExternalSemaphoreHandleTypeFlagsKHR & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkExternalSemaphoreHandleTypeFlagsKHR>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkFenceCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkFenceCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkFenceImportFlagBitsKHR & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkFenceImportFlagBitsKHR>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkFenceImportFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkFenceImportFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkFenceImportFlagsKHR & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkFenceImportFlagsKHR>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkFormatFeatureFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkFormatFeatureFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkFramebufferCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkFramebufferCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkGeometryFlagsNV & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkGeometryFlagsNV>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkGeometryInstanceFlagsNV & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkGeometryInstanceFlagsNV>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkHeadlessSurfaceCreateFlagsEXT & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkHeadlessSurfaceCreateFlagsEXT>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkImageAspectFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkImageAspectFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkImageCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkImageCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkImageUsageFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkImageUsageFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkImageViewCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkImageViewCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkIndirectCommandsLayoutUsageFlagsNVX & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkIndirectCommandsLayoutUsageFlagsNVX>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkInstanceCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkInstanceCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkMemoryAllocateFlagBitsKHR & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkMemoryAllocateFlagBitsKHR>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkMemoryAllocateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkMemoryAllocateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkMemoryAllocateFlagsKHR & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkMemoryAllocateFlagsKHR>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkMemoryHeapFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkMemoryHeapFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkMemoryMapFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkMemoryMapFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkMemoryPropertyFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkMemoryPropertyFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkObjectEntryUsageFlagsNVX & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkObjectEntryUsageFlagsNVX>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPeerMemoryFeatureFlagBitsKHR & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPeerMemoryFeatureFlagBitsKHR>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPeerMemoryFeatureFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPeerMemoryFeatureFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPeerMemoryFeatureFlagsKHR & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPeerMemoryFeatureFlagsKHR>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineCacheCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineCacheCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineColorBlendStateCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineColorBlendStateCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineCompilerControlFlagsAMD & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineCompilerControlFlagsAMD>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineCoverageModulationStateCreateFlagsNV & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineCoverageModulationStateCreateFlagsNV>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineCoverageReductionStateCreateFlagsNV & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineCoverageReductionStateCreateFlagsNV>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineCoverageToColorStateCreateFlagsNV & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineCoverageToColorStateCreateFlagsNV>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineCreationFeedbackFlagsEXT & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineCreationFeedbackFlagsEXT>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineDepthStencilStateCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineDepthStencilStateCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineDiscardRectangleStateCreateFlagsEXT & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineDiscardRectangleStateCreateFlagsEXT>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineDynamicStateCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineDynamicStateCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineInputAssemblyStateCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineInputAssemblyStateCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineLayoutCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineLayoutCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineMultisampleStateCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineMultisampleStateCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineRasterizationConservativeStateCreateFlagsEXT & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineRasterizationConservativeStateCreateFlagsEXT>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineRasterizationDepthClipStateCreateFlagsEXT & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineRasterizationDepthClipStateCreateFlagsEXT>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineRasterizationStateCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineRasterizationStateCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineRasterizationStateStreamCreateFlagsEXT & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineRasterizationStateStreamCreateFlagsEXT>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineShaderStageCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineShaderStageCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineStageFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineStageFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineTessellationStateCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineTessellationStateCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineVertexInputStateCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineVertexInputStateCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineViewportStateCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineViewportStateCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkPipelineViewportSwizzleStateCreateFlagsNV & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkPipelineViewportSwizzleStateCreateFlagsNV>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkQueryControlFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkQueryControlFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkQueryPipelineStatisticFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkQueryPipelineStatisticFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkQueryPoolCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkQueryPoolCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkQueryResultFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkQueryResultFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkQueueFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkQueueFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkRenderPassCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkRenderPassCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkResolveModeFlagsKHR & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkResolveModeFlagsKHR>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkSampleCountFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkSampleCountFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkSamplerCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkSamplerCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkSemaphoreCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkSemaphoreCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkSemaphoreImportFlagBitsKHR & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkSemaphoreImportFlagBitsKHR>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkSemaphoreImportFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkSemaphoreImportFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkSemaphoreImportFlagsKHR & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkSemaphoreImportFlagsKHR>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkShaderCorePropertiesFlagsAMD & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkShaderCorePropertiesFlagsAMD>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkShaderModuleCreateFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkShaderModuleCreateFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkShaderStageFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkShaderStageFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkSparseImageFormatFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkSparseImageFormatFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkSparseMemoryBindFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkSparseMemoryBindFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkStencilFaceFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkStencilFaceFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkSubgroupFeatureFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkSubgroupFeatureFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkSubpassDescriptionFlags & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkSubpassDescriptionFlags>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkSurfaceCounterFlagsEXT & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkSurfaceCounterFlagsEXT>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkSurfaceTransformFlagsKHR & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkSurfaceTransformFlagsKHR>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkSwapchainCreateFlagsKHR & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkSwapchainCreateFlagsKHR>(value);
+    return stream;
+}
+
+std::ostream & operator<<(std::ostream & stream, const VkValidationCacheCreateFlagsEXT & value)
+{
+    stream << vkbinding::aux::bitfieldString<VkValidationCacheCreateFlagsEXT>(value);
     return stream;
 }
 
@@ -367,7 +829,7 @@ std::ostream & operator<<(std::ostream & stream, const Value<vk::VKbitfield> & v
 }*/
 
 template <>
-std::ostream & operator<<(std::ostream & stream, const Value<vk::VKboolean> & value)
+std::ostream & operator<<(std::ostream & stream, const Value<vk::VkBool32> & value)
 {
     const auto & name = aux::Meta::getString(value.value());
     stream.write(name.c_str(), static_cast<std::streamsize>(name.size()));
@@ -389,6 +851,78 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(AbstractValue))
     {
         return stream << reinterpret_cast<const void*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::CAMetalLayer>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::CAMetalLayer>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::CAMetalLayer *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::CAMetalLayer *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::PFN_vkAllocationFunction>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::PFN_vkAllocationFunction>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::PFN_vkAllocationFunction *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::PFN_vkAllocationFunction *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::PFN_vkFreeFunction>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::PFN_vkFreeFunction>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::PFN_vkFreeFunction *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::PFN_vkFreeFunction *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::PFN_vkInternalAllocationNotification>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::PFN_vkInternalAllocationNotification>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::PFN_vkInternalAllocationNotification *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::PFN_vkInternalAllocationNotification *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::PFN_vkInternalFreeNotification>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::PFN_vkInternalFreeNotification>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::PFN_vkInternalFreeNotification *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::PFN_vkInternalFreeNotification *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::PFN_vkReallocationFunction>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::PFN_vkReallocationFunction>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::PFN_vkReallocationFunction *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::PFN_vkReallocationFunction *>*>(value);
     }
 
     
@@ -464,6 +998,30 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VK_DEFINE_HANDLE>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VK_DEFINE_HANDLE>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VK_DEFINE_HANDLE *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VK_DEFINE_HANDLE *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VK_DEFINE_NON_DISPATCHABLE_HANDLE>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VK_DEFINE_NON_DISPATCHABLE_HANDLE>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VK_DEFINE_NON_DISPATCHABLE_HANDLE *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VK_DEFINE_NON_DISPATCHABLE_HANDLE *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VK_HEADER_VERSION>))
     {
         return stream << *reinterpret_cast<const Value<vk::VK_HEADER_VERSION>*>(value);
@@ -473,6 +1031,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VK_HEADER_VERSION *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VK_HEADER_VERSION *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VK_MAKE_VERSION>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VK_MAKE_VERSION>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VK_MAKE_VERSION *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VK_MAKE_VERSION *>*>(value);
     }
 
     
@@ -584,15 +1154,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkAccessFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureTypeNV>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkAccessFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureTypeNV>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkAccessFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkAccelerationStructureTypeNV *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkAccessFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkAccelerationStructureTypeNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkAccessFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkAccessFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkAccessFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkAccessFlags *>*>(value);
     }
 
     
@@ -617,54 +1199,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkAllocationCallbacks *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkAllocationCallbacks *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkAndroidHardwareBufferFormatPropertiesANDROID>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAndroidHardwareBufferFormatPropertiesANDROID>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkAndroidHardwareBufferFormatPropertiesANDROID *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAndroidHardwareBufferFormatPropertiesANDROID *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkAndroidHardwareBufferPropertiesANDROID>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAndroidHardwareBufferPropertiesANDROID>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkAndroidHardwareBufferPropertiesANDROID *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAndroidHardwareBufferPropertiesANDROID *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkAndroidHardwareBufferUsageANDROID>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAndroidHardwareBufferUsageANDROID>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkAndroidHardwareBufferUsageANDROID *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAndroidHardwareBufferUsageANDROID *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkAndroidSurfaceCreateInfoKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAndroidSurfaceCreateInfoKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkAndroidSurfaceCreateInfoKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkAndroidSurfaceCreateInfoKHR *>*>(value);
     }
 
     
@@ -704,6 +1238,30 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkAttachmentDescriptionFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkAttachmentDescriptionFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkAttachmentDescriptionFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkAttachmentDescriptionFlags *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkAttachmentLoadOp>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkAttachmentLoadOp>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkAttachmentLoadOp *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkAttachmentLoadOp *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkAttachmentReference>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkAttachmentReference>*>(value);
@@ -737,6 +1295,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkAttachmentSampleLocationsEXT *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkAttachmentSampleLocationsEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkAttachmentStoreOp>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkAttachmentStoreOp>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkAttachmentStoreOp *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkAttachmentStoreOp *>*>(value);
     }
 
     
@@ -920,6 +1490,30 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VKbitfield>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VKbitfield>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VKbitfield *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VKbitfield *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBlendFactor>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBlendFactor>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBlendFactor *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBlendFactor *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkBlendOp>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkBlendOp>*>(value);
@@ -956,6 +1550,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkBorderColor>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBorderColor>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBorderColor *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBorderColor *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkBuffer>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkBuffer>*>(value);
@@ -980,15 +1586,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkBufferCreateFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkBufferCreateFlags>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkBufferCreateFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkBufferCreateFlags>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkBufferCreateFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkBufferCreateFlags *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkBufferCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkBufferCreateFlags *>*>(value);
     }
 
     
@@ -1076,15 +1682,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkBufferUsageFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkBufferUsageFlags>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkBufferUsageFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkBufferUsageFlags>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkBufferUsageFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkBufferUsageFlags *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkBufferUsageFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkBufferUsageFlags *>*>(value);
     }
 
     
@@ -1097,6 +1703,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkBufferView *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkBufferView *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBufferViewCreateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBufferViewCreateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBufferViewCreateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBufferViewCreateFlags *>*>(value);
     }
 
     
@@ -1121,6 +1739,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkBuildAccelerationStructureFlagBitsNV *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkBuildAccelerationStructureFlagBitsNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkBuildAccelerationStructureFlagsNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBuildAccelerationStructureFlagsNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkBuildAccelerationStructureFlagsNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkBuildAccelerationStructureFlagsNV *>*>(value);
     }
 
     
@@ -1157,6 +1787,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkChromaLocation *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkChromaLocation *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkChromaLocationKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkChromaLocationKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkChromaLocationKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkChromaLocationKHR *>*>(value);
     }
 
     
@@ -1280,6 +1922,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkColorComponentFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkColorComponentFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkColorComponentFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkColorComponentFlags *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkColorSpaceKHR>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkColorSpaceKHR>*>(value);
@@ -1352,6 +2006,42 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkCommandBufferLevel>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferLevel>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkCommandBufferLevel *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferLevel *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkCommandBufferResetFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferResetFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkCommandBufferResetFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferResetFlags *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkCommandBufferUsageFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferUsageFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkCommandBufferUsageFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCommandBufferUsageFlags *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkCommandPool>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkCommandPool>*>(value);
@@ -1364,15 +2054,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkCommandPoolCreateFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkCommandPoolCreateFlags>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandPoolCreateFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkCommandPoolCreateFlags>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkCommandPoolCreateFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkCommandPoolCreateFlags *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkCommandPoolCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkCommandPoolCreateFlags *>*>(value);
     }
 
     
@@ -1388,6 +2078,78 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkCommandPoolResetFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCommandPoolResetFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkCommandPoolResetFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCommandPoolResetFlags *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkCommandPoolTrimFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCommandPoolTrimFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkCommandPoolTrimFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCommandPoolTrimFlags *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkCommandPoolTrimFlagsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCommandPoolTrimFlagsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkCommandPoolTrimFlagsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCommandPoolTrimFlagsKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkCompareOp>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCompareOp>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkCompareOp *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCompareOp *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkComponentMapping>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkComponentMapping>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkComponentMapping *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkComponentMapping *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkComponentSwizzle>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkComponentSwizzle>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkComponentSwizzle *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkComponentSwizzle *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkComponentTypeNV>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkComponentTypeNV>*>(value);
@@ -1397,6 +2159,30 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkComponentTypeNV *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkComponentTypeNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkCompositeAlphaFlagBitsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCompositeAlphaFlagBitsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkCompositeAlphaFlagBitsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCompositeAlphaFlagBitsKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkCompositeAlphaFlagsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCompositeAlphaFlagsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkCompositeAlphaFlagsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkCompositeAlphaFlagsKHR *>*>(value);
     }
 
     
@@ -1433,6 +2219,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkConditionalRenderingFlagBitsEXT *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkConditionalRenderingFlagBitsEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkConditionalRenderingFlagsEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkConditionalRenderingFlagsEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkConditionalRenderingFlagsEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkConditionalRenderingFlagsEXT *>*>(value);
     }
 
     
@@ -1520,15 +2318,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkD3D12FenceSubmitInfoKHR>))
+    if (typeid(*value) == typeid(Value<vk::VkCullModeFlags>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkD3D12FenceSubmitInfoKHR>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkCullModeFlags>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkD3D12FenceSubmitInfoKHR *>))
+    if (typeid(*value) == typeid(Value<vk::VkCullModeFlags *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkD3D12FenceSubmitInfoKHR *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkCullModeFlags *>*>(value);
     }
 
     
@@ -1592,6 +2390,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkDebugReportFlagsEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDebugReportFlagsEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDebugReportFlagsEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDebugReportFlagsEXT *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkDebugReportObjectTypeEXT>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkDebugReportObjectTypeEXT>*>(value);
@@ -1628,6 +2438,30 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessageSeverityFlagsEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessageSeverityFlagsEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessageSeverityFlagsEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessageSeverityFlagsEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessageTypeFlagsEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessageTypeFlagsEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessageTypeFlagsEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessageTypeFlagsEXT *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessengerCallbackDataEXT>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessengerCallbackDataEXT>*>(value);
@@ -1637,6 +2471,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessengerCallbackDataEXT *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessengerCallbackDataEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessengerCallbackDataFlagsEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessengerCallbackDataFlagsEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDebugUtilsMessengerCallbackDataFlagsEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDebugUtilsMessengerCallbackDataFlagsEXT *>*>(value);
     }
 
     
@@ -1724,15 +2570,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDependencyFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkDependencyFlags>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDependencyFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDependencyFlags>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDependencyFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkDependencyFlags *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDependencyFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDependencyFlags *>*>(value);
     }
 
     
@@ -1772,15 +2618,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorPoolCreateFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorPoolCreateFlags>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorPoolCreateFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorPoolCreateFlags>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorPoolCreateFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorPoolCreateFlags *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorPoolCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorPoolCreateFlags *>*>(value);
     }
 
     
@@ -1805,6 +2651,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkDescriptorPoolInlineUniformBlockCreateInfoEXT *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkDescriptorPoolInlineUniformBlockCreateInfoEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorPoolResetFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorPoolResetFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorPoolResetFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorPoolResetFlags *>*>(value);
     }
 
     
@@ -1880,15 +2738,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayoutCreateFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayoutCreateFlags>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayoutCreateFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayoutCreateFlags>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayoutCreateFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorSetLayoutCreateFlags *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayoutCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorSetLayoutCreateFlags *>*>(value);
     }
 
     
@@ -1976,6 +2834,30 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateCreateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateCreateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateCreateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateCreateFlags *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateCreateFlagsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateCreateFlagsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateCreateFlagsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateCreateFlagsKHR *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateCreateInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateCreateInfo>*>(value);
@@ -2048,6 +2930,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateTypeKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateTypeKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDescriptorUpdateTemplateTypeKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDescriptorUpdateTemplateTypeKHR *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkDevice>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkDevice>*>(value);
@@ -2069,6 +2963,30 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkDeviceAddress *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkDeviceAddress *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceAddress>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceAddress>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceAddress *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceAddress *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceCreateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceCreateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceCreateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceCreateFlags *>*>(value);
     }
 
     
@@ -2240,6 +3158,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupPresentModeFlagsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupPresentModeFlagsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceGroupPresentModeFlagsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupPresentModeFlagsKHR *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkDeviceGroupRenderPassBeginInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkDeviceGroupRenderPassBeginInfo>*>(value);
@@ -2324,15 +3254,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceQueueCreateFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceQueueCreateFlags>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceQueueCreateFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceQueueCreateFlags>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkDeviceQueueCreateFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkDeviceQueueCreateFlags *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkDeviceQueueCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceQueueCreateFlags *>*>(value);
     }
 
     
@@ -2369,6 +3299,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkDeviceQueueInfo2 *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkDeviceQueueInfo2 *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceSize>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceSize>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDeviceSize *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDeviceSize *>*>(value);
     }
 
     
@@ -2441,6 +3383,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkDisplayKHR *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkDisplayKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDisplayModeCreateFlagsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayModeCreateFlagsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDisplayModeCreateFlagsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayModeCreateFlagsKHR *>*>(value);
     }
 
     
@@ -2525,6 +3479,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneAlphaFlagBitsKHR *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneAlphaFlagBitsKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneAlphaFlagsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneAlphaFlagsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDisplayPlaneAlphaFlagsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDisplayPlaneAlphaFlagsKHR *>*>(value);
     }
 
     
@@ -2648,6 +3614,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkDisplaySurfaceCreateFlagsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDisplaySurfaceCreateFlagsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkDisplaySurfaceCreateFlagsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkDisplaySurfaceCreateFlagsKHR *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkDisplaySurfaceCreateInfoKHR>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkDisplaySurfaceCreateInfoKHR>*>(value);
@@ -2768,6 +3746,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkEventCreateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkEventCreateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkEventCreateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkEventCreateFlags *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkEventCreateInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkEventCreateInfo>*>(value);
@@ -2801,18 +3791,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkExportFenceCreateInfoKHR *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkExportFenceCreateInfoKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkExportFenceWin32HandleInfoKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExportFenceWin32HandleInfoKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExportFenceWin32HandleInfoKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExportFenceWin32HandleInfoKHR *>*>(value);
     }
 
     
@@ -2852,30 +3830,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkExportMemoryWin32HandleInfoKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExportMemoryWin32HandleInfoKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExportMemoryWin32HandleInfoKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExportMemoryWin32HandleInfoKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkExportMemoryWin32HandleInfoNV>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExportMemoryWin32HandleInfoNV>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExportMemoryWin32HandleInfoNV *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExportMemoryWin32HandleInfoNV *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkExportSemaphoreCreateInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkExportSemaphoreCreateInfo>*>(value);
@@ -2897,18 +3851,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkExportSemaphoreCreateInfoKHR *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkExportSemaphoreCreateInfoKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkExportSemaphoreWin32HandleInfoKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExportSemaphoreWin32HandleInfoKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExportSemaphoreWin32HandleInfoKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExportSemaphoreWin32HandleInfoKHR *>*>(value);
     }
 
     
@@ -2996,6 +3938,42 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkExternalFenceFeatureFlagBitsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceFeatureFlagBitsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalFenceFeatureFlagBitsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceFeatureFlagBitsKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalFenceFeatureFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceFeatureFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalFenceFeatureFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceFeatureFlags *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalFenceFeatureFlagsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceFeatureFlagsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalFenceFeatureFlagsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceFeatureFlagsKHR *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkExternalFenceHandleTypeFlagBits>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkExternalFenceHandleTypeFlagBits>*>(value);
@@ -3005,6 +3983,42 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkExternalFenceHandleTypeFlagBits *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkExternalFenceHandleTypeFlagBits *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalFenceHandleTypeFlagBitsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceHandleTypeFlagBitsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalFenceHandleTypeFlagBitsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceHandleTypeFlagBitsKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalFenceHandleTypeFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceHandleTypeFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalFenceHandleTypeFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceHandleTypeFlags *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalFenceHandleTypeFlagsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceHandleTypeFlagsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalFenceHandleTypeFlagsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalFenceHandleTypeFlagsKHR *>*>(value);
     }
 
     
@@ -3029,18 +4043,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkExternalFencePropertiesKHR *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkExternalFencePropertiesKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalFormatANDROID>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalFormatANDROID>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkExternalFormatANDROID *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkExternalFormatANDROID *>*>(value);
     }
 
     
@@ -3116,6 +4118,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryFeatureFlagBitsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryFeatureFlagBitsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryFeatureFlagBitsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryFeatureFlagBitsKHR *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkExternalMemoryFeatureFlagBitsNV>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryFeatureFlagBitsNV>*>(value);
@@ -3125,6 +4139,42 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkExternalMemoryFeatureFlagBitsNV *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryFeatureFlagBitsNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryFeatureFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryFeatureFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryFeatureFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryFeatureFlags *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryFeatureFlagsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryFeatureFlagsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryFeatureFlagsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryFeatureFlagsKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryFeatureFlagsNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryFeatureFlagsNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryFeatureFlagsNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryFeatureFlagsNV *>*>(value);
     }
 
     
@@ -3140,6 +4190,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryHandleTypeFlagBitsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryHandleTypeFlagBitsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryHandleTypeFlagBitsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryHandleTypeFlagBitsKHR *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkExternalMemoryHandleTypeFlagBitsNV>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryHandleTypeFlagBitsNV>*>(value);
@@ -3149,6 +4211,42 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkExternalMemoryHandleTypeFlagBitsNV *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryHandleTypeFlagBitsNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryHandleTypeFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryHandleTypeFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryHandleTypeFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryHandleTypeFlags *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryHandleTypeFlagsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryHandleTypeFlagsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryHandleTypeFlagsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryHandleTypeFlagsKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryHandleTypeFlagsNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryHandleTypeFlagsNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalMemoryHandleTypeFlagsNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalMemoryHandleTypeFlagsNV *>*>(value);
     }
 
     
@@ -3224,6 +4322,42 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreFeatureFlagBitsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreFeatureFlagBitsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreFeatureFlagBitsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreFeatureFlagBitsKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreFeatureFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreFeatureFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreFeatureFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreFeatureFlags *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreFeatureFlagsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreFeatureFlagsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreFeatureFlagsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreFeatureFlagsKHR *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreHandleTypeFlagBits>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreHandleTypeFlagBits>*>(value);
@@ -3233,6 +4367,42 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreHandleTypeFlagBits *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreHandleTypeFlagBits *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreHandleTypeFlagBitsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreHandleTypeFlagBitsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreHandleTypeFlagBitsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreHandleTypeFlagBitsKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreHandleTypeFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreHandleTypeFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreHandleTypeFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreHandleTypeFlags *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreHandleTypeFlagsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreHandleTypeFlagsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkExternalSemaphoreHandleTypeFlagsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkExternalSemaphoreHandleTypeFlagsKHR *>*>(value);
     }
 
     
@@ -3272,6 +4442,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkFenceCreateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkFenceCreateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkFenceCreateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkFenceCreateFlags *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkFenceCreateInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkFenceCreateInfo>*>(value);
@@ -3296,18 +4478,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkFenceGetWin32HandleInfoKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFenceGetWin32HandleInfoKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFenceGetWin32HandleInfoKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFenceGetWin32HandleInfoKHR *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkFenceImportFlagBits>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkFenceImportFlagBits>*>(value);
@@ -3317,6 +4487,42 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkFenceImportFlagBits *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkFenceImportFlagBits *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkFenceImportFlagBitsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkFenceImportFlagBitsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkFenceImportFlagBitsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkFenceImportFlagBitsKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkFenceImportFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkFenceImportFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkFenceImportFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkFenceImportFlags *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkFenceImportFlagsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkFenceImportFlagsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkFenceImportFlagsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkFenceImportFlagsKHR *>*>(value);
     }
 
     
@@ -3356,15 +4562,27 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkFormatFeatureFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkFormatFeatureFlags>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFormatFeatureFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFormatFeatureFlags>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkFormatFeatureFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkFormatFeatureFlags *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFormatFeatureFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFormatFeatureFlags *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkFormatProperties>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkFormatProperties>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkFormatProperties *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkFormatProperties *>*>(value);
     }
 
     
@@ -3404,18 +4622,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkFramebufferAttachmentImageInfoKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFramebufferAttachmentImageInfoKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkFramebufferAttachmentImageInfoKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkFramebufferAttachmentImageInfoKHR *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkFramebufferAttachmentsCreateInfoKHR>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkFramebufferAttachmentsCreateInfoKHR>*>(value);
@@ -3428,15 +4634,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkFramebufferCreateFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkFramebufferCreateFlags>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFramebufferCreateFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFramebufferCreateFlags>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkFramebufferCreateFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkFramebufferCreateFlags *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkFramebufferCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkFramebufferCreateFlags *>*>(value);
     }
 
     
@@ -3461,6 +4667,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkFramebufferMixedSamplesCombinationNV *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkFramebufferMixedSamplesCombinationNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkFrontFace>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkFrontFace>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkFrontFace *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkFrontFace *>*>(value);
     }
 
     
@@ -3500,6 +4718,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkGeometryFlagsNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkGeometryFlagsNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkGeometryFlagsNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkGeometryFlagsNV *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkGeometryInstanceFlagBitsNV>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkGeometryInstanceFlagBitsNV>*>(value);
@@ -3509,6 +4739,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkGeometryInstanceFlagBitsNV *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkGeometryInstanceFlagBitsNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkGeometryInstanceFlagsNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkGeometryInstanceFlagsNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkGeometryInstanceFlagsNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkGeometryInstanceFlagsNV *>*>(value);
     }
 
     
@@ -3572,6 +4814,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkHeadlessSurfaceCreateFlagsEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkHeadlessSurfaceCreateFlagsEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkHeadlessSurfaceCreateFlagsEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkHeadlessSurfaceCreateFlagsEXT *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkHeadlessSurfaceCreateInfoEXT>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkHeadlessSurfaceCreateInfoEXT>*>(value);
@@ -3596,15 +4850,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImageAspectFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkImageAspectFlags>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageAspectFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageAspectFlags>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkImageAspectFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkImageAspectFlags *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageAspectFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageAspectFlags *>*>(value);
     }
 
     
@@ -3632,15 +4886,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImageCreateFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkImageCreateFlags>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageCreateFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageCreateFlags>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkImageCreateFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkImageCreateFlags *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageCreateFlags *>*>(value);
     }
 
     
@@ -3788,18 +5042,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImagePipeSurfaceCreateInfoFUCHSIA>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImagePipeSurfaceCreateInfoFUCHSIA>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImagePipeSurfaceCreateInfoFUCHSIA *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImagePipeSurfaceCreateInfoFUCHSIA *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkImagePlaneMemoryRequirementsInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkImagePlaneMemoryRequirementsInfo>*>(value);
@@ -3944,15 +5186,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImageUsageFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkImageUsageFlags>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageUsageFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageUsageFlags>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkImageUsageFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkImageUsageFlags *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageUsageFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageUsageFlags *>*>(value);
     }
 
     
@@ -3980,15 +5222,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImageViewCreateFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkImageViewCreateFlags>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageViewCreateFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageViewCreateFlags>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkImageViewCreateFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkImageViewCreateFlags *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkImageViewCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkImageViewCreateFlags *>*>(value);
     }
 
     
@@ -4016,6 +5258,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkImageViewType>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageViewType>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkImageViewType *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkImageViewType *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkImageViewUsageCreateInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkImageViewUsageCreateInfo>*>(value);
@@ -4040,18 +5294,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImportAndroidHardwareBufferInfoANDROID>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImportAndroidHardwareBufferInfoANDROID>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImportAndroidHardwareBufferInfoANDROID *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImportAndroidHardwareBufferInfoANDROID *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkImportFenceFdInfoKHR>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkImportFenceFdInfoKHR>*>(value);
@@ -4061,18 +5303,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkImportFenceFdInfoKHR *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkImportFenceFdInfoKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImportFenceWin32HandleInfoKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImportFenceWin32HandleInfoKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImportFenceWin32HandleInfoKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImportFenceWin32HandleInfoKHR *>*>(value);
     }
 
     
@@ -4100,30 +5330,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkImportMemoryWin32HandleInfoKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImportMemoryWin32HandleInfoKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImportMemoryWin32HandleInfoKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImportMemoryWin32HandleInfoKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImportMemoryWin32HandleInfoNV>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImportMemoryWin32HandleInfoNV>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImportMemoryWin32HandleInfoNV *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImportMemoryWin32HandleInfoNV *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkImportSemaphoreFdInfoKHR>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkImportSemaphoreFdInfoKHR>*>(value);
@@ -4133,18 +5339,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkImportSemaphoreFdInfoKHR *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkImportSemaphoreFdInfoKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkImportSemaphoreWin32HandleInfoKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImportSemaphoreWin32HandleInfoKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkImportSemaphoreWin32HandleInfoKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkImportSemaphoreWin32HandleInfoKHR *>*>(value);
     }
 
     
@@ -4205,6 +5399,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkIndirectCommandsLayoutUsageFlagBitsNVX *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkIndirectCommandsLayoutUsageFlagBitsNVX *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkIndirectCommandsLayoutUsageFlagsNVX>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkIndirectCommandsLayoutUsageFlagsNVX>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkIndirectCommandsLayoutUsageFlagsNVX *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkIndirectCommandsLayoutUsageFlagsNVX *>*>(value);
     }
 
     
@@ -4280,6 +5486,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkInstanceCreateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkInstanceCreateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkInstanceCreateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkInstanceCreateFlags *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkInstanceCreateInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkInstanceCreateInfo>*>(value);
@@ -4292,15 +5510,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkIOSSurfaceCreateInfoMVK>))
+    if (typeid(*value) == typeid(Value<vk::VkInternalAllocationType>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkIOSSurfaceCreateInfoMVK>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkInternalAllocationType>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkIOSSurfaceCreateInfoMVK *>))
+    if (typeid(*value) == typeid(Value<vk::VkInternalAllocationType *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkIOSSurfaceCreateInfoMVK *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkInternalAllocationType *>*>(value);
     }
 
     
@@ -4328,15 +5546,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkMacOSSurfaceCreateInfoMVK>))
+    if (typeid(*value) == typeid(Value<vk::VkLogicOp>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMacOSSurfaceCreateInfoMVK>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkLogicOp>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkMacOSSurfaceCreateInfoMVK *>))
+    if (typeid(*value) == typeid(Value<vk::VkLogicOp *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMacOSSurfaceCreateInfoMVK *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkLogicOp *>*>(value);
     }
 
     
@@ -4364,6 +5582,30 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkMemoryAllocateFlagBitsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryAllocateFlagBitsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryAllocateFlagBitsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryAllocateFlagBitsKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryAllocateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryAllocateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryAllocateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryAllocateFlags *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkMemoryAllocateFlagsInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkMemoryAllocateFlagsInfo>*>(value);
@@ -4385,6 +5627,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkMemoryAllocateFlagsInfoKHR *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkMemoryAllocateFlagsInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryAllocateFlagsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryAllocateFlagsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryAllocateFlagsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryAllocateFlagsKHR *>*>(value);
     }
 
     
@@ -4472,18 +5726,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryGetAndroidHardwareBufferInfoANDROID>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryGetAndroidHardwareBufferInfoANDROID>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkMemoryGetAndroidHardwareBufferInfoANDROID *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryGetAndroidHardwareBufferInfoANDROID *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkMemoryGetFdInfoKHR>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkMemoryGetFdInfoKHR>*>(value);
@@ -4493,18 +5735,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkMemoryGetFdInfoKHR *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkMemoryGetFdInfoKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkMemoryGetWin32HandleInfoKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryGetWin32HandleInfoKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkMemoryGetWin32HandleInfoKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryGetWin32HandleInfoKHR *>*>(value);
     }
 
     
@@ -4520,15 +5750,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryHeapFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryHeapFlags>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryHeapFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryHeapFlags>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryHeapFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryHeapFlags *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryHeapFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryHeapFlags *>*>(value);
     }
 
     
@@ -4541,6 +5771,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkMemoryHostPointerPropertiesEXT *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkMemoryHostPointerPropertiesEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryMapFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryMapFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkMemoryMapFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryMapFlags *>*>(value);
     }
 
     
@@ -4568,15 +5810,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryPropertyFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryPropertyFlags>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryPropertyFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryPropertyFlags>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryPropertyFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkMemoryPropertyFlags *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryPropertyFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkMemoryPropertyFlags *>*>(value);
     }
 
     
@@ -4628,30 +5870,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkMemoryWin32HandlePropertiesKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryWin32HandlePropertiesKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkMemoryWin32HandlePropertiesKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMemoryWin32HandlePropertiesKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkMetalSurfaceCreateInfoEXT>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMetalSurfaceCreateInfoEXT>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkMetalSurfaceCreateInfoEXT *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkMetalSurfaceCreateInfoEXT *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkMultisamplePropertiesEXT>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkMultisamplePropertiesEXT>*>(value);
@@ -4661,30 +5879,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkMultisamplePropertiesEXT *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkMultisamplePropertiesEXT *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkNativeBufferANDROID>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkNativeBufferANDROID>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkNativeBufferANDROID *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkNativeBufferANDROID *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkNativeBufferUsage2ANDROID>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkNativeBufferUsage2ANDROID>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkNativeBufferUsage2ANDROID *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkNativeBufferUsage2ANDROID *>*>(value);
     }
 
     
@@ -4709,6 +5903,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkObjectEntryUsageFlagBitsNVX *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkObjectEntryUsageFlagBitsNVX *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkObjectEntryUsageFlagsNVX>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkObjectEntryUsageFlagsNVX>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkObjectEntryUsageFlagsNVX *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkObjectEntryUsageFlagsNVX *>*>(value);
     }
 
     
@@ -4865,6 +6071,42 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkPeerMemoryFeatureFlagBits *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPeerMemoryFeatureFlagBits *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPeerMemoryFeatureFlagBitsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPeerMemoryFeatureFlagBitsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPeerMemoryFeatureFlagBitsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPeerMemoryFeatureFlagBitsKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPeerMemoryFeatureFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPeerMemoryFeatureFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPeerMemoryFeatureFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPeerMemoryFeatureFlags *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPeerMemoryFeatureFlagsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPeerMemoryFeatureFlagsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPeerMemoryFeatureFlagsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPeerMemoryFeatureFlagsKHR *>*>(value);
     }
 
     
@@ -5876,6 +7118,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevicePipelineExecutablePropertiesFeaturesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevicePipelineExecutablePropertiesFeaturesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevicePipelineExecutablePropertiesFeaturesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevicePipelineExecutablePropertiesFeaturesKHR *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkPhysicalDevicePointClippingProperties>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevicePointClippingProperties>*>(value);
@@ -5897,18 +7151,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkPhysicalDevicePointClippingPropertiesKHR *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevicePointClippingPropertiesKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevicePresentationPropertiesANDROID>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevicePresentationPropertiesANDROID>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDevicePresentationPropertiesANDROID *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDevicePresentationPropertiesANDROID *>*>(value);
     }
 
     
@@ -6077,6 +7319,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderAtomicInt64FeaturesKHR *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderAtomicInt64FeaturesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderCoreProperties2AMD>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderCoreProperties2AMD>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceShaderCoreProperties2AMD *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceShaderCoreProperties2AMD *>*>(value);
     }
 
     
@@ -6260,6 +7514,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSubgroupSizeControlFeaturesEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSubgroupSizeControlFeaturesEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSubgroupSizeControlFeaturesEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSubgroupSizeControlFeaturesEXT *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceSubgroupSizeControlPropertiesEXT>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceSubgroupSizeControlPropertiesEXT>*>(value);
@@ -6344,6 +7610,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceType>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceType>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceType *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceType *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceUniformBufferStandardLayoutFeaturesKHR>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceUniformBufferStandardLayoutFeaturesKHR>*>(value);
@@ -6368,18 +7646,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceVariablePointerFeaturesKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceVariablePointerFeaturesKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceVariablePointerFeaturesKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceVariablePointerFeaturesKHR *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceVariablePointersFeatures>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceVariablePointersFeatures>*>(value);
@@ -6389,18 +7655,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceVariablePointersFeatures *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceVariablePointersFeatures *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceVariablePointersFeaturesKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceVariablePointersFeaturesKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPhysicalDeviceVariablePointersFeaturesKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPhysicalDeviceVariablePointersFeaturesKHR *>*>(value);
     }
 
     
@@ -6488,6 +7742,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCacheCreateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCacheCreateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCacheCreateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCacheCreateFlags *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkPipelineCacheCreateInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineCacheCreateInfo>*>(value);
@@ -6536,6 +7802,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkPipelineColorBlendStateCreateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineColorBlendStateCreateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineColorBlendStateCreateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineColorBlendStateCreateFlags *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkPipelineColorBlendStateCreateInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineColorBlendStateCreateInfo>*>(value);
@@ -6545,6 +7823,54 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkPipelineColorBlendStateCreateInfo *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineColorBlendStateCreateInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCompilerControlCreateInfoAMD>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCompilerControlCreateInfoAMD>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCompilerControlCreateInfoAMD *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCompilerControlCreateInfoAMD *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCompilerControlFlagBitsAMD>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCompilerControlFlagBitsAMD>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCompilerControlFlagBitsAMD *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCompilerControlFlagBitsAMD *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCompilerControlFlagsAMD>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCompilerControlFlagsAMD>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCompilerControlFlagsAMD *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCompilerControlFlagsAMD *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCoverageModulationStateCreateFlagsNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCoverageModulationStateCreateFlagsNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCoverageModulationStateCreateFlagsNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCoverageModulationStateCreateFlagsNV *>*>(value);
     }
 
     
@@ -6560,6 +7886,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCoverageReductionStateCreateFlagsNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCoverageReductionStateCreateFlagsNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCoverageReductionStateCreateFlagsNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCoverageReductionStateCreateFlagsNV *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkPipelineCoverageReductionStateCreateInfoNV>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineCoverageReductionStateCreateInfoNV>*>(value);
@@ -6569,6 +7907,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkPipelineCoverageReductionStateCreateInfoNV *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineCoverageReductionStateCreateInfoNV *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCoverageToColorStateCreateFlagsNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCoverageToColorStateCreateFlagsNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCoverageToColorStateCreateFlagsNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCoverageToColorStateCreateFlagsNV *>*>(value);
     }
 
     
@@ -6584,15 +7934,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCreateFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCreateFlags>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCreateFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCreateFlags>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineCreateFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCreateFlags *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCreateFlags *>*>(value);
     }
 
     
@@ -6632,6 +7982,30 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCreationFeedbackFlagsEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCreationFeedbackFlagsEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineCreationFeedbackFlagsEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineCreationFeedbackFlagsEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineDepthStencilStateCreateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineDepthStencilStateCreateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineDepthStencilStateCreateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineDepthStencilStateCreateFlags *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkPipelineDepthStencilStateCreateInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineDepthStencilStateCreateInfo>*>(value);
@@ -6641,6 +8015,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkPipelineDepthStencilStateCreateInfo *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineDepthStencilStateCreateInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineDiscardRectangleStateCreateFlagsEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineDiscardRectangleStateCreateFlagsEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineDiscardRectangleStateCreateFlagsEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineDiscardRectangleStateCreateFlagsEXT *>*>(value);
     }
 
     
@@ -6656,6 +8042,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkPipelineDynamicStateCreateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineDynamicStateCreateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineDynamicStateCreateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineDynamicStateCreateFlags *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkPipelineDynamicStateCreateInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineDynamicStateCreateInfo>*>(value);
@@ -6665,6 +8063,102 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkPipelineDynamicStateCreateInfo *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineDynamicStateCreateInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineExecutableInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineExecutableInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineExecutableInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineExecutableInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineExecutableInternalRepresentationKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineExecutableInternalRepresentationKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineExecutableInternalRepresentationKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineExecutableInternalRepresentationKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineExecutablePropertiesKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineExecutablePropertiesKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineExecutablePropertiesKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineExecutablePropertiesKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineExecutableStatisticFormatKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineExecutableStatisticFormatKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineExecutableStatisticFormatKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineExecutableStatisticFormatKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineExecutableStatisticKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineExecutableStatisticKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineExecutableStatisticKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineExecutableStatisticKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineExecutableStatisticValueKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineExecutableStatisticValueKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineExecutableStatisticValueKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineExecutableStatisticValueKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineInfoKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineInfoKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineInfoKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineInfoKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineInputAssemblyStateCreateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineInputAssemblyStateCreateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineInputAssemblyStateCreateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineInputAssemblyStateCreateFlags *>*>(value);
     }
 
     
@@ -6692,6 +8186,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkPipelineLayoutCreateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineLayoutCreateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineLayoutCreateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineLayoutCreateFlags *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkPipelineLayoutCreateInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineLayoutCreateInfo>*>(value);
@@ -6701,6 +8207,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkPipelineLayoutCreateInfo *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineLayoutCreateInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineMultisampleStateCreateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineMultisampleStateCreateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineMultisampleStateCreateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineMultisampleStateCreateFlags *>*>(value);
     }
 
     
@@ -6716,6 +8234,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationConservativeStateCreateFlagsEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationConservativeStateCreateFlagsEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationConservativeStateCreateFlagsEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationConservativeStateCreateFlagsEXT *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationConservativeStateCreateInfoEXT>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationConservativeStateCreateInfoEXT>*>(value);
@@ -6725,6 +8255,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationConservativeStateCreateInfoEXT *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationConservativeStateCreateInfoEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationDepthClipStateCreateFlagsEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationDepthClipStateCreateFlagsEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationDepthClipStateCreateFlagsEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationDepthClipStateCreateFlagsEXT *>*>(value);
     }
 
     
@@ -6752,6 +8294,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationStateCreateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationStateCreateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationStateCreateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationStateCreateFlags *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationStateCreateInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationStateCreateInfo>*>(value);
@@ -6773,6 +8327,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationStateRasterizationOrderAMD *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationStateRasterizationOrderAMD *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationStateStreamCreateFlagsEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationStateStreamCreateFlagsEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineRasterizationStateStreamCreateFlagsEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineRasterizationStateStreamCreateFlagsEXT *>*>(value);
     }
 
     
@@ -6812,15 +8378,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineShaderStageCreateFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineShaderStageCreateFlags>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineShaderStageCreateFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineShaderStageCreateFlags>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkPipelineShaderStageCreateFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkPipelineShaderStageCreateFlags *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkPipelineShaderStageCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineShaderStageCreateFlags *>*>(value);
     }
 
     
@@ -6860,6 +8426,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkPipelineStageFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineStageFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineStageFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineStageFlags *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkPipelineTessellationDomainOriginStateCreateInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineTessellationDomainOriginStateCreateInfo>*>(value);
@@ -6884,6 +8462,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkPipelineTessellationStateCreateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineTessellationStateCreateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineTessellationStateCreateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineTessellationStateCreateFlags *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkPipelineTessellationStateCreateInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineTessellationStateCreateInfo>*>(value);
@@ -6905,6 +8495,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkPipelineVertexInputDivisorStateCreateInfoEXT *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineVertexInputDivisorStateCreateInfoEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineVertexInputStateCreateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineVertexInputStateCreateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineVertexInputStateCreateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineVertexInputStateCreateFlags *>*>(value);
     }
 
     
@@ -6956,6 +8558,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportStateCreateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportStateCreateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportStateCreateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportStateCreateFlags *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkPipelineViewportStateCreateInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportStateCreateInfo>*>(value);
@@ -6965,6 +8579,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkPipelineViewportStateCreateInfo *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportStateCreateInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportSwizzleStateCreateFlagsNV>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportSwizzleStateCreateFlagsNV>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPipelineViewportSwizzleStateCreateFlagsNV *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPipelineViewportSwizzleStateCreateFlagsNV *>*>(value);
     }
 
     
@@ -7004,6 +8630,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkPointClippingBehaviorKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPointClippingBehaviorKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPointClippingBehaviorKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPointClippingBehaviorKHR *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkPolygonMode>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPolygonMode>*>(value);
@@ -7013,18 +8651,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkPolygonMode *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkPolygonMode *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkPresentFrameTokenGGP>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPresentFrameTokenGGP>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkPresentFrameTokenGGP *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkPresentFrameTokenGGP *>*>(value);
     }
 
     
@@ -7100,6 +8726,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkPrimitiveTopology>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPrimitiveTopology>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkPrimitiveTopology *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkPrimitiveTopology *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkProtectedSubmitInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkProtectedSubmitInfo>*>(value);
@@ -7124,6 +8762,30 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkQueryControlFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkQueryControlFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkQueryControlFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkQueryControlFlags *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkQueryPipelineStatisticFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkQueryPipelineStatisticFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkQueryPipelineStatisticFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkQueryPipelineStatisticFlags *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkQueryPool>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkQueryPool>*>(value);
@@ -7133,6 +8795,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkQueryPool *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkQueryPool *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkQueryPoolCreateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkQueryPoolCreateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkQueryPoolCreateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkQueryPoolCreateFlags *>*>(value);
     }
 
     
@@ -7169,6 +8843,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkQueryPoolSamplingModeINTEL *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkQueryPoolSamplingModeINTEL *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkQueryResultFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkQueryResultFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkQueryResultFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkQueryResultFlags *>*>(value);
     }
 
     
@@ -7244,15 +8930,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkQueueFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkQueueFlags>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkQueueFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkQueueFlags>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkQueueFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkQueueFlags *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkQueueFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkQueueFlags *>*>(value);
     }
 
     
@@ -7388,6 +9074,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassCreateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassCreateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkRenderPassCreateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkRenderPassCreateFlags *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkRenderPassCreateInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkRenderPassCreateInfo>*>(value);
@@ -7496,6 +9194,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkResolveModeFlagsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkResolveModeFlagsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkResolveModeFlagsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkResolveModeFlagsKHR *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkResult>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkResult>*>(value);
@@ -7517,6 +9227,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkSampleCountFlagBits *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSampleCountFlagBits *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSampleCountFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSampleCountFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSampleCountFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSampleCountFlags *>*>(value);
     }
 
     
@@ -7544,6 +9266,30 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkSampleMask>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSampleMask>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSampleMask *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSampleMask *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSampleMask>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSampleMask>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSampleMask *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSampleMask *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkSampler>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSampler>*>(value);
@@ -7568,15 +9314,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSamplerCreateFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkSamplerCreateFlags>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerCreateFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerCreateFlags>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSamplerCreateFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkSamplerCreateFlags *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSamplerCreateFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerCreateFlags *>*>(value);
     }
 
     
@@ -7589,6 +9335,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkSamplerCreateInfo *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSamplerCreateInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSamplerMipmapMode>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerMipmapMode>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSamplerMipmapMode *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerMipmapMode *>*>(value);
     }
 
     
@@ -7724,6 +9482,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrModelConversionKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrModelConversionKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrModelConversionKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrModelConversionKHR *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrRange>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrRange>*>(value);
@@ -7733,6 +9503,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrRange *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrRange *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrRangeKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrRangeKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSamplerYcbcrRangeKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSamplerYcbcrRangeKHR *>*>(value);
     }
 
     
@@ -7760,6 +9542,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkSemaphoreCreateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreCreateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSemaphoreCreateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreCreateFlags *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkSemaphoreCreateInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSemaphoreCreateInfo>*>(value);
@@ -7784,18 +9578,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSemaphoreGetWin32HandleInfoKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreGetWin32HandleInfoKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSemaphoreGetWin32HandleInfoKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreGetWin32HandleInfoKHR *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkSemaphoreImportFlagBits>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSemaphoreImportFlagBits>*>(value);
@@ -7805,6 +9587,66 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkSemaphoreImportFlagBits *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSemaphoreImportFlagBits *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSemaphoreImportFlagBitsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreImportFlagBitsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSemaphoreImportFlagBitsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreImportFlagBitsKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSemaphoreImportFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreImportFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSemaphoreImportFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreImportFlags *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSemaphoreImportFlagsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreImportFlagsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSemaphoreImportFlagsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSemaphoreImportFlagsKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkShaderCorePropertiesFlagBitsAMD>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkShaderCorePropertiesFlagBitsAMD>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkShaderCorePropertiesFlagBitsAMD *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkShaderCorePropertiesFlagBitsAMD *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkShaderCorePropertiesFlagsAMD>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkShaderCorePropertiesFlagsAMD>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkShaderCorePropertiesFlagsAMD *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkShaderCorePropertiesFlagsAMD *>*>(value);
     }
 
     
@@ -7841,6 +9683,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkShaderModule *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkShaderModule *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkShaderModuleCreateFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkShaderModuleCreateFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkShaderModuleCreateFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkShaderModuleCreateFlags *>*>(value);
     }
 
     
@@ -7892,6 +9746,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkShaderStageFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkShaderStageFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkShaderStageFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkShaderStageFlags *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkShaderStatisticsInfoAMD>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkShaderStatisticsInfoAMD>*>(value);
@@ -7940,6 +9806,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkSharingMode>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSharingMode>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSharingMode *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSharingMode *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkSparseBufferMemoryBindInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSparseBufferMemoryBindInfo>*>(value);
@@ -7949,6 +9827,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkSparseBufferMemoryBindInfo *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSparseBufferMemoryBindInfo *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSparseImageFormatFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSparseImageFormatFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSparseImageFormatFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSparseImageFormatFlags *>*>(value);
     }
 
     
@@ -8072,6 +9962,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkSparseMemoryBindFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSparseMemoryBindFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSparseMemoryBindFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSparseMemoryBindFlags *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkSpecializationInfo>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSpecializationInfo>*>(value);
@@ -8096,6 +9998,30 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkStencilFaceFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkStencilFaceFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkStencilFaceFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkStencilFaceFlags *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkStencilOp>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkStencilOp>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkStencilOp *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkStencilOp *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkStencilOpState>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkStencilOpState>*>(value);
@@ -8105,18 +10031,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkStencilOpState *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkStencilOpState *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkStreamDescriptorSurfaceCreateInfoGGP>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkStreamDescriptorSurfaceCreateInfoGGP>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkStreamDescriptorSurfaceCreateInfoGGP *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkStreamDescriptorSurfaceCreateInfoGGP *>*>(value);
     }
 
     
@@ -8141,6 +10055,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkSubgroupFeatureFlagBits *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSubgroupFeatureFlagBits *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSubgroupFeatureFlags>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSubgroupFeatureFlags>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSubgroupFeatureFlags *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSubgroupFeatureFlags *>*>(value);
     }
 
     
@@ -8240,15 +10166,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSubpassDescriptionFlagBits>))
+    if (typeid(*value) == typeid(Value<vk::VkSubpassDescriptionFlags>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSubpassDescriptionFlagBits>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSubpassDescriptionFlags>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSubpassDescriptionFlagBits *>))
+    if (typeid(*value) == typeid(Value<vk::VkSubpassDescriptionFlags *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSubpassDescriptionFlagBits *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSubpassDescriptionFlags *>*>(value);
     }
 
     
@@ -8312,18 +10238,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceCapabilitiesFullScreenExclusiveEXT>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCapabilitiesFullScreenExclusiveEXT>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceCapabilitiesFullScreenExclusiveEXT *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCapabilitiesFullScreenExclusiveEXT *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkSurfaceCapabilitiesKHR>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSurfaceCapabilitiesKHR>*>(value);
@@ -8345,6 +10259,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkSurfaceCounterFlagBitsEXT *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSurfaceCounterFlagBitsEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceCounterFlagsEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCounterFlagsEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceCounterFlagsEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceCounterFlagsEXT *>*>(value);
     }
 
     
@@ -8372,30 +10298,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceFullScreenExclusiveInfoEXT>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceFullScreenExclusiveInfoEXT>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceFullScreenExclusiveInfoEXT *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceFullScreenExclusiveInfoEXT *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceFullScreenExclusiveWin32InfoEXT>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceFullScreenExclusiveWin32InfoEXT>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSurfaceFullScreenExclusiveWin32InfoEXT *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSurfaceFullScreenExclusiveWin32InfoEXT *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkSurfaceKHR>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSurfaceKHR>*>(value);
@@ -8420,6 +10322,30 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceTransformFlagBitsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceTransformFlagBitsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceTransformFlagBitsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceTransformFlagBitsKHR *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceTransformFlagsKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceTransformFlagsKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSurfaceTransformFlagsKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSurfaceTransformFlagsKHR *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkSwapchainCounterCreateInfoEXT>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSwapchainCounterCreateInfoEXT>*>(value);
@@ -8432,15 +10358,15 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSwapchainCreateFlagBitsKHR>))
+    if (typeid(*value) == typeid(Value<vk::VkSwapchainCreateFlagsKHR>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSwapchainCreateFlagBitsKHR>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSwapchainCreateFlagsKHR>*>(value);
     }
     
     
-    if (typeid(*value) == typeid(Value<vk::VkSwapchainCreateFlagBitsKHR *>))
+    if (typeid(*value) == typeid(Value<vk::VkSwapchainCreateFlagsKHR *>))
     {
-        return stream << *reinterpret_cast<const Value<vk::VkSwapchainCreateFlagBitsKHR *>*>(value);
+        return stream << *reinterpret_cast<const Value<vk::VkSwapchainCreateFlagsKHR *>*>(value);
     }
 
     
@@ -8468,18 +10394,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkSwapchainImageCreateInfoANDROID>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSwapchainImageCreateInfoANDROID>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkSwapchainImageCreateInfoANDROID *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkSwapchainImageCreateInfoANDROID *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkSwapchainKHR>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkSwapchainKHR>*>(value);
@@ -8492,6 +10406,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkSystemAllocationScope>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSystemAllocationScope>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkSystemAllocationScope *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkSystemAllocationScope *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkTessellationDomainOrigin>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkTessellationDomainOrigin>*>(value);
@@ -8501,6 +10427,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkTessellationDomainOrigin *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkTessellationDomainOrigin *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkTessellationDomainOriginKHR>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkTessellationDomainOriginKHR>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkTessellationDomainOriginKHR *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkTessellationDomainOriginKHR *>*>(value);
     }
 
     
@@ -8525,6 +10463,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkTimeDomainEXT *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkTimeDomainEXT *>*>(value);
+    }
+
+    
+    if (typeid(*value) == typeid(Value<vk::VkValidationCacheCreateFlagsEXT>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkValidationCacheCreateFlagsEXT>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkValidationCacheCreateFlagsEXT *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkValidationCacheCreateFlagsEXT *>*>(value);
     }
 
     
@@ -8636,6 +10586,18 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
+    if (typeid(*value) == typeid(Value<vk::VkVertexInputRate>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkVertexInputRate>*>(value);
+    }
+    
+    
+    if (typeid(*value) == typeid(Value<vk::VkVertexInputRate *>))
+    {
+        return stream << *reinterpret_cast<const Value<vk::VkVertexInputRate *>*>(value);
+    }
+
+    
     if (typeid(*value) == typeid(Value<vk::VkViewport>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkViewport>*>(value);
@@ -8684,66 +10646,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     }
 
     
-    if (typeid(*value) == typeid(Value<vk::VkViSurfaceCreateInfoNN>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkViSurfaceCreateInfoNN>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkViSurfaceCreateInfoNN *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkViSurfaceCreateInfoNN *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkWaylandSurfaceCreateInfoKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkWaylandSurfaceCreateInfoKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkWaylandSurfaceCreateInfoKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkWaylandSurfaceCreateInfoKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkWin32KeyedMutexAcquireReleaseInfoKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkWin32KeyedMutexAcquireReleaseInfoKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkWin32KeyedMutexAcquireReleaseInfoKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkWin32KeyedMutexAcquireReleaseInfoKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkWin32KeyedMutexAcquireReleaseInfoNV>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkWin32KeyedMutexAcquireReleaseInfoNV>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkWin32KeyedMutexAcquireReleaseInfoNV *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkWin32KeyedMutexAcquireReleaseInfoNV *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkWin32SurfaceCreateInfoKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkWin32SurfaceCreateInfoKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkWin32SurfaceCreateInfoKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkWin32SurfaceCreateInfoKHR *>*>(value);
-    }
-
-    
     if (typeid(*value) == typeid(Value<vk::VkWriteDescriptorSet>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkWriteDescriptorSet>*>(value);
@@ -8777,30 +10679,6 @@ std::ostream & operator<<(std::ostream & stream, const AbstractValue * value)
     if (typeid(*value) == typeid(Value<vk::VkWriteDescriptorSetInlineUniformBlockEXT *>))
     {
         return stream << *reinterpret_cast<const Value<vk::VkWriteDescriptorSetInlineUniformBlockEXT *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkXcbSurfaceCreateInfoKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkXcbSurfaceCreateInfoKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkXcbSurfaceCreateInfoKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkXcbSurfaceCreateInfoKHR *>*>(value);
-    }
-
-    
-    if (typeid(*value) == typeid(Value<vk::VkXlibSurfaceCreateInfoKHR>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkXlibSurfaceCreateInfoKHR>*>(value);
-    }
-    
-    
-    if (typeid(*value) == typeid(Value<vk::VkXlibSurfaceCreateInfoKHR *>))
-    {
-        return stream << *reinterpret_cast<const Value<vk::VkXlibSurfaceCreateInfoKHR *>*>(value);
     }
 
     

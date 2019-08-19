@@ -19,7 +19,7 @@ add_subdirectory(vkbinding-aux)
 
 # Examples
 set(IDE_FOLDER "Examples")
-# add_subdirectory(examples)
+add_subdirectory(examples)
 
 # Examples
 set(IDE_FOLDER "Tools")

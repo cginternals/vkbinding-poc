@@ -16,402 +16,789 @@ const std::unordered_map<UnusedMask, std::string> Meta_StringsByUnusedMask =
     { UnusedMask::VK_UNUSED_BIT, "VK_UNUSED_BIT" }
 };
 
-const std::unordered_map<VkAccessFlagBits, std::string> Meta_StringsByVkAccessFlagBits =
+const std::unordered_map<VkAccessFlags, std::string> Meta_StringsByVkAccessFlags =
 {
-    { VkAccessFlagBits::VK_ACCESS_ACCELERATION_STRUCTURE_READ_BIT_NV, "VK_ACCESS_ACCELERATION_STRUCTURE_READ_BIT_NV" },
-    { VkAccessFlagBits::VK_ACCESS_ACCELERATION_STRUCTURE_WRITE_BIT_NV, "VK_ACCESS_ACCELERATION_STRUCTURE_WRITE_BIT_NV" },
-    { VkAccessFlagBits::VK_ACCESS_COLOR_ATTACHMENT_READ_NONCOHERENT_BIT_EXT, "VK_ACCESS_COLOR_ATTACHMENT_READ_NONCOHERENT_BIT_EXT" },
-    { VkAccessFlagBits::VK_ACCESS_COMMAND_PROCESS_READ_BIT_NVX, "VK_ACCESS_COMMAND_PROCESS_READ_BIT_NVX" },
-    { VkAccessFlagBits::VK_ACCESS_COMMAND_PROCESS_WRITE_BIT_NVX, "VK_ACCESS_COMMAND_PROCESS_WRITE_BIT_NVX" },
-    { VkAccessFlagBits::VK_ACCESS_CONDITIONAL_RENDERING_READ_BIT_EXT, "VK_ACCESS_CONDITIONAL_RENDERING_READ_BIT_EXT" },
-    { VkAccessFlagBits::VK_ACCESS_FRAGMENT_DENSITY_MAP_READ_BIT_EXT, "VK_ACCESS_FRAGMENT_DENSITY_MAP_READ_BIT_EXT" },
-    { VkAccessFlagBits::VK_ACCESS_SHADING_RATE_IMAGE_READ_BIT_NV, "VK_ACCESS_SHADING_RATE_IMAGE_READ_BIT_NV" },
-    { VkAccessFlagBits::VK_ACCESS_TRANSFORM_FEEDBACK_COUNTER_READ_BIT_EXT, "VK_ACCESS_TRANSFORM_FEEDBACK_COUNTER_READ_BIT_EXT" },
-    { VkAccessFlagBits::VK_ACCESS_TRANSFORM_FEEDBACK_COUNTER_WRITE_BIT_EXT, "VK_ACCESS_TRANSFORM_FEEDBACK_COUNTER_WRITE_BIT_EXT" },
-    { VkAccessFlagBits::VK_ACCESS_TRANSFORM_FEEDBACK_WRITE_BIT_EXT, "VK_ACCESS_TRANSFORM_FEEDBACK_WRITE_BIT_EXT" },
-    { VkAccessFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkAccessFlags::VK_ACCESS_ACCELERATION_STRUCTURE_READ_BIT_NV, "VK_ACCESS_ACCELERATION_STRUCTURE_READ_BIT_NV" },
+    { VkAccessFlags::VK_ACCESS_ACCELERATION_STRUCTURE_WRITE_BIT_NV, "VK_ACCESS_ACCELERATION_STRUCTURE_WRITE_BIT_NV" },
+    { VkAccessFlags::VK_ACCESS_COLOR_ATTACHMENT_READ_NONCOHERENT_BIT_EXT, "VK_ACCESS_COLOR_ATTACHMENT_READ_NONCOHERENT_BIT_EXT" },
+    { VkAccessFlags::VK_ACCESS_COMMAND_PROCESS_READ_BIT_NVX, "VK_ACCESS_COMMAND_PROCESS_READ_BIT_NVX" },
+    { VkAccessFlags::VK_ACCESS_COMMAND_PROCESS_WRITE_BIT_NVX, "VK_ACCESS_COMMAND_PROCESS_WRITE_BIT_NVX" },
+    { VkAccessFlags::VK_ACCESS_CONDITIONAL_RENDERING_READ_BIT_EXT, "VK_ACCESS_CONDITIONAL_RENDERING_READ_BIT_EXT" },
+    { VkAccessFlags::VK_ACCESS_FRAGMENT_DENSITY_MAP_READ_BIT_EXT, "VK_ACCESS_FRAGMENT_DENSITY_MAP_READ_BIT_EXT" },
+    { VkAccessFlags::VK_ACCESS_SHADING_RATE_IMAGE_READ_BIT_NV, "VK_ACCESS_SHADING_RATE_IMAGE_READ_BIT_NV" },
+    { VkAccessFlags::VK_ACCESS_TRANSFORM_FEEDBACK_COUNTER_READ_BIT_EXT, "VK_ACCESS_TRANSFORM_FEEDBACK_COUNTER_READ_BIT_EXT" },
+    { VkAccessFlags::VK_ACCESS_TRANSFORM_FEEDBACK_COUNTER_WRITE_BIT_EXT, "VK_ACCESS_TRANSFORM_FEEDBACK_COUNTER_WRITE_BIT_EXT" },
+    { VkAccessFlags::VK_ACCESS_TRANSFORM_FEEDBACK_WRITE_BIT_EXT, "VK_ACCESS_TRANSFORM_FEEDBACK_WRITE_BIT_EXT" },
+    { VkAccessFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkBufferCreateFlagBits, std::string> Meta_StringsByVkBufferCreateFlagBits =
+const std::unordered_map<VkAttachmentDescriptionFlags, std::string> Meta_StringsByVkAttachmentDescriptionFlags =
 {
-    { VkBufferCreateFlagBits::VK_BUFFER_CREATE_DEVICE_ADDRESS_CAPTURE_REPLAY_BIT_EXT, "VK_BUFFER_CREATE_DEVICE_ADDRESS_CAPTURE_REPLAY_BIT_EXT" },
-    { VkBufferCreateFlagBits::VK_BUFFER_CREATE_PROTECTED_BIT, "VK_BUFFER_CREATE_PROTECTED_BIT" },
-    { VkBufferCreateFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkAttachmentDescriptionFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkBufferUsageFlagBits, std::string> Meta_StringsByVkBufferUsageFlagBits =
+const std::unordered_map<VkBufferCreateFlags, std::string> Meta_StringsByVkBufferCreateFlags =
 {
-    { VkBufferUsageFlagBits::VK_BUFFER_USAGE_CONDITIONAL_RENDERING_BIT_EXT, "VK_BUFFER_USAGE_CONDITIONAL_RENDERING_BIT_EXT" },
-    { VkBufferUsageFlagBits::VK_BUFFER_USAGE_RAY_TRACING_BIT_NV, "VK_BUFFER_USAGE_RAY_TRACING_BIT_NV" },
-    { VkBufferUsageFlagBits::VK_BUFFER_USAGE_SHADER_DEVICE_ADDRESS_BIT_EXT, "VK_BUFFER_USAGE_SHADER_DEVICE_ADDRESS_BIT_EXT" },
-    { VkBufferUsageFlagBits::VK_BUFFER_USAGE_TRANSFORM_FEEDBACK_BUFFER_BIT_EXT, "VK_BUFFER_USAGE_TRANSFORM_FEEDBACK_BUFFER_BIT_EXT" },
-    { VkBufferUsageFlagBits::VK_BUFFER_USAGE_TRANSFORM_FEEDBACK_COUNTER_BUFFER_BIT_EXT, "VK_BUFFER_USAGE_TRANSFORM_FEEDBACK_COUNTER_BUFFER_BIT_EXT" },
-    { VkBufferUsageFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkBufferCreateFlags::VK_BUFFER_CREATE_DEVICE_ADDRESS_CAPTURE_REPLAY_BIT_EXT, "VK_BUFFER_CREATE_DEVICE_ADDRESS_CAPTURE_REPLAY_BIT_EXT" },
+    { VkBufferCreateFlags::VK_BUFFER_CREATE_PROTECTED_BIT, "VK_BUFFER_CREATE_PROTECTED_BIT" },
+    { VkBufferCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkBuildAccelerationStructureFlagBitsNV, std::string> Meta_StringsByVkBuildAccelerationStructureFlagBitsNV =
+const std::unordered_map<VkBufferUsageFlags, std::string> Meta_StringsByVkBufferUsageFlags =
 {
-    { VkBuildAccelerationStructureFlagBitsNV::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkBufferUsageFlags::VK_BUFFER_USAGE_CONDITIONAL_RENDERING_BIT_EXT, "VK_BUFFER_USAGE_CONDITIONAL_RENDERING_BIT_EXT" },
+    { VkBufferUsageFlags::VK_BUFFER_USAGE_RAY_TRACING_BIT_NV, "VK_BUFFER_USAGE_RAY_TRACING_BIT_NV" },
+    { VkBufferUsageFlags::VK_BUFFER_USAGE_SHADER_DEVICE_ADDRESS_BIT_EXT, "VK_BUFFER_USAGE_SHADER_DEVICE_ADDRESS_BIT_EXT" },
+    { VkBufferUsageFlags::VK_BUFFER_USAGE_TRANSFORM_FEEDBACK_BUFFER_BIT_EXT, "VK_BUFFER_USAGE_TRANSFORM_FEEDBACK_BUFFER_BIT_EXT" },
+    { VkBufferUsageFlags::VK_BUFFER_USAGE_TRANSFORM_FEEDBACK_COUNTER_BUFFER_BIT_EXT, "VK_BUFFER_USAGE_TRANSFORM_FEEDBACK_COUNTER_BUFFER_BIT_EXT" },
+    { VkBufferUsageFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkCommandPoolCreateFlagBits, std::string> Meta_StringsByVkCommandPoolCreateFlagBits =
+const std::unordered_map<VkBufferViewCreateFlags, std::string> Meta_StringsByVkBufferViewCreateFlags =
 {
-    { VkCommandPoolCreateFlagBits::VK_COMMAND_POOL_CREATE_PROTECTED_BIT, "VK_COMMAND_POOL_CREATE_PROTECTED_BIT" },
-    { VkCommandPoolCreateFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkBufferViewCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkConditionalRenderingFlagBitsEXT, std::string> Meta_StringsByVkConditionalRenderingFlagBitsEXT =
+const std::unordered_map<VkBuildAccelerationStructureFlagsNV, std::string> Meta_StringsByVkBuildAccelerationStructureFlagsNV =
 {
-    { VkConditionalRenderingFlagBitsEXT::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkBuildAccelerationStructureFlagsNV::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkDebugUtilsMessageSeverityFlagBitsEXT, std::string> Meta_StringsByVkDebugUtilsMessageSeverityFlagBitsEXT =
+const std::unordered_map<VkColorComponentFlags, std::string> Meta_StringsByVkColorComponentFlags =
 {
-    { VkDebugUtilsMessageSeverityFlagBitsEXT::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkColorComponentFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkDependencyFlagBits, std::string> Meta_StringsByVkDependencyFlagBits =
+const std::unordered_map<VkCommandBufferResetFlags, std::string> Meta_StringsByVkCommandBufferResetFlags =
 {
-    { VkDependencyFlagBits::VK_DEPENDENCY_DEVICE_GROUP_BIT, "VK_DEPENDENCY_DEVICE_GROUP_BIT" },
-    { VkDependencyFlagBits::VK_DEPENDENCY_DEVICE_GROUP_BIT_KHR, "VK_DEPENDENCY_DEVICE_GROUP_BIT_KHR" },
-    { VkDependencyFlagBits::VK_DEPENDENCY_VIEW_LOCAL_BIT, "VK_DEPENDENCY_VIEW_LOCAL_BIT" },
-    { VkDependencyFlagBits::VK_DEPENDENCY_VIEW_LOCAL_BIT_KHR, "VK_DEPENDENCY_VIEW_LOCAL_BIT_KHR" },
-    { VkDependencyFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkCommandBufferResetFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkDescriptorPoolCreateFlagBits, std::string> Meta_StringsByVkDescriptorPoolCreateFlagBits =
+const std::unordered_map<VkCommandBufferUsageFlags, std::string> Meta_StringsByVkCommandBufferUsageFlags =
 {
-    { VkDescriptorPoolCreateFlagBits::VK_DESCRIPTOR_POOL_CREATE_UPDATE_AFTER_BIND_BIT_EXT, "VK_DESCRIPTOR_POOL_CREATE_UPDATE_AFTER_BIND_BIT_EXT" },
-    { VkDescriptorPoolCreateFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkCommandBufferUsageFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkDescriptorSetLayoutCreateFlagBits, std::string> Meta_StringsByVkDescriptorSetLayoutCreateFlagBits =
+const std::unordered_map<VkCommandPoolCreateFlags, std::string> Meta_StringsByVkCommandPoolCreateFlags =
 {
-    { VkDescriptorSetLayoutCreateFlagBits::VK_DESCRIPTOR_SET_LAYOUT_CREATE_PUSH_DESCRIPTOR_BIT_KHR, "VK_DESCRIPTOR_SET_LAYOUT_CREATE_PUSH_DESCRIPTOR_BIT_KHR" },
-    { VkDescriptorSetLayoutCreateFlagBits::VK_DESCRIPTOR_SET_LAYOUT_CREATE_UPDATE_AFTER_BIND_POOL_BIT_EXT, "VK_DESCRIPTOR_SET_LAYOUT_CREATE_UPDATE_AFTER_BIND_POOL_BIT_EXT" },
-    { VkDescriptorSetLayoutCreateFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkCommandPoolCreateFlags::VK_COMMAND_POOL_CREATE_PROTECTED_BIT, "VK_COMMAND_POOL_CREATE_PROTECTED_BIT" },
+    { VkCommandPoolCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkDeviceGroupPresentModeFlagBitsKHR, std::string> Meta_StringsByVkDeviceGroupPresentModeFlagBitsKHR =
+const std::unordered_map<VkCommandPoolResetFlags, std::string> Meta_StringsByVkCommandPoolResetFlags =
 {
-    { VkDeviceGroupPresentModeFlagBitsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkCommandPoolResetFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkDeviceQueueCreateFlagBits, std::string> Meta_StringsByVkDeviceQueueCreateFlagBits =
+const std::unordered_map<VkCommandPoolTrimFlags, std::string> Meta_StringsByVkCommandPoolTrimFlags =
 {
-    { VkDeviceQueueCreateFlagBits::VK_DEVICE_QUEUE_CREATE_PROTECTED_BIT, "VK_DEVICE_QUEUE_CREATE_PROTECTED_BIT" },
-    { VkDeviceQueueCreateFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkCommandPoolTrimFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkDisplayPlaneAlphaFlagBitsKHR, std::string> Meta_StringsByVkDisplayPlaneAlphaFlagBitsKHR =
+const std::unordered_map<VkCommandPoolTrimFlagsKHR, std::string> Meta_StringsByVkCommandPoolTrimFlagsKHR =
 {
-    { VkDisplayPlaneAlphaFlagBitsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkCommandPoolTrimFlagsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkExternalFenceFeatureFlagBits, std::string> Meta_StringsByVkExternalFenceFeatureFlagBits =
+const std::unordered_map<VkCompositeAlphaFlagsKHR, std::string> Meta_StringsByVkCompositeAlphaFlagsKHR =
 {
-    { VkExternalFenceFeatureFlagBits::VK_EXTERNAL_FENCE_FEATURE_EXPORTABLE_BIT_KHR, "VK_EXTERNAL_FENCE_FEATURE_EXPORTABLE_BIT_KHR" },
-    { VkExternalFenceFeatureFlagBits::VK_EXTERNAL_FENCE_FEATURE_IMPORTABLE_BIT_KHR, "VK_EXTERNAL_FENCE_FEATURE_IMPORTABLE_BIT_KHR" },
-    { VkExternalFenceFeatureFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkCompositeAlphaFlagsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkExternalFenceHandleTypeFlagBits, std::string> Meta_StringsByVkExternalFenceHandleTypeFlagBits =
+const std::unordered_map<VkConditionalRenderingFlagsEXT, std::string> Meta_StringsByVkConditionalRenderingFlagsEXT =
 {
-    { VkExternalFenceHandleTypeFlagBits::VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_FD_BIT_KHR, "VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_FD_BIT_KHR" },
-    { VkExternalFenceHandleTypeFlagBits::VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_WIN32_BIT_KHR, "VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_WIN32_BIT_KHR" },
-    { VkExternalFenceHandleTypeFlagBits::VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT_KHR, "VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT_KHR" },
-    { VkExternalFenceHandleTypeFlagBits::VK_EXTERNAL_FENCE_HANDLE_TYPE_SYNC_FD_BIT_KHR, "VK_EXTERNAL_FENCE_HANDLE_TYPE_SYNC_FD_BIT_KHR" },
-    { VkExternalFenceHandleTypeFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkConditionalRenderingFlagsEXT::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkExternalMemoryFeatureFlagBits, std::string> Meta_StringsByVkExternalMemoryFeatureFlagBits =
+const std::unordered_map<VkCullModeFlags, std::string> Meta_StringsByVkCullModeFlags =
 {
-    { VkExternalMemoryFeatureFlagBits::VK_EXTERNAL_MEMORY_FEATURE_DEDICATED_ONLY_BIT_KHR, "VK_EXTERNAL_MEMORY_FEATURE_DEDICATED_ONLY_BIT_KHR" },
-    { VkExternalMemoryFeatureFlagBits::VK_EXTERNAL_MEMORY_FEATURE_EXPORTABLE_BIT_KHR, "VK_EXTERNAL_MEMORY_FEATURE_EXPORTABLE_BIT_KHR" },
-    { VkExternalMemoryFeatureFlagBits::VK_EXTERNAL_MEMORY_FEATURE_IMPORTABLE_BIT_KHR, "VK_EXTERNAL_MEMORY_FEATURE_IMPORTABLE_BIT_KHR" },
-    { VkExternalMemoryFeatureFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkCullModeFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkExternalMemoryFeatureFlagBitsNV, std::string> Meta_StringsByVkExternalMemoryFeatureFlagBitsNV =
+const std::unordered_map<VkDebugReportFlagsEXT, std::string> Meta_StringsByVkDebugReportFlagsEXT =
 {
-    { VkExternalMemoryFeatureFlagBitsNV::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkDebugReportFlagsEXT::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkExternalMemoryHandleTypeFlagBits, std::string> Meta_StringsByVkExternalMemoryHandleTypeFlagBits =
+const std::unordered_map<VkDebugUtilsMessageSeverityFlagsEXT, std::string> Meta_StringsByVkDebugUtilsMessageSeverityFlagsEXT =
 {
-    { VkExternalMemoryHandleTypeFlagBits::VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D11_TEXTURE_BIT_KHR, "VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D11_TEXTURE_BIT_KHR" },
-    { VkExternalMemoryHandleTypeFlagBits::VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D11_TEXTURE_KMT_BIT_KHR, "VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D11_TEXTURE_KMT_BIT_KHR" },
-    { VkExternalMemoryHandleTypeFlagBits::VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D12_HEAP_BIT_KHR, "VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D12_HEAP_BIT_KHR" },
-    { VkExternalMemoryHandleTypeFlagBits::VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D12_RESOURCE_BIT_KHR, "VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D12_RESOURCE_BIT_KHR" },
-    { VkExternalMemoryHandleTypeFlagBits::VK_EXTERNAL_MEMORY_HANDLE_TYPE_DMA_BUF_BIT_EXT, "VK_EXTERNAL_MEMORY_HANDLE_TYPE_DMA_BUF_BIT_EXT" },
-    { VkExternalMemoryHandleTypeFlagBits::VK_EXTERNAL_MEMORY_HANDLE_TYPE_HOST_ALLOCATION_BIT_EXT, "VK_EXTERNAL_MEMORY_HANDLE_TYPE_HOST_ALLOCATION_BIT_EXT" },
-    { VkExternalMemoryHandleTypeFlagBits::VK_EXTERNAL_MEMORY_HANDLE_TYPE_HOST_MAPPED_FOREIGN_MEMORY_BIT_EXT, "VK_EXTERNAL_MEMORY_HANDLE_TYPE_HOST_MAPPED_FOREIGN_MEMORY_BIT_EXT" },
-    { VkExternalMemoryHandleTypeFlagBits::VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_FD_BIT_KHR, "VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_FD_BIT_KHR" },
-    { VkExternalMemoryHandleTypeFlagBits::VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_WIN32_BIT_KHR, "VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_WIN32_BIT_KHR" },
-    { VkExternalMemoryHandleTypeFlagBits::VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT_KHR, "VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT_KHR" },
-    { VkExternalMemoryHandleTypeFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkDebugUtilsMessageSeverityFlagsEXT::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkExternalMemoryHandleTypeFlagBitsNV, std::string> Meta_StringsByVkExternalMemoryHandleTypeFlagBitsNV =
+const std::unordered_map<VkDebugUtilsMessageTypeFlagsEXT, std::string> Meta_StringsByVkDebugUtilsMessageTypeFlagsEXT =
 {
-    { VkExternalMemoryHandleTypeFlagBitsNV::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkDebugUtilsMessageTypeFlagsEXT::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkExternalSemaphoreFeatureFlagBits, std::string> Meta_StringsByVkExternalSemaphoreFeatureFlagBits =
+const std::unordered_map<VkDebugUtilsMessengerCallbackDataFlagsEXT, std::string> Meta_StringsByVkDebugUtilsMessengerCallbackDataFlagsEXT =
 {
-    { VkExternalSemaphoreFeatureFlagBits::VK_EXTERNAL_SEMAPHORE_FEATURE_EXPORTABLE_BIT_KHR, "VK_EXTERNAL_SEMAPHORE_FEATURE_EXPORTABLE_BIT_KHR" },
-    { VkExternalSemaphoreFeatureFlagBits::VK_EXTERNAL_SEMAPHORE_FEATURE_IMPORTABLE_BIT_KHR, "VK_EXTERNAL_SEMAPHORE_FEATURE_IMPORTABLE_BIT_KHR" },
-    { VkExternalSemaphoreFeatureFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkDebugUtilsMessengerCallbackDataFlagsEXT::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkExternalSemaphoreHandleTypeFlagBits, std::string> Meta_StringsByVkExternalSemaphoreHandleTypeFlagBits =
+const std::unordered_map<VkDependencyFlags, std::string> Meta_StringsByVkDependencyFlags =
 {
-    { VkExternalSemaphoreHandleTypeFlagBits::VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_D3D12_FENCE_BIT_KHR, "VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_D3D12_FENCE_BIT_KHR" },
-    { VkExternalSemaphoreHandleTypeFlagBits::VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_FD_BIT_KHR, "VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_FD_BIT_KHR" },
-    { VkExternalSemaphoreHandleTypeFlagBits::VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_WIN32_BIT_KHR, "VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_WIN32_BIT_KHR" },
-    { VkExternalSemaphoreHandleTypeFlagBits::VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT_KHR, "VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT_KHR" },
-    { VkExternalSemaphoreHandleTypeFlagBits::VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_SYNC_FD_BIT_KHR, "VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_SYNC_FD_BIT_KHR" },
-    { VkExternalSemaphoreHandleTypeFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkDependencyFlags::VK_DEPENDENCY_DEVICE_GROUP_BIT, "VK_DEPENDENCY_DEVICE_GROUP_BIT" },
+    { VkDependencyFlags::VK_DEPENDENCY_DEVICE_GROUP_BIT_KHR, "VK_DEPENDENCY_DEVICE_GROUP_BIT_KHR" },
+    { VkDependencyFlags::VK_DEPENDENCY_VIEW_LOCAL_BIT, "VK_DEPENDENCY_VIEW_LOCAL_BIT" },
+    { VkDependencyFlags::VK_DEPENDENCY_VIEW_LOCAL_BIT_KHR, "VK_DEPENDENCY_VIEW_LOCAL_BIT_KHR" },
+    { VkDependencyFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkFenceImportFlagBits, std::string> Meta_StringsByVkFenceImportFlagBits =
+const std::unordered_map<VkDescriptorPoolCreateFlags, std::string> Meta_StringsByVkDescriptorPoolCreateFlags =
 {
-    { VkFenceImportFlagBits::VK_FENCE_IMPORT_TEMPORARY_BIT_KHR, "VK_FENCE_IMPORT_TEMPORARY_BIT_KHR" },
-    { VkFenceImportFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkDescriptorPoolCreateFlags::VK_DESCRIPTOR_POOL_CREATE_UPDATE_AFTER_BIND_BIT_EXT, "VK_DESCRIPTOR_POOL_CREATE_UPDATE_AFTER_BIND_BIT_EXT" },
+    { VkDescriptorPoolCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkFormatFeatureFlagBits, std::string> Meta_StringsByVkFormatFeatureFlagBits =
+const std::unordered_map<VkDescriptorPoolResetFlags, std::string> Meta_StringsByVkDescriptorPoolResetFlags =
 {
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_COSITED_CHROMA_SAMPLES_BIT, "VK_FORMAT_FEATURE_COSITED_CHROMA_SAMPLES_BIT" },
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_COSITED_CHROMA_SAMPLES_BIT_KHR, "VK_FORMAT_FEATURE_COSITED_CHROMA_SAMPLES_BIT_KHR" },
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_DISJOINT_BIT, "VK_FORMAT_FEATURE_DISJOINT_BIT" },
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_DISJOINT_BIT_KHR, "VK_FORMAT_FEATURE_DISJOINT_BIT_KHR" },
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_FRAGMENT_DENSITY_MAP_BIT_EXT, "VK_FORMAT_FEATURE_FRAGMENT_DENSITY_MAP_BIT_EXT" },
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_MIDPOINT_CHROMA_SAMPLES_BIT, "VK_FORMAT_FEATURE_MIDPOINT_CHROMA_SAMPLES_BIT" },
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_MIDPOINT_CHROMA_SAMPLES_BIT_KHR, "VK_FORMAT_FEATURE_MIDPOINT_CHROMA_SAMPLES_BIT_KHR" },
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_CUBIC_BIT_EXT, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_CUBIC_BIT_EXT" },
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_CUBIC_BIT_IMG, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_CUBIC_BIT_IMG" },
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_MINMAX_BIT_EXT, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_MINMAX_BIT_EXT" },
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_BIT, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_BIT" },
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_BIT_KHR, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_BIT_KHR" },
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_FORCEABLE_BIT, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_FORCEABLE_BIT" },
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_FORCEABLE_BIT_KHR, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_FORCEABLE_BIT_KHR" },
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_LINEAR_FILTER_BIT, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_LINEAR_FILTER_BIT" },
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_LINEAR_FILTER_BIT_KHR, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_LINEAR_FILTER_BIT_KHR" },
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_SEPARATE_RECONSTRUCTION_FILTER_BIT, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_SEPARATE_RECONSTRUCTION_FILTER_BIT" },
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_SEPARATE_RECONSTRUCTION_FILTER_BIT_KHR, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_SEPARATE_RECONSTRUCTION_FILTER_BIT_KHR" },
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_TRANSFER_DST_BIT, "VK_FORMAT_FEATURE_TRANSFER_DST_BIT" },
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_TRANSFER_DST_BIT_KHR, "VK_FORMAT_FEATURE_TRANSFER_DST_BIT_KHR" },
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_TRANSFER_SRC_BIT, "VK_FORMAT_FEATURE_TRANSFER_SRC_BIT" },
-    { VkFormatFeatureFlagBits::VK_FORMAT_FEATURE_TRANSFER_SRC_BIT_KHR, "VK_FORMAT_FEATURE_TRANSFER_SRC_BIT_KHR" },
-    { VkFormatFeatureFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkDescriptorPoolResetFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkFramebufferCreateFlagBits, std::string> Meta_StringsByVkFramebufferCreateFlagBits =
+const std::unordered_map<VkDescriptorSetLayoutCreateFlags, std::string> Meta_StringsByVkDescriptorSetLayoutCreateFlags =
 {
-    { VkFramebufferCreateFlagBits::VK_FRAMEBUFFER_CREATE_IMAGELESS_BIT_KHR, "VK_FRAMEBUFFER_CREATE_IMAGELESS_BIT_KHR" },
-    { VkFramebufferCreateFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkDescriptorSetLayoutCreateFlags::VK_DESCRIPTOR_SET_LAYOUT_CREATE_PUSH_DESCRIPTOR_BIT_KHR, "VK_DESCRIPTOR_SET_LAYOUT_CREATE_PUSH_DESCRIPTOR_BIT_KHR" },
+    { VkDescriptorSetLayoutCreateFlags::VK_DESCRIPTOR_SET_LAYOUT_CREATE_UPDATE_AFTER_BIND_POOL_BIT_EXT, "VK_DESCRIPTOR_SET_LAYOUT_CREATE_UPDATE_AFTER_BIND_POOL_BIT_EXT" },
+    { VkDescriptorSetLayoutCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkGeometryFlagBitsNV, std::string> Meta_StringsByVkGeometryFlagBitsNV =
+const std::unordered_map<VkDescriptorUpdateTemplateCreateFlags, std::string> Meta_StringsByVkDescriptorUpdateTemplateCreateFlags =
 {
-    { VkGeometryFlagBitsNV::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkDescriptorUpdateTemplateCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkGeometryInstanceFlagBitsNV, std::string> Meta_StringsByVkGeometryInstanceFlagBitsNV =
+const std::unordered_map<VkDescriptorUpdateTemplateCreateFlagsKHR, std::string> Meta_StringsByVkDescriptorUpdateTemplateCreateFlagsKHR =
 {
-    { VkGeometryInstanceFlagBitsNV::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkDescriptorUpdateTemplateCreateFlagsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkImageAspectFlagBits, std::string> Meta_StringsByVkImageAspectFlagBits =
+const std::unordered_map<VkDeviceCreateFlags, std::string> Meta_StringsByVkDeviceCreateFlags =
 {
-    { VkImageAspectFlagBits::VK_IMAGE_ASPECT_MEMORY_PLANE_0_BIT_EXT, "VK_IMAGE_ASPECT_MEMORY_PLANE_0_BIT_EXT" },
-    { VkImageAspectFlagBits::VK_IMAGE_ASPECT_MEMORY_PLANE_1_BIT_EXT, "VK_IMAGE_ASPECT_MEMORY_PLANE_1_BIT_EXT" },
-    { VkImageAspectFlagBits::VK_IMAGE_ASPECT_MEMORY_PLANE_2_BIT_EXT, "VK_IMAGE_ASPECT_MEMORY_PLANE_2_BIT_EXT" },
-    { VkImageAspectFlagBits::VK_IMAGE_ASPECT_MEMORY_PLANE_3_BIT_EXT, "VK_IMAGE_ASPECT_MEMORY_PLANE_3_BIT_EXT" },
-    { VkImageAspectFlagBits::VK_IMAGE_ASPECT_PLANE_0_BIT, "VK_IMAGE_ASPECT_PLANE_0_BIT" },
-    { VkImageAspectFlagBits::VK_IMAGE_ASPECT_PLANE_0_BIT_KHR, "VK_IMAGE_ASPECT_PLANE_0_BIT_KHR" },
-    { VkImageAspectFlagBits::VK_IMAGE_ASPECT_PLANE_1_BIT, "VK_IMAGE_ASPECT_PLANE_1_BIT" },
-    { VkImageAspectFlagBits::VK_IMAGE_ASPECT_PLANE_1_BIT_KHR, "VK_IMAGE_ASPECT_PLANE_1_BIT_KHR" },
-    { VkImageAspectFlagBits::VK_IMAGE_ASPECT_PLANE_2_BIT, "VK_IMAGE_ASPECT_PLANE_2_BIT" },
-    { VkImageAspectFlagBits::VK_IMAGE_ASPECT_PLANE_2_BIT_KHR, "VK_IMAGE_ASPECT_PLANE_2_BIT_KHR" },
-    { VkImageAspectFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkDeviceCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkImageCreateFlagBits, std::string> Meta_StringsByVkImageCreateFlagBits =
+const std::unordered_map<VkDeviceGroupPresentModeFlagsKHR, std::string> Meta_StringsByVkDeviceGroupPresentModeFlagsKHR =
 {
-    { VkImageCreateFlagBits::VK_IMAGE_CREATE_2D_ARRAY_COMPATIBLE_BIT, "VK_IMAGE_CREATE_2D_ARRAY_COMPATIBLE_BIT" },
-    { VkImageCreateFlagBits::VK_IMAGE_CREATE_2D_ARRAY_COMPATIBLE_BIT_KHR, "VK_IMAGE_CREATE_2D_ARRAY_COMPATIBLE_BIT_KHR" },
-    { VkImageCreateFlagBits::VK_IMAGE_CREATE_ALIAS_BIT, "VK_IMAGE_CREATE_ALIAS_BIT" },
-    { VkImageCreateFlagBits::VK_IMAGE_CREATE_ALIAS_BIT_KHR, "VK_IMAGE_CREATE_ALIAS_BIT_KHR" },
-    { VkImageCreateFlagBits::VK_IMAGE_CREATE_BLOCK_TEXEL_VIEW_COMPATIBLE_BIT, "VK_IMAGE_CREATE_BLOCK_TEXEL_VIEW_COMPATIBLE_BIT" },
-    { VkImageCreateFlagBits::VK_IMAGE_CREATE_BLOCK_TEXEL_VIEW_COMPATIBLE_BIT_KHR, "VK_IMAGE_CREATE_BLOCK_TEXEL_VIEW_COMPATIBLE_BIT_KHR" },
-    { VkImageCreateFlagBits::VK_IMAGE_CREATE_CORNER_SAMPLED_BIT_NV, "VK_IMAGE_CREATE_CORNER_SAMPLED_BIT_NV" },
-    { VkImageCreateFlagBits::VK_IMAGE_CREATE_DISJOINT_BIT, "VK_IMAGE_CREATE_DISJOINT_BIT" },
-    { VkImageCreateFlagBits::VK_IMAGE_CREATE_DISJOINT_BIT_KHR, "VK_IMAGE_CREATE_DISJOINT_BIT_KHR" },
-    { VkImageCreateFlagBits::VK_IMAGE_CREATE_EXTENDED_USAGE_BIT, "VK_IMAGE_CREATE_EXTENDED_USAGE_BIT" },
-    { VkImageCreateFlagBits::VK_IMAGE_CREATE_EXTENDED_USAGE_BIT_KHR, "VK_IMAGE_CREATE_EXTENDED_USAGE_BIT_KHR" },
-    { VkImageCreateFlagBits::VK_IMAGE_CREATE_PROTECTED_BIT, "VK_IMAGE_CREATE_PROTECTED_BIT" },
-    { VkImageCreateFlagBits::VK_IMAGE_CREATE_SAMPLE_LOCATIONS_COMPATIBLE_DEPTH_BIT_EXT, "VK_IMAGE_CREATE_SAMPLE_LOCATIONS_COMPATIBLE_DEPTH_BIT_EXT" },
-    { VkImageCreateFlagBits::VK_IMAGE_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT, "VK_IMAGE_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT" },
-    { VkImageCreateFlagBits::VK_IMAGE_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT_KHR, "VK_IMAGE_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT_KHR" },
-    { VkImageCreateFlagBits::VK_IMAGE_CREATE_SUBSAMPLED_BIT_EXT, "VK_IMAGE_CREATE_SUBSAMPLED_BIT_EXT" },
-    { VkImageCreateFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkDeviceGroupPresentModeFlagsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkImageUsageFlagBits, std::string> Meta_StringsByVkImageUsageFlagBits =
+const std::unordered_map<VkDeviceQueueCreateFlags, std::string> Meta_StringsByVkDeviceQueueCreateFlags =
 {
-    { VkImageUsageFlagBits::VK_IMAGE_USAGE_FRAGMENT_DENSITY_MAP_BIT_EXT, "VK_IMAGE_USAGE_FRAGMENT_DENSITY_MAP_BIT_EXT" },
-    { VkImageUsageFlagBits::VK_IMAGE_USAGE_SHADING_RATE_IMAGE_BIT_NV, "VK_IMAGE_USAGE_SHADING_RATE_IMAGE_BIT_NV" },
-    { VkImageUsageFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkDeviceQueueCreateFlags::VK_DEVICE_QUEUE_CREATE_PROTECTED_BIT, "VK_DEVICE_QUEUE_CREATE_PROTECTED_BIT" },
+    { VkDeviceQueueCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkImageViewCreateFlagBits, std::string> Meta_StringsByVkImageViewCreateFlagBits =
+const std::unordered_map<VkDisplayModeCreateFlagsKHR, std::string> Meta_StringsByVkDisplayModeCreateFlagsKHR =
 {
-    { VkImageViewCreateFlagBits::VK_IMAGE_VIEW_CREATE_FRAGMENT_DENSITY_MAP_DYNAMIC_BIT_EXT, "VK_IMAGE_VIEW_CREATE_FRAGMENT_DENSITY_MAP_DYNAMIC_BIT_EXT" },
-    { VkImageViewCreateFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkDisplayModeCreateFlagsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkIndirectCommandsLayoutUsageFlagBitsNVX, std::string> Meta_StringsByVkIndirectCommandsLayoutUsageFlagBitsNVX =
+const std::unordered_map<VkDisplayPlaneAlphaFlagsKHR, std::string> Meta_StringsByVkDisplayPlaneAlphaFlagsKHR =
 {
-    { VkIndirectCommandsLayoutUsageFlagBitsNVX::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkDisplayPlaneAlphaFlagsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkMemoryAllocateFlagBits, std::string> Meta_StringsByVkMemoryAllocateFlagBits =
+const std::unordered_map<VkDisplaySurfaceCreateFlagsKHR, std::string> Meta_StringsByVkDisplaySurfaceCreateFlagsKHR =
 {
-    { VkMemoryAllocateFlagBits::VK_MEMORY_ALLOCATE_DEVICE_MASK_BIT_KHR, "VK_MEMORY_ALLOCATE_DEVICE_MASK_BIT_KHR" },
-    { VkMemoryAllocateFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkDisplaySurfaceCreateFlagsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkMemoryHeapFlagBits, std::string> Meta_StringsByVkMemoryHeapFlagBits =
+const std::unordered_map<VkEventCreateFlags, std::string> Meta_StringsByVkEventCreateFlags =
 {
-    { VkMemoryHeapFlagBits::VK_MEMORY_HEAP_MULTI_INSTANCE_BIT, "VK_MEMORY_HEAP_MULTI_INSTANCE_BIT" },
-    { VkMemoryHeapFlagBits::VK_MEMORY_HEAP_MULTI_INSTANCE_BIT_KHR, "VK_MEMORY_HEAP_MULTI_INSTANCE_BIT_KHR" },
-    { VkMemoryHeapFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkEventCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkMemoryPropertyFlagBits, std::string> Meta_StringsByVkMemoryPropertyFlagBits =
+const std::unordered_map<VkExternalFenceFeatureFlagBitsKHR, std::string> Meta_StringsByVkExternalFenceFeatureFlagBitsKHR =
 {
-    { VkMemoryPropertyFlagBits::VK_MEMORY_PROPERTY_PROTECTED_BIT, "VK_MEMORY_PROPERTY_PROTECTED_BIT" },
-    { VkMemoryPropertyFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkExternalFenceFeatureFlagBitsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkObjectEntryUsageFlagBitsNVX, std::string> Meta_StringsByVkObjectEntryUsageFlagBitsNVX =
+const std::unordered_map<VkExternalFenceFeatureFlags, std::string> Meta_StringsByVkExternalFenceFeatureFlags =
 {
-    { VkObjectEntryUsageFlagBitsNVX::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkExternalFenceFeatureFlags::VK_EXTERNAL_FENCE_FEATURE_EXPORTABLE_BIT_KHR, "VK_EXTERNAL_FENCE_FEATURE_EXPORTABLE_BIT_KHR" },
+    { VkExternalFenceFeatureFlags::VK_EXTERNAL_FENCE_FEATURE_IMPORTABLE_BIT_KHR, "VK_EXTERNAL_FENCE_FEATURE_IMPORTABLE_BIT_KHR" },
+    { VkExternalFenceFeatureFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkPeerMemoryFeatureFlagBits, std::string> Meta_StringsByVkPeerMemoryFeatureFlagBits =
+const std::unordered_map<VkExternalFenceFeatureFlagsKHR, std::string> Meta_StringsByVkExternalFenceFeatureFlagsKHR =
 {
-    { VkPeerMemoryFeatureFlagBits::VK_NONE_BIT, "VK_NONE_BIT" },
-    { VkPeerMemoryFeatureFlagBits::VK_PEER_MEMORY_FEATURE_COPY_DST_BIT_KHR, "VK_PEER_MEMORY_FEATURE_COPY_DST_BIT_KHR" },
-    { VkPeerMemoryFeatureFlagBits::VK_PEER_MEMORY_FEATURE_COPY_SRC_BIT_KHR, "VK_PEER_MEMORY_FEATURE_COPY_SRC_BIT_KHR" },
-    { VkPeerMemoryFeatureFlagBits::VK_PEER_MEMORY_FEATURE_GENERIC_DST_BIT_KHR, "VK_PEER_MEMORY_FEATURE_GENERIC_DST_BIT_KHR" },
-    { VkPeerMemoryFeatureFlagBits::VK_PEER_MEMORY_FEATURE_GENERIC_SRC_BIT_KHR, "VK_PEER_MEMORY_FEATURE_GENERIC_SRC_BIT_KHR" }
+    { VkExternalFenceFeatureFlagsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkPipelineCreateFlagBits, std::string> Meta_StringsByVkPipelineCreateFlagBits =
+const std::unordered_map<VkExternalFenceHandleTypeFlagBitsKHR, std::string> Meta_StringsByVkExternalFenceHandleTypeFlagBitsKHR =
 {
-    { VkPipelineCreateFlagBits::VK_NONE_BIT, "VK_NONE_BIT" },
-    { VkPipelineCreateFlagBits::VK_PIPELINE_CREATE_DEFER_COMPILE_BIT_NV, "VK_PIPELINE_CREATE_DEFER_COMPILE_BIT_NV" },
-    { VkPipelineCreateFlagBits::VK_PIPELINE_CREATE_DISPATCH_BASE, "VK_PIPELINE_CREATE_DISPATCH_BASE" },
-    { VkPipelineCreateFlagBits::VK_PIPELINE_CREATE_DISPATCH_BASE_KHR, "VK_PIPELINE_CREATE_DISPATCH_BASE_KHR" },
-    { VkPipelineCreateFlagBits::VK_PIPELINE_CREATE_VIEW_INDEX_FROM_DEVICE_INDEX_BIT, "VK_PIPELINE_CREATE_VIEW_INDEX_FROM_DEVICE_INDEX_BIT" },
-    { VkPipelineCreateFlagBits::VK_PIPELINE_CREATE_VIEW_INDEX_FROM_DEVICE_INDEX_BIT_KHR, "VK_PIPELINE_CREATE_VIEW_INDEX_FROM_DEVICE_INDEX_BIT_KHR" }
+    { VkExternalFenceHandleTypeFlagBitsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkPipelineCreationFeedbackFlagBitsEXT, std::string> Meta_StringsByVkPipelineCreationFeedbackFlagBitsEXT =
+const std::unordered_map<VkExternalFenceHandleTypeFlags, std::string> Meta_StringsByVkExternalFenceHandleTypeFlags =
 {
-    { VkPipelineCreationFeedbackFlagBitsEXT::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkExternalFenceHandleTypeFlags::VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_FD_BIT_KHR, "VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_FD_BIT_KHR" },
+    { VkExternalFenceHandleTypeFlags::VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_WIN32_BIT_KHR, "VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_WIN32_BIT_KHR" },
+    { VkExternalFenceHandleTypeFlags::VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT_KHR, "VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT_KHR" },
+    { VkExternalFenceHandleTypeFlags::VK_EXTERNAL_FENCE_HANDLE_TYPE_SYNC_FD_BIT_KHR, "VK_EXTERNAL_FENCE_HANDLE_TYPE_SYNC_FD_BIT_KHR" },
+    { VkExternalFenceHandleTypeFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkPipelineShaderStageCreateFlagBits, std::string> Meta_StringsByVkPipelineShaderStageCreateFlagBits =
+const std::unordered_map<VkExternalFenceHandleTypeFlagsKHR, std::string> Meta_StringsByVkExternalFenceHandleTypeFlagsKHR =
 {
-    { VkPipelineShaderStageCreateFlagBits::VK_NONE_BIT, "VK_NONE_BIT" },
-    { VkPipelineShaderStageCreateFlagBits::VK_PIPELINE_SHADER_STAGE_CREATE_ALLOW_VARYING_SUBGROUP_SIZE_BIT_EXT, "VK_PIPELINE_SHADER_STAGE_CREATE_ALLOW_VARYING_SUBGROUP_SIZE_BIT_EXT" },
-    { VkPipelineShaderStageCreateFlagBits::VK_PIPELINE_SHADER_STAGE_CREATE_REQUIRE_FULL_SUBGROUPS_BIT_EXT, "VK_PIPELINE_SHADER_STAGE_CREATE_REQUIRE_FULL_SUBGROUPS_BIT_EXT" }
+    { VkExternalFenceHandleTypeFlagsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkPipelineStageFlagBits, std::string> Meta_StringsByVkPipelineStageFlagBits =
+const std::unordered_map<VkExternalMemoryFeatureFlagBitsKHR, std::string> Meta_StringsByVkExternalMemoryFeatureFlagBitsKHR =
 {
-    { VkPipelineStageFlagBits::VK_NONE_BIT, "VK_NONE_BIT" },
-    { VkPipelineStageFlagBits::VK_PIPELINE_STAGE_ACCELERATION_STRUCTURE_BUILD_BIT_NV, "VK_PIPELINE_STAGE_ACCELERATION_STRUCTURE_BUILD_BIT_NV" },
-    { VkPipelineStageFlagBits::VK_PIPELINE_STAGE_COMMAND_PROCESS_BIT_NVX, "VK_PIPELINE_STAGE_COMMAND_PROCESS_BIT_NVX" },
-    { VkPipelineStageFlagBits::VK_PIPELINE_STAGE_CONDITIONAL_RENDERING_BIT_EXT, "VK_PIPELINE_STAGE_CONDITIONAL_RENDERING_BIT_EXT" },
-    { VkPipelineStageFlagBits::VK_PIPELINE_STAGE_FRAGMENT_DENSITY_PROCESS_BIT_EXT, "VK_PIPELINE_STAGE_FRAGMENT_DENSITY_PROCESS_BIT_EXT" },
-    { VkPipelineStageFlagBits::VK_PIPELINE_STAGE_MESH_SHADER_BIT_NV, "VK_PIPELINE_STAGE_MESH_SHADER_BIT_NV" },
-    { VkPipelineStageFlagBits::VK_PIPELINE_STAGE_RAY_TRACING_SHADER_BIT_NV, "VK_PIPELINE_STAGE_RAY_TRACING_SHADER_BIT_NV" },
-    { VkPipelineStageFlagBits::VK_PIPELINE_STAGE_SHADING_RATE_IMAGE_BIT_NV, "VK_PIPELINE_STAGE_SHADING_RATE_IMAGE_BIT_NV" },
-    { VkPipelineStageFlagBits::VK_PIPELINE_STAGE_TASK_SHADER_BIT_NV, "VK_PIPELINE_STAGE_TASK_SHADER_BIT_NV" },
-    { VkPipelineStageFlagBits::VK_PIPELINE_STAGE_TRANSFORM_FEEDBACK_BIT_EXT, "VK_PIPELINE_STAGE_TRANSFORM_FEEDBACK_BIT_EXT" }
+    { VkExternalMemoryFeatureFlagBitsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkQueueFlagBits, std::string> Meta_StringsByVkQueueFlagBits =
+const std::unordered_map<VkExternalMemoryFeatureFlags, std::string> Meta_StringsByVkExternalMemoryFeatureFlags =
 {
-    { VkQueueFlagBits::VK_NONE_BIT, "VK_NONE_BIT" },
-    { VkQueueFlagBits::VK_QUEUE_PROTECTED_BIT, "VK_QUEUE_PROTECTED_BIT" }
+    { VkExternalMemoryFeatureFlags::VK_EXTERNAL_MEMORY_FEATURE_DEDICATED_ONLY_BIT_KHR, "VK_EXTERNAL_MEMORY_FEATURE_DEDICATED_ONLY_BIT_KHR" },
+    { VkExternalMemoryFeatureFlags::VK_EXTERNAL_MEMORY_FEATURE_EXPORTABLE_BIT_KHR, "VK_EXTERNAL_MEMORY_FEATURE_EXPORTABLE_BIT_KHR" },
+    { VkExternalMemoryFeatureFlags::VK_EXTERNAL_MEMORY_FEATURE_IMPORTABLE_BIT_KHR, "VK_EXTERNAL_MEMORY_FEATURE_IMPORTABLE_BIT_KHR" },
+    { VkExternalMemoryFeatureFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkResolveModeFlagBitsKHR, std::string> Meta_StringsByVkResolveModeFlagBitsKHR =
+const std::unordered_map<VkExternalMemoryFeatureFlagsKHR, std::string> Meta_StringsByVkExternalMemoryFeatureFlagsKHR =
 {
-    { VkResolveModeFlagBitsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkExternalMemoryFeatureFlagsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkSampleCountFlagBits, std::string> Meta_StringsByVkSampleCountFlagBits =
+const std::unordered_map<VkExternalMemoryFeatureFlagsNV, std::string> Meta_StringsByVkExternalMemoryFeatureFlagsNV =
 {
-    { VkSampleCountFlagBits::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkExternalMemoryFeatureFlagsNV::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkSamplerCreateFlagBits, std::string> Meta_StringsByVkSamplerCreateFlagBits =
+const std::unordered_map<VkExternalMemoryHandleTypeFlagBitsKHR, std::string> Meta_StringsByVkExternalMemoryHandleTypeFlagBitsKHR =
 {
-    { VkSamplerCreateFlagBits::VK_NONE_BIT, "VK_NONE_BIT" },
-    { VkSamplerCreateFlagBits::VK_SAMPLER_CREATE_SUBSAMPLED_BIT_EXT, "VK_SAMPLER_CREATE_SUBSAMPLED_BIT_EXT" },
-    { VkSamplerCreateFlagBits::VK_SAMPLER_CREATE_SUBSAMPLED_COARSE_RECONSTRUCTION_BIT_EXT, "VK_SAMPLER_CREATE_SUBSAMPLED_COARSE_RECONSTRUCTION_BIT_EXT" }
+    { VkExternalMemoryHandleTypeFlagBitsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkSemaphoreImportFlagBits, std::string> Meta_StringsByVkSemaphoreImportFlagBits =
+const std::unordered_map<VkExternalMemoryHandleTypeFlags, std::string> Meta_StringsByVkExternalMemoryHandleTypeFlags =
 {
-    { VkSemaphoreImportFlagBits::VK_NONE_BIT, "VK_NONE_BIT" },
-    { VkSemaphoreImportFlagBits::VK_SEMAPHORE_IMPORT_TEMPORARY_BIT_KHR, "VK_SEMAPHORE_IMPORT_TEMPORARY_BIT_KHR" }
+    { VkExternalMemoryHandleTypeFlags::VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D11_TEXTURE_BIT_KHR, "VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D11_TEXTURE_BIT_KHR" },
+    { VkExternalMemoryHandleTypeFlags::VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D11_TEXTURE_KMT_BIT_KHR, "VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D11_TEXTURE_KMT_BIT_KHR" },
+    { VkExternalMemoryHandleTypeFlags::VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D12_HEAP_BIT_KHR, "VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D12_HEAP_BIT_KHR" },
+    { VkExternalMemoryHandleTypeFlags::VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D12_RESOURCE_BIT_KHR, "VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D12_RESOURCE_BIT_KHR" },
+    { VkExternalMemoryHandleTypeFlags::VK_EXTERNAL_MEMORY_HANDLE_TYPE_DMA_BUF_BIT_EXT, "VK_EXTERNAL_MEMORY_HANDLE_TYPE_DMA_BUF_BIT_EXT" },
+    { VkExternalMemoryHandleTypeFlags::VK_EXTERNAL_MEMORY_HANDLE_TYPE_HOST_ALLOCATION_BIT_EXT, "VK_EXTERNAL_MEMORY_HANDLE_TYPE_HOST_ALLOCATION_BIT_EXT" },
+    { VkExternalMemoryHandleTypeFlags::VK_EXTERNAL_MEMORY_HANDLE_TYPE_HOST_MAPPED_FOREIGN_MEMORY_BIT_EXT, "VK_EXTERNAL_MEMORY_HANDLE_TYPE_HOST_MAPPED_FOREIGN_MEMORY_BIT_EXT" },
+    { VkExternalMemoryHandleTypeFlags::VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_FD_BIT_KHR, "VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_FD_BIT_KHR" },
+    { VkExternalMemoryHandleTypeFlags::VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_WIN32_BIT_KHR, "VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_WIN32_BIT_KHR" },
+    { VkExternalMemoryHandleTypeFlags::VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT_KHR, "VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT_KHR" },
+    { VkExternalMemoryHandleTypeFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkShaderStageFlagBits, std::string> Meta_StringsByVkShaderStageFlagBits =
+const std::unordered_map<VkExternalMemoryHandleTypeFlagsKHR, std::string> Meta_StringsByVkExternalMemoryHandleTypeFlagsKHR =
 {
-    { VkShaderStageFlagBits::VK_NONE_BIT, "VK_NONE_BIT" },
-    { VkShaderStageFlagBits::VK_SHADER_STAGE_ANY_HIT_BIT_NV, "VK_SHADER_STAGE_ANY_HIT_BIT_NV" },
-    { VkShaderStageFlagBits::VK_SHADER_STAGE_CALLABLE_BIT_NV, "VK_SHADER_STAGE_CALLABLE_BIT_NV" },
-    { VkShaderStageFlagBits::VK_SHADER_STAGE_CLOSEST_HIT_BIT_NV, "VK_SHADER_STAGE_CLOSEST_HIT_BIT_NV" },
-    { VkShaderStageFlagBits::VK_SHADER_STAGE_INTERSECTION_BIT_NV, "VK_SHADER_STAGE_INTERSECTION_BIT_NV" },
-    { VkShaderStageFlagBits::VK_SHADER_STAGE_MESH_BIT_NV, "VK_SHADER_STAGE_MESH_BIT_NV" },
-    { VkShaderStageFlagBits::VK_SHADER_STAGE_MISS_BIT_NV, "VK_SHADER_STAGE_MISS_BIT_NV" },
-    { VkShaderStageFlagBits::VK_SHADER_STAGE_RAYGEN_BIT_NV, "VK_SHADER_STAGE_RAYGEN_BIT_NV" },
-    { VkShaderStageFlagBits::VK_SHADER_STAGE_TASK_BIT_NV, "VK_SHADER_STAGE_TASK_BIT_NV" }
+    { VkExternalMemoryHandleTypeFlagsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkSubgroupFeatureFlagBits, std::string> Meta_StringsByVkSubgroupFeatureFlagBits =
+const std::unordered_map<VkExternalMemoryHandleTypeFlagsNV, std::string> Meta_StringsByVkExternalMemoryHandleTypeFlagsNV =
 {
-    { VkSubgroupFeatureFlagBits::VK_NONE_BIT, "VK_NONE_BIT" },
-    { VkSubgroupFeatureFlagBits::VK_SUBGROUP_FEATURE_PARTITIONED_BIT_NV, "VK_SUBGROUP_FEATURE_PARTITIONED_BIT_NV" }
+    { VkExternalMemoryHandleTypeFlagsNV::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkSubpassDescriptionFlagBits, std::string> Meta_StringsByVkSubpassDescriptionFlagBits =
+const std::unordered_map<VkExternalSemaphoreFeatureFlagBitsKHR, std::string> Meta_StringsByVkExternalSemaphoreFeatureFlagBitsKHR =
 {
-    { VkSubpassDescriptionFlagBits::VK_NONE_BIT, "VK_NONE_BIT" },
-    { VkSubpassDescriptionFlagBits::VK_SUBPASS_DESCRIPTION_PER_VIEW_ATTRIBUTES_BIT_NVX, "VK_SUBPASS_DESCRIPTION_PER_VIEW_ATTRIBUTES_BIT_NVX" },
-    { VkSubpassDescriptionFlagBits::VK_SUBPASS_DESCRIPTION_PER_VIEW_POSITION_X_ONLY_BIT_NVX, "VK_SUBPASS_DESCRIPTION_PER_VIEW_POSITION_X_ONLY_BIT_NVX" }
+    { VkExternalSemaphoreFeatureFlagBitsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkSurfaceCounterFlagBitsEXT, std::string> Meta_StringsByVkSurfaceCounterFlagBitsEXT =
+const std::unordered_map<VkExternalSemaphoreFeatureFlags, std::string> Meta_StringsByVkExternalSemaphoreFeatureFlags =
 {
-    { VkSurfaceCounterFlagBitsEXT::VK_NONE_BIT, "VK_NONE_BIT" }
+    { VkExternalSemaphoreFeatureFlags::VK_EXTERNAL_SEMAPHORE_FEATURE_EXPORTABLE_BIT_KHR, "VK_EXTERNAL_SEMAPHORE_FEATURE_EXPORTABLE_BIT_KHR" },
+    { VkExternalSemaphoreFeatureFlags::VK_EXTERNAL_SEMAPHORE_FEATURE_IMPORTABLE_BIT_KHR, "VK_EXTERNAL_SEMAPHORE_FEATURE_IMPORTABLE_BIT_KHR" },
+    { VkExternalSemaphoreFeatureFlags::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
-const std::unordered_map<VkSwapchainCreateFlagBitsKHR, std::string> Meta_StringsByVkSwapchainCreateFlagBitsKHR =
+const std::unordered_map<VkExternalSemaphoreFeatureFlagsKHR, std::string> Meta_StringsByVkExternalSemaphoreFeatureFlagsKHR =
 {
-    { VkSwapchainCreateFlagBitsKHR::VK_NONE_BIT, "VK_NONE_BIT" },
-    { VkSwapchainCreateFlagBitsKHR::VK_SWAPCHAIN_CREATE_MUTABLE_FORMAT_BIT_KHR, "VK_SWAPCHAIN_CREATE_MUTABLE_FORMAT_BIT_KHR" },
-    { VkSwapchainCreateFlagBitsKHR::VK_SWAPCHAIN_CREATE_PROTECTED_BIT_KHR, "VK_SWAPCHAIN_CREATE_PROTECTED_BIT_KHR" },
-    { VkSwapchainCreateFlagBitsKHR::VK_SWAPCHAIN_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT_KHR, "VK_SWAPCHAIN_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT_KHR" }
+    { VkExternalSemaphoreFeatureFlagsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkExternalSemaphoreHandleTypeFlagBitsKHR, std::string> Meta_StringsByVkExternalSemaphoreHandleTypeFlagBitsKHR =
+{
+    { VkExternalSemaphoreHandleTypeFlagBitsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkExternalSemaphoreHandleTypeFlags, std::string> Meta_StringsByVkExternalSemaphoreHandleTypeFlags =
+{
+    { VkExternalSemaphoreHandleTypeFlags::VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_D3D12_FENCE_BIT_KHR, "VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_D3D12_FENCE_BIT_KHR" },
+    { VkExternalSemaphoreHandleTypeFlags::VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_FD_BIT_KHR, "VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_FD_BIT_KHR" },
+    { VkExternalSemaphoreHandleTypeFlags::VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_WIN32_BIT_KHR, "VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_WIN32_BIT_KHR" },
+    { VkExternalSemaphoreHandleTypeFlags::VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT_KHR, "VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT_KHR" },
+    { VkExternalSemaphoreHandleTypeFlags::VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_SYNC_FD_BIT_KHR, "VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_SYNC_FD_BIT_KHR" },
+    { VkExternalSemaphoreHandleTypeFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkExternalSemaphoreHandleTypeFlagsKHR, std::string> Meta_StringsByVkExternalSemaphoreHandleTypeFlagsKHR =
+{
+    { VkExternalSemaphoreHandleTypeFlagsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkFenceCreateFlags, std::string> Meta_StringsByVkFenceCreateFlags =
+{
+    { VkFenceCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkFenceImportFlagBitsKHR, std::string> Meta_StringsByVkFenceImportFlagBitsKHR =
+{
+    { VkFenceImportFlagBitsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkFenceImportFlags, std::string> Meta_StringsByVkFenceImportFlags =
+{
+    { VkFenceImportFlags::VK_FENCE_IMPORT_TEMPORARY_BIT_KHR, "VK_FENCE_IMPORT_TEMPORARY_BIT_KHR" },
+    { VkFenceImportFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkFenceImportFlagsKHR, std::string> Meta_StringsByVkFenceImportFlagsKHR =
+{
+    { VkFenceImportFlagsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkFormatFeatureFlags, std::string> Meta_StringsByVkFormatFeatureFlags =
+{
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_COSITED_CHROMA_SAMPLES_BIT, "VK_FORMAT_FEATURE_COSITED_CHROMA_SAMPLES_BIT" },
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_COSITED_CHROMA_SAMPLES_BIT_KHR, "VK_FORMAT_FEATURE_COSITED_CHROMA_SAMPLES_BIT_KHR" },
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_DISJOINT_BIT, "VK_FORMAT_FEATURE_DISJOINT_BIT" },
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_DISJOINT_BIT_KHR, "VK_FORMAT_FEATURE_DISJOINT_BIT_KHR" },
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_FRAGMENT_DENSITY_MAP_BIT_EXT, "VK_FORMAT_FEATURE_FRAGMENT_DENSITY_MAP_BIT_EXT" },
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_MIDPOINT_CHROMA_SAMPLES_BIT, "VK_FORMAT_FEATURE_MIDPOINT_CHROMA_SAMPLES_BIT" },
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_MIDPOINT_CHROMA_SAMPLES_BIT_KHR, "VK_FORMAT_FEATURE_MIDPOINT_CHROMA_SAMPLES_BIT_KHR" },
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_CUBIC_BIT_EXT, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_CUBIC_BIT_EXT" },
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_CUBIC_BIT_IMG, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_CUBIC_BIT_IMG" },
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_MINMAX_BIT_EXT, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_MINMAX_BIT_EXT" },
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_BIT, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_BIT" },
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_BIT_KHR, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_BIT_KHR" },
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_FORCEABLE_BIT, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_FORCEABLE_BIT" },
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_FORCEABLE_BIT_KHR, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_FORCEABLE_BIT_KHR" },
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_LINEAR_FILTER_BIT, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_LINEAR_FILTER_BIT" },
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_LINEAR_FILTER_BIT_KHR, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_LINEAR_FILTER_BIT_KHR" },
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_SEPARATE_RECONSTRUCTION_FILTER_BIT, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_SEPARATE_RECONSTRUCTION_FILTER_BIT" },
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_SEPARATE_RECONSTRUCTION_FILTER_BIT_KHR, "VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_SEPARATE_RECONSTRUCTION_FILTER_BIT_KHR" },
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_TRANSFER_DST_BIT, "VK_FORMAT_FEATURE_TRANSFER_DST_BIT" },
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_TRANSFER_DST_BIT_KHR, "VK_FORMAT_FEATURE_TRANSFER_DST_BIT_KHR" },
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_TRANSFER_SRC_BIT, "VK_FORMAT_FEATURE_TRANSFER_SRC_BIT" },
+    { VkFormatFeatureFlags::VK_FORMAT_FEATURE_TRANSFER_SRC_BIT_KHR, "VK_FORMAT_FEATURE_TRANSFER_SRC_BIT_KHR" },
+    { VkFormatFeatureFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkFramebufferCreateFlags, std::string> Meta_StringsByVkFramebufferCreateFlags =
+{
+    { VkFramebufferCreateFlags::VK_FRAMEBUFFER_CREATE_IMAGELESS_BIT_KHR, "VK_FRAMEBUFFER_CREATE_IMAGELESS_BIT_KHR" },
+    { VkFramebufferCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkGeometryFlagsNV, std::string> Meta_StringsByVkGeometryFlagsNV =
+{
+    { VkGeometryFlagsNV::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkGeometryInstanceFlagsNV, std::string> Meta_StringsByVkGeometryInstanceFlagsNV =
+{
+    { VkGeometryInstanceFlagsNV::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkHeadlessSurfaceCreateFlagsEXT, std::string> Meta_StringsByVkHeadlessSurfaceCreateFlagsEXT =
+{
+    { VkHeadlessSurfaceCreateFlagsEXT::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkImageAspectFlags, std::string> Meta_StringsByVkImageAspectFlags =
+{
+    { VkImageAspectFlags::VK_IMAGE_ASPECT_MEMORY_PLANE_0_BIT_EXT, "VK_IMAGE_ASPECT_MEMORY_PLANE_0_BIT_EXT" },
+    { VkImageAspectFlags::VK_IMAGE_ASPECT_MEMORY_PLANE_1_BIT_EXT, "VK_IMAGE_ASPECT_MEMORY_PLANE_1_BIT_EXT" },
+    { VkImageAspectFlags::VK_IMAGE_ASPECT_MEMORY_PLANE_2_BIT_EXT, "VK_IMAGE_ASPECT_MEMORY_PLANE_2_BIT_EXT" },
+    { VkImageAspectFlags::VK_IMAGE_ASPECT_MEMORY_PLANE_3_BIT_EXT, "VK_IMAGE_ASPECT_MEMORY_PLANE_3_BIT_EXT" },
+    { VkImageAspectFlags::VK_IMAGE_ASPECT_PLANE_0_BIT, "VK_IMAGE_ASPECT_PLANE_0_BIT" },
+    { VkImageAspectFlags::VK_IMAGE_ASPECT_PLANE_0_BIT_KHR, "VK_IMAGE_ASPECT_PLANE_0_BIT_KHR" },
+    { VkImageAspectFlags::VK_IMAGE_ASPECT_PLANE_1_BIT, "VK_IMAGE_ASPECT_PLANE_1_BIT" },
+    { VkImageAspectFlags::VK_IMAGE_ASPECT_PLANE_1_BIT_KHR, "VK_IMAGE_ASPECT_PLANE_1_BIT_KHR" },
+    { VkImageAspectFlags::VK_IMAGE_ASPECT_PLANE_2_BIT, "VK_IMAGE_ASPECT_PLANE_2_BIT" },
+    { VkImageAspectFlags::VK_IMAGE_ASPECT_PLANE_2_BIT_KHR, "VK_IMAGE_ASPECT_PLANE_2_BIT_KHR" },
+    { VkImageAspectFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkImageCreateFlags, std::string> Meta_StringsByVkImageCreateFlags =
+{
+    { VkImageCreateFlags::VK_IMAGE_CREATE_2D_ARRAY_COMPATIBLE_BIT, "VK_IMAGE_CREATE_2D_ARRAY_COMPATIBLE_BIT" },
+    { VkImageCreateFlags::VK_IMAGE_CREATE_2D_ARRAY_COMPATIBLE_BIT_KHR, "VK_IMAGE_CREATE_2D_ARRAY_COMPATIBLE_BIT_KHR" },
+    { VkImageCreateFlags::VK_IMAGE_CREATE_ALIAS_BIT, "VK_IMAGE_CREATE_ALIAS_BIT" },
+    { VkImageCreateFlags::VK_IMAGE_CREATE_ALIAS_BIT_KHR, "VK_IMAGE_CREATE_ALIAS_BIT_KHR" },
+    { VkImageCreateFlags::VK_IMAGE_CREATE_BLOCK_TEXEL_VIEW_COMPATIBLE_BIT, "VK_IMAGE_CREATE_BLOCK_TEXEL_VIEW_COMPATIBLE_BIT" },
+    { VkImageCreateFlags::VK_IMAGE_CREATE_BLOCK_TEXEL_VIEW_COMPATIBLE_BIT_KHR, "VK_IMAGE_CREATE_BLOCK_TEXEL_VIEW_COMPATIBLE_BIT_KHR" },
+    { VkImageCreateFlags::VK_IMAGE_CREATE_CORNER_SAMPLED_BIT_NV, "VK_IMAGE_CREATE_CORNER_SAMPLED_BIT_NV" },
+    { VkImageCreateFlags::VK_IMAGE_CREATE_DISJOINT_BIT, "VK_IMAGE_CREATE_DISJOINT_BIT" },
+    { VkImageCreateFlags::VK_IMAGE_CREATE_DISJOINT_BIT_KHR, "VK_IMAGE_CREATE_DISJOINT_BIT_KHR" },
+    { VkImageCreateFlags::VK_IMAGE_CREATE_EXTENDED_USAGE_BIT, "VK_IMAGE_CREATE_EXTENDED_USAGE_BIT" },
+    { VkImageCreateFlags::VK_IMAGE_CREATE_EXTENDED_USAGE_BIT_KHR, "VK_IMAGE_CREATE_EXTENDED_USAGE_BIT_KHR" },
+    { VkImageCreateFlags::VK_IMAGE_CREATE_PROTECTED_BIT, "VK_IMAGE_CREATE_PROTECTED_BIT" },
+    { VkImageCreateFlags::VK_IMAGE_CREATE_SAMPLE_LOCATIONS_COMPATIBLE_DEPTH_BIT_EXT, "VK_IMAGE_CREATE_SAMPLE_LOCATIONS_COMPATIBLE_DEPTH_BIT_EXT" },
+    { VkImageCreateFlags::VK_IMAGE_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT, "VK_IMAGE_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT" },
+    { VkImageCreateFlags::VK_IMAGE_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT_KHR, "VK_IMAGE_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT_KHR" },
+    { VkImageCreateFlags::VK_IMAGE_CREATE_SUBSAMPLED_BIT_EXT, "VK_IMAGE_CREATE_SUBSAMPLED_BIT_EXT" },
+    { VkImageCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkImageUsageFlags, std::string> Meta_StringsByVkImageUsageFlags =
+{
+    { VkImageUsageFlags::VK_IMAGE_USAGE_FRAGMENT_DENSITY_MAP_BIT_EXT, "VK_IMAGE_USAGE_FRAGMENT_DENSITY_MAP_BIT_EXT" },
+    { VkImageUsageFlags::VK_IMAGE_USAGE_SHADING_RATE_IMAGE_BIT_NV, "VK_IMAGE_USAGE_SHADING_RATE_IMAGE_BIT_NV" },
+    { VkImageUsageFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkImageViewCreateFlags, std::string> Meta_StringsByVkImageViewCreateFlags =
+{
+    { VkImageViewCreateFlags::VK_IMAGE_VIEW_CREATE_FRAGMENT_DENSITY_MAP_DYNAMIC_BIT_EXT, "VK_IMAGE_VIEW_CREATE_FRAGMENT_DENSITY_MAP_DYNAMIC_BIT_EXT" },
+    { VkImageViewCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkIndirectCommandsLayoutUsageFlagsNVX, std::string> Meta_StringsByVkIndirectCommandsLayoutUsageFlagsNVX =
+{
+    { VkIndirectCommandsLayoutUsageFlagsNVX::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkInstanceCreateFlags, std::string> Meta_StringsByVkInstanceCreateFlags =
+{
+    { VkInstanceCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkMemoryAllocateFlagBitsKHR, std::string> Meta_StringsByVkMemoryAllocateFlagBitsKHR =
+{
+    { VkMemoryAllocateFlagBitsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkMemoryAllocateFlags, std::string> Meta_StringsByVkMemoryAllocateFlags =
+{
+    { VkMemoryAllocateFlags::VK_MEMORY_ALLOCATE_DEVICE_MASK_BIT_KHR, "VK_MEMORY_ALLOCATE_DEVICE_MASK_BIT_KHR" },
+    { VkMemoryAllocateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkMemoryAllocateFlagsKHR, std::string> Meta_StringsByVkMemoryAllocateFlagsKHR =
+{
+    { VkMemoryAllocateFlagsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkMemoryHeapFlags, std::string> Meta_StringsByVkMemoryHeapFlags =
+{
+    { VkMemoryHeapFlags::VK_MEMORY_HEAP_MULTI_INSTANCE_BIT, "VK_MEMORY_HEAP_MULTI_INSTANCE_BIT" },
+    { VkMemoryHeapFlags::VK_MEMORY_HEAP_MULTI_INSTANCE_BIT_KHR, "VK_MEMORY_HEAP_MULTI_INSTANCE_BIT_KHR" },
+    { VkMemoryHeapFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkMemoryMapFlags, std::string> Meta_StringsByVkMemoryMapFlags =
+{
+    { VkMemoryMapFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkMemoryPropertyFlags, std::string> Meta_StringsByVkMemoryPropertyFlags =
+{
+    { VkMemoryPropertyFlags::VK_MEMORY_PROPERTY_PROTECTED_BIT, "VK_MEMORY_PROPERTY_PROTECTED_BIT" },
+    { VkMemoryPropertyFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkObjectEntryUsageFlagsNVX, std::string> Meta_StringsByVkObjectEntryUsageFlagsNVX =
+{
+    { VkObjectEntryUsageFlagsNVX::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPeerMemoryFeatureFlagBitsKHR, std::string> Meta_StringsByVkPeerMemoryFeatureFlagBitsKHR =
+{
+    { VkPeerMemoryFeatureFlagBitsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPeerMemoryFeatureFlags, std::string> Meta_StringsByVkPeerMemoryFeatureFlags =
+{
+    { VkPeerMemoryFeatureFlags::VK_NONE_BIT, "VK_NONE_BIT" },
+    { VkPeerMemoryFeatureFlags::VK_PEER_MEMORY_FEATURE_COPY_DST_BIT_KHR, "VK_PEER_MEMORY_FEATURE_COPY_DST_BIT_KHR" },
+    { VkPeerMemoryFeatureFlags::VK_PEER_MEMORY_FEATURE_COPY_SRC_BIT_KHR, "VK_PEER_MEMORY_FEATURE_COPY_SRC_BIT_KHR" },
+    { VkPeerMemoryFeatureFlags::VK_PEER_MEMORY_FEATURE_GENERIC_DST_BIT_KHR, "VK_PEER_MEMORY_FEATURE_GENERIC_DST_BIT_KHR" },
+    { VkPeerMemoryFeatureFlags::VK_PEER_MEMORY_FEATURE_GENERIC_SRC_BIT_KHR, "VK_PEER_MEMORY_FEATURE_GENERIC_SRC_BIT_KHR" }
+};
+
+const std::unordered_map<VkPeerMemoryFeatureFlagsKHR, std::string> Meta_StringsByVkPeerMemoryFeatureFlagsKHR =
+{
+    { VkPeerMemoryFeatureFlagsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPipelineCacheCreateFlags, std::string> Meta_StringsByVkPipelineCacheCreateFlags =
+{
+    { VkPipelineCacheCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPipelineColorBlendStateCreateFlags, std::string> Meta_StringsByVkPipelineColorBlendStateCreateFlags =
+{
+    { VkPipelineColorBlendStateCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPipelineCompilerControlFlagsAMD, std::string> Meta_StringsByVkPipelineCompilerControlFlagsAMD =
+{
+    { VkPipelineCompilerControlFlagsAMD::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPipelineCoverageModulationStateCreateFlagsNV, std::string> Meta_StringsByVkPipelineCoverageModulationStateCreateFlagsNV =
+{
+    { VkPipelineCoverageModulationStateCreateFlagsNV::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPipelineCoverageReductionStateCreateFlagsNV, std::string> Meta_StringsByVkPipelineCoverageReductionStateCreateFlagsNV =
+{
+    { VkPipelineCoverageReductionStateCreateFlagsNV::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPipelineCoverageToColorStateCreateFlagsNV, std::string> Meta_StringsByVkPipelineCoverageToColorStateCreateFlagsNV =
+{
+    { VkPipelineCoverageToColorStateCreateFlagsNV::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPipelineCreateFlags, std::string> Meta_StringsByVkPipelineCreateFlags =
+{
+    { VkPipelineCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" },
+    { VkPipelineCreateFlags::VK_PIPELINE_CREATE_CAPTURE_INTERNAL_REPRESENTATIONS_BIT_KHR, "VK_PIPELINE_CREATE_CAPTURE_INTERNAL_REPRESENTATIONS_BIT_KHR" },
+    { VkPipelineCreateFlags::VK_PIPELINE_CREATE_CAPTURE_STATISTICS_BIT_KHR, "VK_PIPELINE_CREATE_CAPTURE_STATISTICS_BIT_KHR" },
+    { VkPipelineCreateFlags::VK_PIPELINE_CREATE_DEFER_COMPILE_BIT_NV, "VK_PIPELINE_CREATE_DEFER_COMPILE_BIT_NV" },
+    { VkPipelineCreateFlags::VK_PIPELINE_CREATE_DISPATCH_BASE, "VK_PIPELINE_CREATE_DISPATCH_BASE" },
+    { VkPipelineCreateFlags::VK_PIPELINE_CREATE_DISPATCH_BASE_KHR, "VK_PIPELINE_CREATE_DISPATCH_BASE_KHR" },
+    { VkPipelineCreateFlags::VK_PIPELINE_CREATE_VIEW_INDEX_FROM_DEVICE_INDEX_BIT, "VK_PIPELINE_CREATE_VIEW_INDEX_FROM_DEVICE_INDEX_BIT" },
+    { VkPipelineCreateFlags::VK_PIPELINE_CREATE_VIEW_INDEX_FROM_DEVICE_INDEX_BIT_KHR, "VK_PIPELINE_CREATE_VIEW_INDEX_FROM_DEVICE_INDEX_BIT_KHR" }
+};
+
+const std::unordered_map<VkPipelineCreationFeedbackFlagsEXT, std::string> Meta_StringsByVkPipelineCreationFeedbackFlagsEXT =
+{
+    { VkPipelineCreationFeedbackFlagsEXT::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPipelineDepthStencilStateCreateFlags, std::string> Meta_StringsByVkPipelineDepthStencilStateCreateFlags =
+{
+    { VkPipelineDepthStencilStateCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPipelineDiscardRectangleStateCreateFlagsEXT, std::string> Meta_StringsByVkPipelineDiscardRectangleStateCreateFlagsEXT =
+{
+    { VkPipelineDiscardRectangleStateCreateFlagsEXT::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPipelineDynamicStateCreateFlags, std::string> Meta_StringsByVkPipelineDynamicStateCreateFlags =
+{
+    { VkPipelineDynamicStateCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPipelineInputAssemblyStateCreateFlags, std::string> Meta_StringsByVkPipelineInputAssemblyStateCreateFlags =
+{
+    { VkPipelineInputAssemblyStateCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPipelineLayoutCreateFlags, std::string> Meta_StringsByVkPipelineLayoutCreateFlags =
+{
+    { VkPipelineLayoutCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPipelineMultisampleStateCreateFlags, std::string> Meta_StringsByVkPipelineMultisampleStateCreateFlags =
+{
+    { VkPipelineMultisampleStateCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPipelineRasterizationConservativeStateCreateFlagsEXT, std::string> Meta_StringsByVkPipelineRasterizationConservativeStateCreateFlagsEXT =
+{
+    { VkPipelineRasterizationConservativeStateCreateFlagsEXT::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPipelineRasterizationDepthClipStateCreateFlagsEXT, std::string> Meta_StringsByVkPipelineRasterizationDepthClipStateCreateFlagsEXT =
+{
+    { VkPipelineRasterizationDepthClipStateCreateFlagsEXT::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPipelineRasterizationStateCreateFlags, std::string> Meta_StringsByVkPipelineRasterizationStateCreateFlags =
+{
+    { VkPipelineRasterizationStateCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPipelineRasterizationStateStreamCreateFlagsEXT, std::string> Meta_StringsByVkPipelineRasterizationStateStreamCreateFlagsEXT =
+{
+    { VkPipelineRasterizationStateStreamCreateFlagsEXT::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPipelineShaderStageCreateFlags, std::string> Meta_StringsByVkPipelineShaderStageCreateFlags =
+{
+    { VkPipelineShaderStageCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" },
+    { VkPipelineShaderStageCreateFlags::VK_PIPELINE_SHADER_STAGE_CREATE_ALLOW_VARYING_SUBGROUP_SIZE_BIT_EXT, "VK_PIPELINE_SHADER_STAGE_CREATE_ALLOW_VARYING_SUBGROUP_SIZE_BIT_EXT" },
+    { VkPipelineShaderStageCreateFlags::VK_PIPELINE_SHADER_STAGE_CREATE_REQUIRE_FULL_SUBGROUPS_BIT_EXT, "VK_PIPELINE_SHADER_STAGE_CREATE_REQUIRE_FULL_SUBGROUPS_BIT_EXT" }
+};
+
+const std::unordered_map<VkPipelineStageFlags, std::string> Meta_StringsByVkPipelineStageFlags =
+{
+    { VkPipelineStageFlags::VK_NONE_BIT, "VK_NONE_BIT" },
+    { VkPipelineStageFlags::VK_PIPELINE_STAGE_ACCELERATION_STRUCTURE_BUILD_BIT_NV, "VK_PIPELINE_STAGE_ACCELERATION_STRUCTURE_BUILD_BIT_NV" },
+    { VkPipelineStageFlags::VK_PIPELINE_STAGE_COMMAND_PROCESS_BIT_NVX, "VK_PIPELINE_STAGE_COMMAND_PROCESS_BIT_NVX" },
+    { VkPipelineStageFlags::VK_PIPELINE_STAGE_CONDITIONAL_RENDERING_BIT_EXT, "VK_PIPELINE_STAGE_CONDITIONAL_RENDERING_BIT_EXT" },
+    { VkPipelineStageFlags::VK_PIPELINE_STAGE_FRAGMENT_DENSITY_PROCESS_BIT_EXT, "VK_PIPELINE_STAGE_FRAGMENT_DENSITY_PROCESS_BIT_EXT" },
+    { VkPipelineStageFlags::VK_PIPELINE_STAGE_MESH_SHADER_BIT_NV, "VK_PIPELINE_STAGE_MESH_SHADER_BIT_NV" },
+    { VkPipelineStageFlags::VK_PIPELINE_STAGE_RAY_TRACING_SHADER_BIT_NV, "VK_PIPELINE_STAGE_RAY_TRACING_SHADER_BIT_NV" },
+    { VkPipelineStageFlags::VK_PIPELINE_STAGE_SHADING_RATE_IMAGE_BIT_NV, "VK_PIPELINE_STAGE_SHADING_RATE_IMAGE_BIT_NV" },
+    { VkPipelineStageFlags::VK_PIPELINE_STAGE_TASK_SHADER_BIT_NV, "VK_PIPELINE_STAGE_TASK_SHADER_BIT_NV" },
+    { VkPipelineStageFlags::VK_PIPELINE_STAGE_TRANSFORM_FEEDBACK_BIT_EXT, "VK_PIPELINE_STAGE_TRANSFORM_FEEDBACK_BIT_EXT" }
+};
+
+const std::unordered_map<VkPipelineTessellationStateCreateFlags, std::string> Meta_StringsByVkPipelineTessellationStateCreateFlags =
+{
+    { VkPipelineTessellationStateCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPipelineVertexInputStateCreateFlags, std::string> Meta_StringsByVkPipelineVertexInputStateCreateFlags =
+{
+    { VkPipelineVertexInputStateCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPipelineViewportStateCreateFlags, std::string> Meta_StringsByVkPipelineViewportStateCreateFlags =
+{
+    { VkPipelineViewportStateCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkPipelineViewportSwizzleStateCreateFlagsNV, std::string> Meta_StringsByVkPipelineViewportSwizzleStateCreateFlagsNV =
+{
+    { VkPipelineViewportSwizzleStateCreateFlagsNV::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkQueryControlFlags, std::string> Meta_StringsByVkQueryControlFlags =
+{
+    { VkQueryControlFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkQueryPipelineStatisticFlags, std::string> Meta_StringsByVkQueryPipelineStatisticFlags =
+{
+    { VkQueryPipelineStatisticFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkQueryPoolCreateFlags, std::string> Meta_StringsByVkQueryPoolCreateFlags =
+{
+    { VkQueryPoolCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkQueryResultFlags, std::string> Meta_StringsByVkQueryResultFlags =
+{
+    { VkQueryResultFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkQueueFlags, std::string> Meta_StringsByVkQueueFlags =
+{
+    { VkQueueFlags::VK_NONE_BIT, "VK_NONE_BIT" },
+    { VkQueueFlags::VK_QUEUE_PROTECTED_BIT, "VK_QUEUE_PROTECTED_BIT" }
+};
+
+const std::unordered_map<VkRenderPassCreateFlags, std::string> Meta_StringsByVkRenderPassCreateFlags =
+{
+    { VkRenderPassCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkResolveModeFlagsKHR, std::string> Meta_StringsByVkResolveModeFlagsKHR =
+{
+    { VkResolveModeFlagsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkSampleCountFlags, std::string> Meta_StringsByVkSampleCountFlags =
+{
+    { VkSampleCountFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkSamplerCreateFlags, std::string> Meta_StringsByVkSamplerCreateFlags =
+{
+    { VkSamplerCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" },
+    { VkSamplerCreateFlags::VK_SAMPLER_CREATE_SUBSAMPLED_BIT_EXT, "VK_SAMPLER_CREATE_SUBSAMPLED_BIT_EXT" },
+    { VkSamplerCreateFlags::VK_SAMPLER_CREATE_SUBSAMPLED_COARSE_RECONSTRUCTION_BIT_EXT, "VK_SAMPLER_CREATE_SUBSAMPLED_COARSE_RECONSTRUCTION_BIT_EXT" }
+};
+
+const std::unordered_map<VkSemaphoreCreateFlags, std::string> Meta_StringsByVkSemaphoreCreateFlags =
+{
+    { VkSemaphoreCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkSemaphoreImportFlagBitsKHR, std::string> Meta_StringsByVkSemaphoreImportFlagBitsKHR =
+{
+    { VkSemaphoreImportFlagBitsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkSemaphoreImportFlags, std::string> Meta_StringsByVkSemaphoreImportFlags =
+{
+    { VkSemaphoreImportFlags::VK_NONE_BIT, "VK_NONE_BIT" },
+    { VkSemaphoreImportFlags::VK_SEMAPHORE_IMPORT_TEMPORARY_BIT_KHR, "VK_SEMAPHORE_IMPORT_TEMPORARY_BIT_KHR" }
+};
+
+const std::unordered_map<VkSemaphoreImportFlagsKHR, std::string> Meta_StringsByVkSemaphoreImportFlagsKHR =
+{
+    { VkSemaphoreImportFlagsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkShaderCorePropertiesFlagsAMD, std::string> Meta_StringsByVkShaderCorePropertiesFlagsAMD =
+{
+    { VkShaderCorePropertiesFlagsAMD::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkShaderModuleCreateFlags, std::string> Meta_StringsByVkShaderModuleCreateFlags =
+{
+    { VkShaderModuleCreateFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkShaderStageFlags, std::string> Meta_StringsByVkShaderStageFlags =
+{
+    { VkShaderStageFlags::VK_NONE_BIT, "VK_NONE_BIT" },
+    { VkShaderStageFlags::VK_SHADER_STAGE_ANY_HIT_BIT_NV, "VK_SHADER_STAGE_ANY_HIT_BIT_NV" },
+    { VkShaderStageFlags::VK_SHADER_STAGE_CALLABLE_BIT_NV, "VK_SHADER_STAGE_CALLABLE_BIT_NV" },
+    { VkShaderStageFlags::VK_SHADER_STAGE_CLOSEST_HIT_BIT_NV, "VK_SHADER_STAGE_CLOSEST_HIT_BIT_NV" },
+    { VkShaderStageFlags::VK_SHADER_STAGE_INTERSECTION_BIT_NV, "VK_SHADER_STAGE_INTERSECTION_BIT_NV" },
+    { VkShaderStageFlags::VK_SHADER_STAGE_MESH_BIT_NV, "VK_SHADER_STAGE_MESH_BIT_NV" },
+    { VkShaderStageFlags::VK_SHADER_STAGE_MISS_BIT_NV, "VK_SHADER_STAGE_MISS_BIT_NV" },
+    { VkShaderStageFlags::VK_SHADER_STAGE_RAYGEN_BIT_NV, "VK_SHADER_STAGE_RAYGEN_BIT_NV" },
+    { VkShaderStageFlags::VK_SHADER_STAGE_TASK_BIT_NV, "VK_SHADER_STAGE_TASK_BIT_NV" }
+};
+
+const std::unordered_map<VkSparseImageFormatFlags, std::string> Meta_StringsByVkSparseImageFormatFlags =
+{
+    { VkSparseImageFormatFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkSparseMemoryBindFlags, std::string> Meta_StringsByVkSparseMemoryBindFlags =
+{
+    { VkSparseMemoryBindFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkStencilFaceFlags, std::string> Meta_StringsByVkStencilFaceFlags =
+{
+    { VkStencilFaceFlags::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkSubgroupFeatureFlags, std::string> Meta_StringsByVkSubgroupFeatureFlags =
+{
+    { VkSubgroupFeatureFlags::VK_NONE_BIT, "VK_NONE_BIT" },
+    { VkSubgroupFeatureFlags::VK_SUBGROUP_FEATURE_PARTITIONED_BIT_NV, "VK_SUBGROUP_FEATURE_PARTITIONED_BIT_NV" }
+};
+
+const std::unordered_map<VkSubpassDescriptionFlags, std::string> Meta_StringsByVkSubpassDescriptionFlags =
+{
+    { VkSubpassDescriptionFlags::VK_NONE_BIT, "VK_NONE_BIT" },
+    { VkSubpassDescriptionFlags::VK_SUBPASS_DESCRIPTION_PER_VIEW_ATTRIBUTES_BIT_NVX, "VK_SUBPASS_DESCRIPTION_PER_VIEW_ATTRIBUTES_BIT_NVX" },
+    { VkSubpassDescriptionFlags::VK_SUBPASS_DESCRIPTION_PER_VIEW_POSITION_X_ONLY_BIT_NVX, "VK_SUBPASS_DESCRIPTION_PER_VIEW_POSITION_X_ONLY_BIT_NVX" }
+};
+
+const std::unordered_map<VkSurfaceCounterFlagsEXT, std::string> Meta_StringsByVkSurfaceCounterFlagsEXT =
+{
+    { VkSurfaceCounterFlagsEXT::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkSurfaceTransformFlagsKHR, std::string> Meta_StringsByVkSurfaceTransformFlagsKHR =
+{
+    { VkSurfaceTransformFlagsKHR::VK_NONE_BIT, "VK_NONE_BIT" }
+};
+
+const std::unordered_map<VkSwapchainCreateFlagsKHR, std::string> Meta_StringsByVkSwapchainCreateFlagsKHR =
+{
+    { VkSwapchainCreateFlagsKHR::VK_NONE_BIT, "VK_NONE_BIT" },
+    { VkSwapchainCreateFlagsKHR::VK_SWAPCHAIN_CREATE_MUTABLE_FORMAT_BIT_KHR, "VK_SWAPCHAIN_CREATE_MUTABLE_FORMAT_BIT_KHR" },
+    { VkSwapchainCreateFlagsKHR::VK_SWAPCHAIN_CREATE_PROTECTED_BIT_KHR, "VK_SWAPCHAIN_CREATE_PROTECTED_BIT_KHR" },
+    { VkSwapchainCreateFlagsKHR::VK_SWAPCHAIN_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT_KHR, "VK_SWAPCHAIN_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT_KHR" }
+};
+
+const std::unordered_map<VkValidationCacheCreateFlagsEXT, std::string> Meta_StringsByVkValidationCacheCreateFlagsEXT =
+{
+    { VkValidationCacheCreateFlagsEXT::VK_NONE_BIT, "VK_NONE_BIT" }
 };
 
 

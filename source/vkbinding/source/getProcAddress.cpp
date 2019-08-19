@@ -1,17 +1,15 @@
 
-#include <eglbinding/getProcAddress.h>
-
-#include "eglGetProcAddress.h"
+#include <vkbinding/getProcAddress.h>
 
 
-namespace eglbinding
+namespace vkbinding
 {
 
 
 ProcAddress getProcAddress(const char * name)
 {
-    return ::eglGetProcAddress(name);
+    return nullptr;
 }
 
 
-} // namespace eglbinding
+} // namespace vkbinding

@@ -95,6 +95,9 @@ Function<VkResult, VkPhysicalDevice, VkSurfaceKHR, uint32_t*, VkSurfaceFormatKHR
 Function<VkResult, VkPhysicalDevice, VkSurfaceKHR, uint32_t*, VkPresentModeKHR*> Binding::GetPhysicalDeviceSurfacePresentModesKHR("vkGetPhysicalDeviceSurfacePresentModesKHR");
 Function<VkResult, VkPhysicalDevice, uint32_t, VkSurfaceKHR, VkBool32*> Binding::GetPhysicalDeviceSurfaceSupportKHR("vkGetPhysicalDeviceSurfaceSupportKHR");
 Function<VkResult, VkDevice, VkPipelineCache, size_t*, void*> Binding::GetPipelineCacheData("vkGetPipelineCacheData");
+Function<VkResult, VkDevice, const VkPipelineExecutableInfoKHR*, uint32_t*, VkPipelineExecutableInternalRepresentationKHR*> Binding::GetPipelineExecutableInternalRepresentationsKHR("vkGetPipelineExecutableInternalRepresentationsKHR");
+Function<VkResult, VkDevice, const VkPipelineInfoKHR*, uint32_t*, VkPipelineExecutablePropertiesKHR*> Binding::GetPipelineExecutablePropertiesKHR("vkGetPipelineExecutablePropertiesKHR");
+Function<VkResult, VkDevice, const VkPipelineExecutableInfoKHR*, uint32_t*, VkPipelineExecutableStatisticKHR*> Binding::GetPipelineExecutableStatisticsKHR("vkGetPipelineExecutableStatisticsKHR");
 Function<VkResult, VkDevice, VkQueryPool, uint32_t, uint32_t, size_t, void*, VkDeviceSize, VkQueryResultFlags> Binding::GetQueryPoolResults("vkGetQueryPoolResults");
 Function<void, VkQueue, uint32_t*, VkCheckpointDataNV*> Binding::GetQueueCheckpointDataNV("vkGetQueueCheckpointDataNV");
 Function<VkResult, VkDevice, VkPipeline, uint32_t, uint32_t, size_t, void*> Binding::GetRayTracingShaderGroupHandlesNV("vkGetRayTracingShaderGroupHandlesNV");
