@@ -15,178 +15,6 @@ enum class VKenum : unsigned int
 {
     // UNGROUPED
 
-    VK_AMD_BUFFER_MARKER_EXTENSION_NAME                                               = "VK_AMD_buffer_marker",
-    VK_AMD_DISPLAY_NATIVE_HDR_EXTENSION_NAME                                          = "VK_AMD_display_native_hdr",
-    VK_AMD_DRAW_INDIRECT_COUNT_EXTENSION_NAME                                         = "VK_AMD_draw_indirect_count",
-    VK_AMD_GCN_SHADER_EXTENSION_NAME                                                  = "VK_AMD_gcn_shader",
-    VK_AMD_GPU_SHADER_HALF_FLOAT_EXTENSION_NAME                                       = "VK_AMD_gpu_shader_half_float",
-    VK_AMD_GPU_SHADER_INT16_EXTENSION_NAME                                            = "VK_AMD_gpu_shader_int16",
-    VK_AMD_MEMORY_OVERALLOCATION_BEHAVIOR_EXTENSION_NAME                              = "VK_AMD_memory_overallocation_behavior",
-    VK_AMD_MIXED_ATTACHMENT_SAMPLES_EXTENSION_NAME                                    = "VK_AMD_mixed_attachment_samples",
-    VK_AMD_NEGATIVE_VIEWPORT_HEIGHT_EXTENSION_NAME                                    = "VK_AMD_negative_viewport_height",
-    VK_AMD_PIPELINE_COMPILER_CONTROL_EXTENSION_NAME                                   = "VK_AMD_pipeline_compiler_control",
-    VK_AMD_RASTERIZATION_ORDER_EXTENSION_NAME                                         = "VK_AMD_rasterization_order",
-    VK_AMD_SHADER_BALLOT_EXTENSION_NAME                                               = "VK_AMD_shader_ballot",
-    VK_AMD_SHADER_CORE_PROPERTIES_EXTENSION_NAME                                      = "VK_AMD_shader_core_properties",
-    VK_AMD_SHADER_CORE_PROPERTIES_2_EXTENSION_NAME                                    = "VK_AMD_shader_core_properties2",
-    VK_AMD_SHADER_EXPLICIT_VERTEX_PARAMETER_EXTENSION_NAME                            = "VK_AMD_shader_explicit_vertex_parameter",
-    VK_AMD_SHADER_FRAGMENT_MASK_EXTENSION_NAME                                        = "VK_AMD_shader_fragment_mask",
-    VK_AMD_SHADER_IMAGE_LOAD_STORE_LOD_EXTENSION_NAME                                 = "VK_AMD_shader_image_load_store_lod",
-    VK_AMD_SHADER_INFO_EXTENSION_NAME                                                 = "VK_AMD_shader_info",
-    VK_AMD_SHADER_TRINARY_MINMAX_EXTENSION_NAME                                       = "VK_AMD_shader_trinary_minmax",
-    VK_AMD_TEXTURE_GATHER_BIAS_LOD_EXTENSION_NAME                                     = "VK_AMD_texture_gather_bias_lod",
-    VK_EXT_ASTC_DECODE_MODE_EXTENSION_NAME                                            = "VK_EXT_astc_decode_mode",
-    VK_EXT_BLEND_OPERATION_ADVANCED_EXTENSION_NAME                                    = "VK_EXT_blend_operation_advanced",
-    VK_EXT_BUFFER_DEVICE_ADDRESS_EXTENSION_NAME                                       = "VK_EXT_buffer_device_address",
-    VK_EXT_CALIBRATED_TIMESTAMPS_EXTENSION_NAME                                       = "VK_EXT_calibrated_timestamps",
-    VK_EXT_CONDITIONAL_RENDERING_EXTENSION_NAME                                       = "VK_EXT_conditional_rendering",
-    VK_EXT_CONSERVATIVE_RASTERIZATION_EXTENSION_NAME                                  = "VK_EXT_conservative_rasterization",
-    VK_EXT_DEBUG_MARKER_EXTENSION_NAME                                                = "VK_EXT_debug_marker",
-    VK_EXT_DEBUG_REPORT_EXTENSION_NAME                                                = "VK_EXT_debug_report",
-    VK_EXT_DEBUG_UTILS_EXTENSION_NAME                                                 = "VK_EXT_debug_utils",
-    VK_EXT_DEPTH_CLIP_ENABLE_EXTENSION_NAME                                           = "VK_EXT_depth_clip_enable",
-    VK_EXT_DEPTH_RANGE_UNRESTRICTED_EXTENSION_NAME                                    = "VK_EXT_depth_range_unrestricted",
-    VK_EXT_DESCRIPTOR_INDEXING_EXTENSION_NAME                                         = "VK_EXT_descriptor_indexing",
-    VK_EXT_DIRECT_MODE_DISPLAY_EXTENSION_NAME                                         = "VK_EXT_direct_mode_display",
-    VK_EXT_DISCARD_RECTANGLES_EXTENSION_NAME                                          = "VK_EXT_discard_rectangles",
-    VK_EXT_DISPLAY_CONTROL_EXTENSION_NAME                                             = "VK_EXT_display_control",
-    VK_EXT_DISPLAY_SURFACE_COUNTER_EXTENSION_NAME                                     = "VK_EXT_display_surface_counter",
-    VK_EXT_EXTERNAL_MEMORY_DMA_BUF_EXTENSION_NAME                                     = "VK_EXT_external_memory_dma_buf",
-    VK_EXT_EXTERNAL_MEMORY_HOST_EXTENSION_NAME                                        = "VK_EXT_external_memory_host",
-    VK_EXT_FILTER_CUBIC_EXTENSION_NAME                                                = "VK_EXT_filter_cubic",
-    VK_EXT_FRAGMENT_DENSITY_MAP_EXTENSION_NAME                                        = "VK_EXT_fragment_density_map",
-    VK_EXT_FRAGMENT_SHADER_INTERLOCK_EXTENSION_NAME                                   = "VK_EXT_fragment_shader_interlock",
-    VK_EXT_GLOBAL_PRIORITY_EXTENSION_NAME                                             = "VK_EXT_global_priority",
-    VK_EXT_HDR_METADATA_EXTENSION_NAME                                                = "VK_EXT_hdr_metadata",
-    VK_EXT_HEADLESS_SURFACE_EXTENSION_NAME                                            = "VK_EXT_headless_surface",
-    VK_EXT_HOST_QUERY_RESET_EXTENSION_NAME                                            = "VK_EXT_host_query_reset",
-    VK_EXT_IMAGE_DRM_FORMAT_MODIFIER_EXTENSION_NAME                                   = "VK_EXT_image_drm_format_modifier",
-    VK_EXT_INDEX_TYPE_UINT8_EXTENSION_NAME                                            = "VK_EXT_index_type_uint8",
-    VK_EXT_INLINE_UNIFORM_BLOCK_EXTENSION_NAME                                        = "VK_EXT_inline_uniform_block",
-    VK_EXT_LINE_RASTERIZATION_EXTENSION_NAME                                          = "VK_EXT_line_rasterization",
-    VK_EXT_MEMORY_BUDGET_EXTENSION_NAME                                               = "VK_EXT_memory_budget",
-    VK_EXT_MEMORY_PRIORITY_EXTENSION_NAME                                             = "VK_EXT_memory_priority",
-    VK_EXT_PCI_BUS_INFO_EXTENSION_NAME                                                = "VK_EXT_pci_bus_info",
-    VK_EXT_PIPELINE_CREATION_FEEDBACK_EXTENSION_NAME                                  = "VK_EXT_pipeline_creation_feedback",
-    VK_EXT_POST_DEPTH_COVERAGE_EXTENSION_NAME                                         = "VK_EXT_post_depth_coverage",
-    VK_EXT_QUEUE_FAMILY_FOREIGN_EXTENSION_NAME                                        = "VK_EXT_queue_family_foreign",
-    VK_EXT_SAMPLE_LOCATIONS_EXTENSION_NAME                                            = "VK_EXT_sample_locations",
-    VK_EXT_SAMPLER_FILTER_MINMAX_EXTENSION_NAME                                       = "VK_EXT_sampler_filter_minmax",
-    VK_EXT_SCALAR_BLOCK_LAYOUT_EXTENSION_NAME                                         = "VK_EXT_scalar_block_layout",
-    VK_EXT_SEPARATE_STENCIL_USAGE_EXTENSION_NAME                                      = "VK_EXT_separate_stencil_usage",
-    VK_EXT_SHADER_DEMOTE_TO_HELPER_INVOCATION_EXTENSION_NAME                          = "VK_EXT_shader_demote_to_helper_invocation",
-    VK_EXT_SHADER_STENCIL_EXPORT_EXTENSION_NAME                                       = "VK_EXT_shader_stencil_export",
-    VK_EXT_SHADER_SUBGROUP_BALLOT_EXTENSION_NAME                                      = "VK_EXT_shader_subgroup_ballot",
-    VK_EXT_SHADER_SUBGROUP_VOTE_EXTENSION_NAME                                        = "VK_EXT_shader_subgroup_vote",
-    VK_EXT_SHADER_VIEWPORT_INDEX_LAYER_EXTENSION_NAME                                 = "VK_EXT_shader_viewport_index_layer",
-    VK_EXT_SUBGROUP_SIZE_CONTROL_EXTENSION_NAME                                       = "VK_EXT_subgroup_size_control",
-    VK_EXT_SWAPCHAIN_COLOR_SPACE_EXTENSION_NAME                                       = "VK_EXT_swapchain_colorspace",
-    VK_EXT_TEXEL_BUFFER_ALIGNMENT_EXTENSION_NAME                                      = "VK_EXT_texel_buffer_alignment",
-    VK_EXT_TEXTURE_COMPRESSION_ASTC_HDR_EXTENSION_NAME                                = "VK_EXT_texture_compression_astc_hdr",
-    VK_EXT_TRANSFORM_FEEDBACK_EXTENSION_NAME                                          = "VK_EXT_transform_feedback",
-    VK_EXT_VALIDATION_CACHE_EXTENSION_NAME                                            = "VK_EXT_validation_cache",
-    VK_EXT_VALIDATION_FEATURES_EXTENSION_NAME                                         = "VK_EXT_validation_features",
-    VK_EXT_VALIDATION_FLAGS_EXTENSION_NAME                                            = "VK_EXT_validation_flags",
-    VK_EXT_VERTEX_ATTRIBUTE_DIVISOR_EXTENSION_NAME                                    = "VK_EXT_vertex_attribute_divisor",
-    VK_EXT_YCBCR_IMAGE_ARRAYS_EXTENSION_NAME                                          = "VK_EXT_ycbcr_image_arrays",
-    VK_GOOGLE_DECORATE_STRING_EXTENSION_NAME                                          = "VK_GOOGLE_decorate_string",
-    VK_GOOGLE_DISPLAY_TIMING_EXTENSION_NAME                                           = "VK_GOOGLE_display_timing",
-    VK_GOOGLE_HLSL_FUNCTIONALITY1_EXTENSION_NAME                                      = "VK_GOOGLE_hlsl_functionality1",
-    VK_IMG_FILTER_CUBIC_EXTENSION_NAME                                                = "VK_IMG_filter_cubic",
-    VK_IMG_FORMAT_PVRTC_EXTENSION_NAME                                                = "VK_IMG_format_pvrtc",
-    VK_INTEL_PERFORMANCE_QUERY_EXTENSION_NAME                                         = "VK_INTEL_performance_query",
-    VK_INTEL_SHADER_INTEGER_FUNCTIONS_2_EXTENSION_NAME                                = "VK_INTEL_shader_integer_functions2",
-    VK_KHR_16BIT_STORAGE_EXTENSION_NAME                                               = "VK_KHR_16bit_storage",
-    VK_KHR_8BIT_STORAGE_EXTENSION_NAME                                                = "VK_KHR_8bit_storage",
-    VK_KHR_BIND_MEMORY_2_EXTENSION_NAME                                               = "VK_KHR_bind_memory2",
-    VK_KHR_CREATE_RENDERPASS_2_EXTENSION_NAME                                         = "VK_KHR_create_renderpass2",
-    VK_KHR_DEDICATED_ALLOCATION_EXTENSION_NAME                                        = "VK_KHR_dedicated_allocation",
-    VK_KHR_DEPTH_STENCIL_RESOLVE_EXTENSION_NAME                                       = "VK_KHR_depth_stencil_resolve",
-    VK_KHR_DESCRIPTOR_UPDATE_TEMPLATE_EXTENSION_NAME                                  = "VK_KHR_descriptor_update_template",
-    VK_KHR_DEVICE_GROUP_EXTENSION_NAME                                                = "VK_KHR_device_group",
-    VK_KHR_DEVICE_GROUP_CREATION_EXTENSION_NAME                                       = "VK_KHR_device_group_creation",
-    VK_KHR_DISPLAY_EXTENSION_NAME                                                     = "VK_KHR_display",
-    VK_KHR_DISPLAY_SWAPCHAIN_EXTENSION_NAME                                           = "VK_KHR_display_swapchain",
-    VK_KHR_DRAW_INDIRECT_COUNT_EXTENSION_NAME                                         = "VK_KHR_draw_indirect_count",
-    VK_KHR_DRIVER_PROPERTIES_EXTENSION_NAME                                           = "VK_KHR_driver_properties",
-    VK_KHR_EXTERNAL_FENCE_EXTENSION_NAME                                              = "VK_KHR_external_fence",
-    VK_KHR_EXTERNAL_FENCE_CAPABILITIES_EXTENSION_NAME                                 = "VK_KHR_external_fence_capabilities",
-    VK_KHR_EXTERNAL_FENCE_FD_EXTENSION_NAME                                           = "VK_KHR_external_fence_fd",
-    VK_KHR_EXTERNAL_MEMORY_EXTENSION_NAME                                             = "VK_KHR_external_memory",
-    VK_KHR_EXTERNAL_MEMORY_CAPABILITIES_EXTENSION_NAME                                = "VK_KHR_external_memory_capabilities",
-    VK_KHR_EXTERNAL_MEMORY_FD_EXTENSION_NAME                                          = "VK_KHR_external_memory_fd",
-    VK_KHR_EXTERNAL_SEMAPHORE_EXTENSION_NAME                                          = "VK_KHR_external_semaphore",
-    VK_KHR_EXTERNAL_SEMAPHORE_CAPABILITIES_EXTENSION_NAME                             = "VK_KHR_external_semaphore_capabilities",
-    VK_KHR_EXTERNAL_SEMAPHORE_FD_EXTENSION_NAME                                       = "VK_KHR_external_semaphore_fd",
-    VK_KHR_GET_DISPLAY_PROPERTIES_2_EXTENSION_NAME                                    = "VK_KHR_get_display_properties2",
-    VK_KHR_GET_MEMORY_REQUIREMENTS_2_EXTENSION_NAME                                   = "VK_KHR_get_memory_requirements2",
-    VK_KHR_GET_PHYSICAL_DEVICE_PROPERTIES_2_EXTENSION_NAME                            = "VK_KHR_get_physical_device_properties2",
-    VK_KHR_GET_SURFACE_CAPABILITIES_2_EXTENSION_NAME                                  = "VK_KHR_get_surface_capabilities2",
-    VK_KHR_IMAGE_FORMAT_LIST_EXTENSION_NAME                                           = "VK_KHR_image_format_list",
-    VK_KHR_IMAGELESS_FRAMEBUFFER_EXTENSION_NAME                                       = "VK_KHR_imageless_framebuffer",
-    VK_KHR_INCREMENTAL_PRESENT_EXTENSION_NAME                                         = "VK_KHR_incremental_present",
-    VK_KHR_MAINTENANCE1_EXTENSION_NAME                                                = "VK_KHR_maintenance1",
-    VK_KHR_MAINTENANCE2_EXTENSION_NAME                                                = "VK_KHR_maintenance2",
-    VK_KHR_MAINTENANCE3_EXTENSION_NAME                                                = "VK_KHR_maintenance3",
-    VK_KHR_MULTIVIEW_EXTENSION_NAME                                                   = "VK_KHR_multiview",
-    VK_KHR_PIPELINE_EXECUTABLE_PROPERTIES_EXTENSION_NAME                              = "VK_KHR_pipeline_executable_properties",
-    VK_KHR_PUSH_DESCRIPTOR_EXTENSION_NAME                                             = "VK_KHR_push_descriptor",
-    VK_KHR_RELAXED_BLOCK_LAYOUT_EXTENSION_NAME                                        = "VK_KHR_relaxed_block_layout",
-    VK_KHR_SAMPLER_MIRROR_CLAMP_TO_EDGE_EXTENSION_NAME                                = "VK_KHR_sampler_mirror_clamp_to_edge",
-    VK_KHR_SAMPLER_YCBCR_CONVERSION_EXTENSION_NAME                                    = "VK_KHR_sampler_ycbcr_conversion",
-    VK_KHR_SHADER_ATOMIC_INT64_EXTENSION_NAME                                         = "VK_KHR_shader_atomic_int64",
-    VK_KHR_SHADER_DRAW_PARAMETERS_EXTENSION_NAME                                      = "VK_KHR_shader_draw_parameters",
-    VK_KHR_SHADER_FLOAT16_INT8_EXTENSION_NAME                                         = "VK_KHR_shader_float16_int8",
-    VK_KHR_SHADER_FLOAT_CONTROLS_EXTENSION_NAME                                       = "VK_KHR_shader_float_controls",
-    VK_KHR_SHARED_PRESENTABLE_IMAGE_EXTENSION_NAME                                    = "VK_KHR_shared_presentable_image",
-    VK_KHR_STORAGE_BUFFER_STORAGE_CLASS_EXTENSION_NAME                                = "VK_KHR_storage_buffer_storage_class",
-    VK_KHR_SURFACE_EXTENSION_NAME                                                     = "VK_KHR_surface",
-    VK_KHR_SURFACE_PROTECTED_CAPABILITIES_EXTENSION_NAME                              = "VK_KHR_surface_protected_capabilities",
-    VK_KHR_SWAPCHAIN_EXTENSION_NAME                                                   = "VK_KHR_swapchain",
-    VK_KHR_SWAPCHAIN_MUTABLE_FORMAT_EXTENSION_NAME                                    = "VK_KHR_swapchain_mutable_format",
-    VK_KHR_UNIFORM_BUFFER_STANDARD_LAYOUT_EXTENSION_NAME                              = "VK_KHR_uniform_buffer_standard_layout",
-    VK_KHR_VARIABLE_POINTERS_EXTENSION_NAME                                           = "VK_KHR_variable_pointers",
-    VK_KHR_VULKAN_MEMORY_MODEL_EXTENSION_NAME                                         = "VK_KHR_vulkan_memory_model",
-    VK_NV_CLIP_SPACE_W_SCALING_EXTENSION_NAME                                         = "VK_NV_clip_space_w_scaling",
-    VK_NV_COMPUTE_SHADER_DERIVATIVES_EXTENSION_NAME                                   = "VK_NV_compute_shader_derivatives",
-    VK_NV_COOPERATIVE_MATRIX_EXTENSION_NAME                                           = "VK_NV_cooperative_matrix",
-    VK_NV_CORNER_SAMPLED_IMAGE_EXTENSION_NAME                                         = "VK_NV_corner_sampled_image",
-    VK_NV_COVERAGE_REDUCTION_MODE_EXTENSION_NAME                                      = "VK_NV_coverage_reduction_mode",
-    VK_NV_DEDICATED_ALLOCATION_EXTENSION_NAME                                         = "VK_NV_dedicated_allocation",
-    VK_NV_DEDICATED_ALLOCATION_IMAGE_ALIASING_EXTENSION_NAME                          = "VK_NV_dedicated_allocation_image_aliasing",
-    VK_NV_DEVICE_DIAGNOSTIC_CHECKPOINTS_EXTENSION_NAME                                = "VK_NV_device_diagnostic_checkpoints",
-    VK_NV_EXTERNAL_MEMORY_EXTENSION_NAME                                              = "VK_NV_external_memory",
-    VK_NV_EXTERNAL_MEMORY_CAPABILITIES_EXTENSION_NAME                                 = "VK_NV_external_memory_capabilities",
-    VK_NV_FILL_RECTANGLE_EXTENSION_NAME                                               = "VK_NV_fill_rectangle",
-    VK_NV_FRAGMENT_COVERAGE_TO_COLOR_EXTENSION_NAME                                   = "VK_NV_fragment_coverage_to_color",
-    VK_NV_FRAGMENT_SHADER_BARYCENTRIC_EXTENSION_NAME                                  = "VK_NV_fragment_shader_barycentric",
-    VK_NV_FRAMEBUFFER_MIXED_SAMPLES_EXTENSION_NAME                                    = "VK_NV_framebuffer_mixed_samples",
-    VK_NV_GEOMETRY_SHADER_PASSTHROUGH_EXTENSION_NAME                                  = "VK_NV_geometry_shader_passthrough",
-    VK_NV_GLSL_SHADER_EXTENSION_NAME                                                  = "VK_NV_glsl_shader",
-    VK_NV_MESH_SHADER_EXTENSION_NAME                                                  = "VK_NV_mesh_shader",
-    VK_NV_RAY_TRACING_EXTENSION_NAME                                                  = "VK_NV_ray_tracing",
-    VK_NV_REPRESENTATIVE_FRAGMENT_TEST_EXTENSION_NAME                                 = "VK_NV_representative_fragment_test",
-    VK_NV_SAMPLE_MASK_OVERRIDE_COVERAGE_EXTENSION_NAME                                = "VK_NV_sample_mask_override_coverage",
-    VK_NV_SCISSOR_EXCLUSIVE_EXTENSION_NAME                                            = "VK_NV_scissor_exclusive",
-    VK_NV_SHADER_IMAGE_FOOTPRINT_EXTENSION_NAME                                       = "VK_NV_shader_image_footprint",
-    VK_NV_SHADER_SM_BUILTINS_EXTENSION_NAME                                           = "VK_NV_shader_sm_builtins",
-    VK_NV_SHADER_SUBGROUP_PARTITIONED_EXTENSION_NAME                                  = "VK_NV_shader_subgroup_partitioned",
-    VK_NV_SHADING_RATE_IMAGE_EXTENSION_NAME                                           = "VK_NV_shading_rate_image",
-    VK_NV_VIEWPORT_ARRAY2_EXTENSION_NAME                                              = "VK_NV_viewport_array2",
-    VK_NV_VIEWPORT_SWIZZLE_EXTENSION_NAME                                             = "VK_NV_viewport_swizzle",
-    VK_NVX_DEVICE_GENERATED_COMMANDS_EXTENSION_NAME                                   = "VK_NVX_device_generated_commands",
-    VK_NVX_IMAGE_VIEW_HANDLE_EXTENSION_NAME                                           = "VK_NVX_image_view_handle",
-    VK_NVX_MULTIVIEW_PER_VIEW_ATTRIBUTES_EXTENSION_NAME                               = "VK_NVX_multiview_per_view_attributes",
-    VK_REMAINING_MIP_LEVELS                                                           = (~0U),
-    VK_REMAINING_ARRAY_LAYERS                                                         = (~0U),
-    VK_ATTACHMENT_UNUSED                                                              = (~0U),
-    VK_QUEUE_FAMILY_IGNORED                                                           = (~0U),
-    VK_SUBPASS_EXTERNAL                                                               = (~0U),
-    VK_SHADER_UNUSED_NV                                                               = (~0U),
-    VK_QUEUE_FAMILY_EXTERNAL                                                          = (~0U-1),
-    VK_QUEUE_FAMILY_EXTERNAL_KHR                                                      = (~0U-1),
-    VK_QUEUE_FAMILY_FOREIGN_EXT                                                       = (~0U-2),
-    VK_WHOLE_SIZE                                                                     = (~0ULL),
     VK_EXT_HEADLESS_SURFACE_SPEC_VERSION                                              = 0,
     VK_NV_GLSL_SHADER_SPEC_VERSION                                                    = 1,
     VK_EXT_DEPTH_RANGE_UNRESTRICTED_SPEC_VERSION                                      = 1,
@@ -309,7 +137,6 @@ enum class VKenum : unsigned int
     VK_KHR_SURFACE_PROTECTED_CAPABILITIES_SPEC_VERSION                                = 1,
     VK_NV_DEDICATED_ALLOCATION_IMAGE_ALIASING_SPEC_VERSION                            = 1,
     VK_EXT_SEPARATE_STENCIL_USAGE_SPEC_VERSION                                        = 1,
-    VK_EXT_VALIDATION_FEATURES_SPEC_VERSION                                           = 1,
     VK_NV_COOPERATIVE_MATRIX_SPEC_VERSION                                             = 1,
     VK_NV_COVERAGE_REDUCTION_MODE_SPEC_VERSION                                        = 1,
     VK_EXT_FRAGMENT_SHADER_INTERLOCK_SPEC_VERSION                                     = 1,
@@ -321,7 +148,6 @@ enum class VKenum : unsigned int
     VK_KHR_PIPELINE_EXECUTABLE_PROPERTIES_SPEC_VERSION                                = 1,
     VK_EXT_SHADER_DEMOTE_TO_HELPER_INVOCATION_SPEC_VERSION                            = 1,
     VK_EXT_TEXEL_BUFFER_ALIGNMENT_SPEC_VERSION                                        = 1,
-    VK_LOD_CLAMP_NONE                                                                 = 1000.0f,
     VK_AMD_GPU_SHADER_HALF_FLOAT_SPEC_VERSION                                         = 2,
     VK_NV_CORNER_SAMPLED_IMAGE_SPEC_VERSION                                           = 2,
     VK_KHR_MAINTENANCE1_SPEC_VERSION                                                  = 2,
@@ -335,10 +161,9 @@ enum class VKenum : unsigned int
     VK_EXT_PCI_BUS_INFO_SPEC_VERSION                                                  = 2,
     VK_EXT_SUBGROUP_SIZE_CONTROL_SPEC_VERSION                                         = 2,
     VK_EXT_BUFFER_DEVICE_ADDRESS_SPEC_VERSION                                         = 2,
+    VK_EXT_VALIDATION_FEATURES_SPEC_VERSION                                           = 2,
     VK_KHR_DISPLAY_SPEC_VERSION                                                       = 21,
     VK_KHR_SURFACE_SPEC_VERSION                                                       = 25,
-    VK_MAX_DRIVER_NAME_SIZE_KHR                                                       = 256,
-    VK_MAX_DRIVER_INFO_SIZE_KHR                                                       = 256,
     VK_KHR_DEVICE_GROUP_SPEC_VERSION                                                  = 3,
     VK_NVX_DEVICE_GENERATED_COMMANDS_SPEC_VERSION                                     = 3,
     VK_KHR_DEDICATED_ALLOCATION_SPEC_VERSION                                          = 3,
@@ -346,16 +171,27 @@ enum class VKenum : unsigned int
     VK_NV_RAY_TRACING_SPEC_VERSION                                                    = 3,
     VK_EXT_VERTEX_ATTRIBUTE_DIVISOR_SPEC_VERSION                                      = 3,
     VK_KHR_VULKAN_MEMORY_MODEL_SPEC_VERSION                                           = 3,
-    VK_MAX_DEVICE_GROUP_SIZE                                                          = 32,
-    VK_MAX_DEVICE_GROUP_SIZE_KHR                                                      = 32,
     VK_EXT_DEBUG_MARKER_SPEC_VERSION                                                  = 4,
     VK_EXT_SWAPCHAIN_COLOR_SPACE_SPEC_VERSION                                         = 4,
     VK_KHR_SHADER_FLOAT_CONTROLS_SPEC_VERSION                                         = 4,
     VK_KHR_SWAPCHAIN_SPEC_VERSION                                                     = 70,
-    VK_LUID_SIZE                                                                      = 8,
-    VK_LUID_SIZE_KHR                                                                  = 8,
     VK_KHR_DISPLAY_SWAPCHAIN_SPEC_VERSION                                             = 9,
     VK_EXT_DEBUG_REPORT_SPEC_VERSION                                                  = 9,
+
+    // VkAccelerationStructureMemoryRequirementsTypeNV
+
+
+    // VkAccelerationStructureTypeNV
+
+
+    // VkAttachmentLoadOp
+
+
+    // VkAttachmentStoreOp
+
+
+    // VkBlendFactor
+
 
     // VkBlendOp
 
@@ -406,10 +242,22 @@ enum class VKenum : unsigned int
     VK_BLEND_OP_GREEN_EXT                                                             = 0x3b9d0c4c,
     VK_BLEND_OP_BLUE_EXT                                                              = 0x3b9d0c4d,
 
+    // VkBlendOverlapEXT
+
+
+    // VkBorderColor
+
+
     // VkChromaLocation
 
     VK_CHROMA_LOCATION_COSITED_EVEN_KHR                                               = 0,
     VK_CHROMA_LOCATION_MIDPOINT_KHR                                                   = 1,
+
+    // VkChromaLocationKHR
+
+
+    // VkCoarseSampleOrderTypeNV
+
 
     // VkColorSpaceKHR
 
@@ -430,6 +278,30 @@ enum class VKenum : unsigned int
     VK_COLOR_SPACE_EXTENDED_SRGB_NONLINEAR_EXT                                        = 0x3b9c604e,
     VK_COLOR_SPACE_DISPLAY_NATIVE_AMD                                                 = 0x3b9e0a08,
 
+    // VkCommandBufferLevel
+
+
+    // VkCompareOp
+
+
+    // VkComponentSwizzle
+
+
+    // VkComponentTypeNV
+
+
+    // VkConservativeRasterizationModeEXT
+
+
+    // VkCopyAccelerationStructureModeNV
+
+
+    // VkCoverageModulationModeNV
+
+
+    // VkCoverageReductionModeNV
+
+
     // VkDebugReportObjectTypeEXT
 
     VK_DEBUG_REPORT_OBJECT_TYPE_SAMPLER_YCBCR_CONVERSION_EXT                          = 0x3b9af4f8,
@@ -448,6 +320,24 @@ enum class VKenum : unsigned int
     VK_DESCRIPTOR_UPDATE_TEMPLATE_TYPE_DESCRIPTOR_SET_KHR                             = 0,
     VK_DESCRIPTOR_UPDATE_TEMPLATE_TYPE_PUSH_DESCRIPTORS_KHR                           = 1,
 
+    // VkDescriptorUpdateTemplateTypeKHR
+
+
+    // VkDeviceEventTypeEXT
+
+
+    // VkDiscardRectangleModeEXT
+
+
+    // VkDisplayEventTypeEXT
+
+
+    // VkDisplayPowerStateEXT
+
+
+    // VkDriverIdKHR
+
+
     // VkDynamicState
 
     VK_DYNAMIC_STATE_VIEWPORT_W_SCALING_NV                                            = 0x3b9c1dd8,
@@ -457,6 +347,9 @@ enum class VKenum : unsigned int
     VK_DYNAMIC_STATE_VIEWPORT_COARSE_SAMPLE_ORDER_NV                                  = 0x3b9d4aa6,
     VK_DYNAMIC_STATE_EXCLUSIVE_SCISSOR_NV                                             = 0x3b9deac9,
     VK_DYNAMIC_STATE_LINE_STIPPLE_EXT                                                 = 0x3b9ebdb8,
+
+    // VKenum
+
 
     // VkFilter
 
@@ -488,93 +381,123 @@ enum class VKenum : unsigned int
     VK_FORMAT_ASTC_12x10_SFLOAT_BLOCK_EXT                                             = 0x3b9bcbdc,
     VK_FORMAT_ASTC_12x12_SFLOAT_BLOCK_EXT                                             = 0x3b9bcbdd,
     VK_FORMAT_G8B8G8R8_422_UNORM                                                      = 0x3b9d2b60,
+    VK_FORMAT_G8B8G8R8_422_UNORM_KHR                                                  = 0x3b9d2b60,
     VK_FORMAT_B8G8R8G8_422_UNORM                                                      = 0x3b9d2b61,
+    VK_FORMAT_B8G8R8G8_422_UNORM_KHR                                                  = 0x3b9d2b61,
     VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM                                               = 0x3b9d2b62,
+    VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM_KHR                                           = 0x3b9d2b62,
     VK_FORMAT_G8_B8R8_2PLANE_420_UNORM                                                = 0x3b9d2b63,
+    VK_FORMAT_G8_B8R8_2PLANE_420_UNORM_KHR                                            = 0x3b9d2b63,
     VK_FORMAT_G8_B8_R8_3PLANE_422_UNORM                                               = 0x3b9d2b64,
+    VK_FORMAT_G8_B8_R8_3PLANE_422_UNORM_KHR                                           = 0x3b9d2b64,
     VK_FORMAT_G8_B8R8_2PLANE_422_UNORM                                                = 0x3b9d2b65,
+    VK_FORMAT_G8_B8R8_2PLANE_422_UNORM_KHR                                            = 0x3b9d2b65,
     VK_FORMAT_G8_B8_R8_3PLANE_444_UNORM                                               = 0x3b9d2b66,
+    VK_FORMAT_G8_B8_R8_3PLANE_444_UNORM_KHR                                           = 0x3b9d2b66,
     VK_FORMAT_R10X6_UNORM_PACK16                                                      = 0x3b9d2b67,
+    VK_FORMAT_R10X6_UNORM_PACK16_KHR                                                  = 0x3b9d2b67,
     VK_FORMAT_R10X6G10X6_UNORM_2PACK16                                                = 0x3b9d2b68,
+    VK_FORMAT_R10X6G10X6_UNORM_2PACK16_KHR                                            = 0x3b9d2b68,
     VK_FORMAT_R10X6G10X6B10X6A10X6_UNORM_4PACK16                                      = 0x3b9d2b69,
+    VK_FORMAT_R10X6G10X6B10X6A10X6_UNORM_4PACK16_KHR                                  = 0x3b9d2b69,
     VK_FORMAT_G10X6B10X6G10X6R10X6_422_UNORM_4PACK16                                  = 0x3b9d2b6a,
+    VK_FORMAT_G10X6B10X6G10X6R10X6_422_UNORM_4PACK16_KHR                              = 0x3b9d2b6a,
     VK_FORMAT_B10X6G10X6R10X6G10X6_422_UNORM_4PACK16                                  = 0x3b9d2b6b,
+    VK_FORMAT_B10X6G10X6R10X6G10X6_422_UNORM_4PACK16_KHR                              = 0x3b9d2b6b,
     VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_420_UNORM_3PACK16                              = 0x3b9d2b6c,
+    VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_420_UNORM_3PACK16_KHR                          = 0x3b9d2b6c,
     VK_FORMAT_G10X6_B10X6R10X6_2PLANE_420_UNORM_3PACK16                               = 0x3b9d2b6d,
+    VK_FORMAT_G10X6_B10X6R10X6_2PLANE_420_UNORM_3PACK16_KHR                           = 0x3b9d2b6d,
     VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_422_UNORM_3PACK16                              = 0x3b9d2b6e,
+    VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_422_UNORM_3PACK16_KHR                          = 0x3b9d2b6e,
     VK_FORMAT_G10X6_B10X6R10X6_2PLANE_422_UNORM_3PACK16                               = 0x3b9d2b6f,
+    VK_FORMAT_G10X6_B10X6R10X6_2PLANE_422_UNORM_3PACK16_KHR                           = 0x3b9d2b6f,
     VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_444_UNORM_3PACK16                              = 0x3b9d2b70,
+    VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_444_UNORM_3PACK16_KHR                          = 0x3b9d2b70,
     VK_FORMAT_R12X4_UNORM_PACK16                                                      = 0x3b9d2b71,
+    VK_FORMAT_R12X4_UNORM_PACK16_KHR                                                  = 0x3b9d2b71,
     VK_FORMAT_R12X4G12X4_UNORM_2PACK16                                                = 0x3b9d2b72,
+    VK_FORMAT_R12X4G12X4_UNORM_2PACK16_KHR                                            = 0x3b9d2b72,
     VK_FORMAT_R12X4G12X4B12X4A12X4_UNORM_4PACK16                                      = 0x3b9d2b73,
+    VK_FORMAT_R12X4G12X4B12X4A12X4_UNORM_4PACK16_KHR                                  = 0x3b9d2b73,
     VK_FORMAT_G12X4B12X4G12X4R12X4_422_UNORM_4PACK16                                  = 0x3b9d2b74,
+    VK_FORMAT_G12X4B12X4G12X4R12X4_422_UNORM_4PACK16_KHR                              = 0x3b9d2b74,
     VK_FORMAT_B12X4G12X4R12X4G12X4_422_UNORM_4PACK16                                  = 0x3b9d2b75,
+    VK_FORMAT_B12X4G12X4R12X4G12X4_422_UNORM_4PACK16_KHR                              = 0x3b9d2b75,
     VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_420_UNORM_3PACK16                              = 0x3b9d2b76,
+    VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_420_UNORM_3PACK16_KHR                          = 0x3b9d2b76,
     VK_FORMAT_G12X4_B12X4R12X4_2PLANE_420_UNORM_3PACK16                               = 0x3b9d2b77,
+    VK_FORMAT_G12X4_B12X4R12X4_2PLANE_420_UNORM_3PACK16_KHR                           = 0x3b9d2b77,
     VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_422_UNORM_3PACK16                              = 0x3b9d2b78,
+    VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_422_UNORM_3PACK16_KHR                          = 0x3b9d2b78,
     VK_FORMAT_G12X4_B12X4R12X4_2PLANE_422_UNORM_3PACK16                               = 0x3b9d2b79,
+    VK_FORMAT_G12X4_B12X4R12X4_2PLANE_422_UNORM_3PACK16_KHR                           = 0x3b9d2b79,
     VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_444_UNORM_3PACK16                              = 0x3b9d2b7a,
+    VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_444_UNORM_3PACK16_KHR                          = 0x3b9d2b7a,
     VK_FORMAT_G16B16G16R16_422_UNORM                                                  = 0x3b9d2b7b,
+    VK_FORMAT_G16B16G16R16_422_UNORM_KHR                                              = 0x3b9d2b7b,
     VK_FORMAT_B16G16R16G16_422_UNORM                                                  = 0x3b9d2b7c,
+    VK_FORMAT_B16G16R16G16_422_UNORM_KHR                                              = 0x3b9d2b7c,
     VK_FORMAT_G16_B16_R16_3PLANE_420_UNORM                                            = 0x3b9d2b7d,
+    VK_FORMAT_G16_B16_R16_3PLANE_420_UNORM_KHR                                        = 0x3b9d2b7d,
     VK_FORMAT_G16_B16R16_2PLANE_420_UNORM                                             = 0x3b9d2b7e,
+    VK_FORMAT_G16_B16R16_2PLANE_420_UNORM_KHR                                         = 0x3b9d2b7e,
     VK_FORMAT_G16_B16_R16_3PLANE_422_UNORM                                            = 0x3b9d2b7f,
+    VK_FORMAT_G16_B16_R16_3PLANE_422_UNORM_KHR                                        = 0x3b9d2b7f,
     VK_FORMAT_G16_B16R16_2PLANE_422_UNORM                                             = 0x3b9d2b80,
+    VK_FORMAT_G16_B16R16_2PLANE_422_UNORM_KHR                                         = 0x3b9d2b80,
     VK_FORMAT_G16_B16_R16_3PLANE_444_UNORM                                            = 0x3b9d2b81,
-    VK_FORMAT_B10X6G10X6R10X6G10X6_422_UNORM_4PACK16_KHR                              = VK_FORMAT_B10X6G10X6R10X6G10X6_422_UNORM_4PACK16_KHR,
-    VK_FORMAT_B12X4G12X4R12X4G12X4_422_UNORM_4PACK16_KHR                              = VK_FORMAT_B12X4G12X4R12X4G12X4_422_UNORM_4PACK16_KHR,
-    VK_FORMAT_B16G16R16G16_422_UNORM_KHR                                              = VK_FORMAT_B16G16R16G16_422_UNORM_KHR,
-    VK_FORMAT_B8G8R8G8_422_UNORM_KHR                                                  = VK_FORMAT_B8G8R8G8_422_UNORM_KHR,
-    VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_420_UNORM_3PACK16_KHR                          = VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_420_UNORM_3PACK16_KHR,
-    VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_422_UNORM_3PACK16_KHR                          = VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_422_UNORM_3PACK16_KHR,
-    VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_444_UNORM_3PACK16_KHR                          = VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_444_UNORM_3PACK16_KHR,
-    VK_FORMAT_G10X6_B10X6R10X6_2PLANE_420_UNORM_3PACK16_KHR                           = VK_FORMAT_G10X6_B10X6R10X6_2PLANE_420_UNORM_3PACK16_KHR,
-    VK_FORMAT_G10X6_B10X6R10X6_2PLANE_422_UNORM_3PACK16_KHR                           = VK_FORMAT_G10X6_B10X6R10X6_2PLANE_422_UNORM_3PACK16_KHR,
-    VK_FORMAT_G10X6B10X6G10X6R10X6_422_UNORM_4PACK16_KHR                              = VK_FORMAT_G10X6B10X6G10X6R10X6_422_UNORM_4PACK16_KHR,
-    VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_420_UNORM_3PACK16_KHR                          = VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_420_UNORM_3PACK16_KHR,
-    VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_422_UNORM_3PACK16_KHR                          = VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_422_UNORM_3PACK16_KHR,
-    VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_444_UNORM_3PACK16_KHR                          = VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_444_UNORM_3PACK16_KHR,
-    VK_FORMAT_G12X4_B12X4R12X4_2PLANE_420_UNORM_3PACK16_KHR                           = VK_FORMAT_G12X4_B12X4R12X4_2PLANE_420_UNORM_3PACK16_KHR,
-    VK_FORMAT_G12X4_B12X4R12X4_2PLANE_422_UNORM_3PACK16_KHR                           = VK_FORMAT_G12X4_B12X4R12X4_2PLANE_422_UNORM_3PACK16_KHR,
-    VK_FORMAT_G12X4B12X4G12X4R12X4_422_UNORM_4PACK16_KHR                              = VK_FORMAT_G12X4B12X4G12X4R12X4_422_UNORM_4PACK16_KHR,
-    VK_FORMAT_G16_B16_R16_3PLANE_420_UNORM_KHR                                        = VK_FORMAT_G16_B16_R16_3PLANE_420_UNORM_KHR,
-    VK_FORMAT_G16_B16_R16_3PLANE_422_UNORM_KHR                                        = VK_FORMAT_G16_B16_R16_3PLANE_422_UNORM_KHR,
-    VK_FORMAT_G16_B16_R16_3PLANE_444_UNORM_KHR                                        = VK_FORMAT_G16_B16_R16_3PLANE_444_UNORM_KHR,
-    VK_FORMAT_G16_B16R16_2PLANE_420_UNORM_KHR                                         = VK_FORMAT_G16_B16R16_2PLANE_420_UNORM_KHR,
-    VK_FORMAT_G16_B16R16_2PLANE_422_UNORM_KHR                                         = VK_FORMAT_G16_B16R16_2PLANE_422_UNORM_KHR,
-    VK_FORMAT_G16B16G16R16_422_UNORM_KHR                                              = VK_FORMAT_G16B16G16R16_422_UNORM_KHR,
-    VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM_KHR                                           = VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM_KHR,
-    VK_FORMAT_G8_B8_R8_3PLANE_422_UNORM_KHR                                           = VK_FORMAT_G8_B8_R8_3PLANE_422_UNORM_KHR,
-    VK_FORMAT_G8_B8_R8_3PLANE_444_UNORM_KHR                                           = VK_FORMAT_G8_B8_R8_3PLANE_444_UNORM_KHR,
-    VK_FORMAT_G8_B8R8_2PLANE_420_UNORM_KHR                                            = VK_FORMAT_G8_B8R8_2PLANE_420_UNORM_KHR,
-    VK_FORMAT_G8_B8R8_2PLANE_422_UNORM_KHR                                            = VK_FORMAT_G8_B8R8_2PLANE_422_UNORM_KHR,
-    VK_FORMAT_G8B8G8R8_422_UNORM_KHR                                                  = VK_FORMAT_G8B8G8R8_422_UNORM_KHR,
-    VK_FORMAT_R10X6_UNORM_PACK16_KHR                                                  = VK_FORMAT_R10X6_UNORM_PACK16_KHR,
-    VK_FORMAT_R10X6G10X6_UNORM_2PACK16_KHR                                            = VK_FORMAT_R10X6G10X6_UNORM_2PACK16_KHR,
-    VK_FORMAT_R10X6G10X6B10X6A10X6_UNORM_4PACK16_KHR                                  = VK_FORMAT_R10X6G10X6B10X6A10X6_UNORM_4PACK16_KHR,
-    VK_FORMAT_R12X4_UNORM_PACK16_KHR                                                  = VK_FORMAT_R12X4_UNORM_PACK16_KHR,
-    VK_FORMAT_R12X4G12X4_UNORM_2PACK16_KHR                                            = VK_FORMAT_R12X4G12X4_UNORM_2PACK16_KHR,
-    VK_FORMAT_R12X4G12X4B12X4A12X4_UNORM_4PACK16_KHR                                  = VK_FORMAT_R12X4G12X4B12X4A12X4_UNORM_4PACK16_KHR,
+    VK_FORMAT_G16_B16_R16_3PLANE_444_UNORM_KHR                                        = 0x3b9d2b81,
+
+    // VkFrontFace
+
+
+    // VkGeometryTypeNV
+
 
     // VkImageLayout
 
     VK_IMAGE_LAYOUT_PRESENT_SRC_KHR                                                   = 0x3b9acdea,
     VK_IMAGE_LAYOUT_SHARED_PRESENT_KHR                                                = 0x3b9c7b98,
     VK_IMAGE_LAYOUT_DEPTH_READ_ONLY_STENCIL_ATTACHMENT_OPTIMAL                        = 0x3b9c9308,
+    VK_IMAGE_LAYOUT_DEPTH_READ_ONLY_STENCIL_ATTACHMENT_OPTIMAL_KHR                    = 0x3b9c9308,
     VK_IMAGE_LAYOUT_DEPTH_ATTACHMENT_STENCIL_READ_ONLY_OPTIMAL                        = 0x3b9c9309,
+    VK_IMAGE_LAYOUT_DEPTH_ATTACHMENT_STENCIL_READ_ONLY_OPTIMAL_KHR                    = 0x3b9c9309,
     VK_IMAGE_LAYOUT_SHADING_RATE_OPTIMAL_NV                                           = 0x3b9d4aa3,
     VK_IMAGE_LAYOUT_FRAGMENT_DENSITY_MAP_OPTIMAL_EXT                                  = 0x3b9e1d90,
-    VK_IMAGE_LAYOUT_DEPTH_ATTACHMENT_STENCIL_READ_ONLY_OPTIMAL_KHR                    = VK_IMAGE_LAYOUT_DEPTH_ATTACHMENT_STENCIL_READ_ONLY_OPTIMAL_KHR,
-    VK_IMAGE_LAYOUT_DEPTH_READ_ONLY_STENCIL_ATTACHMENT_OPTIMAL_KHR                    = VK_IMAGE_LAYOUT_DEPTH_READ_ONLY_STENCIL_ATTACHMENT_OPTIMAL_KHR,
 
     // VkImageTiling
 
     VK_IMAGE_TILING_DRM_FORMAT_MODIFIER_EXT                                           = 0x3b9d3330,
 
+    // VkImageType
+
+
+    // VkImageViewType
+
+
     // VkIndexType
 
     VK_INDEX_TYPE_NONE_NV                                                             = 0x3b9d4e88,
     VK_INDEX_TYPE_UINT8_EXT                                                           = 0x3b9ed528,
+
+    // VkIndirectCommandsTokenTypeNVX
+
+
+    // VkInternalAllocationType
+
+
+    // VkLineRasterizationModeEXT
+
+
+    // VkLogicOp
+
+
+    // VkMemoryOverallocationBehaviorAMD
+
+
+    // VkObjectEntryTypeNVX
+
 
     // VkObjectType
 
@@ -584,24 +507,48 @@ enum class VKenum : unsigned int
     VK_OBJECT_TYPE_DISPLAY_MODE_KHR                                                   = 0x3b9ad1d1,
     VK_OBJECT_TYPE_DEBUG_REPORT_CALLBACK_EXT                                          = 0x3b9af4f8,
     VK_OBJECT_TYPE_DESCRIPTOR_UPDATE_TEMPLATE                                         = 0x3b9c1608,
+    VK_OBJECT_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_KHR                                     = 0x3b9c1608,
     VK_OBJECT_TYPE_OBJECT_TABLE_NVX                                                   = 0x3b9c19f0,
     VK_OBJECT_TYPE_INDIRECT_COMMANDS_LAYOUT_NVX                                       = 0x3b9c19f1,
     VK_OBJECT_TYPE_DEBUG_UTILS_MESSENGER_EXT                                          = 0x3b9cbe00,
     VK_OBJECT_TYPE_SAMPLER_YCBCR_CONVERSION                                           = 0x3b9d2b60,
+    VK_OBJECT_TYPE_SAMPLER_YCBCR_CONVERSION_KHR                                       = 0x3b9d2b60,
     VK_OBJECT_TYPE_VALIDATION_CACHE_EXT                                               = 0x3b9d3b00,
     VK_OBJECT_TYPE_ACCELERATION_STRUCTURE_NV                                          = 0x3b9d4e88,
     VK_OBJECT_TYPE_PERFORMANCE_CONFIGURATION_INTEL                                    = 0x3b9dfe50,
-    VK_OBJECT_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_KHR                                     = VK_OBJECT_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_KHR,
-    VK_OBJECT_TYPE_SAMPLER_YCBCR_CONVERSION_KHR                                       = VK_OBJECT_TYPE_SAMPLER_YCBCR_CONVERSION_KHR,
+
+    // VkPerformanceConfigurationTypeINTEL
+
+
+    // VkPerformanceOverrideTypeINTEL
+
+
+    // VkPerformanceParameterTypeINTEL
+
+
+    // VkPerformanceValueTypeINTEL
+
+
+    // VkPhysicalDeviceType
+
 
     // VkPipelineBindPoint
 
     VK_PIPELINE_BIND_POINT_RAY_TRACING_NV                                             = 0x3b9d4e88,
 
+    // VkPipelineCacheHeaderVersion
+
+
+    // VkPipelineExecutableStatisticFormatKHR
+
+
     // VkPointClippingBehavior
 
     VK_POINT_CLIPPING_BEHAVIOR_ALL_CLIP_PLANES_KHR                                    = 0,
     VK_POINT_CLIPPING_BEHAVIOR_USER_CLIP_PLANES_ONLY_KHR                              = 1,
+
+    // VkPointClippingBehaviorKHR
+
 
     // VkPolygonMode
 
@@ -612,11 +559,26 @@ enum class VKenum : unsigned int
     VK_PRESENT_MODE_SHARED_DEMAND_REFRESH_KHR                                         = 0x3b9c7b98,
     VK_PRESENT_MODE_SHARED_CONTINUOUS_REFRESH_KHR                                     = 0x3b9c7b99,
 
+    // VkPrimitiveTopology
+
+
+    // VkQueryPoolSamplingModeINTEL
+
+
     // VkQueryType
 
     VK_QUERY_TYPE_TRANSFORM_FEEDBACK_STREAM_EXT                                       = 0x3b9b3764,
     VK_QUERY_TYPE_ACCELERATION_STRUCTURE_COMPACTED_SIZE_NV                            = 0x3b9d4e88,
     VK_QUERY_TYPE_PERFORMANCE_QUERY_INTEL                                             = 0x3b9dfe50,
+
+    // VkQueueGlobalPriorityEXT
+
+
+    // VkRasterizationOrderAMD
+
+
+    // VkRayTracingShaderGroupTypeNV
+
 
     // VkResult
 
@@ -628,17 +590,23 @@ enum class VKenum : unsigned int
     VK_ERROR_VALIDATION_FAILED_EXT                                                    = 0x3b9af4f9,
     VK_ERROR_INVALID_SHADER_NV                                                        = 0x3b9af8e0,
     VK_ERROR_OUT_OF_POOL_MEMORY                                                       = 0x3b9bd788,
+    VK_ERROR_OUT_OF_POOL_MEMORY_KHR                                                   = 0x3b9bd788,
     VK_ERROR_INVALID_EXTERNAL_HANDLE                                                  = 0x3b9be343,
+    VK_ERROR_INVALID_EXTERNAL_HANDLE_KHR                                              = 0x3b9be343,
     VK_ERROR_INVALID_DRM_FORMAT_MODIFIER_PLANE_LAYOUT_EXT                             = 0x3b9d3330,
     VK_ERROR_FRAGMENTATION_EXT                                                        = 0x3b9d3ee8,
     VK_ERROR_NOT_PERMITTED_EXT                                                        = 0x3b9d71b1,
     VK_ERROR_INVALID_DEVICE_ADDRESS_EXT                                               = 0x3b9e8320,
-    VK_ERROR_INVALID_EXTERNAL_HANDLE_KHR                                              = VK_ERROR_INVALID_EXTERNAL_HANDLE_KHR,
-    VK_ERROR_OUT_OF_POOL_MEMORY_KHR                                                   = VK_ERROR_OUT_OF_POOL_MEMORY_KHR,
 
     // VkSamplerAddressMode
 
     VK_SAMPLER_ADDRESS_MODE_MIRROR_CLAMP_TO_EDGE                                      = 4,
+
+    // VkSamplerMipmapMode
+
+
+    // VkSamplerReductionModeEXT
+
 
     // VkSamplerYcbcrModelConversion
 
@@ -648,10 +616,34 @@ enum class VKenum : unsigned int
     VK_SAMPLER_YCBCR_MODEL_CONVERSION_YCBCR_601_KHR                                   = 3,
     VK_SAMPLER_YCBCR_MODEL_CONVERSION_YCBCR_2020_KHR                                  = 4,
 
+    // VkSamplerYcbcrModelConversionKHR
+
+
     // VkSamplerYcbcrRange
 
     VK_SAMPLER_YCBCR_RANGE_ITU_FULL_KHR                                               = 0,
     VK_SAMPLER_YCBCR_RANGE_ITU_NARROW_KHR                                             = 1,
+
+    // VkSamplerYcbcrRangeKHR
+
+
+    // VkScopeNV
+
+
+    // VkShaderFloatControlsIndependenceKHR
+
+
+    // VkShaderInfoTypeAMD
+
+
+    // VkShadingRatePaletteEntryNV
+
+
+    // VkSharingMode
+
+
+    // VkStencilOp
+
 
     // VkStructureType
 
@@ -682,26 +674,45 @@ enum class VKenum : unsigned int
     VK_STRUCTURE_TYPE_TEXTURE_LOD_GATHER_FORMAT_PROPERTIES_AMD                        = 0x3b9b6a28,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CORNER_SAMPLED_IMAGE_FEATURES_NV                = 0x3b9b8d50,
     VK_STRUCTURE_TYPE_RENDER_PASS_MULTIVIEW_CREATE_INFO                               = 0x3b9b9908,
+    VK_STRUCTURE_TYPE_RENDER_PASS_MULTIVIEW_CREATE_INFO_KHR                           = 0x3b9b9908,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_FEATURES                              = 0x3b9b9909,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_FEATURES_KHR                          = 0x3b9b9909,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_PROPERTIES                            = 0x3b9b990a,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_PROPERTIES_KHR                        = 0x3b9b990a,
     VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_IMAGE_CREATE_INFO_NV                            = 0x3b9ba4c0,
     VK_STRUCTURE_TYPE_EXPORT_MEMORY_ALLOCATE_INFO_NV                                  = 0x3b9ba4c1,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FEATURES_2                                      = 0x3b9bb078,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FEATURES_2_KHR                                  = 0x3b9bb078,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROPERTIES_2                                    = 0x3b9bb079,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROPERTIES_2_KHR                                = 0x3b9bb079,
     VK_STRUCTURE_TYPE_FORMAT_PROPERTIES_2                                             = 0x3b9bb07a,
+    VK_STRUCTURE_TYPE_FORMAT_PROPERTIES_2_KHR                                         = 0x3b9bb07a,
     VK_STRUCTURE_TYPE_IMAGE_FORMAT_PROPERTIES_2                                       = 0x3b9bb07b,
+    VK_STRUCTURE_TYPE_IMAGE_FORMAT_PROPERTIES_2_KHR                                   = 0x3b9bb07b,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_FORMAT_INFO_2                             = 0x3b9bb07c,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_FORMAT_INFO_2_KHR                         = 0x3b9bb07c,
     VK_STRUCTURE_TYPE_QUEUE_FAMILY_PROPERTIES_2                                       = 0x3b9bb07d,
+    VK_STRUCTURE_TYPE_QUEUE_FAMILY_PROPERTIES_2_KHR                                   = 0x3b9bb07d,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_PROPERTIES_2                             = 0x3b9bb07e,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_PROPERTIES_2_KHR                         = 0x3b9bb07e,
     VK_STRUCTURE_TYPE_SPARSE_IMAGE_FORMAT_PROPERTIES_2                                = 0x3b9bb07f,
+    VK_STRUCTURE_TYPE_SPARSE_IMAGE_FORMAT_PROPERTIES_2_KHR                            = 0x3b9bb07f,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SPARSE_IMAGE_FORMAT_INFO_2                      = 0x3b9bb080,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SPARSE_IMAGE_FORMAT_INFO_2_KHR                  = 0x3b9bb080,
     VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_FLAGS_INFO                                      = 0x3b9bb460,
+    VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_FLAGS_INFO_KHR                                  = 0x3b9bb460,
     VK_STRUCTURE_TYPE_DEVICE_GROUP_RENDER_PASS_BEGIN_INFO                             = 0x3b9bb463,
+    VK_STRUCTURE_TYPE_DEVICE_GROUP_RENDER_PASS_BEGIN_INFO_KHR                         = 0x3b9bb463,
     VK_STRUCTURE_TYPE_DEVICE_GROUP_COMMAND_BUFFER_BEGIN_INFO                          = 0x3b9bb464,
+    VK_STRUCTURE_TYPE_DEVICE_GROUP_COMMAND_BUFFER_BEGIN_INFO_KHR                      = 0x3b9bb464,
     VK_STRUCTURE_TYPE_DEVICE_GROUP_SUBMIT_INFO                                        = 0x3b9bb465,
+    VK_STRUCTURE_TYPE_DEVICE_GROUP_SUBMIT_INFO_KHR                                    = 0x3b9bb465,
     VK_STRUCTURE_TYPE_DEVICE_GROUP_BIND_SPARSE_INFO                                   = 0x3b9bb466,
+    VK_STRUCTURE_TYPE_DEVICE_GROUP_BIND_SPARSE_INFO_KHR                               = 0x3b9bb466,
     VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_DEVICE_GROUP_INFO                            = 0x3b9bb46d,
+    VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_DEVICE_GROUP_INFO_KHR                        = 0x3b9bb46d,
     VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_DEVICE_GROUP_INFO                             = 0x3b9bb46e,
+    VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_DEVICE_GROUP_INFO_KHR                         = 0x3b9bb46e,
     VK_STRUCTURE_TYPE_VALIDATION_FLAGS_EXT                                            = 0x3b9bb848,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_DRAW_PARAMETERS_FEATURES                 = 0x3b9bc018,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_DRAW_PARAMETER_FEATURES                  = 0x3b9bc018,
@@ -709,21 +720,34 @@ enum class VKenum : unsigned int
     VK_STRUCTURE_TYPE_IMAGE_VIEW_ASTC_DECODE_MODE_EXT                                 = 0x3b9bcfb8,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ASTC_DECODE_FEATURES_EXT                        = 0x3b9bcfb9,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_GROUP_PROPERTIES                                = 0x3b9bdb70,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_GROUP_PROPERTIES_KHR                            = 0x3b9bdb70,
     VK_STRUCTURE_TYPE_DEVICE_GROUP_DEVICE_CREATE_INFO                                 = 0x3b9bdb71,
+    VK_STRUCTURE_TYPE_DEVICE_GROUP_DEVICE_CREATE_INFO_KHR                             = 0x3b9bdb71,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_IMAGE_FORMAT_INFO                      = 0x3b9bdf58,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_IMAGE_FORMAT_INFO_KHR                  = 0x3b9bdf58,
     VK_STRUCTURE_TYPE_EXTERNAL_IMAGE_FORMAT_PROPERTIES                                = 0x3b9bdf59,
+    VK_STRUCTURE_TYPE_EXTERNAL_IMAGE_FORMAT_PROPERTIES_KHR                            = 0x3b9bdf59,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_BUFFER_INFO                            = 0x3b9bdf5a,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_BUFFER_INFO_KHR                        = 0x3b9bdf5a,
     VK_STRUCTURE_TYPE_EXTERNAL_BUFFER_PROPERTIES                                      = 0x3b9bdf5b,
+    VK_STRUCTURE_TYPE_EXTERNAL_BUFFER_PROPERTIES_KHR                                  = 0x3b9bdf5b,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ID_PROPERTIES                                   = 0x3b9bdf5c,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ID_PROPERTIES_KHR                               = 0x3b9bdf5c,
     VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_BUFFER_CREATE_INFO                              = 0x3b9be340,
+    VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_BUFFER_CREATE_INFO_KHR                          = 0x3b9be340,
     VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_IMAGE_CREATE_INFO                               = 0x3b9be341,
+    VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_IMAGE_CREATE_INFO_KHR                           = 0x3b9be341,
     VK_STRUCTURE_TYPE_EXPORT_MEMORY_ALLOCATE_INFO                                     = 0x3b9be342,
+    VK_STRUCTURE_TYPE_EXPORT_MEMORY_ALLOCATE_INFO_KHR                                 = 0x3b9be342,
     VK_STRUCTURE_TYPE_IMPORT_MEMORY_FD_INFO_KHR                                       = 0x3b9beb10,
     VK_STRUCTURE_TYPE_MEMORY_FD_PROPERTIES_KHR                                        = 0x3b9beb11,
     VK_STRUCTURE_TYPE_MEMORY_GET_FD_INFO_KHR                                          = 0x3b9beb12,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_SEMAPHORE_INFO                         = 0x3b9bf2e0,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_SEMAPHORE_INFO_KHR                     = 0x3b9bf2e0,
     VK_STRUCTURE_TYPE_EXTERNAL_SEMAPHORE_PROPERTIES                                   = 0x3b9bf2e1,
+    VK_STRUCTURE_TYPE_EXTERNAL_SEMAPHORE_PROPERTIES_KHR                               = 0x3b9bf2e1,
     VK_STRUCTURE_TYPE_EXPORT_SEMAPHORE_CREATE_INFO                                    = 0x3b9bf6c8,
+    VK_STRUCTURE_TYPE_EXPORT_SEMAPHORE_CREATE_INFO_KHR                                = 0x3b9bf6c8,
     VK_STRUCTURE_TYPE_IMPORT_SEMAPHORE_FD_INFO_KHR                                    = 0x3b9bfe98,
     VK_STRUCTURE_TYPE_SEMAPHORE_GET_FD_INFO_KHR                                       = 0x3b9bfe99,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PUSH_DESCRIPTOR_PROPERTIES_KHR                  = 0x3b9c0280,
@@ -733,8 +757,10 @@ enum class VKenum : unsigned int
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_FLOAT16_INT8_FEATURES_KHR                = 0x3b9c0a50,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FLOAT16_INT8_FEATURES_KHR                       = 0x3b9c0a50,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_16BIT_STORAGE_FEATURES                          = 0x3b9c0e38,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_16BIT_STORAGE_FEATURES_KHR                      = 0x3b9c0e38,
     VK_STRUCTURE_TYPE_PRESENT_REGIONS_KHR                                             = 0x3b9c1220,
     VK_STRUCTURE_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_CREATE_INFO                          = 0x3b9c1608,
+    VK_STRUCTURE_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_CREATE_INFO_KHR                      = 0x3b9c1608,
     VK_STRUCTURE_TYPE_OBJECT_TABLE_CREATE_INFO_NVX                                    = 0x3b9c19f0,
     VK_STRUCTURE_TYPE_INDIRECT_COMMANDS_LAYOUT_CREATE_INFO_NVX                        = 0x3b9c19f1,
     VK_STRUCTURE_TYPE_CMD_PROCESS_COMMANDS_INFO_NVX                                   = 0x3b9c19f2,
@@ -772,26 +798,37 @@ enum class VKenum : unsigned int
     VK_STRUCTURE_TYPE_SUBPASS_END_INFO_KHR                                            = 0x3b9c73ce,
     VK_STRUCTURE_TYPE_SHARED_PRESENT_SURFACE_CAPABILITIES_KHR                         = 0x3b9c7b98,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_FENCE_INFO                             = 0x3b9c7f80,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_FENCE_INFO_KHR                         = 0x3b9c7f80,
     VK_STRUCTURE_TYPE_EXTERNAL_FENCE_PROPERTIES                                       = 0x3b9c7f81,
+    VK_STRUCTURE_TYPE_EXTERNAL_FENCE_PROPERTIES_KHR                                   = 0x3b9c7f81,
     VK_STRUCTURE_TYPE_EXPORT_FENCE_CREATE_INFO                                        = 0x3b9c8368,
+    VK_STRUCTURE_TYPE_EXPORT_FENCE_CREATE_INFO_KHR                                    = 0x3b9c8368,
     VK_STRUCTURE_TYPE_IMPORT_FENCE_FD_INFO_KHR                                        = 0x3b9c8b38,
     VK_STRUCTURE_TYPE_FENCE_GET_FD_INFO_KHR                                           = 0x3b9c8b39,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_POINT_CLIPPING_PROPERTIES                       = 0x3b9c9308,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_POINT_CLIPPING_PROPERTIES_KHR                   = 0x3b9c9308,
     VK_STRUCTURE_TYPE_RENDER_PASS_INPUT_ATTACHMENT_ASPECT_CREATE_INFO                 = 0x3b9c9309,
+    VK_STRUCTURE_TYPE_RENDER_PASS_INPUT_ATTACHMENT_ASPECT_CREATE_INFO_KHR             = 0x3b9c9309,
     VK_STRUCTURE_TYPE_IMAGE_VIEW_USAGE_CREATE_INFO                                    = 0x3b9c930a,
+    VK_STRUCTURE_TYPE_IMAGE_VIEW_USAGE_CREATE_INFO_KHR                                = 0x3b9c930a,
     VK_STRUCTURE_TYPE_PIPELINE_TESSELLATION_DOMAIN_ORIGIN_STATE_CREATE_INFO           = 0x3b9c930b,
+    VK_STRUCTURE_TYPE_PIPELINE_TESSELLATION_DOMAIN_ORIGIN_STATE_CREATE_INFO_KHR       = 0x3b9c930b,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SURFACE_INFO_2_KHR                              = 0x3b9c9ad8,
     VK_STRUCTURE_TYPE_SURFACE_CAPABILITIES_2_KHR                                      = 0x3b9c9ad9,
     VK_STRUCTURE_TYPE_SURFACE_FORMAT_2_KHR                                            = 0x3b9c9ada,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTERS_FEATURES                      = 0x3b9c9ec0,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTER_FEATURES                       = 0x3b9c9ec0,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTER_FEATURES_KHR                   = 0x3b9c9ec0,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTERS_FEATURES_KHR                  = 0x3b9c9ec0,
     VK_STRUCTURE_TYPE_DISPLAY_PROPERTIES_2_KHR                                        = 0x3b9ca2a8,
     VK_STRUCTURE_TYPE_DISPLAY_PLANE_PROPERTIES_2_KHR                                  = 0x3b9ca2a9,
     VK_STRUCTURE_TYPE_DISPLAY_MODE_PROPERTIES_2_KHR                                   = 0x3b9ca2aa,
     VK_STRUCTURE_TYPE_DISPLAY_PLANE_INFO_2_KHR                                        = 0x3b9ca2ab,
     VK_STRUCTURE_TYPE_DISPLAY_PLANE_CAPABILITIES_2_KHR                                = 0x3b9ca2ac,
     VK_STRUCTURE_TYPE_MEMORY_DEDICATED_REQUIREMENTS                                   = 0x3b9cba18,
+    VK_STRUCTURE_TYPE_MEMORY_DEDICATED_REQUIREMENTS_KHR                               = 0x3b9cba18,
     VK_STRUCTURE_TYPE_MEMORY_DEDICATED_ALLOCATE_INFO                                  = 0x3b9cba19,
+    VK_STRUCTURE_TYPE_MEMORY_DEDICATED_ALLOCATE_INFO_KHR                              = 0x3b9cba19,
     VK_STRUCTURE_TYPE_DEBUG_UTILS_OBJECT_NAME_INFO_EXT                                = 0x3b9cbe00,
     VK_STRUCTURE_TYPE_DEBUG_UTILS_OBJECT_TAG_INFO_EXT                                 = 0x3b9cbe01,
     VK_STRUCTURE_TYPE_DEBUG_UTILS_LABEL_EXT                                           = 0x3b9cbe02,
@@ -813,10 +850,15 @@ enum class VKenum : unsigned int
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROTECTED_MEMORY_PROPERTIES                     = 0x3b9d006a,
     VK_STRUCTURE_TYPE_DEVICE_QUEUE_INFO_2                                             = 0x3b9d006b,
     VK_STRUCTURE_TYPE_BUFFER_MEMORY_REQUIREMENTS_INFO_2                               = 0x3b9d0450,
+    VK_STRUCTURE_TYPE_BUFFER_MEMORY_REQUIREMENTS_INFO_2_KHR                           = 0x3b9d0450,
     VK_STRUCTURE_TYPE_IMAGE_MEMORY_REQUIREMENTS_INFO_2                                = 0x3b9d0451,
+    VK_STRUCTURE_TYPE_IMAGE_MEMORY_REQUIREMENTS_INFO_2_KHR                            = 0x3b9d0451,
     VK_STRUCTURE_TYPE_IMAGE_SPARSE_MEMORY_REQUIREMENTS_INFO_2                         = 0x3b9d0452,
+    VK_STRUCTURE_TYPE_IMAGE_SPARSE_MEMORY_REQUIREMENTS_INFO_2_KHR                     = 0x3b9d0452,
     VK_STRUCTURE_TYPE_MEMORY_REQUIREMENTS_2                                           = 0x3b9d0453,
+    VK_STRUCTURE_TYPE_MEMORY_REQUIREMENTS_2_KHR                                       = 0x3b9d0453,
     VK_STRUCTURE_TYPE_SPARSE_IMAGE_MEMORY_REQUIREMENTS_2                              = 0x3b9d0454,
+    VK_STRUCTURE_TYPE_SPARSE_IMAGE_MEMORY_REQUIREMENTS_2_KHR                          = 0x3b9d0454,
     VK_STRUCTURE_TYPE_IMAGE_FORMAT_LIST_CREATE_INFO_KHR                               = 0x3b9d0838,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BLEND_OPERATION_ADVANCED_FEATURES_EXT           = 0x3b9d0c20,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BLEND_OPERATION_ADVANCED_PROPERTIES_EXT         = 0x3b9d0c21,
@@ -826,13 +868,21 @@ enum class VKenum : unsigned int
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_SM_BUILTINS_FEATURES_NV                  = 0x3b9d2390,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_SM_BUILTINS_PROPERTIES_NV                = 0x3b9d2391,
     VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_CREATE_INFO                            = 0x3b9d2b60,
+    VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_CREATE_INFO_KHR                        = 0x3b9d2b60,
     VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_INFO                                   = 0x3b9d2b61,
+    VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_INFO_KHR                               = 0x3b9d2b61,
     VK_STRUCTURE_TYPE_BIND_IMAGE_PLANE_MEMORY_INFO                                    = 0x3b9d2b62,
+    VK_STRUCTURE_TYPE_BIND_IMAGE_PLANE_MEMORY_INFO_KHR                                = 0x3b9d2b62,
     VK_STRUCTURE_TYPE_IMAGE_PLANE_MEMORY_REQUIREMENTS_INFO                            = 0x3b9d2b63,
+    VK_STRUCTURE_TYPE_IMAGE_PLANE_MEMORY_REQUIREMENTS_INFO_KHR                        = 0x3b9d2b63,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLER_YCBCR_CONVERSION_FEATURES               = 0x3b9d2b64,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLER_YCBCR_CONVERSION_FEATURES_KHR           = 0x3b9d2b64,
     VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_IMAGE_FORMAT_PROPERTIES                = 0x3b9d2b65,
+    VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_IMAGE_FORMAT_PROPERTIES_KHR            = 0x3b9d2b65,
     VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_INFO                                         = 0x3b9d2f48,
+    VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_INFO_KHR                                     = 0x3b9d2f48,
     VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_INFO                                          = 0x3b9d2f49,
+    VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_INFO_KHR                                      = 0x3b9d2f49,
     VK_STRUCTURE_TYPE_DRM_FORMAT_MODIFIER_PROPERTIES_LIST_EXT                         = 0x3b9d3330,
     VK_STRUCTURE_TYPE_DRM_FORMAT_MODIFIER_PROPERTIES_EXT                              = 0x3b9d3331,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_DRM_FORMAT_MODIFIER_INFO_EXT              = 0x3b9d3332,
@@ -864,7 +914,9 @@ enum class VKenum : unsigned int
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_REPRESENTATIVE_FRAGMENT_TEST_FEATURES_NV        = 0x3b9d5270,
     VK_STRUCTURE_TYPE_PIPELINE_REPRESENTATIVE_FRAGMENT_TEST_STATE_CREATE_INFO_NV      = 0x3b9d5271,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_3_PROPERTIES                        = 0x3b9d5a40,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_3_PROPERTIES_KHR                    = 0x3b9d5a40,
     VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_SUPPORT                                   = 0x3b9d5a41,
+    VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_SUPPORT_KHR                               = 0x3b9d5a41,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_VIEW_IMAGE_FORMAT_INFO_EXT                = 0x3b9d6210,
     VK_STRUCTURE_TYPE_FILTER_CUBIC_IMAGE_VIEW_IMAGE_FORMAT_PROPERTIES_EXT             = 0x3b9d6211,
     VK_STRUCTURE_TYPE_DEVICE_QUEUE_GLOBAL_PRIORITY_CREATE_INFO_EXT                    = 0x3b9d71b0,
@@ -948,71 +1000,35 @@ enum class VKenum : unsigned int
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_DEMOTE_TO_HELPER_INVOCATION_FEATURES_EXT = 0x3b9f0020,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TEXEL_BUFFER_ALIGNMENT_FEATURES_EXT             = 0x3b9f13a8,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TEXEL_BUFFER_ALIGNMENT_PROPERTIES_EXT           = 0x3b9f13a9,
-    VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_DEVICE_GROUP_INFO_KHR                        = VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_DEVICE_GROUP_INFO_KHR,
-    VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_INFO_KHR                                     = VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_INFO_KHR,
-    VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_DEVICE_GROUP_INFO_KHR                         = VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_DEVICE_GROUP_INFO_KHR,
-    VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_INFO_KHR                                      = VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_INFO_KHR,
-    VK_STRUCTURE_TYPE_BIND_IMAGE_PLANE_MEMORY_INFO_KHR                                = VK_STRUCTURE_TYPE_BIND_IMAGE_PLANE_MEMORY_INFO_KHR,
-    VK_STRUCTURE_TYPE_BUFFER_MEMORY_REQUIREMENTS_INFO_2_KHR                           = VK_STRUCTURE_TYPE_BUFFER_MEMORY_REQUIREMENTS_INFO_2_KHR,
-    VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_SUPPORT_KHR                               = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_SUPPORT_KHR,
-    VK_STRUCTURE_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_CREATE_INFO_KHR                      = VK_STRUCTURE_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_CREATE_INFO_KHR,
-    VK_STRUCTURE_TYPE_DEVICE_GROUP_BIND_SPARSE_INFO_KHR                               = VK_STRUCTURE_TYPE_DEVICE_GROUP_BIND_SPARSE_INFO_KHR,
-    VK_STRUCTURE_TYPE_DEVICE_GROUP_COMMAND_BUFFER_BEGIN_INFO_KHR                      = VK_STRUCTURE_TYPE_DEVICE_GROUP_COMMAND_BUFFER_BEGIN_INFO_KHR,
-    VK_STRUCTURE_TYPE_DEVICE_GROUP_DEVICE_CREATE_INFO_KHR                             = VK_STRUCTURE_TYPE_DEVICE_GROUP_DEVICE_CREATE_INFO_KHR,
-    VK_STRUCTURE_TYPE_DEVICE_GROUP_RENDER_PASS_BEGIN_INFO_KHR                         = VK_STRUCTURE_TYPE_DEVICE_GROUP_RENDER_PASS_BEGIN_INFO_KHR,
-    VK_STRUCTURE_TYPE_DEVICE_GROUP_SUBMIT_INFO_KHR                                    = VK_STRUCTURE_TYPE_DEVICE_GROUP_SUBMIT_INFO_KHR,
-    VK_STRUCTURE_TYPE_EXPORT_FENCE_CREATE_INFO_KHR                                    = VK_STRUCTURE_TYPE_EXPORT_FENCE_CREATE_INFO_KHR,
-    VK_STRUCTURE_TYPE_EXPORT_MEMORY_ALLOCATE_INFO_KHR                                 = VK_STRUCTURE_TYPE_EXPORT_MEMORY_ALLOCATE_INFO_KHR,
-    VK_STRUCTURE_TYPE_EXPORT_SEMAPHORE_CREATE_INFO_KHR                                = VK_STRUCTURE_TYPE_EXPORT_SEMAPHORE_CREATE_INFO_KHR,
-    VK_STRUCTURE_TYPE_EXTERNAL_BUFFER_PROPERTIES_KHR                                  = VK_STRUCTURE_TYPE_EXTERNAL_BUFFER_PROPERTIES_KHR,
-    VK_STRUCTURE_TYPE_EXTERNAL_FENCE_PROPERTIES_KHR                                   = VK_STRUCTURE_TYPE_EXTERNAL_FENCE_PROPERTIES_KHR,
-    VK_STRUCTURE_TYPE_EXTERNAL_IMAGE_FORMAT_PROPERTIES_KHR                            = VK_STRUCTURE_TYPE_EXTERNAL_IMAGE_FORMAT_PROPERTIES_KHR,
-    VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_BUFFER_CREATE_INFO_KHR                          = VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_BUFFER_CREATE_INFO_KHR,
-    VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_IMAGE_CREATE_INFO_KHR                           = VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_IMAGE_CREATE_INFO_KHR,
-    VK_STRUCTURE_TYPE_EXTERNAL_SEMAPHORE_PROPERTIES_KHR                               = VK_STRUCTURE_TYPE_EXTERNAL_SEMAPHORE_PROPERTIES_KHR,
-    VK_STRUCTURE_TYPE_FORMAT_PROPERTIES_2_KHR                                         = VK_STRUCTURE_TYPE_FORMAT_PROPERTIES_2_KHR,
-    VK_STRUCTURE_TYPE_IMAGE_FORMAT_PROPERTIES_2_KHR                                   = VK_STRUCTURE_TYPE_IMAGE_FORMAT_PROPERTIES_2_KHR,
-    VK_STRUCTURE_TYPE_IMAGE_MEMORY_REQUIREMENTS_INFO_2_KHR                            = VK_STRUCTURE_TYPE_IMAGE_MEMORY_REQUIREMENTS_INFO_2_KHR,
-    VK_STRUCTURE_TYPE_IMAGE_PLANE_MEMORY_REQUIREMENTS_INFO_KHR                        = VK_STRUCTURE_TYPE_IMAGE_PLANE_MEMORY_REQUIREMENTS_INFO_KHR,
-    VK_STRUCTURE_TYPE_IMAGE_SPARSE_MEMORY_REQUIREMENTS_INFO_2_KHR                     = VK_STRUCTURE_TYPE_IMAGE_SPARSE_MEMORY_REQUIREMENTS_INFO_2_KHR,
-    VK_STRUCTURE_TYPE_IMAGE_VIEW_USAGE_CREATE_INFO_KHR                                = VK_STRUCTURE_TYPE_IMAGE_VIEW_USAGE_CREATE_INFO_KHR,
-    VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_FLAGS_INFO_KHR                                  = VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_FLAGS_INFO_KHR,
-    VK_STRUCTURE_TYPE_MEMORY_DEDICATED_ALLOCATE_INFO_KHR                              = VK_STRUCTURE_TYPE_MEMORY_DEDICATED_ALLOCATE_INFO_KHR,
-    VK_STRUCTURE_TYPE_MEMORY_DEDICATED_REQUIREMENTS_KHR                               = VK_STRUCTURE_TYPE_MEMORY_DEDICATED_REQUIREMENTS_KHR,
-    VK_STRUCTURE_TYPE_MEMORY_REQUIREMENTS_2_KHR                                       = VK_STRUCTURE_TYPE_MEMORY_REQUIREMENTS_2_KHR,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_16BIT_STORAGE_FEATURES_KHR                      = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_16BIT_STORAGE_FEATURES_KHR,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_BUFFER_INFO_KHR                        = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_BUFFER_INFO_KHR,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_FENCE_INFO_KHR                         = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_FENCE_INFO_KHR,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_IMAGE_FORMAT_INFO_KHR                  = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_IMAGE_FORMAT_INFO_KHR,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_SEMAPHORE_INFO_KHR                     = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_SEMAPHORE_INFO_KHR,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FEATURES_2_KHR                                  = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FEATURES_2_KHR,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_GROUP_PROPERTIES_KHR                            = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_GROUP_PROPERTIES_KHR,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ID_PROPERTIES_KHR                               = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ID_PROPERTIES_KHR,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_FORMAT_INFO_2_KHR                         = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_FORMAT_INFO_2_KHR,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_3_PROPERTIES_KHR                    = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_3_PROPERTIES_KHR,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_PROPERTIES_2_KHR                         = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_PROPERTIES_2_KHR,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_FEATURES_KHR                          = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_FEATURES_KHR,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_PROPERTIES_KHR                        = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_PROPERTIES_KHR,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_POINT_CLIPPING_PROPERTIES_KHR                   = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_POINT_CLIPPING_PROPERTIES_KHR,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROPERTIES_2_KHR                                = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROPERTIES_2_KHR,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLER_YCBCR_CONVERSION_FEATURES_KHR           = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLER_YCBCR_CONVERSION_FEATURES_KHR,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SPARSE_IMAGE_FORMAT_INFO_2_KHR                  = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SPARSE_IMAGE_FORMAT_INFO_2_KHR,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTER_FEATURES_KHR                   = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTER_FEATURES_KHR,
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTERS_FEATURES_KHR                  = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTERS_FEATURES_KHR,
-    VK_STRUCTURE_TYPE_PIPELINE_TESSELLATION_DOMAIN_ORIGIN_STATE_CREATE_INFO_KHR       = VK_STRUCTURE_TYPE_PIPELINE_TESSELLATION_DOMAIN_ORIGIN_STATE_CREATE_INFO_KHR,
-    VK_STRUCTURE_TYPE_QUEUE_FAMILY_PROPERTIES_2_KHR                                   = VK_STRUCTURE_TYPE_QUEUE_FAMILY_PROPERTIES_2_KHR,
-    VK_STRUCTURE_TYPE_RENDER_PASS_INPUT_ATTACHMENT_ASPECT_CREATE_INFO_KHR             = VK_STRUCTURE_TYPE_RENDER_PASS_INPUT_ATTACHMENT_ASPECT_CREATE_INFO_KHR,
-    VK_STRUCTURE_TYPE_RENDER_PASS_MULTIVIEW_CREATE_INFO_KHR                           = VK_STRUCTURE_TYPE_RENDER_PASS_MULTIVIEW_CREATE_INFO_KHR,
-    VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_CREATE_INFO_KHR                        = VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_CREATE_INFO_KHR,
-    VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_IMAGE_FORMAT_PROPERTIES_KHR            = VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_IMAGE_FORMAT_PROPERTIES_KHR,
-    VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_INFO_KHR                               = VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_INFO_KHR,
-    VK_STRUCTURE_TYPE_SPARSE_IMAGE_FORMAT_PROPERTIES_2_KHR                            = VK_STRUCTURE_TYPE_SPARSE_IMAGE_FORMAT_PROPERTIES_2_KHR,
-    VK_STRUCTURE_TYPE_SPARSE_IMAGE_MEMORY_REQUIREMENTS_2_KHR                          = VK_STRUCTURE_TYPE_SPARSE_IMAGE_MEMORY_REQUIREMENTS_2_KHR,
+
+    // VkSubpassContents
+
+
+    // VkSystemAllocationScope
+
 
     // VkTessellationDomainOrigin
 
     VK_TESSELLATION_DOMAIN_ORIGIN_UPPER_LEFT_KHR                                      = 0,
     VK_TESSELLATION_DOMAIN_ORIGIN_LOWER_LEFT_KHR                                      = 1,
+
+    // VkTessellationDomainOriginKHR
+
+
+    // VkTimeDomainEXT
+
+
+    // VkValidationCacheHeaderVersionEXT
+
+
+    // VkVendorId
+
+
+    // VkVertexInputRate
+
+
+    // VkViewportCoordinateSwizzleNV
+
 
 };
 
@@ -1021,178 +1037,6 @@ enum class VKenum : unsigned int
 
 // UNGROUPED
 
-VKBINDING_CONSTEXPR static const VKenum VK_AMD_BUFFER_MARKER_EXTENSION_NAME = VKenum::VK_AMD_BUFFER_MARKER_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_AMD_DISPLAY_NATIVE_HDR_EXTENSION_NAME = VKenum::VK_AMD_DISPLAY_NATIVE_HDR_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_AMD_DRAW_INDIRECT_COUNT_EXTENSION_NAME = VKenum::VK_AMD_DRAW_INDIRECT_COUNT_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_AMD_GCN_SHADER_EXTENSION_NAME = VKenum::VK_AMD_GCN_SHADER_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_AMD_GPU_SHADER_HALF_FLOAT_EXTENSION_NAME = VKenum::VK_AMD_GPU_SHADER_HALF_FLOAT_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_AMD_GPU_SHADER_INT16_EXTENSION_NAME = VKenum::VK_AMD_GPU_SHADER_INT16_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_AMD_MEMORY_OVERALLOCATION_BEHAVIOR_EXTENSION_NAME = VKenum::VK_AMD_MEMORY_OVERALLOCATION_BEHAVIOR_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_AMD_MIXED_ATTACHMENT_SAMPLES_EXTENSION_NAME = VKenum::VK_AMD_MIXED_ATTACHMENT_SAMPLES_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_AMD_NEGATIVE_VIEWPORT_HEIGHT_EXTENSION_NAME = VKenum::VK_AMD_NEGATIVE_VIEWPORT_HEIGHT_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_AMD_PIPELINE_COMPILER_CONTROL_EXTENSION_NAME = VKenum::VK_AMD_PIPELINE_COMPILER_CONTROL_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_AMD_RASTERIZATION_ORDER_EXTENSION_NAME = VKenum::VK_AMD_RASTERIZATION_ORDER_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_AMD_SHADER_BALLOT_EXTENSION_NAME = VKenum::VK_AMD_SHADER_BALLOT_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_AMD_SHADER_CORE_PROPERTIES_EXTENSION_NAME = VKenum::VK_AMD_SHADER_CORE_PROPERTIES_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_AMD_SHADER_CORE_PROPERTIES_2_EXTENSION_NAME = VKenum::VK_AMD_SHADER_CORE_PROPERTIES_2_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_AMD_SHADER_EXPLICIT_VERTEX_PARAMETER_EXTENSION_NAME = VKenum::VK_AMD_SHADER_EXPLICIT_VERTEX_PARAMETER_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_AMD_SHADER_FRAGMENT_MASK_EXTENSION_NAME = VKenum::VK_AMD_SHADER_FRAGMENT_MASK_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_AMD_SHADER_IMAGE_LOAD_STORE_LOD_EXTENSION_NAME = VKenum::VK_AMD_SHADER_IMAGE_LOAD_STORE_LOD_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_AMD_SHADER_INFO_EXTENSION_NAME = VKenum::VK_AMD_SHADER_INFO_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_AMD_SHADER_TRINARY_MINMAX_EXTENSION_NAME = VKenum::VK_AMD_SHADER_TRINARY_MINMAX_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_AMD_TEXTURE_GATHER_BIAS_LOD_EXTENSION_NAME = VKenum::VK_AMD_TEXTURE_GATHER_BIAS_LOD_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_ASTC_DECODE_MODE_EXTENSION_NAME = VKenum::VK_EXT_ASTC_DECODE_MODE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_BLEND_OPERATION_ADVANCED_EXTENSION_NAME = VKenum::VK_EXT_BLEND_OPERATION_ADVANCED_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_BUFFER_DEVICE_ADDRESS_EXTENSION_NAME = VKenum::VK_EXT_BUFFER_DEVICE_ADDRESS_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_CALIBRATED_TIMESTAMPS_EXTENSION_NAME = VKenum::VK_EXT_CALIBRATED_TIMESTAMPS_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_CONDITIONAL_RENDERING_EXTENSION_NAME = VKenum::VK_EXT_CONDITIONAL_RENDERING_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_CONSERVATIVE_RASTERIZATION_EXTENSION_NAME = VKenum::VK_EXT_CONSERVATIVE_RASTERIZATION_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_DEBUG_MARKER_EXTENSION_NAME = VKenum::VK_EXT_DEBUG_MARKER_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_DEBUG_REPORT_EXTENSION_NAME = VKenum::VK_EXT_DEBUG_REPORT_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_DEBUG_UTILS_EXTENSION_NAME = VKenum::VK_EXT_DEBUG_UTILS_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_DEPTH_CLIP_ENABLE_EXTENSION_NAME = VKenum::VK_EXT_DEPTH_CLIP_ENABLE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_DEPTH_RANGE_UNRESTRICTED_EXTENSION_NAME = VKenum::VK_EXT_DEPTH_RANGE_UNRESTRICTED_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_DESCRIPTOR_INDEXING_EXTENSION_NAME = VKenum::VK_EXT_DESCRIPTOR_INDEXING_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_DIRECT_MODE_DISPLAY_EXTENSION_NAME = VKenum::VK_EXT_DIRECT_MODE_DISPLAY_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_DISCARD_RECTANGLES_EXTENSION_NAME = VKenum::VK_EXT_DISCARD_RECTANGLES_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_DISPLAY_CONTROL_EXTENSION_NAME = VKenum::VK_EXT_DISPLAY_CONTROL_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_DISPLAY_SURFACE_COUNTER_EXTENSION_NAME = VKenum::VK_EXT_DISPLAY_SURFACE_COUNTER_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_EXTERNAL_MEMORY_DMA_BUF_EXTENSION_NAME = VKenum::VK_EXT_EXTERNAL_MEMORY_DMA_BUF_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_EXTERNAL_MEMORY_HOST_EXTENSION_NAME = VKenum::VK_EXT_EXTERNAL_MEMORY_HOST_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_FILTER_CUBIC_EXTENSION_NAME = VKenum::VK_EXT_FILTER_CUBIC_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_FRAGMENT_DENSITY_MAP_EXTENSION_NAME = VKenum::VK_EXT_FRAGMENT_DENSITY_MAP_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_FRAGMENT_SHADER_INTERLOCK_EXTENSION_NAME = VKenum::VK_EXT_FRAGMENT_SHADER_INTERLOCK_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_GLOBAL_PRIORITY_EXTENSION_NAME = VKenum::VK_EXT_GLOBAL_PRIORITY_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_HDR_METADATA_EXTENSION_NAME = VKenum::VK_EXT_HDR_METADATA_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_HEADLESS_SURFACE_EXTENSION_NAME = VKenum::VK_EXT_HEADLESS_SURFACE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_HOST_QUERY_RESET_EXTENSION_NAME = VKenum::VK_EXT_HOST_QUERY_RESET_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_IMAGE_DRM_FORMAT_MODIFIER_EXTENSION_NAME = VKenum::VK_EXT_IMAGE_DRM_FORMAT_MODIFIER_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_INDEX_TYPE_UINT8_EXTENSION_NAME = VKenum::VK_EXT_INDEX_TYPE_UINT8_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_INLINE_UNIFORM_BLOCK_EXTENSION_NAME = VKenum::VK_EXT_INLINE_UNIFORM_BLOCK_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_LINE_RASTERIZATION_EXTENSION_NAME = VKenum::VK_EXT_LINE_RASTERIZATION_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_MEMORY_BUDGET_EXTENSION_NAME = VKenum::VK_EXT_MEMORY_BUDGET_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_MEMORY_PRIORITY_EXTENSION_NAME = VKenum::VK_EXT_MEMORY_PRIORITY_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_PCI_BUS_INFO_EXTENSION_NAME = VKenum::VK_EXT_PCI_BUS_INFO_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_PIPELINE_CREATION_FEEDBACK_EXTENSION_NAME = VKenum::VK_EXT_PIPELINE_CREATION_FEEDBACK_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_POST_DEPTH_COVERAGE_EXTENSION_NAME = VKenum::VK_EXT_POST_DEPTH_COVERAGE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_QUEUE_FAMILY_FOREIGN_EXTENSION_NAME = VKenum::VK_EXT_QUEUE_FAMILY_FOREIGN_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_SAMPLE_LOCATIONS_EXTENSION_NAME = VKenum::VK_EXT_SAMPLE_LOCATIONS_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_SAMPLER_FILTER_MINMAX_EXTENSION_NAME = VKenum::VK_EXT_SAMPLER_FILTER_MINMAX_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_SCALAR_BLOCK_LAYOUT_EXTENSION_NAME = VKenum::VK_EXT_SCALAR_BLOCK_LAYOUT_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_SEPARATE_STENCIL_USAGE_EXTENSION_NAME = VKenum::VK_EXT_SEPARATE_STENCIL_USAGE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_SHADER_DEMOTE_TO_HELPER_INVOCATION_EXTENSION_NAME = VKenum::VK_EXT_SHADER_DEMOTE_TO_HELPER_INVOCATION_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_SHADER_STENCIL_EXPORT_EXTENSION_NAME = VKenum::VK_EXT_SHADER_STENCIL_EXPORT_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_SHADER_SUBGROUP_BALLOT_EXTENSION_NAME = VKenum::VK_EXT_SHADER_SUBGROUP_BALLOT_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_SHADER_SUBGROUP_VOTE_EXTENSION_NAME = VKenum::VK_EXT_SHADER_SUBGROUP_VOTE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_SHADER_VIEWPORT_INDEX_LAYER_EXTENSION_NAME = VKenum::VK_EXT_SHADER_VIEWPORT_INDEX_LAYER_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_SUBGROUP_SIZE_CONTROL_EXTENSION_NAME = VKenum::VK_EXT_SUBGROUP_SIZE_CONTROL_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_SWAPCHAIN_COLOR_SPACE_EXTENSION_NAME = VKenum::VK_EXT_SWAPCHAIN_COLOR_SPACE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_TEXEL_BUFFER_ALIGNMENT_EXTENSION_NAME = VKenum::VK_EXT_TEXEL_BUFFER_ALIGNMENT_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_TEXTURE_COMPRESSION_ASTC_HDR_EXTENSION_NAME = VKenum::VK_EXT_TEXTURE_COMPRESSION_ASTC_HDR_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_TRANSFORM_FEEDBACK_EXTENSION_NAME = VKenum::VK_EXT_TRANSFORM_FEEDBACK_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_VALIDATION_CACHE_EXTENSION_NAME = VKenum::VK_EXT_VALIDATION_CACHE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_VALIDATION_FEATURES_EXTENSION_NAME = VKenum::VK_EXT_VALIDATION_FEATURES_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_VALIDATION_FLAGS_EXTENSION_NAME = VKenum::VK_EXT_VALIDATION_FLAGS_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_VERTEX_ATTRIBUTE_DIVISOR_EXTENSION_NAME = VKenum::VK_EXT_VERTEX_ATTRIBUTE_DIVISOR_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_YCBCR_IMAGE_ARRAYS_EXTENSION_NAME = VKenum::VK_EXT_YCBCR_IMAGE_ARRAYS_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_GOOGLE_DECORATE_STRING_EXTENSION_NAME = VKenum::VK_GOOGLE_DECORATE_STRING_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_GOOGLE_DISPLAY_TIMING_EXTENSION_NAME = VKenum::VK_GOOGLE_DISPLAY_TIMING_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_GOOGLE_HLSL_FUNCTIONALITY1_EXTENSION_NAME = VKenum::VK_GOOGLE_HLSL_FUNCTIONALITY1_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_IMG_FILTER_CUBIC_EXTENSION_NAME = VKenum::VK_IMG_FILTER_CUBIC_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_IMG_FORMAT_PVRTC_EXTENSION_NAME = VKenum::VK_IMG_FORMAT_PVRTC_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_INTEL_PERFORMANCE_QUERY_EXTENSION_NAME = VKenum::VK_INTEL_PERFORMANCE_QUERY_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_INTEL_SHADER_INTEGER_FUNCTIONS_2_EXTENSION_NAME = VKenum::VK_INTEL_SHADER_INTEGER_FUNCTIONS_2_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_16BIT_STORAGE_EXTENSION_NAME = VKenum::VK_KHR_16BIT_STORAGE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_8BIT_STORAGE_EXTENSION_NAME = VKenum::VK_KHR_8BIT_STORAGE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_BIND_MEMORY_2_EXTENSION_NAME = VKenum::VK_KHR_BIND_MEMORY_2_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_CREATE_RENDERPASS_2_EXTENSION_NAME = VKenum::VK_KHR_CREATE_RENDERPASS_2_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_DEDICATED_ALLOCATION_EXTENSION_NAME = VKenum::VK_KHR_DEDICATED_ALLOCATION_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_DEPTH_STENCIL_RESOLVE_EXTENSION_NAME = VKenum::VK_KHR_DEPTH_STENCIL_RESOLVE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_DESCRIPTOR_UPDATE_TEMPLATE_EXTENSION_NAME = VKenum::VK_KHR_DESCRIPTOR_UPDATE_TEMPLATE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_DEVICE_GROUP_EXTENSION_NAME = VKenum::VK_KHR_DEVICE_GROUP_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_DEVICE_GROUP_CREATION_EXTENSION_NAME = VKenum::VK_KHR_DEVICE_GROUP_CREATION_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_DISPLAY_EXTENSION_NAME = VKenum::VK_KHR_DISPLAY_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_DISPLAY_SWAPCHAIN_EXTENSION_NAME = VKenum::VK_KHR_DISPLAY_SWAPCHAIN_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_DRAW_INDIRECT_COUNT_EXTENSION_NAME = VKenum::VK_KHR_DRAW_INDIRECT_COUNT_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_DRIVER_PROPERTIES_EXTENSION_NAME = VKenum::VK_KHR_DRIVER_PROPERTIES_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_EXTERNAL_FENCE_EXTENSION_NAME = VKenum::VK_KHR_EXTERNAL_FENCE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_EXTERNAL_FENCE_CAPABILITIES_EXTENSION_NAME = VKenum::VK_KHR_EXTERNAL_FENCE_CAPABILITIES_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_EXTERNAL_FENCE_FD_EXTENSION_NAME = VKenum::VK_KHR_EXTERNAL_FENCE_FD_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_EXTERNAL_MEMORY_EXTENSION_NAME = VKenum::VK_KHR_EXTERNAL_MEMORY_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_EXTERNAL_MEMORY_CAPABILITIES_EXTENSION_NAME = VKenum::VK_KHR_EXTERNAL_MEMORY_CAPABILITIES_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_EXTERNAL_MEMORY_FD_EXTENSION_NAME = VKenum::VK_KHR_EXTERNAL_MEMORY_FD_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_EXTERNAL_SEMAPHORE_EXTENSION_NAME = VKenum::VK_KHR_EXTERNAL_SEMAPHORE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_EXTERNAL_SEMAPHORE_CAPABILITIES_EXTENSION_NAME = VKenum::VK_KHR_EXTERNAL_SEMAPHORE_CAPABILITIES_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_EXTERNAL_SEMAPHORE_FD_EXTENSION_NAME = VKenum::VK_KHR_EXTERNAL_SEMAPHORE_FD_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_GET_DISPLAY_PROPERTIES_2_EXTENSION_NAME = VKenum::VK_KHR_GET_DISPLAY_PROPERTIES_2_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_GET_MEMORY_REQUIREMENTS_2_EXTENSION_NAME = VKenum::VK_KHR_GET_MEMORY_REQUIREMENTS_2_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_GET_PHYSICAL_DEVICE_PROPERTIES_2_EXTENSION_NAME = VKenum::VK_KHR_GET_PHYSICAL_DEVICE_PROPERTIES_2_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_GET_SURFACE_CAPABILITIES_2_EXTENSION_NAME = VKenum::VK_KHR_GET_SURFACE_CAPABILITIES_2_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_IMAGE_FORMAT_LIST_EXTENSION_NAME = VKenum::VK_KHR_IMAGE_FORMAT_LIST_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_IMAGELESS_FRAMEBUFFER_EXTENSION_NAME = VKenum::VK_KHR_IMAGELESS_FRAMEBUFFER_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_INCREMENTAL_PRESENT_EXTENSION_NAME = VKenum::VK_KHR_INCREMENTAL_PRESENT_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_MAINTENANCE1_EXTENSION_NAME = VKenum::VK_KHR_MAINTENANCE1_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_MAINTENANCE2_EXTENSION_NAME = VKenum::VK_KHR_MAINTENANCE2_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_MAINTENANCE3_EXTENSION_NAME = VKenum::VK_KHR_MAINTENANCE3_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_MULTIVIEW_EXTENSION_NAME = VKenum::VK_KHR_MULTIVIEW_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_PIPELINE_EXECUTABLE_PROPERTIES_EXTENSION_NAME = VKenum::VK_KHR_PIPELINE_EXECUTABLE_PROPERTIES_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_PUSH_DESCRIPTOR_EXTENSION_NAME = VKenum::VK_KHR_PUSH_DESCRIPTOR_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_RELAXED_BLOCK_LAYOUT_EXTENSION_NAME = VKenum::VK_KHR_RELAXED_BLOCK_LAYOUT_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_SAMPLER_MIRROR_CLAMP_TO_EDGE_EXTENSION_NAME = VKenum::VK_KHR_SAMPLER_MIRROR_CLAMP_TO_EDGE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_SAMPLER_YCBCR_CONVERSION_EXTENSION_NAME = VKenum::VK_KHR_SAMPLER_YCBCR_CONVERSION_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_SHADER_ATOMIC_INT64_EXTENSION_NAME = VKenum::VK_KHR_SHADER_ATOMIC_INT64_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_SHADER_DRAW_PARAMETERS_EXTENSION_NAME = VKenum::VK_KHR_SHADER_DRAW_PARAMETERS_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_SHADER_FLOAT16_INT8_EXTENSION_NAME = VKenum::VK_KHR_SHADER_FLOAT16_INT8_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_SHADER_FLOAT_CONTROLS_EXTENSION_NAME = VKenum::VK_KHR_SHADER_FLOAT_CONTROLS_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_SHARED_PRESENTABLE_IMAGE_EXTENSION_NAME = VKenum::VK_KHR_SHARED_PRESENTABLE_IMAGE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_STORAGE_BUFFER_STORAGE_CLASS_EXTENSION_NAME = VKenum::VK_KHR_STORAGE_BUFFER_STORAGE_CLASS_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_SURFACE_EXTENSION_NAME = VKenum::VK_KHR_SURFACE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_SURFACE_PROTECTED_CAPABILITIES_EXTENSION_NAME = VKenum::VK_KHR_SURFACE_PROTECTED_CAPABILITIES_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_SWAPCHAIN_EXTENSION_NAME = VKenum::VK_KHR_SWAPCHAIN_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_SWAPCHAIN_MUTABLE_FORMAT_EXTENSION_NAME = VKenum::VK_KHR_SWAPCHAIN_MUTABLE_FORMAT_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_UNIFORM_BUFFER_STANDARD_LAYOUT_EXTENSION_NAME = VKenum::VK_KHR_UNIFORM_BUFFER_STANDARD_LAYOUT_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_VARIABLE_POINTERS_EXTENSION_NAME = VKenum::VK_KHR_VARIABLE_POINTERS_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_KHR_VULKAN_MEMORY_MODEL_EXTENSION_NAME = VKenum::VK_KHR_VULKAN_MEMORY_MODEL_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_CLIP_SPACE_W_SCALING_EXTENSION_NAME = VKenum::VK_NV_CLIP_SPACE_W_SCALING_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_COMPUTE_SHADER_DERIVATIVES_EXTENSION_NAME = VKenum::VK_NV_COMPUTE_SHADER_DERIVATIVES_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_COOPERATIVE_MATRIX_EXTENSION_NAME = VKenum::VK_NV_COOPERATIVE_MATRIX_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_CORNER_SAMPLED_IMAGE_EXTENSION_NAME = VKenum::VK_NV_CORNER_SAMPLED_IMAGE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_COVERAGE_REDUCTION_MODE_EXTENSION_NAME = VKenum::VK_NV_COVERAGE_REDUCTION_MODE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_DEDICATED_ALLOCATION_EXTENSION_NAME = VKenum::VK_NV_DEDICATED_ALLOCATION_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_DEDICATED_ALLOCATION_IMAGE_ALIASING_EXTENSION_NAME = VKenum::VK_NV_DEDICATED_ALLOCATION_IMAGE_ALIASING_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_DEVICE_DIAGNOSTIC_CHECKPOINTS_EXTENSION_NAME = VKenum::VK_NV_DEVICE_DIAGNOSTIC_CHECKPOINTS_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_EXTERNAL_MEMORY_EXTENSION_NAME = VKenum::VK_NV_EXTERNAL_MEMORY_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_EXTERNAL_MEMORY_CAPABILITIES_EXTENSION_NAME = VKenum::VK_NV_EXTERNAL_MEMORY_CAPABILITIES_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_FILL_RECTANGLE_EXTENSION_NAME = VKenum::VK_NV_FILL_RECTANGLE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_FRAGMENT_COVERAGE_TO_COLOR_EXTENSION_NAME = VKenum::VK_NV_FRAGMENT_COVERAGE_TO_COLOR_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_FRAGMENT_SHADER_BARYCENTRIC_EXTENSION_NAME = VKenum::VK_NV_FRAGMENT_SHADER_BARYCENTRIC_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_FRAMEBUFFER_MIXED_SAMPLES_EXTENSION_NAME = VKenum::VK_NV_FRAMEBUFFER_MIXED_SAMPLES_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_GEOMETRY_SHADER_PASSTHROUGH_EXTENSION_NAME = VKenum::VK_NV_GEOMETRY_SHADER_PASSTHROUGH_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_GLSL_SHADER_EXTENSION_NAME = VKenum::VK_NV_GLSL_SHADER_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_MESH_SHADER_EXTENSION_NAME = VKenum::VK_NV_MESH_SHADER_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_RAY_TRACING_EXTENSION_NAME = VKenum::VK_NV_RAY_TRACING_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_REPRESENTATIVE_FRAGMENT_TEST_EXTENSION_NAME = VKenum::VK_NV_REPRESENTATIVE_FRAGMENT_TEST_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_SAMPLE_MASK_OVERRIDE_COVERAGE_EXTENSION_NAME = VKenum::VK_NV_SAMPLE_MASK_OVERRIDE_COVERAGE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_SCISSOR_EXCLUSIVE_EXTENSION_NAME = VKenum::VK_NV_SCISSOR_EXCLUSIVE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_SHADER_IMAGE_FOOTPRINT_EXTENSION_NAME = VKenum::VK_NV_SHADER_IMAGE_FOOTPRINT_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_SHADER_SM_BUILTINS_EXTENSION_NAME = VKenum::VK_NV_SHADER_SM_BUILTINS_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_SHADER_SUBGROUP_PARTITIONED_EXTENSION_NAME = VKenum::VK_NV_SHADER_SUBGROUP_PARTITIONED_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_SHADING_RATE_IMAGE_EXTENSION_NAME = VKenum::VK_NV_SHADING_RATE_IMAGE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_VIEWPORT_ARRAY2_EXTENSION_NAME = VKenum::VK_NV_VIEWPORT_ARRAY2_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NV_VIEWPORT_SWIZZLE_EXTENSION_NAME = VKenum::VK_NV_VIEWPORT_SWIZZLE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NVX_DEVICE_GENERATED_COMMANDS_EXTENSION_NAME = VKenum::VK_NVX_DEVICE_GENERATED_COMMANDS_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NVX_IMAGE_VIEW_HANDLE_EXTENSION_NAME = VKenum::VK_NVX_IMAGE_VIEW_HANDLE_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_NVX_MULTIVIEW_PER_VIEW_ATTRIBUTES_EXTENSION_NAME = VKenum::VK_NVX_MULTIVIEW_PER_VIEW_ATTRIBUTES_EXTENSION_NAME;
-VKBINDING_CONSTEXPR static const VKenum VK_REMAINING_MIP_LEVELS = VKenum::VK_REMAINING_MIP_LEVELS;
-VKBINDING_CONSTEXPR static const VKenum VK_REMAINING_ARRAY_LAYERS = VKenum::VK_REMAINING_ARRAY_LAYERS;
-VKBINDING_CONSTEXPR static const VKenum VK_ATTACHMENT_UNUSED = VKenum::VK_ATTACHMENT_UNUSED;
-VKBINDING_CONSTEXPR static const VKenum VK_QUEUE_FAMILY_IGNORED = VKenum::VK_QUEUE_FAMILY_IGNORED;
-VKBINDING_CONSTEXPR static const VKenum VK_SUBPASS_EXTERNAL = VKenum::VK_SUBPASS_EXTERNAL;
-VKBINDING_CONSTEXPR static const VKenum VK_SHADER_UNUSED_NV = VKenum::VK_SHADER_UNUSED_NV;
-VKBINDING_CONSTEXPR static const VKenum VK_QUEUE_FAMILY_EXTERNAL = VKenum::VK_QUEUE_FAMILY_EXTERNAL;
-VKBINDING_CONSTEXPR static const VKenum VK_QUEUE_FAMILY_EXTERNAL_KHR = VKenum::VK_QUEUE_FAMILY_EXTERNAL_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_QUEUE_FAMILY_FOREIGN_EXT = VKenum::VK_QUEUE_FAMILY_FOREIGN_EXT;
-VKBINDING_CONSTEXPR static const VKenum VK_WHOLE_SIZE = VKenum::VK_WHOLE_SIZE;
 VKBINDING_CONSTEXPR static const VKenum VK_EXT_HEADLESS_SURFACE_SPEC_VERSION = VKenum::VK_EXT_HEADLESS_SURFACE_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_NV_GLSL_SHADER_SPEC_VERSION = VKenum::VK_NV_GLSL_SHADER_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_EXT_DEPTH_RANGE_UNRESTRICTED_SPEC_VERSION = VKenum::VK_EXT_DEPTH_RANGE_UNRESTRICTED_SPEC_VERSION;
@@ -1315,7 +1159,6 @@ VKBINDING_CONSTEXPR static const VKenum VK_EXT_MEMORY_PRIORITY_SPEC_VERSION = VK
 VKBINDING_CONSTEXPR static const VKenum VK_KHR_SURFACE_PROTECTED_CAPABILITIES_SPEC_VERSION = VKenum::VK_KHR_SURFACE_PROTECTED_CAPABILITIES_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_NV_DEDICATED_ALLOCATION_IMAGE_ALIASING_SPEC_VERSION = VKenum::VK_NV_DEDICATED_ALLOCATION_IMAGE_ALIASING_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_EXT_SEPARATE_STENCIL_USAGE_SPEC_VERSION = VKenum::VK_EXT_SEPARATE_STENCIL_USAGE_SPEC_VERSION;
-VKBINDING_CONSTEXPR static const VKenum VK_EXT_VALIDATION_FEATURES_SPEC_VERSION = VKenum::VK_EXT_VALIDATION_FEATURES_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_NV_COOPERATIVE_MATRIX_SPEC_VERSION = VKenum::VK_NV_COOPERATIVE_MATRIX_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_NV_COVERAGE_REDUCTION_MODE_SPEC_VERSION = VKenum::VK_NV_COVERAGE_REDUCTION_MODE_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_EXT_FRAGMENT_SHADER_INTERLOCK_SPEC_VERSION = VKenum::VK_EXT_FRAGMENT_SHADER_INTERLOCK_SPEC_VERSION;
@@ -1327,7 +1170,6 @@ VKBINDING_CONSTEXPR static const VKenum VK_EXT_INDEX_TYPE_UINT8_SPEC_VERSION = V
 VKBINDING_CONSTEXPR static const VKenum VK_KHR_PIPELINE_EXECUTABLE_PROPERTIES_SPEC_VERSION = VKenum::VK_KHR_PIPELINE_EXECUTABLE_PROPERTIES_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_EXT_SHADER_DEMOTE_TO_HELPER_INVOCATION_SPEC_VERSION = VKenum::VK_EXT_SHADER_DEMOTE_TO_HELPER_INVOCATION_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_EXT_TEXEL_BUFFER_ALIGNMENT_SPEC_VERSION = VKenum::VK_EXT_TEXEL_BUFFER_ALIGNMENT_SPEC_VERSION;
-VKBINDING_CONSTEXPR static const VKenum VK_LOD_CLAMP_NONE = VKenum::VK_LOD_CLAMP_NONE;
 VKBINDING_CONSTEXPR static const VKenum VK_AMD_GPU_SHADER_HALF_FLOAT_SPEC_VERSION = VKenum::VK_AMD_GPU_SHADER_HALF_FLOAT_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_NV_CORNER_SAMPLED_IMAGE_SPEC_VERSION = VKenum::VK_NV_CORNER_SAMPLED_IMAGE_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_KHR_MAINTENANCE1_SPEC_VERSION = VKenum::VK_KHR_MAINTENANCE1_SPEC_VERSION;
@@ -1341,10 +1183,9 @@ VKBINDING_CONSTEXPR static const VKenum VK_NV_DEVICE_DIAGNOSTIC_CHECKPOINTS_SPEC
 VKBINDING_CONSTEXPR static const VKenum VK_EXT_PCI_BUS_INFO_SPEC_VERSION = VKenum::VK_EXT_PCI_BUS_INFO_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_EXT_SUBGROUP_SIZE_CONTROL_SPEC_VERSION = VKenum::VK_EXT_SUBGROUP_SIZE_CONTROL_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_EXT_BUFFER_DEVICE_ADDRESS_SPEC_VERSION = VKenum::VK_EXT_BUFFER_DEVICE_ADDRESS_SPEC_VERSION;
+VKBINDING_CONSTEXPR static const VKenum VK_EXT_VALIDATION_FEATURES_SPEC_VERSION = VKenum::VK_EXT_VALIDATION_FEATURES_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_KHR_DISPLAY_SPEC_VERSION = VKenum::VK_KHR_DISPLAY_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_KHR_SURFACE_SPEC_VERSION = VKenum::VK_KHR_SURFACE_SPEC_VERSION;
-VKBINDING_CONSTEXPR static const VKenum VK_MAX_DRIVER_NAME_SIZE_KHR = VKenum::VK_MAX_DRIVER_NAME_SIZE_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_MAX_DRIVER_INFO_SIZE_KHR = VKenum::VK_MAX_DRIVER_INFO_SIZE_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_KHR_DEVICE_GROUP_SPEC_VERSION = VKenum::VK_KHR_DEVICE_GROUP_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_NVX_DEVICE_GENERATED_COMMANDS_SPEC_VERSION = VKenum::VK_NVX_DEVICE_GENERATED_COMMANDS_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_KHR_DEDICATED_ALLOCATION_SPEC_VERSION = VKenum::VK_KHR_DEDICATED_ALLOCATION_SPEC_VERSION;
@@ -1352,16 +1193,27 @@ VKBINDING_CONSTEXPR static const VKenum VK_NV_SHADING_RATE_IMAGE_SPEC_VERSION = 
 VKBINDING_CONSTEXPR static const VKenum VK_NV_RAY_TRACING_SPEC_VERSION = VKenum::VK_NV_RAY_TRACING_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_EXT_VERTEX_ATTRIBUTE_DIVISOR_SPEC_VERSION = VKenum::VK_EXT_VERTEX_ATTRIBUTE_DIVISOR_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_KHR_VULKAN_MEMORY_MODEL_SPEC_VERSION = VKenum::VK_KHR_VULKAN_MEMORY_MODEL_SPEC_VERSION;
-VKBINDING_CONSTEXPR static const VKenum VK_MAX_DEVICE_GROUP_SIZE = VKenum::VK_MAX_DEVICE_GROUP_SIZE;
-VKBINDING_CONSTEXPR static const VKenum VK_MAX_DEVICE_GROUP_SIZE_KHR = VKenum::VK_MAX_DEVICE_GROUP_SIZE_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_EXT_DEBUG_MARKER_SPEC_VERSION = VKenum::VK_EXT_DEBUG_MARKER_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_EXT_SWAPCHAIN_COLOR_SPACE_SPEC_VERSION = VKenum::VK_EXT_SWAPCHAIN_COLOR_SPACE_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_KHR_SHADER_FLOAT_CONTROLS_SPEC_VERSION = VKenum::VK_KHR_SHADER_FLOAT_CONTROLS_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_KHR_SWAPCHAIN_SPEC_VERSION = VKenum::VK_KHR_SWAPCHAIN_SPEC_VERSION;
-VKBINDING_CONSTEXPR static const VKenum VK_LUID_SIZE = VKenum::VK_LUID_SIZE;
-VKBINDING_CONSTEXPR static const VKenum VK_LUID_SIZE_KHR = VKenum::VK_LUID_SIZE_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_KHR_DISPLAY_SWAPCHAIN_SPEC_VERSION = VKenum::VK_KHR_DISPLAY_SWAPCHAIN_SPEC_VERSION;
 VKBINDING_CONSTEXPR static const VKenum VK_EXT_DEBUG_REPORT_SPEC_VERSION = VKenum::VK_EXT_DEBUG_REPORT_SPEC_VERSION;
+
+// VkAccelerationStructureMemoryRequirementsTypeNV
+
+
+// VkAccelerationStructureTypeNV
+
+
+// VkAttachmentLoadOp
+
+
+// VkAttachmentStoreOp
+
+
+// VkBlendFactor
+
 
 // VkBlendOp
 
@@ -1412,10 +1264,22 @@ VKBINDING_CONSTEXPR static const VKenum VK_BLEND_OP_RED_EXT = VKenum::VK_BLEND_O
 VKBINDING_CONSTEXPR static const VKenum VK_BLEND_OP_GREEN_EXT = VKenum::VK_BLEND_OP_GREEN_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_BLEND_OP_BLUE_EXT = VKenum::VK_BLEND_OP_BLUE_EXT;
 
+// VkBlendOverlapEXT
+
+
+// VkBorderColor
+
+
 // VkChromaLocation
 
 VKBINDING_CONSTEXPR static const VKenum VK_CHROMA_LOCATION_COSITED_EVEN_KHR = VKenum::VK_CHROMA_LOCATION_COSITED_EVEN_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_CHROMA_LOCATION_MIDPOINT_KHR = VKenum::VK_CHROMA_LOCATION_MIDPOINT_KHR;
+
+// VkChromaLocationKHR
+
+
+// VkCoarseSampleOrderTypeNV
+
 
 // VkColorSpaceKHR
 
@@ -1436,6 +1300,30 @@ VKBINDING_CONSTEXPR static const VKenum VK_COLOR_SPACE_PASS_THROUGH_EXT = VKenum
 VKBINDING_CONSTEXPR static const VKenum VK_COLOR_SPACE_EXTENDED_SRGB_NONLINEAR_EXT = VKenum::VK_COLOR_SPACE_EXTENDED_SRGB_NONLINEAR_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_COLOR_SPACE_DISPLAY_NATIVE_AMD = VKenum::VK_COLOR_SPACE_DISPLAY_NATIVE_AMD;
 
+// VkCommandBufferLevel
+
+
+// VkCompareOp
+
+
+// VkComponentSwizzle
+
+
+// VkComponentTypeNV
+
+
+// VkConservativeRasterizationModeEXT
+
+
+// VkCopyAccelerationStructureModeNV
+
+
+// VkCoverageModulationModeNV
+
+
+// VkCoverageReductionModeNV
+
+
 // VkDebugReportObjectTypeEXT
 
 VKBINDING_CONSTEXPR static const VKenum VK_DEBUG_REPORT_OBJECT_TYPE_SAMPLER_YCBCR_CONVERSION_EXT = VKenum::VK_DEBUG_REPORT_OBJECT_TYPE_SAMPLER_YCBCR_CONVERSION_EXT;
@@ -1454,6 +1342,24 @@ VKBINDING_CONSTEXPR static const VKenum VK_DESCRIPTOR_TYPE_ACCELERATION_STRUCTUR
 VKBINDING_CONSTEXPR static const VKenum VK_DESCRIPTOR_UPDATE_TEMPLATE_TYPE_DESCRIPTOR_SET_KHR = VKenum::VK_DESCRIPTOR_UPDATE_TEMPLATE_TYPE_DESCRIPTOR_SET_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_DESCRIPTOR_UPDATE_TEMPLATE_TYPE_PUSH_DESCRIPTORS_KHR = VKenum::VK_DESCRIPTOR_UPDATE_TEMPLATE_TYPE_PUSH_DESCRIPTORS_KHR;
 
+// VkDescriptorUpdateTemplateTypeKHR
+
+
+// VkDeviceEventTypeEXT
+
+
+// VkDiscardRectangleModeEXT
+
+
+// VkDisplayEventTypeEXT
+
+
+// VkDisplayPowerStateEXT
+
+
+// VkDriverIdKHR
+
+
 // VkDynamicState
 
 VKBINDING_CONSTEXPR static const VKenum VK_DYNAMIC_STATE_VIEWPORT_W_SCALING_NV = VKenum::VK_DYNAMIC_STATE_VIEWPORT_W_SCALING_NV;
@@ -1463,6 +1369,9 @@ VKBINDING_CONSTEXPR static const VKenum VK_DYNAMIC_STATE_VIEWPORT_SHADING_RATE_P
 VKBINDING_CONSTEXPR static const VKenum VK_DYNAMIC_STATE_VIEWPORT_COARSE_SAMPLE_ORDER_NV = VKenum::VK_DYNAMIC_STATE_VIEWPORT_COARSE_SAMPLE_ORDER_NV;
 VKBINDING_CONSTEXPR static const VKenum VK_DYNAMIC_STATE_EXCLUSIVE_SCISSOR_NV = VKenum::VK_DYNAMIC_STATE_EXCLUSIVE_SCISSOR_NV;
 VKBINDING_CONSTEXPR static const VKenum VK_DYNAMIC_STATE_LINE_STIPPLE_EXT = VKenum::VK_DYNAMIC_STATE_LINE_STIPPLE_EXT;
+
+// VKenum
+
 
 // VkFilter
 
@@ -1494,93 +1403,123 @@ VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_ASTC_10x10_SFLOAT_BLOCK_EXT = 
 VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_ASTC_12x10_SFLOAT_BLOCK_EXT = VKenum::VK_FORMAT_ASTC_12x10_SFLOAT_BLOCK_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_ASTC_12x12_SFLOAT_BLOCK_EXT = VKenum::VK_FORMAT_ASTC_12x12_SFLOAT_BLOCK_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8B8G8R8_422_UNORM = VKenum::VK_FORMAT_G8B8G8R8_422_UNORM;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_B8G8R8G8_422_UNORM = VKenum::VK_FORMAT_B8G8R8G8_422_UNORM;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM = VKenum::VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8_B8R8_2PLANE_420_UNORM = VKenum::VK_FORMAT_G8_B8R8_2PLANE_420_UNORM;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8_B8_R8_3PLANE_422_UNORM = VKenum::VK_FORMAT_G8_B8_R8_3PLANE_422_UNORM;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8_B8R8_2PLANE_422_UNORM = VKenum::VK_FORMAT_G8_B8R8_2PLANE_422_UNORM;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8_B8_R8_3PLANE_444_UNORM = VKenum::VK_FORMAT_G8_B8_R8_3PLANE_444_UNORM;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_R10X6_UNORM_PACK16 = VKenum::VK_FORMAT_R10X6_UNORM_PACK16;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_R10X6G10X6_UNORM_2PACK16 = VKenum::VK_FORMAT_R10X6G10X6_UNORM_2PACK16;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_R10X6G10X6B10X6A10X6_UNORM_4PACK16 = VKenum::VK_FORMAT_R10X6G10X6B10X6A10X6_UNORM_4PACK16;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6B10X6G10X6R10X6_422_UNORM_4PACK16 = VKenum::VK_FORMAT_G10X6B10X6G10X6R10X6_422_UNORM_4PACK16;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_B10X6G10X6R10X6G10X6_422_UNORM_4PACK16 = VKenum::VK_FORMAT_B10X6G10X6R10X6G10X6_422_UNORM_4PACK16;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_420_UNORM_3PACK16 = VKenum::VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_420_UNORM_3PACK16;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6_B10X6R10X6_2PLANE_420_UNORM_3PACK16 = VKenum::VK_FORMAT_G10X6_B10X6R10X6_2PLANE_420_UNORM_3PACK16;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_422_UNORM_3PACK16 = VKenum::VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_422_UNORM_3PACK16;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6_B10X6R10X6_2PLANE_422_UNORM_3PACK16 = VKenum::VK_FORMAT_G10X6_B10X6R10X6_2PLANE_422_UNORM_3PACK16;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_444_UNORM_3PACK16 = VKenum::VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_444_UNORM_3PACK16;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_R12X4_UNORM_PACK16 = VKenum::VK_FORMAT_R12X4_UNORM_PACK16;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_R12X4G12X4_UNORM_2PACK16 = VKenum::VK_FORMAT_R12X4G12X4_UNORM_2PACK16;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_R12X4G12X4B12X4A12X4_UNORM_4PACK16 = VKenum::VK_FORMAT_R12X4G12X4B12X4A12X4_UNORM_4PACK16;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4B12X4G12X4R12X4_422_UNORM_4PACK16 = VKenum::VK_FORMAT_G12X4B12X4G12X4R12X4_422_UNORM_4PACK16;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_B12X4G12X4R12X4G12X4_422_UNORM_4PACK16 = VKenum::VK_FORMAT_B12X4G12X4R12X4G12X4_422_UNORM_4PACK16;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_420_UNORM_3PACK16 = VKenum::VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_420_UNORM_3PACK16;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4_B12X4R12X4_2PLANE_420_UNORM_3PACK16 = VKenum::VK_FORMAT_G12X4_B12X4R12X4_2PLANE_420_UNORM_3PACK16;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_422_UNORM_3PACK16 = VKenum::VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_422_UNORM_3PACK16;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4_B12X4R12X4_2PLANE_422_UNORM_3PACK16 = VKenum::VK_FORMAT_G12X4_B12X4R12X4_2PLANE_422_UNORM_3PACK16;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_444_UNORM_3PACK16 = VKenum::VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_444_UNORM_3PACK16;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16B16G16R16_422_UNORM = VKenum::VK_FORMAT_G16B16G16R16_422_UNORM;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_B16G16R16G16_422_UNORM = VKenum::VK_FORMAT_B16G16R16G16_422_UNORM;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16_B16_R16_3PLANE_420_UNORM = VKenum::VK_FORMAT_G16_B16_R16_3PLANE_420_UNORM;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16_B16R16_2PLANE_420_UNORM = VKenum::VK_FORMAT_G16_B16R16_2PLANE_420_UNORM;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16_B16_R16_3PLANE_422_UNORM = VKenum::VK_FORMAT_G16_B16_R16_3PLANE_422_UNORM;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16_B16R16_2PLANE_422_UNORM = VKenum::VK_FORMAT_G16_B16R16_2PLANE_422_UNORM;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16_B16_R16_3PLANE_444_UNORM = VKenum::VK_FORMAT_G16_B16_R16_3PLANE_444_UNORM;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_B10X6G10X6R10X6G10X6_422_UNORM_4PACK16_KHR = VKenum::VK_FORMAT_B10X6G10X6R10X6G10X6_422_UNORM_4PACK16_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_B12X4G12X4R12X4G12X4_422_UNORM_4PACK16_KHR = VKenum::VK_FORMAT_B12X4G12X4R12X4G12X4_422_UNORM_4PACK16_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_B16G16R16G16_422_UNORM_KHR = VKenum::VK_FORMAT_B16G16R16G16_422_UNORM_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_B8G8R8G8_422_UNORM_KHR = VKenum::VK_FORMAT_B8G8R8G8_422_UNORM_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_420_UNORM_3PACK16_KHR = VKenum::VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_420_UNORM_3PACK16_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_422_UNORM_3PACK16_KHR = VKenum::VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_422_UNORM_3PACK16_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_444_UNORM_3PACK16_KHR = VKenum::VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_444_UNORM_3PACK16_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6_B10X6R10X6_2PLANE_420_UNORM_3PACK16_KHR = VKenum::VK_FORMAT_G10X6_B10X6R10X6_2PLANE_420_UNORM_3PACK16_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6_B10X6R10X6_2PLANE_422_UNORM_3PACK16_KHR = VKenum::VK_FORMAT_G10X6_B10X6R10X6_2PLANE_422_UNORM_3PACK16_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6B10X6G10X6R10X6_422_UNORM_4PACK16_KHR = VKenum::VK_FORMAT_G10X6B10X6G10X6R10X6_422_UNORM_4PACK16_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_420_UNORM_3PACK16_KHR = VKenum::VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_420_UNORM_3PACK16_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_422_UNORM_3PACK16_KHR = VKenum::VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_422_UNORM_3PACK16_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_444_UNORM_3PACK16_KHR = VKenum::VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_444_UNORM_3PACK16_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4_B12X4R12X4_2PLANE_420_UNORM_3PACK16_KHR = VKenum::VK_FORMAT_G12X4_B12X4R12X4_2PLANE_420_UNORM_3PACK16_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4_B12X4R12X4_2PLANE_422_UNORM_3PACK16_KHR = VKenum::VK_FORMAT_G12X4_B12X4R12X4_2PLANE_422_UNORM_3PACK16_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4B12X4G12X4R12X4_422_UNORM_4PACK16_KHR = VKenum::VK_FORMAT_G12X4B12X4G12X4R12X4_422_UNORM_4PACK16_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16_B16_R16_3PLANE_420_UNORM_KHR = VKenum::VK_FORMAT_G16_B16_R16_3PLANE_420_UNORM_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16_B16_R16_3PLANE_422_UNORM_KHR = VKenum::VK_FORMAT_G16_B16_R16_3PLANE_422_UNORM_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16_B16_R16_3PLANE_444_UNORM_KHR = VKenum::VK_FORMAT_G16_B16_R16_3PLANE_444_UNORM_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16_B16R16_2PLANE_420_UNORM_KHR = VKenum::VK_FORMAT_G16_B16R16_2PLANE_420_UNORM_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16_B16R16_2PLANE_422_UNORM_KHR = VKenum::VK_FORMAT_G16_B16R16_2PLANE_422_UNORM_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16B16G16R16_422_UNORM_KHR = VKenum::VK_FORMAT_G16B16G16R16_422_UNORM_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM_KHR = VKenum::VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8_B8_R8_3PLANE_422_UNORM_KHR = VKenum::VK_FORMAT_G8_B8_R8_3PLANE_422_UNORM_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8_B8_R8_3PLANE_444_UNORM_KHR = VKenum::VK_FORMAT_G8_B8_R8_3PLANE_444_UNORM_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8_B8R8_2PLANE_420_UNORM_KHR = VKenum::VK_FORMAT_G8_B8R8_2PLANE_420_UNORM_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8_B8R8_2PLANE_422_UNORM_KHR = VKenum::VK_FORMAT_G8_B8R8_2PLANE_422_UNORM_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8B8G8R8_422_UNORM_KHR = VKenum::VK_FORMAT_G8B8G8R8_422_UNORM_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_B8G8R8G8_422_UNORM = VKenum::VK_FORMAT_B8G8R8G8_422_UNORM;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_B8G8R8G8_422_UNORM_KHR = VKenum::VK_FORMAT_B8G8R8G8_422_UNORM_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM = VKenum::VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM_KHR = VKenum::VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8_B8R8_2PLANE_420_UNORM = VKenum::VK_FORMAT_G8_B8R8_2PLANE_420_UNORM;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8_B8R8_2PLANE_420_UNORM_KHR = VKenum::VK_FORMAT_G8_B8R8_2PLANE_420_UNORM_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8_B8_R8_3PLANE_422_UNORM = VKenum::VK_FORMAT_G8_B8_R8_3PLANE_422_UNORM;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8_B8_R8_3PLANE_422_UNORM_KHR = VKenum::VK_FORMAT_G8_B8_R8_3PLANE_422_UNORM_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8_B8R8_2PLANE_422_UNORM = VKenum::VK_FORMAT_G8_B8R8_2PLANE_422_UNORM;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8_B8R8_2PLANE_422_UNORM_KHR = VKenum::VK_FORMAT_G8_B8R8_2PLANE_422_UNORM_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8_B8_R8_3PLANE_444_UNORM = VKenum::VK_FORMAT_G8_B8_R8_3PLANE_444_UNORM;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G8_B8_R8_3PLANE_444_UNORM_KHR = VKenum::VK_FORMAT_G8_B8_R8_3PLANE_444_UNORM_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_R10X6_UNORM_PACK16 = VKenum::VK_FORMAT_R10X6_UNORM_PACK16;
 VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_R10X6_UNORM_PACK16_KHR = VKenum::VK_FORMAT_R10X6_UNORM_PACK16_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_R10X6G10X6_UNORM_2PACK16 = VKenum::VK_FORMAT_R10X6G10X6_UNORM_2PACK16;
 VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_R10X6G10X6_UNORM_2PACK16_KHR = VKenum::VK_FORMAT_R10X6G10X6_UNORM_2PACK16_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_R10X6G10X6B10X6A10X6_UNORM_4PACK16 = VKenum::VK_FORMAT_R10X6G10X6B10X6A10X6_UNORM_4PACK16;
 VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_R10X6G10X6B10X6A10X6_UNORM_4PACK16_KHR = VKenum::VK_FORMAT_R10X6G10X6B10X6A10X6_UNORM_4PACK16_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6B10X6G10X6R10X6_422_UNORM_4PACK16 = VKenum::VK_FORMAT_G10X6B10X6G10X6R10X6_422_UNORM_4PACK16;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6B10X6G10X6R10X6_422_UNORM_4PACK16_KHR = VKenum::VK_FORMAT_G10X6B10X6G10X6R10X6_422_UNORM_4PACK16_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_B10X6G10X6R10X6G10X6_422_UNORM_4PACK16 = VKenum::VK_FORMAT_B10X6G10X6R10X6G10X6_422_UNORM_4PACK16;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_B10X6G10X6R10X6G10X6_422_UNORM_4PACK16_KHR = VKenum::VK_FORMAT_B10X6G10X6R10X6G10X6_422_UNORM_4PACK16_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_420_UNORM_3PACK16 = VKenum::VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_420_UNORM_3PACK16;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_420_UNORM_3PACK16_KHR = VKenum::VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_420_UNORM_3PACK16_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6_B10X6R10X6_2PLANE_420_UNORM_3PACK16 = VKenum::VK_FORMAT_G10X6_B10X6R10X6_2PLANE_420_UNORM_3PACK16;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6_B10X6R10X6_2PLANE_420_UNORM_3PACK16_KHR = VKenum::VK_FORMAT_G10X6_B10X6R10X6_2PLANE_420_UNORM_3PACK16_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_422_UNORM_3PACK16 = VKenum::VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_422_UNORM_3PACK16;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_422_UNORM_3PACK16_KHR = VKenum::VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_422_UNORM_3PACK16_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6_B10X6R10X6_2PLANE_422_UNORM_3PACK16 = VKenum::VK_FORMAT_G10X6_B10X6R10X6_2PLANE_422_UNORM_3PACK16;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6_B10X6R10X6_2PLANE_422_UNORM_3PACK16_KHR = VKenum::VK_FORMAT_G10X6_B10X6R10X6_2PLANE_422_UNORM_3PACK16_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_444_UNORM_3PACK16 = VKenum::VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_444_UNORM_3PACK16;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_444_UNORM_3PACK16_KHR = VKenum::VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_444_UNORM_3PACK16_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_R12X4_UNORM_PACK16 = VKenum::VK_FORMAT_R12X4_UNORM_PACK16;
 VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_R12X4_UNORM_PACK16_KHR = VKenum::VK_FORMAT_R12X4_UNORM_PACK16_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_R12X4G12X4_UNORM_2PACK16 = VKenum::VK_FORMAT_R12X4G12X4_UNORM_2PACK16;
 VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_R12X4G12X4_UNORM_2PACK16_KHR = VKenum::VK_FORMAT_R12X4G12X4_UNORM_2PACK16_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_R12X4G12X4B12X4A12X4_UNORM_4PACK16 = VKenum::VK_FORMAT_R12X4G12X4B12X4A12X4_UNORM_4PACK16;
 VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_R12X4G12X4B12X4A12X4_UNORM_4PACK16_KHR = VKenum::VK_FORMAT_R12X4G12X4B12X4A12X4_UNORM_4PACK16_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4B12X4G12X4R12X4_422_UNORM_4PACK16 = VKenum::VK_FORMAT_G12X4B12X4G12X4R12X4_422_UNORM_4PACK16;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4B12X4G12X4R12X4_422_UNORM_4PACK16_KHR = VKenum::VK_FORMAT_G12X4B12X4G12X4R12X4_422_UNORM_4PACK16_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_B12X4G12X4R12X4G12X4_422_UNORM_4PACK16 = VKenum::VK_FORMAT_B12X4G12X4R12X4G12X4_422_UNORM_4PACK16;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_B12X4G12X4R12X4G12X4_422_UNORM_4PACK16_KHR = VKenum::VK_FORMAT_B12X4G12X4R12X4G12X4_422_UNORM_4PACK16_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_420_UNORM_3PACK16 = VKenum::VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_420_UNORM_3PACK16;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_420_UNORM_3PACK16_KHR = VKenum::VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_420_UNORM_3PACK16_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4_B12X4R12X4_2PLANE_420_UNORM_3PACK16 = VKenum::VK_FORMAT_G12X4_B12X4R12X4_2PLANE_420_UNORM_3PACK16;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4_B12X4R12X4_2PLANE_420_UNORM_3PACK16_KHR = VKenum::VK_FORMAT_G12X4_B12X4R12X4_2PLANE_420_UNORM_3PACK16_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_422_UNORM_3PACK16 = VKenum::VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_422_UNORM_3PACK16;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_422_UNORM_3PACK16_KHR = VKenum::VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_422_UNORM_3PACK16_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4_B12X4R12X4_2PLANE_422_UNORM_3PACK16 = VKenum::VK_FORMAT_G12X4_B12X4R12X4_2PLANE_422_UNORM_3PACK16;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4_B12X4R12X4_2PLANE_422_UNORM_3PACK16_KHR = VKenum::VK_FORMAT_G12X4_B12X4R12X4_2PLANE_422_UNORM_3PACK16_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_444_UNORM_3PACK16 = VKenum::VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_444_UNORM_3PACK16;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_444_UNORM_3PACK16_KHR = VKenum::VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_444_UNORM_3PACK16_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16B16G16R16_422_UNORM = VKenum::VK_FORMAT_G16B16G16R16_422_UNORM;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16B16G16R16_422_UNORM_KHR = VKenum::VK_FORMAT_G16B16G16R16_422_UNORM_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_B16G16R16G16_422_UNORM = VKenum::VK_FORMAT_B16G16R16G16_422_UNORM;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_B16G16R16G16_422_UNORM_KHR = VKenum::VK_FORMAT_B16G16R16G16_422_UNORM_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16_B16_R16_3PLANE_420_UNORM = VKenum::VK_FORMAT_G16_B16_R16_3PLANE_420_UNORM;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16_B16_R16_3PLANE_420_UNORM_KHR = VKenum::VK_FORMAT_G16_B16_R16_3PLANE_420_UNORM_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16_B16R16_2PLANE_420_UNORM = VKenum::VK_FORMAT_G16_B16R16_2PLANE_420_UNORM;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16_B16R16_2PLANE_420_UNORM_KHR = VKenum::VK_FORMAT_G16_B16R16_2PLANE_420_UNORM_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16_B16_R16_3PLANE_422_UNORM = VKenum::VK_FORMAT_G16_B16_R16_3PLANE_422_UNORM;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16_B16_R16_3PLANE_422_UNORM_KHR = VKenum::VK_FORMAT_G16_B16_R16_3PLANE_422_UNORM_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16_B16R16_2PLANE_422_UNORM = VKenum::VK_FORMAT_G16_B16R16_2PLANE_422_UNORM;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16_B16R16_2PLANE_422_UNORM_KHR = VKenum::VK_FORMAT_G16_B16R16_2PLANE_422_UNORM_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16_B16_R16_3PLANE_444_UNORM = VKenum::VK_FORMAT_G16_B16_R16_3PLANE_444_UNORM;
+VKBINDING_CONSTEXPR static const VKenum VK_FORMAT_G16_B16_R16_3PLANE_444_UNORM_KHR = VKenum::VK_FORMAT_G16_B16_R16_3PLANE_444_UNORM_KHR;
+
+// VkFrontFace
+
+
+// VkGeometryTypeNV
+
 
 // VkImageLayout
 
 VKBINDING_CONSTEXPR static const VKenum VK_IMAGE_LAYOUT_PRESENT_SRC_KHR = VKenum::VK_IMAGE_LAYOUT_PRESENT_SRC_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_IMAGE_LAYOUT_SHARED_PRESENT_KHR = VKenum::VK_IMAGE_LAYOUT_SHARED_PRESENT_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_IMAGE_LAYOUT_DEPTH_READ_ONLY_STENCIL_ATTACHMENT_OPTIMAL = VKenum::VK_IMAGE_LAYOUT_DEPTH_READ_ONLY_STENCIL_ATTACHMENT_OPTIMAL;
+VKBINDING_CONSTEXPR static const VKenum VK_IMAGE_LAYOUT_DEPTH_READ_ONLY_STENCIL_ATTACHMENT_OPTIMAL_KHR = VKenum::VK_IMAGE_LAYOUT_DEPTH_READ_ONLY_STENCIL_ATTACHMENT_OPTIMAL_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_IMAGE_LAYOUT_DEPTH_ATTACHMENT_STENCIL_READ_ONLY_OPTIMAL = VKenum::VK_IMAGE_LAYOUT_DEPTH_ATTACHMENT_STENCIL_READ_ONLY_OPTIMAL;
+VKBINDING_CONSTEXPR static const VKenum VK_IMAGE_LAYOUT_DEPTH_ATTACHMENT_STENCIL_READ_ONLY_OPTIMAL_KHR = VKenum::VK_IMAGE_LAYOUT_DEPTH_ATTACHMENT_STENCIL_READ_ONLY_OPTIMAL_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_IMAGE_LAYOUT_SHADING_RATE_OPTIMAL_NV = VKenum::VK_IMAGE_LAYOUT_SHADING_RATE_OPTIMAL_NV;
 VKBINDING_CONSTEXPR static const VKenum VK_IMAGE_LAYOUT_FRAGMENT_DENSITY_MAP_OPTIMAL_EXT = VKenum::VK_IMAGE_LAYOUT_FRAGMENT_DENSITY_MAP_OPTIMAL_EXT;
-VKBINDING_CONSTEXPR static const VKenum VK_IMAGE_LAYOUT_DEPTH_ATTACHMENT_STENCIL_READ_ONLY_OPTIMAL_KHR = VKenum::VK_IMAGE_LAYOUT_DEPTH_ATTACHMENT_STENCIL_READ_ONLY_OPTIMAL_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_IMAGE_LAYOUT_DEPTH_READ_ONLY_STENCIL_ATTACHMENT_OPTIMAL_KHR = VKenum::VK_IMAGE_LAYOUT_DEPTH_READ_ONLY_STENCIL_ATTACHMENT_OPTIMAL_KHR;
 
 // VkImageTiling
 
 VKBINDING_CONSTEXPR static const VKenum VK_IMAGE_TILING_DRM_FORMAT_MODIFIER_EXT = VKenum::VK_IMAGE_TILING_DRM_FORMAT_MODIFIER_EXT;
 
+// VkImageType
+
+
+// VkImageViewType
+
+
 // VkIndexType
 
 VKBINDING_CONSTEXPR static const VKenum VK_INDEX_TYPE_NONE_NV = VKenum::VK_INDEX_TYPE_NONE_NV;
 VKBINDING_CONSTEXPR static const VKenum VK_INDEX_TYPE_UINT8_EXT = VKenum::VK_INDEX_TYPE_UINT8_EXT;
+
+// VkIndirectCommandsTokenTypeNVX
+
+
+// VkInternalAllocationType
+
+
+// VkLineRasterizationModeEXT
+
+
+// VkLogicOp
+
+
+// VkMemoryOverallocationBehaviorAMD
+
+
+// VkObjectEntryTypeNVX
+
 
 // VkObjectType
 
@@ -1590,24 +1529,48 @@ VKBINDING_CONSTEXPR static const VKenum VK_OBJECT_TYPE_DISPLAY_KHR = VKenum::VK_
 VKBINDING_CONSTEXPR static const VKenum VK_OBJECT_TYPE_DISPLAY_MODE_KHR = VKenum::VK_OBJECT_TYPE_DISPLAY_MODE_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_OBJECT_TYPE_DEBUG_REPORT_CALLBACK_EXT = VKenum::VK_OBJECT_TYPE_DEBUG_REPORT_CALLBACK_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_OBJECT_TYPE_DESCRIPTOR_UPDATE_TEMPLATE = VKenum::VK_OBJECT_TYPE_DESCRIPTOR_UPDATE_TEMPLATE;
+VKBINDING_CONSTEXPR static const VKenum VK_OBJECT_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_KHR = VKenum::VK_OBJECT_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_OBJECT_TYPE_OBJECT_TABLE_NVX = VKenum::VK_OBJECT_TYPE_OBJECT_TABLE_NVX;
 VKBINDING_CONSTEXPR static const VKenum VK_OBJECT_TYPE_INDIRECT_COMMANDS_LAYOUT_NVX = VKenum::VK_OBJECT_TYPE_INDIRECT_COMMANDS_LAYOUT_NVX;
 VKBINDING_CONSTEXPR static const VKenum VK_OBJECT_TYPE_DEBUG_UTILS_MESSENGER_EXT = VKenum::VK_OBJECT_TYPE_DEBUG_UTILS_MESSENGER_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_OBJECT_TYPE_SAMPLER_YCBCR_CONVERSION = VKenum::VK_OBJECT_TYPE_SAMPLER_YCBCR_CONVERSION;
+VKBINDING_CONSTEXPR static const VKenum VK_OBJECT_TYPE_SAMPLER_YCBCR_CONVERSION_KHR = VKenum::VK_OBJECT_TYPE_SAMPLER_YCBCR_CONVERSION_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_OBJECT_TYPE_VALIDATION_CACHE_EXT = VKenum::VK_OBJECT_TYPE_VALIDATION_CACHE_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_OBJECT_TYPE_ACCELERATION_STRUCTURE_NV = VKenum::VK_OBJECT_TYPE_ACCELERATION_STRUCTURE_NV;
 VKBINDING_CONSTEXPR static const VKenum VK_OBJECT_TYPE_PERFORMANCE_CONFIGURATION_INTEL = VKenum::VK_OBJECT_TYPE_PERFORMANCE_CONFIGURATION_INTEL;
-VKBINDING_CONSTEXPR static const VKenum VK_OBJECT_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_KHR = VKenum::VK_OBJECT_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_OBJECT_TYPE_SAMPLER_YCBCR_CONVERSION_KHR = VKenum::VK_OBJECT_TYPE_SAMPLER_YCBCR_CONVERSION_KHR;
+
+// VkPerformanceConfigurationTypeINTEL
+
+
+// VkPerformanceOverrideTypeINTEL
+
+
+// VkPerformanceParameterTypeINTEL
+
+
+// VkPerformanceValueTypeINTEL
+
+
+// VkPhysicalDeviceType
+
 
 // VkPipelineBindPoint
 
 VKBINDING_CONSTEXPR static const VKenum VK_PIPELINE_BIND_POINT_RAY_TRACING_NV = VKenum::VK_PIPELINE_BIND_POINT_RAY_TRACING_NV;
 
+// VkPipelineCacheHeaderVersion
+
+
+// VkPipelineExecutableStatisticFormatKHR
+
+
 // VkPointClippingBehavior
 
 VKBINDING_CONSTEXPR static const VKenum VK_POINT_CLIPPING_BEHAVIOR_ALL_CLIP_PLANES_KHR = VKenum::VK_POINT_CLIPPING_BEHAVIOR_ALL_CLIP_PLANES_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_POINT_CLIPPING_BEHAVIOR_USER_CLIP_PLANES_ONLY_KHR = VKenum::VK_POINT_CLIPPING_BEHAVIOR_USER_CLIP_PLANES_ONLY_KHR;
+
+// VkPointClippingBehaviorKHR
+
 
 // VkPolygonMode
 
@@ -1618,11 +1581,26 @@ VKBINDING_CONSTEXPR static const VKenum VK_POLYGON_MODE_FILL_RECTANGLE_NV = VKen
 VKBINDING_CONSTEXPR static const VKenum VK_PRESENT_MODE_SHARED_DEMAND_REFRESH_KHR = VKenum::VK_PRESENT_MODE_SHARED_DEMAND_REFRESH_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_PRESENT_MODE_SHARED_CONTINUOUS_REFRESH_KHR = VKenum::VK_PRESENT_MODE_SHARED_CONTINUOUS_REFRESH_KHR;
 
+// VkPrimitiveTopology
+
+
+// VkQueryPoolSamplingModeINTEL
+
+
 // VkQueryType
 
 VKBINDING_CONSTEXPR static const VKenum VK_QUERY_TYPE_TRANSFORM_FEEDBACK_STREAM_EXT = VKenum::VK_QUERY_TYPE_TRANSFORM_FEEDBACK_STREAM_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_QUERY_TYPE_ACCELERATION_STRUCTURE_COMPACTED_SIZE_NV = VKenum::VK_QUERY_TYPE_ACCELERATION_STRUCTURE_COMPACTED_SIZE_NV;
 VKBINDING_CONSTEXPR static const VKenum VK_QUERY_TYPE_PERFORMANCE_QUERY_INTEL = VKenum::VK_QUERY_TYPE_PERFORMANCE_QUERY_INTEL;
+
+// VkQueueGlobalPriorityEXT
+
+
+// VkRasterizationOrderAMD
+
+
+// VkRayTracingShaderGroupTypeNV
+
 
 // VkResult
 
@@ -1634,17 +1612,23 @@ VKBINDING_CONSTEXPR static const VKenum VK_ERROR_INCOMPATIBLE_DISPLAY_KHR = VKen
 VKBINDING_CONSTEXPR static const VKenum VK_ERROR_VALIDATION_FAILED_EXT = VKenum::VK_ERROR_VALIDATION_FAILED_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_ERROR_INVALID_SHADER_NV = VKenum::VK_ERROR_INVALID_SHADER_NV;
 VKBINDING_CONSTEXPR static const VKenum VK_ERROR_OUT_OF_POOL_MEMORY = VKenum::VK_ERROR_OUT_OF_POOL_MEMORY;
+VKBINDING_CONSTEXPR static const VKenum VK_ERROR_OUT_OF_POOL_MEMORY_KHR = VKenum::VK_ERROR_OUT_OF_POOL_MEMORY_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_ERROR_INVALID_EXTERNAL_HANDLE = VKenum::VK_ERROR_INVALID_EXTERNAL_HANDLE;
+VKBINDING_CONSTEXPR static const VKenum VK_ERROR_INVALID_EXTERNAL_HANDLE_KHR = VKenum::VK_ERROR_INVALID_EXTERNAL_HANDLE_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_ERROR_INVALID_DRM_FORMAT_MODIFIER_PLANE_LAYOUT_EXT = VKenum::VK_ERROR_INVALID_DRM_FORMAT_MODIFIER_PLANE_LAYOUT_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_ERROR_FRAGMENTATION_EXT = VKenum::VK_ERROR_FRAGMENTATION_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_ERROR_NOT_PERMITTED_EXT = VKenum::VK_ERROR_NOT_PERMITTED_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_ERROR_INVALID_DEVICE_ADDRESS_EXT = VKenum::VK_ERROR_INVALID_DEVICE_ADDRESS_EXT;
-VKBINDING_CONSTEXPR static const VKenum VK_ERROR_INVALID_EXTERNAL_HANDLE_KHR = VKenum::VK_ERROR_INVALID_EXTERNAL_HANDLE_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_ERROR_OUT_OF_POOL_MEMORY_KHR = VKenum::VK_ERROR_OUT_OF_POOL_MEMORY_KHR;
 
 // VkSamplerAddressMode
 
 VKBINDING_CONSTEXPR static const VKenum VK_SAMPLER_ADDRESS_MODE_MIRROR_CLAMP_TO_EDGE = VKenum::VK_SAMPLER_ADDRESS_MODE_MIRROR_CLAMP_TO_EDGE;
+
+// VkSamplerMipmapMode
+
+
+// VkSamplerReductionModeEXT
+
 
 // VkSamplerYcbcrModelConversion
 
@@ -1654,10 +1638,34 @@ VKBINDING_CONSTEXPR static const VKenum VK_SAMPLER_YCBCR_MODEL_CONVERSION_YCBCR_
 VKBINDING_CONSTEXPR static const VKenum VK_SAMPLER_YCBCR_MODEL_CONVERSION_YCBCR_601_KHR = VKenum::VK_SAMPLER_YCBCR_MODEL_CONVERSION_YCBCR_601_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_SAMPLER_YCBCR_MODEL_CONVERSION_YCBCR_2020_KHR = VKenum::VK_SAMPLER_YCBCR_MODEL_CONVERSION_YCBCR_2020_KHR;
 
+// VkSamplerYcbcrModelConversionKHR
+
+
 // VkSamplerYcbcrRange
 
 VKBINDING_CONSTEXPR static const VKenum VK_SAMPLER_YCBCR_RANGE_ITU_FULL_KHR = VKenum::VK_SAMPLER_YCBCR_RANGE_ITU_FULL_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_SAMPLER_YCBCR_RANGE_ITU_NARROW_KHR = VKenum::VK_SAMPLER_YCBCR_RANGE_ITU_NARROW_KHR;
+
+// VkSamplerYcbcrRangeKHR
+
+
+// VkScopeNV
+
+
+// VkShaderFloatControlsIndependenceKHR
+
+
+// VkShaderInfoTypeAMD
+
+
+// VkShadingRatePaletteEntryNV
+
+
+// VkSharingMode
+
+
+// VkStencilOp
+
 
 // VkStructureType
 
@@ -1688,26 +1696,45 @@ VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_IMAGE_VIEW_HANDLE_INFO
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_TEXTURE_LOD_GATHER_FORMAT_PROPERTIES_AMD = VKenum::VK_STRUCTURE_TYPE_TEXTURE_LOD_GATHER_FORMAT_PROPERTIES_AMD;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CORNER_SAMPLED_IMAGE_FEATURES_NV = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CORNER_SAMPLED_IMAGE_FEATURES_NV;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_RENDER_PASS_MULTIVIEW_CREATE_INFO = VKenum::VK_STRUCTURE_TYPE_RENDER_PASS_MULTIVIEW_CREATE_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_RENDER_PASS_MULTIVIEW_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_RENDER_PASS_MULTIVIEW_CREATE_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_FEATURES = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_FEATURES;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_FEATURES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_FEATURES_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_PROPERTIES = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_PROPERTIES;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_PROPERTIES_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_IMAGE_CREATE_INFO_NV = VKenum::VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_IMAGE_CREATE_INFO_NV;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXPORT_MEMORY_ALLOCATE_INFO_NV = VKenum::VK_STRUCTURE_TYPE_EXPORT_MEMORY_ALLOCATE_INFO_NV;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FEATURES_2 = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FEATURES_2;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FEATURES_2_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FEATURES_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROPERTIES_2 = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROPERTIES_2;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROPERTIES_2_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROPERTIES_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_FORMAT_PROPERTIES_2 = VKenum::VK_STRUCTURE_TYPE_FORMAT_PROPERTIES_2;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_FORMAT_PROPERTIES_2_KHR = VKenum::VK_STRUCTURE_TYPE_FORMAT_PROPERTIES_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_IMAGE_FORMAT_PROPERTIES_2 = VKenum::VK_STRUCTURE_TYPE_IMAGE_FORMAT_PROPERTIES_2;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_IMAGE_FORMAT_PROPERTIES_2_KHR = VKenum::VK_STRUCTURE_TYPE_IMAGE_FORMAT_PROPERTIES_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_FORMAT_INFO_2 = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_FORMAT_INFO_2;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_FORMAT_INFO_2_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_FORMAT_INFO_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_QUEUE_FAMILY_PROPERTIES_2 = VKenum::VK_STRUCTURE_TYPE_QUEUE_FAMILY_PROPERTIES_2;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_QUEUE_FAMILY_PROPERTIES_2_KHR = VKenum::VK_STRUCTURE_TYPE_QUEUE_FAMILY_PROPERTIES_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_PROPERTIES_2 = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_PROPERTIES_2;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_PROPERTIES_2_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_PROPERTIES_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_SPARSE_IMAGE_FORMAT_PROPERTIES_2 = VKenum::VK_STRUCTURE_TYPE_SPARSE_IMAGE_FORMAT_PROPERTIES_2;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_SPARSE_IMAGE_FORMAT_PROPERTIES_2_KHR = VKenum::VK_STRUCTURE_TYPE_SPARSE_IMAGE_FORMAT_PROPERTIES_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SPARSE_IMAGE_FORMAT_INFO_2 = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SPARSE_IMAGE_FORMAT_INFO_2;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SPARSE_IMAGE_FORMAT_INFO_2_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SPARSE_IMAGE_FORMAT_INFO_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_FLAGS_INFO = VKenum::VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_FLAGS_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_FLAGS_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_FLAGS_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DEVICE_GROUP_RENDER_PASS_BEGIN_INFO = VKenum::VK_STRUCTURE_TYPE_DEVICE_GROUP_RENDER_PASS_BEGIN_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DEVICE_GROUP_RENDER_PASS_BEGIN_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_DEVICE_GROUP_RENDER_PASS_BEGIN_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DEVICE_GROUP_COMMAND_BUFFER_BEGIN_INFO = VKenum::VK_STRUCTURE_TYPE_DEVICE_GROUP_COMMAND_BUFFER_BEGIN_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DEVICE_GROUP_COMMAND_BUFFER_BEGIN_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_DEVICE_GROUP_COMMAND_BUFFER_BEGIN_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DEVICE_GROUP_SUBMIT_INFO = VKenum::VK_STRUCTURE_TYPE_DEVICE_GROUP_SUBMIT_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DEVICE_GROUP_SUBMIT_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_DEVICE_GROUP_SUBMIT_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DEVICE_GROUP_BIND_SPARSE_INFO = VKenum::VK_STRUCTURE_TYPE_DEVICE_GROUP_BIND_SPARSE_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DEVICE_GROUP_BIND_SPARSE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_DEVICE_GROUP_BIND_SPARSE_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_DEVICE_GROUP_INFO = VKenum::VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_DEVICE_GROUP_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_DEVICE_GROUP_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_DEVICE_GROUP_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_DEVICE_GROUP_INFO = VKenum::VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_DEVICE_GROUP_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_DEVICE_GROUP_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_DEVICE_GROUP_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_VALIDATION_FLAGS_EXT = VKenum::VK_STRUCTURE_TYPE_VALIDATION_FLAGS_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_DRAW_PARAMETERS_FEATURES = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_DRAW_PARAMETERS_FEATURES;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_DRAW_PARAMETER_FEATURES = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_DRAW_PARAMETER_FEATURES;
@@ -1715,21 +1742,34 @@ VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TEXTUR
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_IMAGE_VIEW_ASTC_DECODE_MODE_EXT = VKenum::VK_STRUCTURE_TYPE_IMAGE_VIEW_ASTC_DECODE_MODE_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ASTC_DECODE_FEATURES_EXT = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ASTC_DECODE_FEATURES_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_GROUP_PROPERTIES = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_GROUP_PROPERTIES;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_GROUP_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_GROUP_PROPERTIES_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DEVICE_GROUP_DEVICE_CREATE_INFO = VKenum::VK_STRUCTURE_TYPE_DEVICE_GROUP_DEVICE_CREATE_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DEVICE_GROUP_DEVICE_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_DEVICE_GROUP_DEVICE_CREATE_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_IMAGE_FORMAT_INFO = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_IMAGE_FORMAT_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_IMAGE_FORMAT_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_IMAGE_FORMAT_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXTERNAL_IMAGE_FORMAT_PROPERTIES = VKenum::VK_STRUCTURE_TYPE_EXTERNAL_IMAGE_FORMAT_PROPERTIES;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXTERNAL_IMAGE_FORMAT_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_EXTERNAL_IMAGE_FORMAT_PROPERTIES_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_BUFFER_INFO = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_BUFFER_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_BUFFER_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_BUFFER_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXTERNAL_BUFFER_PROPERTIES = VKenum::VK_STRUCTURE_TYPE_EXTERNAL_BUFFER_PROPERTIES;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXTERNAL_BUFFER_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_EXTERNAL_BUFFER_PROPERTIES_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ID_PROPERTIES = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ID_PROPERTIES;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ID_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ID_PROPERTIES_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_BUFFER_CREATE_INFO = VKenum::VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_BUFFER_CREATE_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_BUFFER_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_BUFFER_CREATE_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_IMAGE_CREATE_INFO = VKenum::VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_IMAGE_CREATE_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_IMAGE_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_IMAGE_CREATE_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXPORT_MEMORY_ALLOCATE_INFO = VKenum::VK_STRUCTURE_TYPE_EXPORT_MEMORY_ALLOCATE_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXPORT_MEMORY_ALLOCATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_EXPORT_MEMORY_ALLOCATE_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_IMPORT_MEMORY_FD_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_IMPORT_MEMORY_FD_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_MEMORY_FD_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_MEMORY_FD_PROPERTIES_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_MEMORY_GET_FD_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_MEMORY_GET_FD_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_SEMAPHORE_INFO = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_SEMAPHORE_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_SEMAPHORE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_SEMAPHORE_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXTERNAL_SEMAPHORE_PROPERTIES = VKenum::VK_STRUCTURE_TYPE_EXTERNAL_SEMAPHORE_PROPERTIES;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXTERNAL_SEMAPHORE_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_EXTERNAL_SEMAPHORE_PROPERTIES_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXPORT_SEMAPHORE_CREATE_INFO = VKenum::VK_STRUCTURE_TYPE_EXPORT_SEMAPHORE_CREATE_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXPORT_SEMAPHORE_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_EXPORT_SEMAPHORE_CREATE_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_IMPORT_SEMAPHORE_FD_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_IMPORT_SEMAPHORE_FD_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_SEMAPHORE_GET_FD_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_SEMAPHORE_GET_FD_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PUSH_DESCRIPTOR_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PUSH_DESCRIPTOR_PROPERTIES_KHR;
@@ -1739,8 +1779,10 @@ VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_CONDITIONAL_RENDERING_
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_FLOAT16_INT8_FEATURES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_FLOAT16_INT8_FEATURES_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FLOAT16_INT8_FEATURES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FLOAT16_INT8_FEATURES_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_16BIT_STORAGE_FEATURES = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_16BIT_STORAGE_FEATURES;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_16BIT_STORAGE_FEATURES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_16BIT_STORAGE_FEATURES_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PRESENT_REGIONS_KHR = VKenum::VK_STRUCTURE_TYPE_PRESENT_REGIONS_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_CREATE_INFO = VKenum::VK_STRUCTURE_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_CREATE_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_CREATE_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_OBJECT_TABLE_CREATE_INFO_NVX = VKenum::VK_STRUCTURE_TYPE_OBJECT_TABLE_CREATE_INFO_NVX;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_INDIRECT_COMMANDS_LAYOUT_CREATE_INFO_NVX = VKenum::VK_STRUCTURE_TYPE_INDIRECT_COMMANDS_LAYOUT_CREATE_INFO_NVX;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_CMD_PROCESS_COMMANDS_INFO_NVX = VKenum::VK_STRUCTURE_TYPE_CMD_PROCESS_COMMANDS_INFO_NVX;
@@ -1778,26 +1820,37 @@ VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_SUBPASS_BEGIN_INFO_KHR
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_SUBPASS_END_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_SUBPASS_END_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_SHARED_PRESENT_SURFACE_CAPABILITIES_KHR = VKenum::VK_STRUCTURE_TYPE_SHARED_PRESENT_SURFACE_CAPABILITIES_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_FENCE_INFO = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_FENCE_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_FENCE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_FENCE_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXTERNAL_FENCE_PROPERTIES = VKenum::VK_STRUCTURE_TYPE_EXTERNAL_FENCE_PROPERTIES;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXTERNAL_FENCE_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_EXTERNAL_FENCE_PROPERTIES_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXPORT_FENCE_CREATE_INFO = VKenum::VK_STRUCTURE_TYPE_EXPORT_FENCE_CREATE_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXPORT_FENCE_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_EXPORT_FENCE_CREATE_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_IMPORT_FENCE_FD_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_IMPORT_FENCE_FD_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_FENCE_GET_FD_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_FENCE_GET_FD_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_POINT_CLIPPING_PROPERTIES = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_POINT_CLIPPING_PROPERTIES;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_POINT_CLIPPING_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_POINT_CLIPPING_PROPERTIES_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_RENDER_PASS_INPUT_ATTACHMENT_ASPECT_CREATE_INFO = VKenum::VK_STRUCTURE_TYPE_RENDER_PASS_INPUT_ATTACHMENT_ASPECT_CREATE_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_RENDER_PASS_INPUT_ATTACHMENT_ASPECT_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_RENDER_PASS_INPUT_ATTACHMENT_ASPECT_CREATE_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_IMAGE_VIEW_USAGE_CREATE_INFO = VKenum::VK_STRUCTURE_TYPE_IMAGE_VIEW_USAGE_CREATE_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_IMAGE_VIEW_USAGE_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_IMAGE_VIEW_USAGE_CREATE_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PIPELINE_TESSELLATION_DOMAIN_ORIGIN_STATE_CREATE_INFO = VKenum::VK_STRUCTURE_TYPE_PIPELINE_TESSELLATION_DOMAIN_ORIGIN_STATE_CREATE_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PIPELINE_TESSELLATION_DOMAIN_ORIGIN_STATE_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_PIPELINE_TESSELLATION_DOMAIN_ORIGIN_STATE_CREATE_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SURFACE_INFO_2_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SURFACE_INFO_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_SURFACE_CAPABILITIES_2_KHR = VKenum::VK_STRUCTURE_TYPE_SURFACE_CAPABILITIES_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_SURFACE_FORMAT_2_KHR = VKenum::VK_STRUCTURE_TYPE_SURFACE_FORMAT_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTERS_FEATURES = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTERS_FEATURES;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTER_FEATURES = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTER_FEATURES;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTER_FEATURES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTER_FEATURES_KHR;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTERS_FEATURES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTERS_FEATURES_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DISPLAY_PROPERTIES_2_KHR = VKenum::VK_STRUCTURE_TYPE_DISPLAY_PROPERTIES_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DISPLAY_PLANE_PROPERTIES_2_KHR = VKenum::VK_STRUCTURE_TYPE_DISPLAY_PLANE_PROPERTIES_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DISPLAY_MODE_PROPERTIES_2_KHR = VKenum::VK_STRUCTURE_TYPE_DISPLAY_MODE_PROPERTIES_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DISPLAY_PLANE_INFO_2_KHR = VKenum::VK_STRUCTURE_TYPE_DISPLAY_PLANE_INFO_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DISPLAY_PLANE_CAPABILITIES_2_KHR = VKenum::VK_STRUCTURE_TYPE_DISPLAY_PLANE_CAPABILITIES_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_MEMORY_DEDICATED_REQUIREMENTS = VKenum::VK_STRUCTURE_TYPE_MEMORY_DEDICATED_REQUIREMENTS;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_MEMORY_DEDICATED_REQUIREMENTS_KHR = VKenum::VK_STRUCTURE_TYPE_MEMORY_DEDICATED_REQUIREMENTS_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_MEMORY_DEDICATED_ALLOCATE_INFO = VKenum::VK_STRUCTURE_TYPE_MEMORY_DEDICATED_ALLOCATE_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_MEMORY_DEDICATED_ALLOCATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_MEMORY_DEDICATED_ALLOCATE_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DEBUG_UTILS_OBJECT_NAME_INFO_EXT = VKenum::VK_STRUCTURE_TYPE_DEBUG_UTILS_OBJECT_NAME_INFO_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DEBUG_UTILS_OBJECT_TAG_INFO_EXT = VKenum::VK_STRUCTURE_TYPE_DEBUG_UTILS_OBJECT_TAG_INFO_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DEBUG_UTILS_LABEL_EXT = VKenum::VK_STRUCTURE_TYPE_DEBUG_UTILS_LABEL_EXT;
@@ -1819,10 +1872,15 @@ VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROTEC
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROTECTED_MEMORY_PROPERTIES = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROTECTED_MEMORY_PROPERTIES;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DEVICE_QUEUE_INFO_2 = VKenum::VK_STRUCTURE_TYPE_DEVICE_QUEUE_INFO_2;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_BUFFER_MEMORY_REQUIREMENTS_INFO_2 = VKenum::VK_STRUCTURE_TYPE_BUFFER_MEMORY_REQUIREMENTS_INFO_2;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_BUFFER_MEMORY_REQUIREMENTS_INFO_2_KHR = VKenum::VK_STRUCTURE_TYPE_BUFFER_MEMORY_REQUIREMENTS_INFO_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_IMAGE_MEMORY_REQUIREMENTS_INFO_2 = VKenum::VK_STRUCTURE_TYPE_IMAGE_MEMORY_REQUIREMENTS_INFO_2;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_IMAGE_MEMORY_REQUIREMENTS_INFO_2_KHR = VKenum::VK_STRUCTURE_TYPE_IMAGE_MEMORY_REQUIREMENTS_INFO_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_IMAGE_SPARSE_MEMORY_REQUIREMENTS_INFO_2 = VKenum::VK_STRUCTURE_TYPE_IMAGE_SPARSE_MEMORY_REQUIREMENTS_INFO_2;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_IMAGE_SPARSE_MEMORY_REQUIREMENTS_INFO_2_KHR = VKenum::VK_STRUCTURE_TYPE_IMAGE_SPARSE_MEMORY_REQUIREMENTS_INFO_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_MEMORY_REQUIREMENTS_2 = VKenum::VK_STRUCTURE_TYPE_MEMORY_REQUIREMENTS_2;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_MEMORY_REQUIREMENTS_2_KHR = VKenum::VK_STRUCTURE_TYPE_MEMORY_REQUIREMENTS_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_SPARSE_IMAGE_MEMORY_REQUIREMENTS_2 = VKenum::VK_STRUCTURE_TYPE_SPARSE_IMAGE_MEMORY_REQUIREMENTS_2;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_SPARSE_IMAGE_MEMORY_REQUIREMENTS_2_KHR = VKenum::VK_STRUCTURE_TYPE_SPARSE_IMAGE_MEMORY_REQUIREMENTS_2_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_IMAGE_FORMAT_LIST_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_IMAGE_FORMAT_LIST_CREATE_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BLEND_OPERATION_ADVANCED_FEATURES_EXT = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BLEND_OPERATION_ADVANCED_FEATURES_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BLEND_OPERATION_ADVANCED_PROPERTIES_EXT = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BLEND_OPERATION_ADVANCED_PROPERTIES_EXT;
@@ -1832,13 +1890,21 @@ VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PIPELINE_COVERAGE_MODU
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_SM_BUILTINS_FEATURES_NV = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_SM_BUILTINS_FEATURES_NV;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_SM_BUILTINS_PROPERTIES_NV = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_SM_BUILTINS_PROPERTIES_NV;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_CREATE_INFO = VKenum::VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_CREATE_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_CREATE_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_INFO = VKenum::VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_BIND_IMAGE_PLANE_MEMORY_INFO = VKenum::VK_STRUCTURE_TYPE_BIND_IMAGE_PLANE_MEMORY_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_BIND_IMAGE_PLANE_MEMORY_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_BIND_IMAGE_PLANE_MEMORY_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_IMAGE_PLANE_MEMORY_REQUIREMENTS_INFO = VKenum::VK_STRUCTURE_TYPE_IMAGE_PLANE_MEMORY_REQUIREMENTS_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_IMAGE_PLANE_MEMORY_REQUIREMENTS_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_IMAGE_PLANE_MEMORY_REQUIREMENTS_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLER_YCBCR_CONVERSION_FEATURES = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLER_YCBCR_CONVERSION_FEATURES;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLER_YCBCR_CONVERSION_FEATURES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLER_YCBCR_CONVERSION_FEATURES_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_IMAGE_FORMAT_PROPERTIES = VKenum::VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_IMAGE_FORMAT_PROPERTIES;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_IMAGE_FORMAT_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_IMAGE_FORMAT_PROPERTIES_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_INFO = VKenum::VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_INFO = VKenum::VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_INFO;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_INFO_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DRM_FORMAT_MODIFIER_PROPERTIES_LIST_EXT = VKenum::VK_STRUCTURE_TYPE_DRM_FORMAT_MODIFIER_PROPERTIES_LIST_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DRM_FORMAT_MODIFIER_PROPERTIES_EXT = VKenum::VK_STRUCTURE_TYPE_DRM_FORMAT_MODIFIER_PROPERTIES_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_DRM_FORMAT_MODIFIER_INFO_EXT = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_DRM_FORMAT_MODIFIER_INFO_EXT;
@@ -1870,7 +1936,9 @@ VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_REPRESENTATIVE_FRAGMENT_TEST_FEATURES_NV = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_REPRESENTATIVE_FRAGMENT_TEST_FEATURES_NV;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PIPELINE_REPRESENTATIVE_FRAGMENT_TEST_STATE_CREATE_INFO_NV = VKenum::VK_STRUCTURE_TYPE_PIPELINE_REPRESENTATIVE_FRAGMENT_TEST_STATE_CREATE_INFO_NV;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_3_PROPERTIES = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_3_PROPERTIES;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_3_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_3_PROPERTIES_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_SUPPORT = VKenum::VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_SUPPORT;
+VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_SUPPORT_KHR = VKenum::VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_SUPPORT_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_VIEW_IMAGE_FORMAT_INFO_EXT = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_VIEW_IMAGE_FORMAT_INFO_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_FILTER_CUBIC_IMAGE_VIEW_IMAGE_FORMAT_PROPERTIES_EXT = VKenum::VK_STRUCTURE_TYPE_FILTER_CUBIC_IMAGE_VIEW_IMAGE_FORMAT_PROPERTIES_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DEVICE_QUEUE_GLOBAL_PRIORITY_CREATE_INFO_EXT = VKenum::VK_STRUCTURE_TYPE_DEVICE_QUEUE_GLOBAL_PRIORITY_CREATE_INFO_EXT;
@@ -1954,71 +2022,35 @@ VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PIPELINE_EXECUTABLE_IN
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_DEMOTE_TO_HELPER_INVOCATION_FEATURES_EXT = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_DEMOTE_TO_HELPER_INVOCATION_FEATURES_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TEXEL_BUFFER_ALIGNMENT_FEATURES_EXT = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TEXEL_BUFFER_ALIGNMENT_FEATURES_EXT;
 VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TEXEL_BUFFER_ALIGNMENT_PROPERTIES_EXT = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TEXEL_BUFFER_ALIGNMENT_PROPERTIES_EXT;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_DEVICE_GROUP_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_DEVICE_GROUP_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_BIND_BUFFER_MEMORY_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_DEVICE_GROUP_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_DEVICE_GROUP_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_BIND_IMAGE_MEMORY_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_BIND_IMAGE_PLANE_MEMORY_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_BIND_IMAGE_PLANE_MEMORY_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_BUFFER_MEMORY_REQUIREMENTS_INFO_2_KHR = VKenum::VK_STRUCTURE_TYPE_BUFFER_MEMORY_REQUIREMENTS_INFO_2_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_SUPPORT_KHR = VKenum::VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_SUPPORT_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_CREATE_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DEVICE_GROUP_BIND_SPARSE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_DEVICE_GROUP_BIND_SPARSE_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DEVICE_GROUP_COMMAND_BUFFER_BEGIN_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_DEVICE_GROUP_COMMAND_BUFFER_BEGIN_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DEVICE_GROUP_DEVICE_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_DEVICE_GROUP_DEVICE_CREATE_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DEVICE_GROUP_RENDER_PASS_BEGIN_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_DEVICE_GROUP_RENDER_PASS_BEGIN_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_DEVICE_GROUP_SUBMIT_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_DEVICE_GROUP_SUBMIT_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXPORT_FENCE_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_EXPORT_FENCE_CREATE_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXPORT_MEMORY_ALLOCATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_EXPORT_MEMORY_ALLOCATE_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXPORT_SEMAPHORE_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_EXPORT_SEMAPHORE_CREATE_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXTERNAL_BUFFER_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_EXTERNAL_BUFFER_PROPERTIES_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXTERNAL_FENCE_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_EXTERNAL_FENCE_PROPERTIES_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXTERNAL_IMAGE_FORMAT_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_EXTERNAL_IMAGE_FORMAT_PROPERTIES_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_BUFFER_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_BUFFER_CREATE_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_IMAGE_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_IMAGE_CREATE_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_EXTERNAL_SEMAPHORE_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_EXTERNAL_SEMAPHORE_PROPERTIES_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_FORMAT_PROPERTIES_2_KHR = VKenum::VK_STRUCTURE_TYPE_FORMAT_PROPERTIES_2_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_IMAGE_FORMAT_PROPERTIES_2_KHR = VKenum::VK_STRUCTURE_TYPE_IMAGE_FORMAT_PROPERTIES_2_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_IMAGE_MEMORY_REQUIREMENTS_INFO_2_KHR = VKenum::VK_STRUCTURE_TYPE_IMAGE_MEMORY_REQUIREMENTS_INFO_2_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_IMAGE_PLANE_MEMORY_REQUIREMENTS_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_IMAGE_PLANE_MEMORY_REQUIREMENTS_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_IMAGE_SPARSE_MEMORY_REQUIREMENTS_INFO_2_KHR = VKenum::VK_STRUCTURE_TYPE_IMAGE_SPARSE_MEMORY_REQUIREMENTS_INFO_2_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_IMAGE_VIEW_USAGE_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_IMAGE_VIEW_USAGE_CREATE_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_FLAGS_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_FLAGS_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_MEMORY_DEDICATED_ALLOCATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_MEMORY_DEDICATED_ALLOCATE_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_MEMORY_DEDICATED_REQUIREMENTS_KHR = VKenum::VK_STRUCTURE_TYPE_MEMORY_DEDICATED_REQUIREMENTS_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_MEMORY_REQUIREMENTS_2_KHR = VKenum::VK_STRUCTURE_TYPE_MEMORY_REQUIREMENTS_2_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_16BIT_STORAGE_FEATURES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_16BIT_STORAGE_FEATURES_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_BUFFER_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_BUFFER_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_FENCE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_FENCE_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_IMAGE_FORMAT_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_IMAGE_FORMAT_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_SEMAPHORE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_SEMAPHORE_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FEATURES_2_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FEATURES_2_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_GROUP_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_GROUP_PROPERTIES_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ID_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ID_PROPERTIES_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_FORMAT_INFO_2_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_FORMAT_INFO_2_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_3_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_3_PROPERTIES_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_PROPERTIES_2_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_PROPERTIES_2_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_FEATURES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_FEATURES_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_PROPERTIES_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_POINT_CLIPPING_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_POINT_CLIPPING_PROPERTIES_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROPERTIES_2_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROPERTIES_2_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLER_YCBCR_CONVERSION_FEATURES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLER_YCBCR_CONVERSION_FEATURES_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SPARSE_IMAGE_FORMAT_INFO_2_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SPARSE_IMAGE_FORMAT_INFO_2_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTER_FEATURES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTER_FEATURES_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTERS_FEATURES_KHR = VKenum::VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VARIABLE_POINTERS_FEATURES_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_PIPELINE_TESSELLATION_DOMAIN_ORIGIN_STATE_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_PIPELINE_TESSELLATION_DOMAIN_ORIGIN_STATE_CREATE_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_QUEUE_FAMILY_PROPERTIES_2_KHR = VKenum::VK_STRUCTURE_TYPE_QUEUE_FAMILY_PROPERTIES_2_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_RENDER_PASS_INPUT_ATTACHMENT_ASPECT_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_RENDER_PASS_INPUT_ATTACHMENT_ASPECT_CREATE_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_RENDER_PASS_MULTIVIEW_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_RENDER_PASS_MULTIVIEW_CREATE_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_CREATE_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_CREATE_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_IMAGE_FORMAT_PROPERTIES_KHR = VKenum::VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_IMAGE_FORMAT_PROPERTIES_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_INFO_KHR = VKenum::VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_INFO_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_SPARSE_IMAGE_FORMAT_PROPERTIES_2_KHR = VKenum::VK_STRUCTURE_TYPE_SPARSE_IMAGE_FORMAT_PROPERTIES_2_KHR;
-VKBINDING_CONSTEXPR static const VKenum VK_STRUCTURE_TYPE_SPARSE_IMAGE_MEMORY_REQUIREMENTS_2_KHR = VKenum::VK_STRUCTURE_TYPE_SPARSE_IMAGE_MEMORY_REQUIREMENTS_2_KHR;
+
+// VkSubpassContents
+
+
+// VkSystemAllocationScope
+
 
 // VkTessellationDomainOrigin
 
 VKBINDING_CONSTEXPR static const VKenum VK_TESSELLATION_DOMAIN_ORIGIN_UPPER_LEFT_KHR = VKenum::VK_TESSELLATION_DOMAIN_ORIGIN_UPPER_LEFT_KHR;
 VKBINDING_CONSTEXPR static const VKenum VK_TESSELLATION_DOMAIN_ORIGIN_LOWER_LEFT_KHR = VKenum::VK_TESSELLATION_DOMAIN_ORIGIN_LOWER_LEFT_KHR;
+
+// VkTessellationDomainOriginKHR
+
+
+// VkTimeDomainEXT
+
+
+// VkValidationCacheHeaderVersionEXT
+
+
+// VkVendorId
+
+
+// VkVertexInputRate
+
+
+// VkViewportCoordinateSwizzleNV
+
 
 
 

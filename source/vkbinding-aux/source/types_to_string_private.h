@@ -6,22 +6,22 @@
 #include <bitset>
 #include <sstream>
 
-#include <eglbinding-aux/Meta.h>
+#include <vkbinding-aux/Meta.h>
 
 
-namespace eglbinding { namespace aux
+namespace vkbinding { namespace aux
 {
 
 
 template <typename T>
 std::string bitfieldString(T value)
 {
-    std::bitset<sizeof(egl::EGLbitfield) * 8> bits(static_cast<int>(static_cast<egl::EGLbitfield>(value)));
+    std::bitset<sizeof(vk::VKbitfield) * 8> bits(static_cast<int>(static_cast<vk::VKbitfield>(value)));
 
     std::stringstream ss;
     bool first = true;
 
-    for (size_t i = 0; i < sizeof(egl::EGLbitfield) * 8; ++i)
+    for (size_t i = 0; i < sizeof(vk::VKbitfield) * 8; ++i)
     {
     if (!bits.test(i))
         continue;
@@ -35,9 +35,9 @@ std::string bitfieldString(T value)
             ss << " | ";
         }
 
-    const egl::EGLbitfield bit = static_cast<egl::EGLbitfield>(1 << i);
+    const vk::VKbitfield bit = static_cast<vk::VKbitfield>(1 << i);
 
-    const auto identifier = eglbinding::aux::Meta::getString(static_cast<T>(bit));
+    const auto identifier = vkbinding::aux::Meta::getString(static_cast<T>(bit));
     if (identifier.empty())
     {
         ss << "1 << " << i;
@@ -53,4 +53,4 @@ std::string bitfieldString(T value)
 std::string wrapString(const char * value);
 
 
-} } // namespace eglbinding::aux
+} } // namespace vkbinding::aux

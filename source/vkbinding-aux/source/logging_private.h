@@ -1,7 +1,7 @@
 #pragma once
 
 
-namespace eglbinding { namespace aux
+namespace vkbinding { namespace aux
 {
 
 
@@ -18,4 +18,4 @@ const std::vector<LogEntry>::const_iterator next(TailIdentifier key, const std::
 unsigned int size(TailIdentifier key);
 
 
-} } // namespace eglbinding::aux
+} } // namespace vkbinding::aux

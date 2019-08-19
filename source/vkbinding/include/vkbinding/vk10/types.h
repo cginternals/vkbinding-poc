@@ -56,7 +56,6 @@ using vk::VKbitfield;
 using vk::VkBlendFactor;
 using vk::VkBlendOp;
 using vk::VkBlendOverlapEXT;
-using vk::VkBool32;
 using vk::VkBorderColor;
 using vk::VkBuffer;
 using vk::VkBufferCopy;

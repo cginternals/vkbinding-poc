@@ -39,7 +39,7 @@ enum class VKenum : unsigned int;
 // Vulkan 1.1 version number
 #define VK_API_VERSION_1_1 VK_MAKE_VERSION(1, 1, 0)// Patch version should always be set to 0
 // Version of this file
-#define VK_HEADER_VERSION 119
+#define VK_HEADER_VERSION 120
 
 #define VK_DEFINE_HANDLE(object) typedef struct object##_T* object;
 
@@ -357,7 +357,6 @@ using PFN_vkReallocationFunction = void* (VK_APIENTRY *)(void* pUserData,void* p
 using PFN_vkVoidFunction = void (VK_APIENTRY *)(void);
 using VkDeviceAddress = uint64_t;
 using VkDeviceSize = uint64_t;
-using VkBool32 = uint32_t;
 using VkSampleMask = uint32_t;
 struct VkBufferMemoryBarrier {
 	VkStructureType sType;

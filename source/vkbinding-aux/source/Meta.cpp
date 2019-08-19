@@ -75,11 +75,11 @@ std::vector<VKbitfield> Meta::bitfields()
     return bitfields;    
 }
 
-std::vector<EGLenum> Meta::enums()
+std::vector<VKenum> Meta::enums()
 {
-    auto enums = std::vector<EGLenum>{};
+    auto enums = std::vector<VKenum>{};
 
-    for (const auto & p : Meta_StringsByEnum)
+    for (const auto & p : Meta_StringsByVKenum)
     {
         enums.push_back(p.first);
     }
@@ -88,23 +88,23 @@ std::vector<EGLenum> Meta::enums()
 }
 
 
-EGLextension Meta::getExtension(const std::string & glextension)
+VKextension Meta::getExtension(const std::string & vkextension)
 {
-    const auto index = alphabeticalGroupIndex(glextension, 4);
+    const auto index = alphabeticalGroupIndex(vkextension, 4);
     const auto & map = Meta_ExtensionsByStringMaps[index];
-    const auto i = map.find(glextension);
+    const auto i = map.find(vkextension);
 
     if (i != map.cend())
     {
         return i->second;
     }
 
-    return EGLextension::UNKNOWN;
+    return VKextension::UNKNOWN;
 }
 
-std::set<EGLextension> Meta::extensions()
+std::set<VKextension> Meta::extensions()
 {
-    auto extensions = std::set<EGLextension>{};
+    auto extensions = std::set<VKextension>{};
 
     for (const auto & m : Meta_ExtensionsByStringMaps)
     {
@@ -118,9 +118,9 @@ std::set<EGLextension> Meta::extensions()
 }
 
 
-const std::string & Meta::getString(const EGLBoolean & glboolean)
+const std::string & Meta::getString(const VkBool32 & vkboolean)
 {
-    const auto i = Meta_StringsByBoolean.find(glboolean);
+    const auto i = Meta_StringsByBoolean.find(vkboolean);
 
     if (i != Meta_StringsByBoolean.cend())
     {
@@ -130,11 +130,11 @@ const std::string & Meta::getString(const EGLBoolean & glboolean)
     return none;
 }
 
-const std::string & Meta::getString(const EGLenum glenum)
+const std::string & Meta::getString(const VKenum vkenum)
 {
-    const auto i = Meta_StringsByEnum.find(glenum);
+    const auto i = Meta_StringsByVKenum.find(vkenum);
 
-    if (i != Meta_StringsByEnum.cend())
+    if (i != Meta_StringsByVKenum.cend())
     {
         return i->second;
     }
@@ -142,9 +142,9 @@ const std::string & Meta::getString(const EGLenum glenum)
     return none;
 }
 
-const std::string & Meta::getString(const EGLextension glextension)
+const std::string & Meta::getString(const VKextension vkextension)
 {
-    const auto i = Meta_StringsByExtension.find(glextension);
+    const auto i = Meta_StringsByExtension.find(vkextension);
 
     if (i != Meta_StringsByExtension.cend())
     {
@@ -154,37 +154,37 @@ const std::string & Meta::getString(const EGLextension glextension)
     return none;
 }
 
-EGLbitfield Meta::getBitfield(const std::string & glbitfield)
+VKbitfield Meta::getBitfield(const std::string & vkbitfield)
 {
-    const auto index = alphabeticalGroupIndex(glbitfield, 4);
+    const auto index = alphabeticalGroupIndex(vkbitfield, 4);
     const auto & map = Meta_BitfieldsByStringMaps[index];
-    const auto i = map.find(glbitfield);
+    const auto i = map.find(vkbitfield);
 
     if (i != map.cend())
     {
         return i->second;
     }
 
-    return static_cast<EGLbitfield>(-1);
+    return static_cast<VKbitfield>(-1);
 }
 
-EGLenum Meta::getEnum(const std::string & glenum)
+VKenum Meta::getEnum(const std::string & vkenum)
 {
-    const auto index = alphabeticalGroupIndex(glenum, 4);
+    const auto index = alphabeticalGroupIndex(vkenum, 4);
     const auto & map = Meta_EnumsByStringMaps[index];
-    const auto i = map.find(glenum);
+    const auto i = map.find(vkenum);
 
     if (i != map.cend())
     {
         return i->second;
     }
 
-    return static_cast<EGLenum>(static_cast<unsigned int>(-1));
+    return static_cast<VKenum>(static_cast<unsigned int>(-1));
 }
 
-const std::set<EGLextension> Meta::extensions(const Version & version)
+const std::set<VKextension> Meta::extensions(const Version & version)
 {
-    auto required = std::set<EGLextension>{};
+    auto required = std::set<VKextension>{};
 
     if (version.isNull())
     {
@@ -207,11 +207,11 @@ const std::set<EGLextension> Meta::extensions(const Version & version)
     return required;
 }
 
-const std::set<EGLextension> Meta::extensions(const std::string & glfunction)
+const std::set<VKextension> Meta::extensions(const std::string & vkfunction)
 {
-    const auto index = alphabeticalGroupIndex(glfunction, 3);
+    const auto index = alphabeticalGroupIndex(vkfunction, 3);
     const auto & map = Meta_ExtensionsByFunctionStringMaps[index];
-    const auto i = map.find(glfunction);
+    const auto i = map.find(vkfunction);
 
     if (i != map.cend())
     {

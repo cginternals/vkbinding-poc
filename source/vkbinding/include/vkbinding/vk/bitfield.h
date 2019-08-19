@@ -21,18 +21,18 @@ enum class UnusedMask : unsigned int
 
 enum class VkAccessFlags : unsigned int
 {
-    VK_ACCESS_TRANSFORM_FEEDBACK_WRITE_BIT_EXT                                                        = 0x2000000,
-    VK_ACCESS_TRANSFORM_FEEDBACK_COUNTER_READ_BIT_EXT                                                 = 0x4000000,
-    VK_ACCESS_TRANSFORM_FEEDBACK_COUNTER_WRITE_BIT_EXT                                                = 0x8000000,
-    VK_ACCESS_CONDITIONAL_RENDERING_READ_BIT_EXT                                                      = 0x100000,
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
     VK_ACCESS_COMMAND_PROCESS_READ_BIT_NVX                                                            = 0x20000,
     VK_ACCESS_COMMAND_PROCESS_WRITE_BIT_NVX                                                           = 0x40000,
     VK_ACCESS_COLOR_ATTACHMENT_READ_NONCOHERENT_BIT_EXT                                               = 0x80000,
-    VK_ACCESS_SHADING_RATE_IMAGE_READ_BIT_NV                                                          = 0x800000,
+    VK_ACCESS_CONDITIONAL_RENDERING_READ_BIT_EXT                                                      = 0x100000,
     VK_ACCESS_ACCELERATION_STRUCTURE_READ_BIT_NV                                                      = 0x200000,
     VK_ACCESS_ACCELERATION_STRUCTURE_WRITE_BIT_NV                                                     = 0x400000,
+    VK_ACCESS_SHADING_RATE_IMAGE_READ_BIT_NV                                                          = 0x800000,
     VK_ACCESS_FRAGMENT_DENSITY_MAP_READ_BIT_EXT                                                       = 0x1000000,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_ACCESS_TRANSFORM_FEEDBACK_WRITE_BIT_EXT                                                        = 0x2000000,
+    VK_ACCESS_TRANSFORM_FEEDBACK_COUNTER_READ_BIT_EXT                                                 = 0x4000000,
+    VK_ACCESS_TRANSFORM_FEEDBACK_COUNTER_WRITE_BIT_EXT                                                = 0x8000000
 };
 
 
@@ -44,20 +44,20 @@ enum class VkAttachmentDescriptionFlags : unsigned int
 
 enum class VkBufferCreateFlags : unsigned int
 {
-    VK_BUFFER_CREATE_DEVICE_ADDRESS_CAPTURE_REPLAY_BIT_EXT                                            = 0x10,
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
     VK_BUFFER_CREATE_PROTECTED_BIT                                                                    = 0x8,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_BUFFER_CREATE_DEVICE_ADDRESS_CAPTURE_REPLAY_BIT_EXT                                            = 0x10
 };
 
 
 enum class VkBufferUsageFlags : unsigned int
 {
-    VK_BUFFER_USAGE_TRANSFORM_FEEDBACK_BUFFER_BIT_EXT                                                 = 0x800,
-    VK_BUFFER_USAGE_TRANSFORM_FEEDBACK_COUNTER_BUFFER_BIT_EXT                                         = 0x1000,
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
     VK_BUFFER_USAGE_CONDITIONAL_RENDERING_BIT_EXT                                                     = 0x200,
     VK_BUFFER_USAGE_RAY_TRACING_BIT_NV                                                                = 0x400,
-    VK_BUFFER_USAGE_SHADER_DEVICE_ADDRESS_BIT_EXT                                                     = 0x20000,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_BUFFER_USAGE_TRANSFORM_FEEDBACK_BUFFER_BIT_EXT                                                 = 0x800,
+    VK_BUFFER_USAGE_TRANSFORM_FEEDBACK_COUNTER_BUFFER_BIT_EXT                                         = 0x1000,
+    VK_BUFFER_USAGE_SHADER_DEVICE_ADDRESS_BIT_EXT                                                     = 0x20000
 };
 
 
@@ -93,8 +93,8 @@ enum class VkCommandBufferUsageFlags : unsigned int
 
 enum class VkCommandPoolCreateFlags : unsigned int
 {
-    VK_COMMAND_POOL_CREATE_PROTECTED_BIT                                                              = 0x4,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
+    VK_COMMAND_POOL_CREATE_PROTECTED_BIT                                                              = 0x4
 };
 
 
@@ -160,18 +160,18 @@ enum class VkDebugUtilsMessengerCallbackDataFlagsEXT : unsigned int
 
 enum class VkDependencyFlags : unsigned int
 {
-    VK_DEPENDENCY_VIEW_LOCAL_BIT_KHR                                                                  = VK_DEPENDENCY_VIEW_LOCAL_BIT_KHR,
-    VK_DEPENDENCY_DEVICE_GROUP_BIT_KHR                                                                = VK_DEPENDENCY_DEVICE_GROUP_BIT_KHR,
-    VK_DEPENDENCY_DEVICE_GROUP_BIT                                                                    = 0x4,
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
     VK_DEPENDENCY_VIEW_LOCAL_BIT                                                                      = 0x2,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_DEPENDENCY_VIEW_LOCAL_BIT_KHR                                                                  = 0x2,
+    VK_DEPENDENCY_DEVICE_GROUP_BIT                                                                    = 0x4,
+    VK_DEPENDENCY_DEVICE_GROUP_BIT_KHR                                                                = 0x4
 };
 
 
 enum class VkDescriptorPoolCreateFlags : unsigned int
 {
-    VK_DESCRIPTOR_POOL_CREATE_UPDATE_AFTER_BIND_BIT_EXT                                               = 0x2,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
+    VK_DESCRIPTOR_POOL_CREATE_UPDATE_AFTER_BIND_BIT_EXT                                               = 0x2
 };
 
 
@@ -183,9 +183,9 @@ enum class VkDescriptorPoolResetFlags : unsigned int
 
 enum class VkDescriptorSetLayoutCreateFlags : unsigned int
 {
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
     VK_DESCRIPTOR_SET_LAYOUT_CREATE_PUSH_DESCRIPTOR_BIT_KHR                                           = 0x1,
-    VK_DESCRIPTOR_SET_LAYOUT_CREATE_UPDATE_AFTER_BIND_POOL_BIT_EXT                                    = 0x2,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_DESCRIPTOR_SET_LAYOUT_CREATE_UPDATE_AFTER_BIND_POOL_BIT_EXT                                    = 0x2
 };
 
 
@@ -215,8 +215,8 @@ enum class VkDeviceGroupPresentModeFlagsKHR : unsigned int
 
 enum class VkDeviceQueueCreateFlags : unsigned int
 {
-    VK_DEVICE_QUEUE_CREATE_PROTECTED_BIT                                                              = 0x1,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
+    VK_DEVICE_QUEUE_CREATE_PROTECTED_BIT                                                              = 0x1
 };
 
 
@@ -252,9 +252,9 @@ enum class VkExternalFenceFeatureFlagBitsKHR : unsigned int
 
 enum class VkExternalFenceFeatureFlags : unsigned int
 {
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
     VK_EXTERNAL_FENCE_FEATURE_EXPORTABLE_BIT_KHR                                                      = 0x1,
-    VK_EXTERNAL_FENCE_FEATURE_IMPORTABLE_BIT_KHR                                                      = 0x2,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_EXTERNAL_FENCE_FEATURE_IMPORTABLE_BIT_KHR                                                      = 0x2
 };
 
 
@@ -272,11 +272,11 @@ enum class VkExternalFenceHandleTypeFlagBitsKHR : unsigned int
 
 enum class VkExternalFenceHandleTypeFlags : unsigned int
 {
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
     VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_FD_BIT_KHR                                                   = 0x1,
     VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_WIN32_BIT_KHR                                                = 0x2,
     VK_EXTERNAL_FENCE_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT_KHR                                            = 0x4,
-    VK_EXTERNAL_FENCE_HANDLE_TYPE_SYNC_FD_BIT_KHR                                                     = 0x8,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_EXTERNAL_FENCE_HANDLE_TYPE_SYNC_FD_BIT_KHR                                                     = 0x8
 };
 
 
@@ -294,10 +294,10 @@ enum class VkExternalMemoryFeatureFlagBitsKHR : unsigned int
 
 enum class VkExternalMemoryFeatureFlags : unsigned int
 {
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
     VK_EXTERNAL_MEMORY_FEATURE_DEDICATED_ONLY_BIT_KHR                                                 = 0x1,
     VK_EXTERNAL_MEMORY_FEATURE_EXPORTABLE_BIT_KHR                                                     = 0x2,
-    VK_EXTERNAL_MEMORY_FEATURE_IMPORTABLE_BIT_KHR                                                     = 0x4,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_EXTERNAL_MEMORY_FEATURE_IMPORTABLE_BIT_KHR                                                     = 0x4
 };
 
 
@@ -321,6 +321,7 @@ enum class VkExternalMemoryHandleTypeFlagBitsKHR : unsigned int
 
 enum class VkExternalMemoryHandleTypeFlags : unsigned int
 {
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
     VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_FD_BIT_KHR                                                  = 0x1,
     VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_WIN32_BIT_KHR                                               = 0x2,
     VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT_KHR                                           = 0x4,
@@ -328,10 +329,9 @@ enum class VkExternalMemoryHandleTypeFlags : unsigned int
     VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D11_TEXTURE_KMT_BIT_KHR                                          = 0x10,
     VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D12_HEAP_BIT_KHR                                                 = 0x20,
     VK_EXTERNAL_MEMORY_HANDLE_TYPE_D3D12_RESOURCE_BIT_KHR                                             = 0x40,
-    VK_EXTERNAL_MEMORY_HANDLE_TYPE_DMA_BUF_BIT_EXT                                                    = 0x200,
     VK_EXTERNAL_MEMORY_HANDLE_TYPE_HOST_ALLOCATION_BIT_EXT                                            = 0x80,
     VK_EXTERNAL_MEMORY_HANDLE_TYPE_HOST_MAPPED_FOREIGN_MEMORY_BIT_EXT                                 = 0x100,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_EXTERNAL_MEMORY_HANDLE_TYPE_DMA_BUF_BIT_EXT                                                    = 0x200
 };
 
 
@@ -355,9 +355,9 @@ enum class VkExternalSemaphoreFeatureFlagBitsKHR : unsigned int
 
 enum class VkExternalSemaphoreFeatureFlags : unsigned int
 {
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
     VK_EXTERNAL_SEMAPHORE_FEATURE_EXPORTABLE_BIT_KHR                                                  = 0x1,
-    VK_EXTERNAL_SEMAPHORE_FEATURE_IMPORTABLE_BIT_KHR                                                  = 0x2,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_EXTERNAL_SEMAPHORE_FEATURE_IMPORTABLE_BIT_KHR                                                  = 0x2
 };
 
 
@@ -375,12 +375,12 @@ enum class VkExternalSemaphoreHandleTypeFlagBitsKHR : unsigned int
 
 enum class VkExternalSemaphoreHandleTypeFlags : unsigned int
 {
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
     VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_FD_BIT_KHR                                               = 0x1,
     VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_WIN32_BIT_KHR                                            = 0x2,
     VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_OPAQUE_WIN32_KMT_BIT_KHR                                        = 0x4,
     VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_D3D12_FENCE_BIT_KHR                                             = 0x8,
-    VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_SYNC_FD_BIT_KHR                                                 = 0x10,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_EXTERNAL_SEMAPHORE_HANDLE_TYPE_SYNC_FD_BIT_KHR                                                 = 0x10
 };
 
 
@@ -404,8 +404,8 @@ enum class VkFenceImportFlagBitsKHR : unsigned int
 
 enum class VkFenceImportFlags : unsigned int
 {
-    VK_FENCE_IMPORT_TEMPORARY_BIT_KHR                                                                 = 0x1,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
+    VK_FENCE_IMPORT_TEMPORARY_BIT_KHR                                                                 = 0x1
 };
 
 
@@ -417,36 +417,36 @@ enum class VkFenceImportFlagsKHR : unsigned int
 
 enum class VkFormatFeatureFlags : unsigned int
 {
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
     VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_CUBIC_BIT_IMG                                              = 0x2000,
-    VK_FORMAT_FEATURE_TRANSFER_SRC_BIT_KHR                                                            = VK_FORMAT_FEATURE_TRANSFER_SRC_BIT_KHR,
-    VK_FORMAT_FEATURE_TRANSFER_DST_BIT_KHR                                                            = VK_FORMAT_FEATURE_TRANSFER_DST_BIT_KHR,
-    VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_MINMAX_BIT_EXT                                             = 0x10000,
-    VK_FORMAT_FEATURE_MIDPOINT_CHROMA_SAMPLES_BIT_KHR                                                 = VK_FORMAT_FEATURE_MIDPOINT_CHROMA_SAMPLES_BIT_KHR,
-    VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_LINEAR_FILTER_BIT_KHR                            = VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_LINEAR_FILTER_BIT_KHR,
-    VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_SEPARATE_RECONSTRUCTION_FILTER_BIT_KHR           = VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_SEPARATE_RECONSTRUCTION_FILTER_BIT_KHR,
-    VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_BIT_KHR           = VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_BIT_KHR,
-    VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_FORCEABLE_BIT_KHR = VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_FORCEABLE_BIT_KHR,
-    VK_FORMAT_FEATURE_DISJOINT_BIT_KHR                                                                = VK_FORMAT_FEATURE_DISJOINT_BIT_KHR,
-    VK_FORMAT_FEATURE_COSITED_CHROMA_SAMPLES_BIT_KHR                                                  = VK_FORMAT_FEATURE_COSITED_CHROMA_SAMPLES_BIT_KHR,
     VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_CUBIC_BIT_EXT                                              = 0x2000,
-    VK_FORMAT_FEATURE_FRAGMENT_DENSITY_MAP_BIT_EXT                                                    = 0x1000000,
     VK_FORMAT_FEATURE_TRANSFER_SRC_BIT                                                                = 0x4000,
+    VK_FORMAT_FEATURE_TRANSFER_SRC_BIT_KHR                                                            = 0x4000,
     VK_FORMAT_FEATURE_TRANSFER_DST_BIT                                                                = 0x8000,
+    VK_FORMAT_FEATURE_TRANSFER_DST_BIT_KHR                                                            = 0x8000,
+    VK_FORMAT_FEATURE_SAMPLED_IMAGE_FILTER_MINMAX_BIT_EXT                                             = 0x10000,
     VK_FORMAT_FEATURE_MIDPOINT_CHROMA_SAMPLES_BIT                                                     = 0x20000,
+    VK_FORMAT_FEATURE_MIDPOINT_CHROMA_SAMPLES_BIT_KHR                                                 = 0x20000,
     VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_LINEAR_FILTER_BIT                                = 0x40000,
+    VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_LINEAR_FILTER_BIT_KHR                            = 0x40000,
     VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_SEPARATE_RECONSTRUCTION_FILTER_BIT               = 0x80000,
+    VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_SEPARATE_RECONSTRUCTION_FILTER_BIT_KHR           = 0x80000,
     VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_BIT               = 0x100000,
+    VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_BIT_KHR           = 0x100000,
     VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_FORCEABLE_BIT     = 0x200000,
+    VK_FORMAT_FEATURE_SAMPLED_IMAGE_YCBCR_CONVERSION_CHROMA_RECONSTRUCTION_EXPLICIT_FORCEABLE_BIT_KHR = 0x200000,
     VK_FORMAT_FEATURE_DISJOINT_BIT                                                                    = 0x400000,
+    VK_FORMAT_FEATURE_DISJOINT_BIT_KHR                                                                = 0x400000,
     VK_FORMAT_FEATURE_COSITED_CHROMA_SAMPLES_BIT                                                      = 0x800000,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_FORMAT_FEATURE_COSITED_CHROMA_SAMPLES_BIT_KHR                                                  = 0x800000,
+    VK_FORMAT_FEATURE_FRAGMENT_DENSITY_MAP_BIT_EXT                                                    = 0x1000000
 };
 
 
 enum class VkFramebufferCreateFlags : unsigned int
 {
-    VK_FRAMEBUFFER_CREATE_IMAGELESS_BIT_KHR                                                           = 0x1,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
+    VK_FRAMEBUFFER_CREATE_IMAGELESS_BIT_KHR                                                           = 0x1
 };
 
 
@@ -470,54 +470,54 @@ enum class VkHeadlessSurfaceCreateFlagsEXT : unsigned int
 
 enum class VkImageAspectFlags : unsigned int
 {
-    VK_IMAGE_ASPECT_PLANE_0_BIT_KHR                                                                   = VK_IMAGE_ASPECT_PLANE_0_BIT_KHR,
-    VK_IMAGE_ASPECT_PLANE_1_BIT_KHR                                                                   = VK_IMAGE_ASPECT_PLANE_1_BIT_KHR,
-    VK_IMAGE_ASPECT_PLANE_2_BIT_KHR                                                                   = VK_IMAGE_ASPECT_PLANE_2_BIT_KHR,
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
+    VK_IMAGE_ASPECT_PLANE_0_BIT                                                                       = 0x10,
+    VK_IMAGE_ASPECT_PLANE_0_BIT_KHR                                                                   = 0x10,
+    VK_IMAGE_ASPECT_PLANE_1_BIT                                                                       = 0x20,
+    VK_IMAGE_ASPECT_PLANE_1_BIT_KHR                                                                   = 0x20,
+    VK_IMAGE_ASPECT_PLANE_2_BIT                                                                       = 0x40,
+    VK_IMAGE_ASPECT_PLANE_2_BIT_KHR                                                                   = 0x40,
     VK_IMAGE_ASPECT_MEMORY_PLANE_0_BIT_EXT                                                            = 0x80,
     VK_IMAGE_ASPECT_MEMORY_PLANE_1_BIT_EXT                                                            = 0x100,
     VK_IMAGE_ASPECT_MEMORY_PLANE_2_BIT_EXT                                                            = 0x200,
-    VK_IMAGE_ASPECT_MEMORY_PLANE_3_BIT_EXT                                                            = 0x400,
-    VK_IMAGE_ASPECT_PLANE_0_BIT                                                                       = 0x10,
-    VK_IMAGE_ASPECT_PLANE_1_BIT                                                                       = 0x20,
-    VK_IMAGE_ASPECT_PLANE_2_BIT                                                                       = 0x40,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_IMAGE_ASPECT_MEMORY_PLANE_3_BIT_EXT                                                            = 0x400
 };
 
 
 enum class VkImageCreateFlags : unsigned int
 {
-    VK_IMAGE_CREATE_CORNER_SAMPLED_BIT_NV                                                             = 0x2000,
-    VK_IMAGE_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT_KHR                                               = VK_IMAGE_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT_KHR,
-    VK_IMAGE_CREATE_2D_ARRAY_COMPATIBLE_BIT_KHR                                                       = VK_IMAGE_CREATE_2D_ARRAY_COMPATIBLE_BIT_KHR,
-    VK_IMAGE_CREATE_BLOCK_TEXEL_VIEW_COMPATIBLE_BIT_KHR                                               = VK_IMAGE_CREATE_BLOCK_TEXEL_VIEW_COMPATIBLE_BIT_KHR,
-    VK_IMAGE_CREATE_EXTENDED_USAGE_BIT_KHR                                                            = VK_IMAGE_CREATE_EXTENDED_USAGE_BIT_KHR,
-    VK_IMAGE_CREATE_SAMPLE_LOCATIONS_COMPATIBLE_DEPTH_BIT_EXT                                         = 0x1000,
-    VK_IMAGE_CREATE_DISJOINT_BIT_KHR                                                                  = VK_IMAGE_CREATE_DISJOINT_BIT_KHR,
-    VK_IMAGE_CREATE_ALIAS_BIT_KHR                                                                     = VK_IMAGE_CREATE_ALIAS_BIT_KHR,
-    VK_IMAGE_CREATE_SUBSAMPLED_BIT_EXT                                                                = 0x4000,
-    VK_IMAGE_CREATE_ALIAS_BIT                                                                         = 0x400,
-    VK_IMAGE_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT                                                   = 0x40,
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
     VK_IMAGE_CREATE_2D_ARRAY_COMPATIBLE_BIT                                                           = 0x20,
+    VK_IMAGE_CREATE_2D_ARRAY_COMPATIBLE_BIT_KHR                                                       = 0x20,
+    VK_IMAGE_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT                                                   = 0x40,
+    VK_IMAGE_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT_KHR                                               = 0x40,
     VK_IMAGE_CREATE_BLOCK_TEXEL_VIEW_COMPATIBLE_BIT                                                   = 0x80,
+    VK_IMAGE_CREATE_BLOCK_TEXEL_VIEW_COMPATIBLE_BIT_KHR                                               = 0x80,
     VK_IMAGE_CREATE_EXTENDED_USAGE_BIT                                                                = 0x100,
-    VK_IMAGE_CREATE_PROTECTED_BIT                                                                     = 0x800,
+    VK_IMAGE_CREATE_EXTENDED_USAGE_BIT_KHR                                                            = 0x100,
     VK_IMAGE_CREATE_DISJOINT_BIT                                                                      = 0x200,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_IMAGE_CREATE_DISJOINT_BIT_KHR                                                                  = 0x200,
+    VK_IMAGE_CREATE_ALIAS_BIT                                                                         = 0x400,
+    VK_IMAGE_CREATE_ALIAS_BIT_KHR                                                                     = 0x400,
+    VK_IMAGE_CREATE_PROTECTED_BIT                                                                     = 0x800,
+    VK_IMAGE_CREATE_SAMPLE_LOCATIONS_COMPATIBLE_DEPTH_BIT_EXT                                         = 0x1000,
+    VK_IMAGE_CREATE_CORNER_SAMPLED_BIT_NV                                                             = 0x2000,
+    VK_IMAGE_CREATE_SUBSAMPLED_BIT_EXT                                                                = 0x4000
 };
 
 
 enum class VkImageUsageFlags : unsigned int
 {
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
     VK_IMAGE_USAGE_SHADING_RATE_IMAGE_BIT_NV                                                          = 0x100,
-    VK_IMAGE_USAGE_FRAGMENT_DENSITY_MAP_BIT_EXT                                                       = 0x200,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_IMAGE_USAGE_FRAGMENT_DENSITY_MAP_BIT_EXT                                                       = 0x200
 };
 
 
 enum class VkImageViewCreateFlags : unsigned int
 {
-    VK_IMAGE_VIEW_CREATE_FRAGMENT_DENSITY_MAP_DYNAMIC_BIT_EXT                                         = 0x1,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
+    VK_IMAGE_VIEW_CREATE_FRAGMENT_DENSITY_MAP_DYNAMIC_BIT_EXT                                         = 0x1
 };
 
 
@@ -541,8 +541,8 @@ enum class VkMemoryAllocateFlagBitsKHR : unsigned int
 
 enum class VkMemoryAllocateFlags : unsigned int
 {
-    VK_MEMORY_ALLOCATE_DEVICE_MASK_BIT_KHR                                                            = 0x1,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
+    VK_MEMORY_ALLOCATE_DEVICE_MASK_BIT_KHR                                                            = 0x1
 };
 
 
@@ -554,9 +554,9 @@ enum class VkMemoryAllocateFlagsKHR : unsigned int
 
 enum class VkMemoryHeapFlags : unsigned int
 {
-    VK_MEMORY_HEAP_MULTI_INSTANCE_BIT_KHR                                                             = VK_MEMORY_HEAP_MULTI_INSTANCE_BIT_KHR,
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
     VK_MEMORY_HEAP_MULTI_INSTANCE_BIT                                                                 = 0x2,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_MEMORY_HEAP_MULTI_INSTANCE_BIT_KHR                                                             = 0x2
 };
 
 
@@ -568,8 +568,8 @@ enum class VkMemoryMapFlags : unsigned int
 
 enum class VkMemoryPropertyFlags : unsigned int
 {
-    VK_MEMORY_PROPERTY_PROTECTED_BIT                                                                  = 0x20,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
+    VK_MEMORY_PROPERTY_PROTECTED_BIT                                                                  = 0x20
 };
 
 
@@ -587,11 +587,11 @@ enum class VkPeerMemoryFeatureFlagBitsKHR : unsigned int
 
 enum class VkPeerMemoryFeatureFlags : unsigned int
 {
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
     VK_PEER_MEMORY_FEATURE_COPY_SRC_BIT_KHR                                                           = 0x1,
     VK_PEER_MEMORY_FEATURE_COPY_DST_BIT_KHR                                                           = 0x2,
     VK_PEER_MEMORY_FEATURE_GENERIC_SRC_BIT_KHR                                                        = 0x4,
-    VK_PEER_MEMORY_FEATURE_GENERIC_DST_BIT_KHR                                                        = 0x8,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_PEER_MEMORY_FEATURE_GENERIC_DST_BIT_KHR                                                        = 0x8
 };
 
 
@@ -639,14 +639,14 @@ enum class VkPipelineCoverageToColorStateCreateFlagsNV : unsigned int
 
 enum class VkPipelineCreateFlags : unsigned int
 {
-    VK_PIPELINE_CREATE_VIEW_INDEX_FROM_DEVICE_INDEX_BIT_KHR                                           = VK_PIPELINE_CREATE_VIEW_INDEX_FROM_DEVICE_INDEX_BIT_KHR,
-    VK_PIPELINE_CREATE_DISPATCH_BASE_KHR                                                              = VK_PIPELINE_CREATE_DISPATCH_BASE_KHR,
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
+    VK_PIPELINE_CREATE_VIEW_INDEX_FROM_DEVICE_INDEX_BIT                                               = 0x8,
+    VK_PIPELINE_CREATE_VIEW_INDEX_FROM_DEVICE_INDEX_BIT_KHR                                           = 0x8,
+    VK_PIPELINE_CREATE_DISPATCH_BASE                                                                  = 0x10,
+    VK_PIPELINE_CREATE_DISPATCH_BASE_KHR                                                              = 0x10,
     VK_PIPELINE_CREATE_DEFER_COMPILE_BIT_NV                                                           = 0x20,
     VK_PIPELINE_CREATE_CAPTURE_STATISTICS_BIT_KHR                                                     = 0x40,
-    VK_PIPELINE_CREATE_CAPTURE_INTERNAL_REPRESENTATIONS_BIT_KHR                                       = 0x80,
-    VK_PIPELINE_CREATE_VIEW_INDEX_FROM_DEVICE_INDEX_BIT                                               = 0x8,
-    VK_PIPELINE_CREATE_DISPATCH_BASE                                                                  = 0x10,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_PIPELINE_CREATE_CAPTURE_INTERNAL_REPRESENTATIONS_BIT_KHR                                       = 0x80
 };
 
 
@@ -718,24 +718,24 @@ enum class VkPipelineRasterizationStateStreamCreateFlagsEXT : unsigned int
 
 enum class VkPipelineShaderStageCreateFlags : unsigned int
 {
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
     VK_PIPELINE_SHADER_STAGE_CREATE_ALLOW_VARYING_SUBGROUP_SIZE_BIT_EXT                               = 0x1,
-    VK_PIPELINE_SHADER_STAGE_CREATE_REQUIRE_FULL_SUBGROUPS_BIT_EXT                                    = 0x2,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_PIPELINE_SHADER_STAGE_CREATE_REQUIRE_FULL_SUBGROUPS_BIT_EXT                                    = 0x2
 };
 
 
 enum class VkPipelineStageFlags : unsigned int
 {
-    VK_PIPELINE_STAGE_TRANSFORM_FEEDBACK_BIT_EXT                                                      = 0x1000000,
-    VK_PIPELINE_STAGE_CONDITIONAL_RENDERING_BIT_EXT                                                   = 0x40000,
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
     VK_PIPELINE_STAGE_COMMAND_PROCESS_BIT_NVX                                                         = 0x20000,
-    VK_PIPELINE_STAGE_SHADING_RATE_IMAGE_BIT_NV                                                       = 0x400000,
-    VK_PIPELINE_STAGE_RAY_TRACING_SHADER_BIT_NV                                                       = 0x200000,
-    VK_PIPELINE_STAGE_ACCELERATION_STRUCTURE_BUILD_BIT_NV                                             = 0x2000000,
+    VK_PIPELINE_STAGE_CONDITIONAL_RENDERING_BIT_EXT                                                   = 0x40000,
     VK_PIPELINE_STAGE_TASK_SHADER_BIT_NV                                                              = 0x80000,
     VK_PIPELINE_STAGE_MESH_SHADER_BIT_NV                                                              = 0x100000,
+    VK_PIPELINE_STAGE_RAY_TRACING_SHADER_BIT_NV                                                       = 0x200000,
+    VK_PIPELINE_STAGE_SHADING_RATE_IMAGE_BIT_NV                                                       = 0x400000,
     VK_PIPELINE_STAGE_FRAGMENT_DENSITY_PROCESS_BIT_EXT                                                = 0x800000,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_PIPELINE_STAGE_TRANSFORM_FEEDBACK_BIT_EXT                                                      = 0x1000000,
+    VK_PIPELINE_STAGE_ACCELERATION_STRUCTURE_BUILD_BIT_NV                                             = 0x2000000
 };
 
 
@@ -789,8 +789,8 @@ enum class VkQueryResultFlags : unsigned int
 
 enum class VkQueueFlags : unsigned int
 {
-    VK_QUEUE_PROTECTED_BIT                                                                            = 0x10,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
+    VK_QUEUE_PROTECTED_BIT                                                                            = 0x10
 };
 
 
@@ -814,9 +814,9 @@ enum class VkSampleCountFlags : unsigned int
 
 enum class VkSamplerCreateFlags : unsigned int
 {
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
     VK_SAMPLER_CREATE_SUBSAMPLED_BIT_EXT                                                              = 0x1,
-    VK_SAMPLER_CREATE_SUBSAMPLED_COARSE_RECONSTRUCTION_BIT_EXT                                        = 0x2,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_SAMPLER_CREATE_SUBSAMPLED_COARSE_RECONSTRUCTION_BIT_EXT                                        = 0x2
 };
 
 
@@ -834,8 +834,8 @@ enum class VkSemaphoreImportFlagBitsKHR : unsigned int
 
 enum class VkSemaphoreImportFlags : unsigned int
 {
-    VK_SEMAPHORE_IMPORT_TEMPORARY_BIT_KHR                                                             = 0x1,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
+    VK_SEMAPHORE_IMPORT_TEMPORARY_BIT_KHR                                                             = 0x1
 };
 
 
@@ -859,15 +859,15 @@ enum class VkShaderModuleCreateFlags : unsigned int
 
 enum class VkShaderStageFlags : unsigned int
 {
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
+    VK_SHADER_STAGE_TASK_BIT_NV                                                                       = 0x40,
+    VK_SHADER_STAGE_MESH_BIT_NV                                                                       = 0x80,
     VK_SHADER_STAGE_RAYGEN_BIT_NV                                                                     = 0x100,
     VK_SHADER_STAGE_ANY_HIT_BIT_NV                                                                    = 0x200,
     VK_SHADER_STAGE_CLOSEST_HIT_BIT_NV                                                                = 0x400,
     VK_SHADER_STAGE_MISS_BIT_NV                                                                       = 0x800,
     VK_SHADER_STAGE_INTERSECTION_BIT_NV                                                               = 0x1000,
-    VK_SHADER_STAGE_CALLABLE_BIT_NV                                                                   = 0x2000,
-    VK_SHADER_STAGE_TASK_BIT_NV                                                                       = 0x40,
-    VK_SHADER_STAGE_MESH_BIT_NV                                                                       = 0x80,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_SHADER_STAGE_CALLABLE_BIT_NV                                                                   = 0x2000
 };
 
 
@@ -891,16 +891,16 @@ enum class VkStencilFaceFlags : unsigned int
 
 enum class VkSubgroupFeatureFlags : unsigned int
 {
-    VK_SUBGROUP_FEATURE_PARTITIONED_BIT_NV                                                            = 0x100,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
+    VK_SUBGROUP_FEATURE_PARTITIONED_BIT_NV                                                            = 0x100
 };
 
 
 enum class VkSubpassDescriptionFlags : unsigned int
 {
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
     VK_SUBPASS_DESCRIPTION_PER_VIEW_ATTRIBUTES_BIT_NVX                                                = 0x1,
-    VK_SUBPASS_DESCRIPTION_PER_VIEW_POSITION_X_ONLY_BIT_NVX                                           = 0x2,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_SUBPASS_DESCRIPTION_PER_VIEW_POSITION_X_ONLY_BIT_NVX                                           = 0x2
 };
 
 
@@ -918,10 +918,10 @@ enum class VkSurfaceTransformFlagsKHR : unsigned int
 
 enum class VkSwapchainCreateFlagsKHR : unsigned int
 {
+    VK_NONE_BIT                                                                                       = 0x0, // Generic VK_NONE_BIT
     VK_SWAPCHAIN_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT_KHR                                           = 0x1,
     VK_SWAPCHAIN_CREATE_PROTECTED_BIT_KHR                                                             = 0x2,
-    VK_SWAPCHAIN_CREATE_MUTABLE_FORMAT_BIT_KHR                                                        = 0x4,
-    VK_NONE_BIT                                                                                       = 0x0 // Generic VK_NONE_BIT
+    VK_SWAPCHAIN_CREATE_MUTABLE_FORMAT_BIT_KHR                                                        = 0x4
 };
 
 

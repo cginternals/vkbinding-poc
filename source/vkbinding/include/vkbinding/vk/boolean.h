@@ -1,7 +1,8 @@
+
 #pragma once
 
 
-#include <vkbinding/Boolean8.h>
+#include <vkbinding/Boolean32.h>
 
 #include <vkbinding/vkbinding_api.h>
 #include <vkbinding/vkbinding_features.h>
@@ -12,19 +13,13 @@ namespace vk
 {
 
 
-using VKBoolean = vkbinding::Boolean8;
+using VkBool32 = vkbinding::Boolean32;
 
-
-} // namespace vk
-
-
-namespace vk
-{
 
 // import booleans to namespace
 
-VKBINDING_CONSTEXPR static const VKBoolean EGL_FALSE = VKBoolean(0);
-VKBINDING_CONSTEXPR static const VKBoolean EGL_TRUE = VKBoolean(1);
+VKBINDING_CONSTEXPR static const VkBool32 VK_FALSE = VkBool32(0);
+VKBINDING_CONSTEXPR static const VkBool32 VK_TRUE = VkBool32(1);
 
 
 } // namespace vk

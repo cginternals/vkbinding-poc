@@ -4,12 +4,12 @@
 
 #include <set>
 
-#include <eglbinding/FunctionCall.h>
+#include <vkbinding/FunctionCall.h>
 
-#include <eglbinding-aux/eglbinding-aux_api.h>
+#include <vkbinding-aux/vkbinding-aux_api.h>
 
 
-namespace eglbinding { namespace aux
+namespace vkbinding { namespace aux
 {
 
 
@@ -27,7 +27,7 @@ using LogEntry = FunctionCall *;
 *  @param[in] newSize
 *    The new size of the buffer
 */
-EGLBINDING_AUX_API void resize(unsigned int newSize);
+VKBINDING_AUX_API void resize(unsigned int newSize);
 
 /**
 *  @brief
@@ -36,7 +36,7 @@ EGLBINDING_AUX_API void resize(unsigned int newSize);
 *  @remarks
 *    This function generates a file name and uses this as output
 */
-EGLBINDING_AUX_API void start();
+VKBINDING_AUX_API void start();
 
 /**
 *  @brief
@@ -45,7 +45,7 @@ EGLBINDING_AUX_API void start();
 *  @param[in] filepath
 *    The file to store the log into
 */
-EGLBINDING_AUX_API void start(const std::string & filepath);
+VKBINDING_AUX_API void start(const std::string & filepath);
 
 /**
 *  @brief
@@ -57,7 +57,7 @@ EGLBINDING_AUX_API void start(const std::string & filepath);
 *  @remarks
 *    This function generates a file name and uses this as output
 */
-EGLBINDING_AUX_API void startExcept(const std::set<std::string> & blackList);
+VKBINDING_AUX_API void startExcept(const std::set<std::string> & blackList);
 
 /**
 *  @brief
@@ -68,13 +68,13 @@ EGLBINDING_AUX_API void startExcept(const std::set<std::string> & blackList);
 *  @param[in] blackList
 *    The blacklist of function names
 */
-EGLBINDING_AUX_API void startExcept(const std::string & filepath, const std::set<std::string> & blackList);
+VKBINDING_AUX_API void startExcept(const std::string & filepath, const std::set<std::string> & blackList);
 
 /**
 *  @brief
 *    Stops logging and flushing log file
 */
-EGLBINDING_AUX_API void stop();
+VKBINDING_AUX_API void stop();
 
 /**
 *  @brief
@@ -83,13 +83,13 @@ EGLBINDING_AUX_API void stop();
 *  @remarks
 *    While logging is started but paused, no OpenGL function calls are considered for the log file
 */
-EGLBINDING_AUX_API void pause();
+VKBINDING_AUX_API void pause();
 
 /**
 *  @brief
 *    Resumes paused logging
 */
-EGLBINDING_AUX_API void resume();
+VKBINDING_AUX_API void resume();
 
 /**
 *  @brief
@@ -98,7 +98,7 @@ EGLBINDING_AUX_API void resume();
 *  @remarks
 *    This function is intended to get used by glbinding and not by a user of glbinding
 */
-EGLBINDING_AUX_API void log(LogEntry call);
+VKBINDING_AUX_API void log(LogEntry call);
 
 
-} } // namespace eglbinding::aux
+} } // namespace vkbinding::aux

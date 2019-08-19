@@ -1,5 +1,5 @@
 
-#include <eglbinding-aux/logging.h>
+#include <vkbinding-aux/logging.h>
 
 #include <array>
 #include <atomic>
@@ -18,13 +18,13 @@ namespace std_boost = boost;
 namespace std_boost = std;
 #endif
 
-#include <eglbinding-aux/RingBuffer.h>
+#include <vkbinding-aux/RingBuffer.h>
 
-#include <eglbinding/AbstractFunction.h>
-#include <eglbinding/Binding.h>
-#include <eglbinding/CallbackMask.h>
+#include <vkbinding/AbstractFunction.h>
+#include <vkbinding/Binding.h>
+#include <vkbinding/CallbackMask.h>
 
-#include <eglbinding-aux/types_to_string.h>
+#include <vkbinding-aux/types_to_string.h>
 
 #include "logging_private.h"
 
@@ -39,18 +39,18 @@ std::atomic<bool> g_persisted{true};
 std_boost::mutex g_lockfinish;
 std_boost::condition_variable g_finishcheck;
 
-using FunctionCallBuffer = eglbinding::aux::RingBuffer<eglbinding::aux::LogEntry>;
+using FunctionCallBuffer = vkbinding::aux::RingBuffer<vkbinding::aux::LogEntry>;
 FunctionCallBuffer g_buffer{LOG_BUFFER_SIZE};
 
 
 } // namespace
 
 
-namespace eglbinding { namespace aux
+namespace vkbinding { namespace aux
 {
 
 
-std::ostream & operator<<(std::ostream & stream, const eglbinding::FunctionCall * call)
+std::ostream & operator<<(std::ostream & stream, const vkbinding::FunctionCall * call)
 {
     using microseconds = std::chrono::microseconds;
     using milliseconds = std::chrono::milliseconds;
@@ -106,7 +106,7 @@ void start()
 
 void start(const std::string & filepath)
 {
-    Binding::setLogCallback(eglbinding::aux::log);
+    Binding::setLogCallback(vkbinding::aux::log);
     Binding::addCallbackMask(CallbackMask::Timestamp | CallbackMask::Logging);
     startWriter(filepath);
 }
@@ -254,4 +254,4 @@ unsigned int size(TailIdentifier key)
 }
 
 
-} } // namespace eglbinding::aux
+} } // namespace vkbinding::aux

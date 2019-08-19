@@ -82,7 +82,7 @@ public:
     *  @remark
     *    Beware, that some enums in the OpenGL API have different symbol names but identical enum values and that this function cannot differentiate between them
     */
-    static const std::string & getString(vk::VKenum vkenum);
+    // static const std::string & getString(vk::VKenum vkenum);
     
     /**
     *  @brief
@@ -256,7 +256,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -268,7 +268,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -280,7 +280,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -292,7 +292,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -304,7 +304,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -316,7 +316,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -328,7 +328,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -340,7 +340,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -352,7 +352,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -364,7 +364,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -376,7 +376,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -388,7 +388,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -400,7 +400,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -412,7 +412,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -424,7 +424,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -436,7 +436,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -448,7 +448,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -460,7 +460,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -472,7 +472,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -484,7 +484,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -496,7 +496,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -508,7 +508,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -520,7 +520,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -532,7 +532,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -544,7 +544,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -556,7 +556,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -568,7 +568,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -580,7 +580,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -592,7 +592,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -604,7 +604,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -616,7 +616,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -628,7 +628,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -640,7 +640,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -652,7 +652,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -664,7 +664,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -676,7 +676,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -688,7 +688,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -700,7 +700,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -712,7 +712,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -724,7 +724,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -736,7 +736,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -748,7 +748,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -760,7 +760,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -772,7 +772,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -784,7 +784,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -796,7 +796,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -808,7 +808,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -820,7 +820,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -832,7 +832,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -844,7 +844,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -856,7 +856,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -868,7 +868,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -880,7 +880,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -892,7 +892,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -904,7 +904,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -916,7 +916,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -928,7 +928,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -940,7 +940,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -952,7 +952,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -964,7 +964,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -976,7 +976,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -988,7 +988,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1000,7 +1000,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1012,7 +1012,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1024,7 +1024,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1036,7 +1036,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1048,7 +1048,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1060,7 +1060,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1072,7 +1072,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1084,7 +1084,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1096,7 +1096,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1108,7 +1108,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1120,7 +1120,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1132,7 +1132,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1144,7 +1144,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1156,7 +1156,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1168,7 +1168,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1180,7 +1180,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1192,7 +1192,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1204,7 +1204,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1216,7 +1216,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1228,7 +1228,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1240,7 +1240,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1252,7 +1252,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1264,7 +1264,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1276,7 +1276,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1288,7 +1288,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1300,7 +1300,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1312,7 +1312,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1324,7 +1324,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1336,7 +1336,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1348,7 +1348,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1360,7 +1360,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1372,7 +1372,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1384,7 +1384,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1396,7 +1396,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1408,7 +1408,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1420,7 +1420,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1432,7 +1432,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1444,7 +1444,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1456,7 +1456,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1468,7 +1468,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1480,7 +1480,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1492,7 +1492,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1504,7 +1504,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1516,7 +1516,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1528,7 +1528,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1540,7 +1540,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1552,7 +1552,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1564,7 +1564,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1576,7 +1576,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1588,7 +1588,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1600,7 +1600,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1612,7 +1612,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1624,7 +1624,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1636,7 +1636,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1648,7 +1648,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1660,7 +1660,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1672,7 +1672,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1684,7 +1684,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1696,7 +1696,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1708,7 +1708,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1720,7 +1720,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1732,7 +1732,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1744,7 +1744,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1756,7 +1756,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1768,7 +1768,7 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
@@ -1780,13 +1780,1094 @@ public:
     *  @brief
     *    Convert bitfield to symbol name string representation
     *
-    *  @param[in] glbitfield
+    *  @param[in] bitfield
     *    The bitfield value
     *
     *  @return
     *    The string representation of the value
     */
     static const std::string & getString(vk::VkValidationCacheCreateFlagsEXT vkbitfield);
+
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::UNGROUPED vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkAccelerationStructureMemoryRequirementsTypeNV vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkAccelerationStructureTypeNV vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkAttachmentLoadOp vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkAttachmentStoreOp vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkBlendFactor vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkBlendOp vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkBlendOverlapEXT vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkBorderColor vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkChromaLocation vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkChromaLocationKHR vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkCoarseSampleOrderTypeNV vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkColorSpaceKHR vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkCommandBufferLevel vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkCompareOp vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkComponentSwizzle vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkComponentTypeNV vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkConservativeRasterizationModeEXT vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkCopyAccelerationStructureModeNV vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkCoverageModulationModeNV vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkCoverageReductionModeNV vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkDebugReportObjectTypeEXT vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkDescriptorType vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkDescriptorUpdateTemplateType vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkDescriptorUpdateTemplateTypeKHR vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkDeviceEventTypeEXT vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkDiscardRectangleModeEXT vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkDisplayEventTypeEXT vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkDisplayPowerStateEXT vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkDriverIdKHR vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkDynamicState vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VKenum vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkFilter vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkFormat vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkFrontFace vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkGeometryTypeNV vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkImageLayout vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkImageTiling vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkImageType vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkImageViewType vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkIndexType vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkIndirectCommandsTokenTypeNVX vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkInternalAllocationType vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkLineRasterizationModeEXT vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkLogicOp vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkMemoryOverallocationBehaviorAMD vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkObjectEntryTypeNVX vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkObjectType vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkPerformanceConfigurationTypeINTEL vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkPerformanceOverrideTypeINTEL vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkPerformanceParameterTypeINTEL vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkPerformanceValueTypeINTEL vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkPhysicalDeviceType vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkPipelineBindPoint vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkPipelineCacheHeaderVersion vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkPipelineExecutableStatisticFormatKHR vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkPointClippingBehavior vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkPointClippingBehaviorKHR vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkPolygonMode vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkPresentModeKHR vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkPrimitiveTopology vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkQueryPoolSamplingModeINTEL vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkQueryType vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkQueueGlobalPriorityEXT vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkRasterizationOrderAMD vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkRayTracingShaderGroupTypeNV vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkResult vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkSamplerAddressMode vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkSamplerMipmapMode vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkSamplerReductionModeEXT vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkSamplerYcbcrModelConversion vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkSamplerYcbcrModelConversionKHR vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkSamplerYcbcrRange vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkSamplerYcbcrRangeKHR vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkScopeNV vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkShaderFloatControlsIndependenceKHR vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkShaderInfoTypeAMD vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkShadingRatePaletteEntryNV vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkSharingMode vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkStencilOp vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkStructureType vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkSubpassContents vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkSystemAllocationScope vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkTessellationDomainOrigin vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkTessellationDomainOriginKHR vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkTimeDomainEXT vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkValidationCacheHeaderVersionEXT vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkVendorId vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkVertexInputRate vkenum);
+
+    /**
+    *  @brief
+    *    Convert enum to symbol name string representation
+    *
+    *  @param[in] enum
+    *    The enum value
+    *
+    *  @return
+    *    The string representation of the value
+    */
+    static const std::string & getString(vk::VkViewportCoordinateSwizzleNV vkenum);
 
 
 private:
